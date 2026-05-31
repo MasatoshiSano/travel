@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ローマ観光トレンド 2026｜日本人おすすめスポット</title>
+<style>
+  :root {
+    --c-ink: #1a1410;
+    --c-paper: #fdfaf5;
+    --c-accent: #b8442e;
+    --c-accent-2: #d4a574;
+    --c-gold: #c9a961;
+    --c-shadow: rgba(26, 20, 16, 0.12);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif;
+    background: var(--c-paper);
+    color: var(--c-ink);
+    line-height: 1.75;
+  }
+  .hero {
+    position: relative;
+    height: 70vh;
+    min-height: 480px;
+    background-image:
+      linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.55) 100%),
+      url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/3840px-Colosseo_2020.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 60px 8vw;
+  }
+  .hero .kicker {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    opacity: 0.85;
+  }
+  .hero h1 {
+    font-size: clamp(36px, 6vw, 72px);
+    font-weight: 600;
+    line-height: 1.15;
+    margin-bottom: 12px;
+    text-shadow: 0 2px 20px rgba(0,0,0,0.4);
+  }
+  .hero .sub {
+    font-size: clamp(15px, 1.6vw, 18px);
+    max-width: 640px;
+    opacity: 0.92;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 6vw;
+  }
+  .section-head {
+    margin-bottom: 48px;
+    border-bottom: 1px solid rgba(26,20,16,0.15);
+    padding-bottom: 24px;
+  }
+  .section-head .num {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.3em;
+    color: var(--c-accent);
+    margin-bottom: 10px;
+  }
+  .section-head h2 {
+    font-size: clamp(28px, 4vw, 44px);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
+  .section-head p { margin-top: 12px; color: #555; font-size: 16px; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 32px;
+  }
+  .card {
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px var(--c-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 36px rgba(26,20,16,0.18);
+  }
+  .card .photo {
+    aspect-ratio: 4 / 3;
+    background-size: cover;
+    background-position: center;
+    background-color: #efe7da;
+    position: relative;
+  }
+  .card .photo .tag {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: rgba(184, 68, 46, 0.95);
+    color: #fff;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    padding: 5px 10px;
+    border-radius: 2px;
+  }
+  .card .body {
+    padding: 24px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .card .meta {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 12px;
+    color: var(--c-accent);
+    letter-spacing: 0.1em;
+    margin-bottom: 12px;
+  }
+  .card p {
+    font-size: 14.5px;
+    color: #444;
+    line-height: 1.75;
+    flex: 1;
+  }
+  .restaurant {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 36px;
+    background: #fff;
+    padding: 28px;
+    border-radius: 4px;
+    box-shadow: 0 4px 20px var(--c-shadow);
+    margin-bottom: 24px;
+  }
+  .restaurant .photo {
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+    aspect-ratio: 1;
+    background-color: #efe7da;
+  }
+  .restaurant .icon {
+    background: linear-gradient(135deg, #f5e6d3 0%, #e9d4b8 100%);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 88px;
+    aspect-ratio: 1;
+  }
+  .restaurant h4 {
+    font-size: 22px;
+    margin-bottom: 4px;
+  }
+  .restaurant .label {
+    display: inline-block;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    background: var(--c-ink);
+    color: #fff;
+    padding: 4px 10px;
+    margin-bottom: 16px;
+  }
+  .restaurant p { font-size: 14.5px; line-height: 1.85; color: #444; }
+  @media (max-width: 640px) {
+    .restaurant { grid-template-columns: 1fr; }
+    .restaurant .icon, .restaurant .photo { aspect-ratio: 16/9; font-size: 64px; }
+  }
+  .gelato-section {
+    background: linear-gradient(135deg, #fff5e6 0%, #ffe8d6 100%);
+    padding: 80px 6vw;
+  }
+  .insta-strip {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 4px;
+    margin-top: 40px;
+  }
+  .insta-strip .photo {
+    aspect-ratio: 1;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .insta-strip .photo::after {
+    content: attr(data-label);
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    padding: 14px;
+    color: #fff;
+    background: linear-gradient(0deg, rgba(0,0,0,0.7), transparent);
+    font-size: 13px;
+    font-family: "Helvetica Neue", sans-serif;
+    letter-spacing: 0.05em;
+  }
+  footer {
+    background: var(--c-ink);
+    color: #d8cdbd;
+    padding: 48px 6vw;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+  }
+  footer a { color: var(--c-accent-2); text-decoration: none; border-bottom: 1px dotted; }
+  .quote {
+    font-family: "Hiragino Mincho ProN", serif;
+    font-size: 22px;
+    font-style: italic;
+    color: var(--c-accent);
+    border-left: 3px solid var(--c-accent);
+    padding: 16px 0 16px 28px;
+    margin: 40px 0;
+    max-width: 720px;
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="kicker">Roma · Travel Guide 2026</div>
+  <h1>ローマ観光トレンド<br>2026年版</h1>
+  <p class="sub">定番から最新の穴場、日本人ブロガーが推すレストランまで。<br>6/28〜7/6のパリ＆ローマ旅行のために。</p>
+</header>
+
+<main class="container">
+
+  <!-- Section 1: Trend Areas -->
+  <section style="margin-bottom: 100px;">
+    <div class="section-head">
+      <div class="num">01 — TRENDING AREAS</div>
+      <h2>いま歩きたいエリア</h2>
+      <p>定番観光地のあいまに足を伸ばしたい、地元感のあるエリア。</p>
+    </div>
+
+    <div class="grid">
+      <article class="card">
+        <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/de/Santa_Maria_in_Trastevere_fountain.jpg');">
+          <span class="tag">TRASTEVERE</span>
+        </div>
+        <div class="body">
+          <h3>トラステヴェレ</h3>
+          <div class="meta">NIGHT · LOCAL · PHOTOGENIC</div>
+          <p>テヴェレ川南側の下町。曲がりくねった石畳と蔦のからまる建物、夕方からは地元バー・レストランで賑わう。SNS映えする路地写真の宝庫。</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/ea/Rome_via_dei_fori_imperiali_20050922.jpg');">
+          <span class="tag">MONTI</span>
+        </div>
+        <div class="body">
+          <h3>モンティ地区</h3>
+          <div class="meta">CAFE · VINTAGE · BOHEMIAN</div>
+          <p>コロッセオ徒歩圏なのに観光客が少ない裏路地エリア。カフェ文化が深く、ヴィンテージ古着店やボヘミアンなバーが点在。夜の散策がおすすめ。</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/8f/Piazzale_Ostiense_Piramide_porta_san_Paolo.jpg');">
+          <span class="tag">OSTIENSE</span>
+        </div>
+        <div class="body">
+          <h3>オスティエンセ／ガルバテッラ</h3>
+          <div class="meta">STREET ART · MUSEUM</div>
+          <p>メトロB線でアクセス可能な、ストリートアートと産業遺産が共存するエリア。チェントラーレ・モンテマルティーニ美術館の最寄り。</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Section 2: Hidden Gems -->
+  <section style="margin-bottom: 100px;">
+    <div class="section-head">
+      <div class="num">02 — HIDDEN GEMS</div>
+      <h2>行列を避けたい人の穴場</h2>
+      <p>コロッセオ・トレビの後の「もう一歩」が選ばれる。</p>
+    </div>
+
+    <div class="grid">
+      <article class="card">
+        <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a2/Quartiere_Copped%C3%A9_09.jpg');">
+          <span class="tag">HIDDEN</span>
+        </div>
+        <div class="body">
+          <h3>コッペデ地区</h3>
+          <div class="meta">ART NOUVEAU · 1915-1927</div>
+          <p>トリエステ地区にあるおとぎ話のような建築群。アール・ヌーヴォーとバロックが混ざった独特の世界。観光客がほぼいない映えスポット。</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/9e/Le_mus%C3%A9e_de_la_centrale_Montemartini_%28Rome%29_%2834321364485%29.jpg');">
+          <span class="tag">MUSEUM</span>
+        </div>
+        <div class="body">
+          <h3>チェントラーレ・モンテマルティーニ</h3>
+          <div class="meta">ANCIENT × INDUSTRIAL</div>
+          <p>旧火力発電所の機械の前に古代彫刻が並ぶ唯一無二の展示空間。バチカン美術館の混雑と真逆の、静かな鑑賞体験。</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/90/Ripa_-_Aventino_-_CavalieriDiMalta.JPG');">
+          <span class="tag">SECRET VIEW</span>
+        </div>
+        <div class="body">
+          <h3>マルタ騎士団の鍵穴</h3>
+          <div class="meta">AVENTINE HILL</div>
+          <p>扉の鍵穴から覗くと、3つの国（イタリア・マルタ騎士団・バチカン）越しにサン・ピエトロ大聖堂が一直線。所要5分の名物スポット。</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e3/Ripa_-_giardino_degli_aranci_01.JPG');">
+          <span class="tag">SUNSET</span>
+        </div>
+        <div class="body">
+          <h3>アランチ庭園</h3>
+          <div class="meta">AVENTINE · FREE</div>
+          <p>鍵穴のすぐ近く、オレンジの木に囲まれた展望テラス。夕日の時間帯にローマの街並みを一望できる無料スポット。</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Basilica_di_San_Clemente_al_Laterano_-_esterno.jpg/3840px-Basilica_di_San_Clemente_al_Laterano_-_esterno.jpg');">
+          <span class="tag">3-LAYER</span>
+        </div>
+        <div class="body">
+          <h3>サン・クレメンテ教会</h3>
+          <div class="meta">12C · 4C · 1C BC</div>
+          <p>コロッセオ徒歩5分。地下に降りていくと中世教会の下に4世紀バシリカ、さらに下に古代ローマの邸宅が3層構造で残る。</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c8/SantoStefanoRotondoByRoeslerFranz.jpg');">
+          <span class="tag">QUIET</span>
+        </div>
+        <div class="body">
+          <h3>サント・ステーファノ・ロトンド聖堂</h3>
+          <div class="meta">5C · CIRCULAR</div>
+          <p>ローマ最古級の円形教会。コロッセオすぐ近くなのに、観光客が驚くほど少なく静寂のなかで建築を味わえる。</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Quote -->
+  <p class="quote">「観光地は1日2か所まで、あとは地元の人が歩く路地で。」<br>— ローマ在住日本人ブロガーが繰り返す共通の助言</p>
+
+</main>
+
+<!-- Section 3: Restaurants -->
+<section style="background: #f5efe5; padding: 80px 6vw;">
+  <div style="max-width: 1200px; margin: 0 auto;">
+    <div class="section-head">
+      <div class="num">03 — RESTAURANTS</div>
+      <h2>日本人ブロガー推し店</h2>
+      <p>ロコタビ・現地在住者のレビューから抽出した、安心して入れる4軒。</p>
+    </div>
+
+    <div class="restaurant">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/59/Spaghetti_vongole_2.jpg');"></div>
+      <div>
+        <span class="label">JAPANESE-FRIENDLY</span>
+        <h4>Ristorante Tema</h4>
+        <p>テルミニ駅から地下鉄B線で1駅（カブール駅）。<strong>18時オープン</strong>（ローマの一般的な19時より早い）で、時差ボケの日本人の生活リズムに合う稀有な店。日本語が少し通じるスタッフあり、トリップアドバイザーで日本人レビュー多数。</p>
+      </div>
+    </div>
+
+    <div class="restaurant">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/43/Pizza_al_taglio.jpg');"></div>
+      <div>
+        <span class="label">LOCAL FAVORITE</span>
+        <h4>La Montecarlo</h4>
+        <p>ナヴォーナ広場近くの老舗ピッツェリア。ローマ風の<strong>薄い生地</strong>のピッツァが看板。観光客より地元客で賑わうローカル感が魅力。回転が速く、行列ができても比較的早く入れる。</p>
+      </div>
+    </div>
+
+    <div class="restaurant">
+      <div class="icon">🍣</div>
+      <div>
+        <span class="label">JAPANESE FOOD</span>
+        <h4>竹寿司（トラステヴェレ）</h4>
+        <p>下町トラステヴェレにある、<strong>日本人板前</strong>が握る本格寿司店。長旅で和食が恋しくなったときの駆け込み寺。値段はそれなりだが、ヨーロッパで本物の寿司が食べられる安心感。</p>
+      </div>
+    </div>
+
+    <div class="restaurant">
+      <div class="icon">🍜</div>
+      <div>
+        <span class="label">CASUAL JAPANESE</span>
+        <h4>和楽</h4>
+        <p>ローマ元祖の和食ダイニング。<strong>ラーメン・お好み焼き・餃子・カレーライス</strong>まで揃う「日本食フードコート」的存在。ベジタリアン対応メニューもあり、グループでも入りやすい。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 4: Gelato -->
+<section class="gelato-section">
+  <div style="max-width: 1200px; margin: 0 auto;">
+    <div class="section-head" style="border-color: rgba(184, 68, 46, 0.2);">
+      <div class="num">04 — GELATO & CAFFÈ</div>
+      <h2>ジェラートとカフェ</h2>
+      <p>1日3個でも飽きない、定番と最新の組み合わせ。</p>
+    </div>
+
+    <div class="grid">
+      <article class="card">
+        <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/01/GiolittiCafeRoma.jpg');">
+          <span class="tag">SINCE 1900</span>
+        </div>
+        <div class="body">
+          <h3>Giolitti（ジョリッティ）</h3>
+          <div class="meta">PANTHEON AREA</div>
+          <p>『ローマの休日』でアン王女が食べた老舗。パンテオン近く、座って食べられる希少なジェラテリア。日本（有楽町・新宿）に進出するほどの世界的人気。</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/47/CafeMia.jpg');">
+          <span class="tag">SEASONAL</span>
+        </div>
+        <div class="body">
+          <h3>Gelateria del Teatro</h3>
+          <div class="meta">TRASTEVERE NEAR</div>
+          <p><strong>季節フルーツ</strong>を使ったジェラートに定評。バジル＆ラズベリーなど大胆なフレーバーが日替わり。隠れ家的な立地で、見つけた喜びがある。</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Maritozzo_presso_Caff%C3%A8_delle_colline%2C_Reggio_Emilia.jpg/3840px-Maritozzo_presso_Caff%C3%A8_delle_colline%2C_Reggio_Emilia.jpg');">
+          <span class="tag">EXPERIMENTAL</span>
+        </div>
+        <div class="body">
+          <h3>Fatamorgana</h3>
+          <div class="meta">MONTI · TRASTEVERE</div>
+          <p>チーズ・ハーブ・スパイス系の<strong>変わり種フレーバー</strong>が攻めている店。グルテンフリー対応。モンティ・トラステヴェレ両方に支店あり。</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Section 5: Instagram Strip -->
+<section class="container">
+  <div class="section-head">
+    <div class="num">05 — PHOTO SPOTS</div>
+    <h2>映えする時間と場所</h2>
+    <p>SNS用にしっかり撮るなら、時間帯まで意識したい。</p>
+  </div>
+
+  <div class="insta-strip">
+    <div class="photo" data-label="Trastevere · 朝〜午前"
+         style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/de/Santa_Maria_in_Trastevere_fountain.jpg');"></div>
+    <div class="photo" data-label="Coppedè · 終日"
+         style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a2/Quartiere_Copped%C3%A9_09.jpg');"></div>
+    <div class="photo" data-label="Aventine · 夕景"
+         style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e3/Ripa_-_giardino_degli_aranci_01.JPG');"></div>
+    <div class="photo" data-label="Maritozzo · 朝食"
+         style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Maritozzo_presso_Caff%C3%A8_delle_colline%2C_Reggio_Emilia.jpg/3840px-Maritozzo_presso_Caff%C3%A8_delle_colline%2C_Reggio_Emilia.jpg');"></div>
+  </div>
+</section>
+
+<footer>
+  <p>2026年6月28日〜7月6日 パリ＆ローマ旅行 / Generated for personal trip planning</p>
+  <p style="margin-top: 8px;">Images: Wikimedia Commons · Sources: ロコタビ / トリップアドバイザー / TARIP / Trip.com</p>
+</footer>
+
+</body>
+</html>
