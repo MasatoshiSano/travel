@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PARIS — 7/1〜7/5 のためのキュレーション・ガイド｜36の選択</title>
+<style>
+  :root {
+    --c-ink: #14141a;
+    --c-paper: #faf8f3;
+    --c-cream: #efe9dc;
+    --c-classic: #1a4a7a;       /* 定番 = パリブルー */
+    --c-classic-soft: #2e6ba8;
+    --c-hidden: #b89968;        /* 穴場 = アンティークゴールド */
+    --c-hidden-soft: #d4b88a;
+    --c-accent: #c44a35;        /* フランス紅 */
+    --c-text: #2a2620;
+    --c-mute: #6e6558;
+    --c-shadow: rgba(20, 20, 26, 0.1);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", "Cormorant Garamond", serif;
+    background: var(--c-paper);
+    color: var(--c-text);
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+  }
+  img { max-width: 100%; display: block; }
+
+  /* ===== NAV ===== */
+  nav.topnav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(250, 248, 243, 0.95);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(20,20,26,0.08);
+    padding: 16px 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+  nav.topnav .brand { font-weight: 700; letter-spacing: 0.35em; color: var(--c-classic); }
+  nav.topnav ul { display: flex; gap: 32px; list-style: none; }
+  nav.topnav a { color: var(--c-text); text-decoration: none; transition: color 0.2s; }
+  nav.topnav a:hover { color: var(--c-classic); }
+  @media (max-width: 640px) { nav.topnav ul { display: none; } }
+
+  /* ===== HERO ===== */
+  .hero {
+    position: relative;
+    min-height: 88vh;
+    background:
+      linear-gradient(180deg, rgba(0,0,0,0.25) 0%, rgba(20,20,26,0.75) 100%),
+      url("https://upload.wikimedia.org/wikipedia/commons/8/85/Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 6vw;
+  }
+  .hero .small {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    opacity: 0.9;
+  }
+  .hero h1 {
+    font-size: clamp(56px, 11vw, 168px);
+    font-weight: 400;
+    line-height: 0.95;
+    letter-spacing: -0.02em;
+    margin-bottom: 28px;
+    font-style: italic;
+  }
+  .hero h1 span { display: block; font-size: 0.4em; font-style: normal; letter-spacing: 0.3em; margin-top: 12px; opacity: 0.8; }
+  .hero .lead {
+    font-size: clamp(16px, 1.6vw, 20px);
+    max-width: 640px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+    opacity: 0.95;
+  }
+  .hero .meta-bar {
+    display: flex;
+    gap: 48px;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    padding-top: 24px;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    opacity: 0.9;
+    flex-wrap: wrap;
+  }
+  .hero .meta-bar div span { display: block; font-size: 18px; margin-top: 6px; font-family: "Hiragino Mincho ProN", serif; letter-spacing: 0; text-transform: none; font-weight: 600; }
+
+  /* ===== ITINERARY STRIP ===== */
+  .itinerary {
+    background: var(--c-ink);
+    color: #cdc6b8;
+    padding: 32px 6vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
+    border-bottom: 4px solid var(--c-classic);
+  }
+  .itinerary .day {
+    border-left: 2px solid var(--c-hidden);
+    padding-left: 14px;
+  }
+  .itinerary .day .label {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    color: var(--c-hidden);
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .itinerary .day .date { font-size: 13px; opacity: 0.7; font-family: "Helvetica Neue", sans-serif; }
+  .itinerary .day .what { font-size: 14px; margin-top: 4px; color: #fff; line-height: 1.5; }
+
+  /* ===== SECTION ===== */
+  section.chapter {
+    padding: 120px 6vw 100px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .ch-head {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 60px;
+    margin-bottom: 60px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid rgba(20,20,26,0.15);
+    align-items: end;
+  }
+  .ch-head .num {
+    font-family: "Cormorant Garamond", "Hiragino Mincho ProN", serif;
+    font-style: italic;
+    font-size: clamp(80px, 12vw, 140px);
+    line-height: 1;
+    color: var(--c-classic);
+    font-weight: 300;
+  }
+  .ch-head .label { font-family: "Helvetica Neue", sans-serif; font-size: 12px; letter-spacing: 0.4em; text-transform: uppercase; color: var(--c-mute); margin-bottom: 16px; }
+  .ch-head h2 { font-size: clamp(36px, 5vw, 60px); font-weight: 500; line-height: 1.2; margin-bottom: 20px; }
+  .ch-head p { font-size: 16px; color: var(--c-mute); max-width: 540px; }
+  @media (max-width: 768px) { .ch-head { grid-template-columns: 1fr; gap: 24px; } }
+
+  /* ===== SUBHEAD ===== */
+  .subhead {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 60px 0 36px;
+  }
+  .subhead .pill {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 100px;
+    font-weight: 700;
+  }
+  .subhead .pill.classic { background: var(--c-classic); }
+  .subhead .pill.hidden { background: var(--c-hidden); color: var(--c-ink); }
+  .subhead h3 { font-size: clamp(24px, 3vw, 34px); font-weight: 500; }
+  .subhead .line { flex: 1; height: 1px; background: rgba(20,20,26,0.15); }
+
+  /* ===== CARDS ===== */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 28px;
+  }
+  .card {
+    background: #fff;
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: 0 2px 16px var(--c-shadow);
+    transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.35s ease;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(20,20,26,0.18); }
+  .card .photo {
+    aspect-ratio: 4 / 3;
+    background-size: cover;
+    background-position: center;
+    background-color: #efe7da;
+    position: relative;
+    overflow: hidden;
+  }
+  .card .photo::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 50%, rgba(0,0,0,0.55) 100%);
+  }
+  .card .photo .city {
+    position: absolute;
+    bottom: 14px;
+    left: 16px;
+    color: #fff;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    z-index: 1;
+  }
+  .card .badge {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    background: var(--c-classic);
+    color: #fff;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    z-index: 2;
+    font-weight: 700;
+  }
+  .card.hidden .badge { background: var(--c-hidden); color: var(--c-ink); }
+  .card .body { padding: 24px; flex: 1; display: flex; flex-direction: column; }
+  .card .body .num { font-family: "Cormorant Garamond", serif; font-style: italic; color: var(--c-classic); font-size: 13px; margin-bottom: 6px; letter-spacing: 0.1em; }
+  .card.hidden .body .num { color: var(--c-hidden); }
+  .card .body h4 { font-size: 21px; font-weight: 600; margin-bottom: 10px; letter-spacing: 0.01em; }
+  .card .body .sub { font-family: "Helvetica Neue", sans-serif; font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--c-mute); margin-bottom: 14px; }
+  .card .body p { font-size: 14.5px; color: var(--c-text); line-height: 1.85; }
+  .card .body .info {
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px dashed rgba(20,20,26,0.15);
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 12px;
+    color: var(--c-mute);
+    line-height: 1.7;
+  }
+  .card .body .info span { display: inline-block; color: var(--c-ink); font-weight: 600; }
+  .card .body .day-tag {
+    display: inline-block;
+    background: var(--c-classic);
+    color: #fff;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    padding: 3px 8px;
+    margin-top: 12px;
+    border-radius: 2px;
+  }
+
+  /* ===== CHAPTER アクセント ===== */
+  #ch-food .ch-head .num { color: #5a2e1a; }
+  #ch-sweet .ch-head .num { color: #a67a4e; }
+  #ch-food { background: linear-gradient(180deg, transparent 0%, #f4ece0 100%); }
+  #ch-sweet { background: linear-gradient(180deg, #f7eed8 0%, #f0e4c8 100%); }
+
+  /* ===== FOOTER ===== */
+  footer {
+    background: var(--c-ink);
+    color: #cdc6b8;
+    padding: 80px 6vw 48px;
+    text-align: center;
+  }
+  footer .logo {
+    font-family: "Cormorant Garamond", "Hiragino Mincho ProN", serif;
+    font-size: 36px;
+    font-style: italic;
+    color: var(--c-hidden-soft);
+    margin-bottom: 20px;
+  }
+  footer .legal { font-family: "Helvetica Neue", sans-serif; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; opacity: 0.7; margin-top: 28px; }
+  footer .sources { font-size: 12px; margin-top: 12px; opacity: 0.55; }
+</style>
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="brand">PARIS · 2026.07.01 — 07.05</div>
+  <ul>
+    <li><a href="#ch-sight">観光</a></li>
+    <li><a href="#ch-food">レストラン</a></li>
+    <li><a href="#ch-sweet">スイーツ＆カフェ</a></li>
+  </ul>
+</nav>
+
+<!-- ===== HERO ===== -->
+<header class="hero">
+  <div class="small">A Curated Field Guide · Asiana 2026</div>
+  <h1>Paris.<span>4泊5日、36の選択</span></h1>
+  <p class="lead">7/1〜7/5のパリ滞在＋7/4のモン・サン・ミッシェル日帰りに合わせて編んだ実用ガイド。<br>定番6＋穴場6を、観光・レストラン・スイーツ&amp;カフェの3章で。</p>
+  <div class="meta-bar">
+    <div>STAY<span>4 泊</span></div>
+    <div>DAY TRIP<span>Mt St-Michel</span></div>
+    <div>PICKS<span>36</span></div>
+    <div>UPDATED<span>2026.05.31</span></div>
+  </div>
+</header>
+
+<!-- ===== ITINERARY STRIP ===== -->
+<aside class="itinerary">
+  <div class="day">
+    <div class="label">Day 4 · ARRIVAL</div>
+    <div class="date">7/1 (水)</div>
+    <div class="what">午後CDG着 → マレ地区ファラフェル</div>
+  </div>
+  <div class="day">
+    <div class="label">Day 5 · LOUVRE</div>
+    <div class="date">7/2 (木)</div>
+    <div class="what">ルーブル → 凱旋門 → エッフェル塔ライトアップ</div>
+  </div>
+  <div class="day">
+    <div class="label">Day 6 · VERSAILLES</div>
+    <div class="date">7/3 (金)</div>
+    <div class="what">ヴェルサイユ宮殿・鏡の間・離宮</div>
+  </div>
+  <div class="day">
+    <div class="label">Day 7 · MSM</div>
+    <div class="date">7/4 (土)</div>
+    <div class="what">モン・サン・ミッシェル日帰り</div>
+  </div>
+  <div class="day">
+    <div class="label">Day 8 · DEPART</div>
+    <div class="date">7/5 (日)</div>
+    <div class="what">サン=マルタン運河 → CDG 19:10発</div>
+  </div>
+</aside>
+
+<!-- ===== CHAPTER 1: 観光 ===== -->
+<section class="chapter" id="ch-sight">
+  <div class="ch-head">
+    <div class="num"><em>01</em></div>
+    <div>
+      <div class="label">CHAPTER ONE · SIGHTSEEING</div>
+      <h2>観光スポット<br>定番6＋穴場6</h2>
+      <p>旅程に組み込み済みの主要モニュメントと、徒歩・メトロ圏で寄り道できる穴場。所要時間と Day を併記。</p>
+    </div>
+  </div>
+
+  <!-- 定番 -->
+  <div class="subhead">
+    <span class="pill classic">定番</span>
+    <h3>THE CLASSICS · 旅程に組込み済み</h3>
+    <span class="line"></span>
+  </div>
+
+  <div class="grid">
+    <article class="card">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Louvre_Museum_Wikimedia_Commons.jpg/3840px-Louvre_Museum_Wikimedia_Commons.jpg');">
+        <span class="city">1er · Rivoli</span>
+      </div>
+      <span class="badge">MUST</span>
+      <div class="body">
+        <div class="num">N° 01</div>
+        <h4>ルーブル美術館</h4>
+        <div class="sub">MONA LISA · VENUS DE MILO</div>
+        <p>世界最大級の美術館。<strong>モナリザ・サモトラケのニケ・ミロのヴィーナス</strong>の三大スター作品を見るだけでも4時間。Day 5の開館直後（9:00）入場で混雑を回避。</p>
+        <div class="info">
+          <span>所要</span> 4-5h<br>
+          <span>料金</span> €32（2026〜）<br>
+          <span>予約</span> 必須・GetYourGuide推奨
+          <div class="day-tag">DAY 5 · 7/2 (木) 9:00</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/85/Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg');">
+        <span class="city">7e · Champ-de-Mars</span>
+      </div>
+      <span class="badge">MUST</span>
+      <div class="body">
+        <div class="num">N° 02</div>
+        <h4>エッフェル塔</h4>
+        <div class="sub">324M · BUILT 1889</div>
+        <p>毎時0分に5分間の<strong>シャンパン・スパークル</strong>（22:00ラスト）。Day 5の夕暮れにトロカデロ広場から全景撮影 → 19:00のスパークルを狙うのが鉄板。</p>
+        <div class="info">
+          <span>所要</span> 撮影30分 / 展望2h<br>
+          <span>料金</span> €13.40（2階）〜€29.40（最上階）<br>
+          <span>予約</span> 公式toureiffel.paris
+          <div class="day-tag">DAY 5 · 19:00 スパークル</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Arc_de_Triomphe%2C_Paris_21_October_2010.jpg/3840px-Arc_de_Triomphe%2C_Paris_21_October_2010.jpg');">
+        <span class="city">8e · Étoile</span>
+      </div>
+      <span class="badge">MUST</span>
+      <div class="body">
+        <div class="num">N° 03</div>
+        <h4>凱旋門＋シャンゼリゼ</h4>
+        <div class="sub">ARC DE TRIOMPHE · €13</div>
+        <p>ナポレオン創建。<strong>屋上展望台</strong>から12本の道路が放射状に伸びる景観が圧巻。シャンゼリゼ大通りから歩いて到着するのが王道。エッフェル塔も見える。</p>
+        <div class="info">
+          <span>所要</span> 1-1.5h<br>
+          <span>料金</span> €13<br>
+          <span>注意</span> 地下道からアクセス
+          <div class="day-tag">DAY 5 · 14:30</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d2/Versailles-Chateau-Jardins02.jpg');">
+        <span class="city">Versailles</span>
+      </div>
+      <span class="badge">MUST</span>
+      <div class="body">
+        <div class="num">N° 04</div>
+        <h4>ヴェルサイユ宮殿</h4>
+        <div class="sub">HALL OF MIRRORS · TRIANON</div>
+        <p>太陽王ルイ14世の宮殿。<strong>鏡の間・礼拝堂</strong>を見て、午後はマリー・アントワネットの離宮（プチ・トリアノン＋王妃の村里）へ。RER C線で40分。</p>
+        <div class="info">
+          <span>所要</span> 終日（朝〜17:00）<br>
+          <span>料金</span> €35（パスポート）<br>
+          <span>予約</span> 必須・GetYourGuide推奨
+          <div class="day-tag">DAY 6 · 7/3 (金) 終日</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Mont-Saint-Michel_vu_du_ciel.jpg/3840px-Mont-Saint-Michel_vu_du_ciel.jpg');">
+        <span class="city">Normandie</span>
+      </div>
+      <span class="badge">DAY TRIP</span>
+      <div class="body">
+        <div class="num">N° 05</div>
+        <h4>モン・サン・ミッシェル</h4>
+        <div class="sub">UNESCO · TIDAL ISLAND</div>
+        <p>海に浮かぶ修道院の島。Day 7にみゅうツアー（¥38,725・<strong>名物オムレツランチ込み</strong>）で参加予定。<strong>潮汐次第</strong>で島が孤立／陸続きに変わる。事前にmaree.infoで7/4の潮位確認。</p>
+        <div class="info">
+          <span>ツアー</span> みゅう・日本語アシスタント<br>
+          <span>注意</span> 朝7:10集合・帰着20:00頃
+          <div class="day-tag">DAY 7 · 7/4 (土) 終日</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Notre-Dame_de_Paris%2C_4_October_2017.jpg/3840px-Notre-Dame_de_Paris%2C_4_October_2017.jpg');">
+        <span class="city">Île de la Cité</span>
+      </div>
+      <span class="badge">MUST</span>
+      <div class="body">
+        <div class="num">N° 06</div>
+        <h4>ノートルダム大聖堂</h4>
+        <div class="sub">REOPENED DEC 2024 · GOTHIC</div>
+        <p>2019年の大火災から再建、<strong>2024年12月に再開</strong>。塔への登頂は要事前予約。Day 4のマレ散策、Day 8の街ブラに組み込みやすい立地（マレから徒歩15分）。</p>
+        <div class="info">
+          <span>所要</span> 内部30分 / 塔1h<br>
+          <span>料金</span> 内部無料 / 塔€13<br>
+          <span>注意</span> 修復継続中の箇所あり
+          <div class="day-tag">DAY 4 or DAY 8 街ブラ</div>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <!-- 穴場 -->
+  <div class="subhead">
+    <span class="pill hidden">穴場</span>
+    <h3>HIDDEN GEMS · 余白で寄り道</h3>
+    <span class="line"></span>
+  </div>
+
+  <div class="grid">
+    <article class="card hidden">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/2022-04-14-Passerelle_de_la_Grange-aux-Belles-8583.jpg/3840px-2022-04-14-Passerelle_de_la_Grange-aux-Belles-8583.jpg');">
+        <span class="city">10e · Canal</span>
+      </div>
+      <span class="badge">DAY 8 計画</span>
+      <div class="body">
+        <div class="num">N° 07</div>
+        <h4>サン=マルタン運河</h4>
+        <div class="sub">CANAL · LOCK SYSTEM · 1825</div>
+        <p>『アメリ』のロケ地。<strong>水門の昇降ショー</strong>と石造りの歩道橋がフォトジェニック。Day 8朝のブランチ（Du Pain et des Idées）と組み合わせるのが定番ルート。</p>
+        <div class="info">
+          <span>所要</span> 1-2h散策<br>
+          <span>ベスト</span> 朝〜午前
+          <div class="day-tag">DAY 8 · 9:30 ブランチ</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card hidden">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d3/Paris_Hotel_de_Sens_dsc04028.jpg');">
+        <span class="city">4e · Marais</span>
+      </div>
+      <span class="badge">DAY 4/8 計画</span>
+      <div class="body">
+        <div class="num">N° 08</div>
+        <h4>マレ地区＆ヴォージュ広場</h4>
+        <div class="sub">PLACE DES VOSGES · 1612</div>
+        <p>マレはユダヤ人街と古い貴族街が混在するパリ最古のエリア。<strong>ヴォージュ広場</strong>はパリ最古の広場（1612年）でヴィクトル・ユゴーの家がある。Day 4到着後の街ブラに最適。</p>
+        <div class="info">
+          <span>所要</span> 2-3h<br>
+          <span>料金</span> 無料散策
+          <div class="day-tag">DAY 4 / DAY 8</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card hidden">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6b/Centre_Pompidou_%40_Beaubourg_%40_Paris_%2815448205062%29.jpg');">
+        <span class="city">4e · Beaubourg</span>
+      </div>
+      <span class="badge">DAY 8 計画</span>
+      <div class="body">
+        <div class="num">N° 09</div>
+        <h4>ポンピドゥーセンター</h4>
+        <div class="sub">RENZO PIANO · MODERN ART</div>
+        <p>配管・エスカレーターが外壁を走る<strong>「裏返しの建物」</strong>。レンゾ・ピアノ＋リチャード・ロジャース設計。外観だけでも見る価値あり。屋上テラスはパリ随一の絶景。</p>
+        <div class="info">
+          <span>所要</span> 外観30分 / 内部2-3h<br>
+          <span>料金</span> 内部€15 / 屋上のみ€5<br>
+          <span>注意</span> 改修工事の可能性
+          <div class="day-tag">DAY 8 · 12:00</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card hidden">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c5/Le_sacre_coeur.jpg');">
+        <span class="city">18e · Montmartre</span>
+      </div>
+      <span class="badge">HIDDEN</span>
+      <div class="body">
+        <div class="num">N° 10</div>
+        <h4>モンマルトル＆サクレ・クール</h4>
+        <div class="sub">BUTTE · ARTISTS' QUARTER</div>
+        <p>パリ最高地点（130m）の白亜の聖堂と、画家の街。<strong>テルトル広場</strong>で似顔絵描き。Day 8午後の自由時間にメトロ12号線で。</p>
+        <div class="info">
+          <span>所要</span> 2-3h<br>
+          <span>料金</span> 聖堂無料・ドーム€7
+        </div>
+      </div>
+    </article>
+
+    <article class="card hidden">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/70/Sainte_Chapelle_-_Upper_level_1.jpg');">
+        <span class="city">Île de la Cité</span>
+      </div>
+      <span class="badge">HIDDEN</span>
+      <div class="body">
+        <div class="num">N° 11</div>
+        <h4>サント・シャペル</h4>
+        <div class="sub">13C · STAINED GLASS</div>
+        <p>ノートルダム隣、<strong>15メートルのステンドグラス</strong>が壁面を埋め尽くす聖堂。ルイ9世がキリストの茨の冠を納めるため建てた。晴天時の午後が映え。</p>
+        <div class="info">
+          <span>所要</span> 45分<br>
+          <span>料金</span> €13<br>
+          <span>予約</span> 推奨・行列回避用
+        </div>
+      </div>
+    </article>
+
+    <article class="card hidden">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Crowd_in_the_Jardin_des_Tuileries%2C_Paris_July_2014.jpg/3840px-Crowd_in_the_Jardin_des_Tuileries%2C_Paris_July_2014.jpg');">
+        <span class="city">1er · Tuileries</span>
+      </div>
+      <span class="badge">DAY 5 経路</span>
+      <div class="body">
+        <div class="num">N° 12</div>
+        <h4>チュイルリー庭園</h4>
+        <div class="sub">ROYAL GARDEN · 1564</div>
+        <p>ルーブル → 凱旋門の<strong>動線途中にある王宮庭園</strong>。緑のテラスチェアでサンドイッチピクニックが最高の贅沢。Day 5のルーブル後のランチ場所として組込予定。</p>
+        <div class="info">
+          <span>所要</span> 30分-1h<br>
+          <span>料金</span> 無料
+          <div class="day-tag">DAY 5 · 13:00 ランチ</div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ===== CHAPTER 2: レストラン ===== -->
+<section class="chapter" id="ch-food">
+  <div class="ch-head">
+    <div class="num"><em>02</em></div>
+    <div>
+      <div class="label">CHAPTER TWO · RESTAURANTS</div>
+      <h2>レストラン<br>定番店6＋穴場店6</h2>
+      <p>日本人ブロガー・在住者レビューから選定。<strong>店名・名物・予約要否・予算</strong>を併記。Day 4のマレ夕食、Day 6サン=ジェルマン夕食の候補も含む。</p>
+    </div>
+  </div>
+
+  <!-- 定番店 -->
+  <div class="subhead">
+    <span class="pill classic">定番</span>
+    <h3>RESTAURANT CLASSICS · 日本人観光客の鉄板6軒</h3>
+    <span class="line"></span>
+  </div>
+
+  <div class="grid">
+    <article class="card">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Falafels_2.jpg/3840px-Falafels_2.jpg');">
+        <span class="city">4e · Marais</span>
+      </div>
+      <span class="badge">MUST EAT</span>
+      <div class="body">
+        <div class="num">N° 13</div>
+        <h4>L'As du Fallafel</h4>
+        <div class="sub">SINCE 1979 · ROSIERS STREET</div>
+        <p>マレ地区ロジエ通り。<strong>「キング・オブ・ファラフェル」</strong>を自称する大衆店。レニー・クラヴィッツが「世界最高」と評価し有名に。Day 4到着後のランチに確定予定。</p>
+        <div class="info">
+          <span>名物</span> ファラフェル・サンドイッチ（€10）<br>
+          <span>予約</span> 不可・テイクアウト推奨<br>
+          <span>予算</span> €10-15/人
+          <div class="day-tag">DAY 4 · 13:00 ランチ</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/ef/Chez_Chartier_1.JPG');">
+        <span class="city">9e · Grands Boulevards</span>
+      </div>
+      <span class="badge">SINCE 1896</span>
+      <div class="body">
+        <div class="num">N° 14</div>
+        <h4>Bouillon Chartier</h4>
+        <div class="sub">HISTORIC MONUMENT · BUDGET</div>
+        <p>1896年創業、<strong>歴史的建造物指定</strong>の大衆食堂。前菜€3〜・メイン€10〜と驚異の安さ。相席が基本で、店員が紙テーブルクロスに伝票を直書きする昭和ノスタルジア感。</p>
+        <div class="info">
+          <span>名物</span> ステーキタルタル・骨付き肉<br>
+          <span>予約</span> 不可・並ぶ（昼15分／夜45分）<br>
+          <span>予算</span> €20-25/人
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Le_Procope_1%2C_Paris_2010.jpg/3840px-Le_Procope_1%2C_Paris_2010.jpg');">
+        <span class="city">6e · Saint-Germain</span>
+      </div>
+      <span class="badge">SINCE 1686</span>
+      <div class="body">
+        <div class="num">N° 15</div>
+        <h4>Café Procope</h4>
+        <div class="sub">OLDEST CAFÉ IN PARIS · 1686</div>
+        <p><strong>パリ最古のカフェ（世界最古とも）</strong>。ヴォルテール、ルソー、フランクリン、ナポレオンが通った歴史の証人。Day 6のヴェルサイユ後のサン=ジェルマン夕食候補。</p>
+        <div class="info">
+          <span>名物</span> コック・オ・ヴァン・牛頬肉煮込み<br>
+          <span>予約</span> 推奨・サイト<br>
+          <span>予算</span> €40-55/人
+          <div class="day-tag">DAY 6 候補</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Soupe_%C3%A0_l%27oignon.jpg/3840px-Soupe_%C3%A0_l%27oignon.jpg');">
+        <span class="city">1er · Les Halles</span>
+      </div>
+      <span class="badge">24H OPEN</span>
+      <div class="body">
+        <div class="num">N° 16</div>
+        <h4>Au Pied de Cochon</h4>
+        <div class="sub">SINCE 1947 · 24/7</div>
+        <p>レアル地区、<strong>24時間営業</strong>の老舗。看板は店名通り<strong>豚足のグリル</strong>と<strong>オニオン・グラタンスープ</strong>。深夜便で到着した日本人観光客のセーフティネット。</p>
+        <div class="info">
+          <span>名物</span> 豚足グリル・オニオングラタンスープ<br>
+          <span>予約</span> 推奨<br>
+          <span>予算</span> €45-60/人
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/09/Crepes_dsc07085.jpg');">
+        <span class="city">3e · Marais</span>
+      </div>
+      <span class="badge">MUST EAT</span>
+      <div class="body">
+        <div class="num">N° 17</div>
+        <h4>Breizh Café</h4>
+        <div class="sub">BRETON · KAWAII-FRIENDLY</div>
+        <p>「ガレットの真打」と日本人ブロガー一押し。<strong>本場ブルターニュ産そば粉</strong>を使った塩キャラメル＆バターガレットが看板。シードルとセットが推奨。マレ・モンパルナス2店舗。</p>
+        <div class="info">
+          <span>名物</span> ガレット・コンプリート／クレープ<br>
+          <span>予約</span> 必須・サイトから<br>
+          <span>予算</span> €25-35/人
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/9a/Reel_and_Brand_-_September_2021_-_Sarah_Stierch_05.jpg');">
+        <span class="city">6e · Odéon</span>
+      </div>
+      <span class="badge">BISTRO ICON</span>
+      <div class="body">
+        <div class="num">N° 18</div>
+        <h4>Le Comptoir du Relais</h4>
+        <div class="sub">CHEF YVES CAMDEBORDE</div>
+        <p>シェフ<strong>イヴ・カンドゥボーレ</strong>率いるネオ・ビストロの原点。ステーキ・フリットや内臓料理が看板。昼はカジュアル予約不要、夜は3ヶ月前から予約必須の人気。</p>
+        <div class="info">
+          <span>名物</span> ステーキ・フリット・パテ<br>
+          <span>予約</span> 夜は3ヶ月前 / 昼は不要<br>
+          <span>予算</span> 昼€35 / 夜€80（コース）
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <!-- 穴場店 -->
+  <div class="subhead">
+    <span class="pill hidden">穴場</span>
+    <h3>HIDDEN TABLES · ネオ・ビストロと在住者の6軒</h3>
+    <span class="line"></span>
+  </div>
+
+  <div class="grid">
+    <article class="card hidden">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/29/Quiche.jpg');">
+        <span class="city">2e · Sentier</span>
+      </div>
+      <span class="badge">HIDDEN</span>
+      <div class="body">
+        <div class="num">N° 19</div>
+        <h4>Frenchie</h4>
+        <div class="sub">CHEF GREGORY MARCHAND · 2009</div>
+        <p>パリ・ネオビストロ革命の<strong>原点</strong>。Jamie Oliver の元シェフが開いた小さな店。本店は予約困難だが、向かいの<strong>Frenchie Bar à Vins（予約不可）</strong>から攻めるのが通。</p>
+        <div class="info">
+          <span>名物</span> 創作モダンフレンチ<br>
+          <span>予約</span> 本店は3ヶ月前 / Bar不要<br>
+          <span>予算</span> 本店€95 / Bar€40
+        </div>
+      </div>
+    </article>
+
+    <article class="card hidden">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/16/Franse_tarte_tatin.jpg');">
+        <span class="city">11e · Charonne</span>
+      </div>
+      <span class="badge">HIDDEN</span>
+      <div class="body">
+        <div class="num">N° 20</div>
+        <h4>Septime</h4>
+        <div class="sub">CHEF BERTRAND GRÉBAUT · ★</div>
+        <p>シェフ<strong>ベルトラン・グレボー</strong>のミシュラン1つ星。サン・セバスチャン50ベスト常連。電話のみの予約で<strong>3週間前の朝10時</strong>に争奪戦が始まる。世界的フーディーの目的地。</p>
+        <div class="info">
+          <span>名物</span> シェフお任せコースのみ<br>
+          <span>予約</span> 3週前・電話のみ<br>
+          <span>予算</span> €115（コース）
+        </div>
+      </div>
+    </article>
+
+    <article class="card hidden">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/2a/Croissant-Petr_Kratochvil.jpg');">
+        <span class="city">2e · Opéra</span>
+      </div>
+      <span class="badge">HIDDEN</span>
+      <div class="body">
+        <div class="num">N° 21</div>
+        <h4>Le Petit Vendôme</h4>
+        <div class="sub">SANDWICH · LUNCH ONLY</div>
+        <p>オペラ座近くの小さなビストロ。<strong>パリ最高のジャンボン・ブール（ハム&amp;バターサンド）</strong>と日本人在住者の間で評判。Day 8朝のお土産買出しランチに最適。</p>
+        <div class="info">
+          <span>名物</span> ジャンボン・ブール（€6.50）<br>
+          <span>予約</span> 不要<br>
+          <span>予算</span> €10-20/人
+          <div class="day-tag">DAY 8 ランチ候補</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card hidden">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d7/Caracoles-del-restaurante-granero.jpg');">
+        <span class="city">3e · Marais</span>
+      </div>
+      <span class="badge">HIDDEN</span>
+      <div class="body">
+        <div class="num">N° 22</div>
+        <h4>Chez Janou</h4>
+        <div class="sub">PROVENÇAL · 80+ PASTIS</div>
+        <p>ヴォージュ広場すぐ、<strong>南仏プロヴァンス料理</strong>の名店。80種以上のパスティス（南仏アペリティフ）が壁に並ぶ。<strong>ムスティオン・ショコラ（食べ放題）</strong>がお決まり。Day 4夜にも。</p>
+        <div class="info">
+          <span>名物</span> ラタトゥイユ・ムース・オ・ショコラ<br>
+          <span>予約</span> 必須<br>
+          <span>予算</span> €40-55/人
+          <div class="day-tag">DAY 4 夜候補</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card hidden">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/fa/Galette_des_Rois.png');">
+        <span class="city">11e · Charonne</span>
+      </div>
+      <span class="badge">HIDDEN</span>
+      <div class="body">
+        <div class="num">N° 23</div>
+        <h4>Clamato</h4>
+        <div class="sub">SEPTIME'S SEAFOOD SISTER</div>
+        <p>Septime姉妹店、<strong>魚介専門の小皿スタイル</strong>。予約不可・先着順なので開店18:00直前に並ぶのが鉄則。生牡蠣・ウニ・ホタテのカルパッチョが看板。</p>
+        <div class="info">
+          <span>名物</span> 生牡蠣・ホタテ・ウニ<br>
+          <span>予約</span> 不可・先着順<br>
+          <span>予算</span> €40-60/人
+        </div>
+      </div>
+    </article>
+
+    <article class="card hidden">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/9a/Reel_and_Brand_-_September_2021_-_Sarah_Stierch_05.jpg');">
+        <span class="city">11e · Bastille</span>
+      </div>
+      <span class="badge">HIDDEN</span>
+      <div class="body">
+        <div class="num">N° 24</div>
+        <h4>Bistrot Paul Bert</h4>
+        <div class="sub">CLASSIC BISTRO · 1948</div>
+        <p>クラシックなパリ・ビストロの教科書。<strong>ステーキ・フリット（パリ最高との呼び声）</strong>と<strong>ミルフィーユ</strong>が双璧。隣に魚専門の Paul Bert Poisson、地下に Le 6 Paul Bert。</p>
+        <div class="info">
+          <span>名物</span> ステーキ・フリット／ミルフィーユ<br>
+          <span>予約</span> 必須・サイト<br>
+          <span>予算</span> €50-65/人
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ===== CHAPTER 3: スイーツ＆カフェ ===== -->
+<section class="chapter" id="ch-sweet">
+  <div class="ch-head">
+    <div class="num"><em>03</em></div>
+    <div>
+      <div class="label">CHAPTER THREE · SWEETS &amp; CAFÉS</div>
+      <h2>スイーツ＆カフェ<br>定番6＋穴場6</h2>
+      <p>マカロン・モンブラン・エクレア・アイス・パン。<strong>店名・名物・場所</strong>を併記。Day 8のお土産買出しにも。</p>
+    </div>
+  </div>
+
+  <!-- 定番 -->
+  <div class="subhead">
+    <span class="pill classic">定番</span>
+    <h3>SWEET CLASSICS · 日本人観光客の鉄板6軒</h3>
+    <span class="line"></span>
+  </div>
+
+  <div class="grid">
+    <article class="card">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/11/VanillaMacaron.jpg');">
+        <span class="city">6e · Saint-Germain</span>
+      </div>
+      <span class="badge">MACARON</span>
+      <div class="body">
+        <div class="num">N° 25</div>
+        <h4>Pierre Hermé（ピエール・エルメ）</h4>
+        <div class="sub">"PICASSO OF PASTRY"</div>
+        <p>「パティスリーのピカソ」。<strong>イスパハン（ローズ・ライチ・ラズベリー）</strong>が伝説のマカロン。ラデュレで修業後独立。日本でも青山などに展開。</p>
+        <div class="info">
+          <span>名物</span> イスパハン・モガドール<br>
+          <span>場所</span> 72 rue Bonaparte（本店）
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/10/Madeleines_pic.jpg');">
+        <span class="city">8e · Champs-Élysées</span>
+      </div>
+      <span class="badge">SINCE 1862</span>
+      <div class="body">
+        <div class="num">N° 26</div>
+        <h4>Ladurée（ラデュレ）</h4>
+        <div class="sub">MACARON ORIGINATOR</div>
+        <p>マカロンの<strong>2枚生地でクリームを挟む現在のスタイルを発明</strong>した老舗。シャンゼリゼ本店はサロンも美しい。Day 5の凱旋門の後、シャンゼリゼで立ち寄れる。</p>
+        <div class="info">
+          <span>名物</span> マカロン・サントノレ<br>
+          <span>場所</span> 75 Av. des Champs-Élysées
+          <div class="day-tag">DAY 5 シャンゼリゼ</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/44/Mille-feuille_fran%C3%A7ais_1.jpg');">
+        <span class="city">1er · Rivoli</span>
+      </div>
+      <span class="badge">SINCE 1903</span>
+      <div class="body">
+        <div class="num">N° 27</div>
+        <h4>Angelina（アンジェリーナ）</h4>
+        <div class="sub">MONT BLANC · HOT CHOCOLATE</div>
+        <p>ルーブル向かい、リヴォリ通りのサロン・ド・テ。<strong>モンブラン</strong>と<strong>濃厚すぎるショコラ・ショー「アフリカン」</strong>の二枚看板。Day 5のルーブル前後のティータイムに。</p>
+        <div class="info">
+          <span>名物</span> モンブラン・ショコラ・ショー<br>
+          <span>場所</span> 226 rue de Rivoli
+          <div class="day-tag">DAY 5 ルーブル前後</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/3f/Paris_Berthillon%2C_12_July_2003.jpg');">
+        <span class="city">Île Saint-Louis</span>
+      </div>
+      <span class="badge">SINCE 1954</span>
+      <div class="body">
+        <div class="num">N° 28</div>
+        <h4>Berthillon（ベルティヨン）</h4>
+        <div class="sub">ICE CREAM · ISLAND ONLY</div>
+        <p>サン・ルイ島の家族経営アイスクリーム店。<strong>パリ最高峰のグラス＆ソルベ</strong>として、シェフたちが認める1軒。<strong>月火休み・8月閉店</strong>の不便さが伝説。ノートルダムからすぐ。</p>
+        <div class="info">
+          <span>名物</span> サレ・ブール・カラメル<br>
+          <span>場所</span> 29-31 rue Saint-Louis en l'Île
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/5f/Pain_au_chocolat_Luc_Viatour.jpg');">
+        <span class="city">10e · Saint-Martin</span>
+      </div>
+      <span class="badge">DAY 8 計画</span>
+      <div class="body">
+        <div class="num">N° 29</div>
+        <h4>Du Pain et des Idées</h4>
+        <div class="sub">CHRISTOPHE VASSEUR · ORGANIC</div>
+        <p>サン=マルタン運河近くの<strong>「パリ最高のパン屋」</strong>常連。看板は<strong>エスカルゴ（うずまき型菓子パン）</strong>と<strong>パン・デ・ザミ（友達のパン）</strong>。Day 8朝のブランチ確定候補。</p>
+        <div class="info">
+          <span>名物</span> エスカルゴ・パン・デ・ザミ<br>
+          <span>場所</span> 34 rue Yves Toudic
+          <div class="day-tag">DAY 8 · 9:30 ブランチ</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Caf%C3%A9_de_Flore%2C_172_boulevard_Saint-Germain%2C_Paris_6e.jpg/3840px-Caf%C3%A9_de_Flore%2C_172_boulevard_Saint-Germain%2C_Paris_6e.jpg');">
+        <span class="city">6e · Saint-Germain</span>
+      </div>
+      <span class="badge">SINCE 1887</span>
+      <div class="body">
+        <div class="num">N° 30</div>
+        <h4>Café de Flore（カフェ・ド・フロール）</h4>
+        <div class="sub">SARTRE · BEAUVOIR · CAMUS</div>
+        <p>サルトル・ボーヴォワール・カミュの<strong>実存主義の聖地</strong>。隣のレ・ドゥ・マゴと並ぶ20世紀の知的サロン。コーヒー1杯€5の体験料。Day 6の夕食候補エリア。</p>
+        <div class="info">
+          <span>名物</span> ショコラ・ショー・ハムサンド<br>
+          <span>場所</span> 172 boulevard Saint-Germain
+          <div class="day-tag">DAY 6 候補</div>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <!-- 穴場 -->
+  <div class="subhead">
+    <span class="pill hidden">穴場</span>
+    <h3>HIDDEN SWEETS · ガストロ系パティシエ6軒</h3>
+    <span class="line"></span>
+  </div>
+
+  <div class="grid">
+    <article class="card hidden">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/16/Franse_tarte_tatin.jpg');">
+        <span class="city">2e · Opéra</span>
+      </div>
+      <span class="badge">HIDDEN</span>
+      <div class="body">
+        <div class="num">N° 31</div>
+        <h4>Cédric Grolet Opéra</h4>
+        <div class="sub">"FRUIT SCULPTURES"</div>
+        <p>ホテル ル・ムーリス出身、<strong>「世界一の若手パティシエ」</strong>と称されるセドリック・グロレ。<strong>果物そっくりに見える芸術的スイーツ</strong>が看板。Instagram必撮。1個€18。</p>
+        <div class="info">
+          <span>名物</span> フルーツ・スカルプチャー<br>
+          <span>場所</span> 35 Av. de l'Opéra
+        </div>
+      </div>
+    </article>
+
+    <article class="card hidden">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/44/Mille-feuille_fran%C3%A7ais_1.jpg');">
+        <span class="city">10e · République</span>
+      </div>
+      <span class="badge">HIDDEN</span>
+      <div class="body">
+        <div class="num">N° 32</div>
+        <h4>Yann Couvreur</h4>
+        <div class="sub">VANILLA · MILLEFEUILLE</div>
+        <p><strong>「ミルフィーユの天才」</strong>と評されるパティシエ。注文してから組み立てる<strong>「ミニッツ・ミルフィーユ」</strong>でサクサク食感を保つ独自スタイル。狐がトレードマーク。</p>
+        <div class="info">
+          <span>名物</span> ミルフィーユ・ヴァニラ・タルト<br>
+          <span>場所</span> 137 av. Parmentier
+        </div>
+      </div>
+    </article>
+
+    <article class="card hidden">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/4a/Brioche.jpg');">
+        <span class="city">2e · Montorgueil</span>
+      </div>
+      <span class="badge">SINCE 1730</span>
+      <div class="body">
+        <div class="num">N° 33</div>
+        <h4>Stohrer（ストレー）</h4>
+        <div class="sub">OLDEST PASTRY · ROYAL ROOTS</div>
+        <p><strong>パリ最古のパティスリー</strong>（1730年）。ポーランド王女の専属パティシエがルイ15世との結婚に伴いパリへ移転して開いた店。<strong>ババ・オ・ラム</strong>を発明したのもこの店。</p>
+        <div class="info">
+          <span>名物</span> ババ・オ・ラム・プイ・ダムール<br>
+          <span>場所</span> 51 rue Montorgueil
+        </div>
+      </div>
+    </article>
+
+    <article class="card hidden">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/11/VanillaMacaron.jpg');">
+        <span class="city">16e · Trocadéro</span>
+      </div>
+      <span class="badge">HIDDEN</span>
+      <div class="body">
+        <div class="num">N° 34</div>
+        <h4>Carette（カレット）</h4>
+        <div class="sub">TROCADÉRO · 1927</div>
+        <p>トロカデロ広場、<strong>エッフェル塔正面のサロン</strong>。マカロンとお洒落な朝食ブランチが看板。<strong>テラスからエッフェル塔ビュー</strong>で写真映え。Day 5のエッフェル塔と組み合わせ。</p>
+        <div class="info">
+          <span>名物</span> マカロン・ブランチ<br>
+          <span>場所</span> 4 place du Trocadéro
+          <div class="day-tag">DAY 5 エッフェル塔前</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card hidden">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/fa/Galette_des_Rois.png');">
+        <span class="city">9e · 各地</span>
+      </div>
+      <span class="badge">HIDDEN</span>
+      <div class="body">
+        <div class="num">N° 35</div>
+        <h4>Aux Merveilleux de Fred</h4>
+        <div class="sub">MERVEILLEUX SPECIALIST</div>
+        <p>北フランス銘菓<strong>メルヴェイユー（メレンゲ＋ホイップ＋削りチョコ）</strong>の専門店。<strong>店内の実演調理が必見</strong>。日本人観光客にも徐々に人気で、お土産にも。</p>
+        <div class="info">
+          <span>名物</span> メルヴェイユー（4種）<br>
+          <span>場所</span> 24 rue de Choiseul
+        </div>
+      </div>
+    </article>
+
+    <article class="card hidden">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/2a/Croissant-Petr_Kratochvil.jpg');">
+        <span class="city">11e · Oberkampf</span>
+      </div>
+      <span class="badge">EXPERIMENTAL</span>
+      <div class="body">
+        <div class="num">N° 36</div>
+        <h4>Boulangerie Utopie</h4>
+        <div class="sub">CHARCOAL CROISSANT · 2015</div>
+        <p>11区の<strong>実験パン屋</strong>。竹炭で黒くした<strong>黒いクロワッサン</strong>、抹茶・ゆず・黒ゴマなど和食材を取り入れた攻めの品揃え。日本人在住者と若手フーディーが推す店。</p>
+        <div class="info">
+          <span>名物</span> 黒クロワッサン・抹茶パン<br>
+          <span>場所</span> 20 rue Jean-Pierre Timbaud
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="logo">Paris.</div>
+  <p>2026年7月1日〜7月5日（4泊5日＋モン・サン・ミッシェル日帰り）<br>のためのキュレーション・ガイド</p>
+  <p class="legal">36 picks · 3 chapters · curated may 2026</p>
+  <p class="sources">Images: Wikimedia Commons · Sources: ロコタビ／トリップアドバイザー／JTB／TARIP／Trip.com／各種日本人ブログ</p>
+</footer>
+
+</body>
+</html>

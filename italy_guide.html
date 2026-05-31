@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ITALIA 2026 — 定番と穴場、36の選択｜旅のガイド</title>
+<title>ROMA — 6/28〜7/1 のためのキュレーション・ガイド｜36の選択</title>
 <style>
   :root {
     --c-ink: #1a1410;
     --c-paper: #fbf8f3;
     --c-cream: #f3ebde;
-    --c-classic: #8b2c1d;      /* 定番 = テラコッタ */
+    --c-classic: #8b2c1d;
     --c-classic-soft: #c44a35;
-    --c-hidden: #c9a961;       /* 穴場 = ゴールド */
+    --c-hidden: #c9a961;
     --c-hidden-soft: #d9c084;
     --c-text: #3a3026;
     --c-mute: #7a6b58;
@@ -56,7 +56,7 @@
     min-height: 88vh;
     background:
       linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(26,20,16,0.7) 100%),
-      url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Cinque_Terre_%28Italy%2C_October_2020%29_-_24_%2850543603956%29.jpg/3840px-Cinque_Terre_%28Italy%2C_October_2020%29_-_24_%2850543603956%29.jpg");
+      url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Trevi_Fountain_-_Roma.jpg/3840px-Trevi_Fountain_-_Roma.jpg");
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -84,7 +84,7 @@
   .hero h1 span { display: block; font-size: 0.4em; font-style: normal; letter-spacing: 0.3em; margin-top: 12px; opacity: 0.8; }
   .hero .lead {
     font-size: clamp(16px, 1.6vw, 20px);
-    max-width: 580px;
+    max-width: 640px;
     line-height: 1.9;
     margin-bottom: 40px;
     opacity: 0.95;
@@ -99,8 +99,34 @@
     letter-spacing: 0.25em;
     text-transform: uppercase;
     opacity: 0.9;
+    flex-wrap: wrap;
   }
   .hero .meta-bar div span { display: block; font-size: 18px; margin-top: 6px; font-family: "Hiragino Mincho ProN", serif; letter-spacing: 0; text-transform: none; font-weight: 600; }
+
+  /* ===== ITINERARY STRIP ===== */
+  .itinerary {
+    background: var(--c-ink);
+    color: #ccbea8;
+    padding: 32px 6vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 24px;
+    border-bottom: 4px solid var(--c-classic);
+  }
+  .itinerary .day {
+    border-left: 2px solid var(--c-hidden);
+    padding-left: 14px;
+  }
+  .itinerary .day .label {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    color: var(--c-hidden);
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .itinerary .day .date { font-size: 13px; opacity: 0.7; font-family: "Helvetica Neue", sans-serif; }
+  .itinerary .day .what { font-size: 14.5px; margin-top: 4px; color: #fff; }
 
   /* ===== SECTION ===== */
   section.chapter {
@@ -112,7 +138,7 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 60px;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     padding-bottom: 48px;
     border-bottom: 1px solid rgba(26,20,16,0.15);
     align-items: end;
@@ -130,7 +156,7 @@
   .ch-head p { font-size: 16px; color: var(--c-mute); max-width: 540px; }
   @media (max-width: 768px) { .ch-head { grid-template-columns: 1fr; gap: 24px; } }
 
-  /* ===== SUBHEAD (定番/穴場の見出し) ===== */
+  /* ===== SUBHEAD ===== */
   .subhead {
     display: flex;
     align-items: center;
@@ -181,7 +207,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, transparent 50%, rgba(0,0,0,0.5) 100%);
+    background: linear-gradient(180deg, transparent 50%, rgba(0,0,0,0.55) 100%);
   }
   .card .photo .city {
     position: absolute;
@@ -215,12 +241,33 @@
   .card .body h4 { font-size: 21px; font-weight: 600; margin-bottom: 10px; letter-spacing: 0.01em; }
   .card .body .sub { font-family: "Helvetica Neue", sans-serif; font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--c-mute); margin-bottom: 14px; }
   .card .body p { font-size: 14.5px; color: var(--c-text); line-height: 1.85; }
+  .card .body .info {
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px dashed rgba(26,20,16,0.15);
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 12px;
+    color: var(--c-mute);
+    line-height: 1.7;
+  }
+  .card .body .info span { display: inline-block; color: var(--c-ink); font-weight: 600; }
+  .card .body .day-tag {
+    display: inline-block;
+    background: var(--c-classic);
+    color: #fff;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    padding: 3px 8px;
+    margin-top: 12px;
+    border-radius: 2px;
+  }
 
-  /* ===== CHAPTER 2/3 アクセント色変更 ===== */
+  /* ===== CHAPTER アクセント ===== */
   #ch-food .ch-head .num { color: #6b3a1f; }
   #ch-gelato .ch-head .num { color: #b08856; }
   #ch-food { background: linear-gradient(180deg, transparent 0%, #f5ede0 100%); }
-  #ch-gelato { background: linear-gradient(180deg, #fdf3e2 0%, #fae6c8 100%); margin-top: 0; }
+  #ch-gelato { background: linear-gradient(180deg, #fdf3e2 0%, #fae6c8 100%); }
 
   /* ===== FOOTER ===== */
   footer {
@@ -238,43 +285,55 @@
   }
   footer .legal { font-family: "Helvetica Neue", sans-serif; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; opacity: 0.7; margin-top: 28px; }
   footer .sources { font-size: 12px; margin-top: 12px; opacity: 0.55; }
-
-  /* ===== HIDDEN section banner ===== */
-  .hidden-banner {
-    background: linear-gradient(135deg, #1a1410 0%, #3a2820 100%);
-    color: #f3ebde;
-    padding: 60px 6vw;
-    margin: 80px -6vw 40px;
-    text-align: center;
-  }
-  .hidden-banner .small { font-family: "Helvetica Neue", sans-serif; font-size: 12px; letter-spacing: 0.5em; text-transform: uppercase; color: var(--c-hidden); margin-bottom: 16px; }
-  .hidden-banner h3 { font-family: "Cormorant Garamond", "Hiragino Mincho ProN", serif; font-size: clamp(32px, 5vw, 56px); font-weight: 400; font-style: italic; margin-bottom: 12px; }
-  .hidden-banner p { font-size: 15px; max-width: 540px; margin: 0 auto; opacity: 0.85; }
 </style>
 </head>
 <body>
 
 <nav class="topnav">
-  <div class="brand">ITALIA · 2026</div>
+  <div class="brand">ROMA · 2026.06.28 — 07.01</div>
   <ul>
     <li><a href="#ch-sight">観光</a></li>
-    <li><a href="#ch-food">食事</a></li>
+    <li><a href="#ch-food">レストラン</a></li>
     <li><a href="#ch-gelato">ジェラート</a></li>
   </ul>
 </nav>
 
 <!-- ===== HERO ===== -->
 <header class="hero">
-  <div class="small">A Japanese Traveler's Guide</div>
-  <h1>Italia.<span>定番と穴場、36の選択</span></h1>
-  <p class="lead">王道だけを巡る旅も、地元の路地に消えていく旅も、どちらもイタリアの本当。<br>日本人ブロガーと現地在住者の声から選んだ、観光・食事・ジェラート 36 軒。</p>
+  <div class="small">A Curated Field Guide · Asiana 2026</div>
+  <h1>Roma.<span>3泊4日、36の選択</span></h1>
+  <p class="lead">6/28〜7/1のローマ滞在＋6/30のカプリ島日帰りに合わせて編んだ実用ガイド。<br>定番6＋穴場6を、観光・レストラン・ジェラートの3章で。</p>
   <div class="meta-bar">
-    <div>CHAPTERS<span>3</span></div>
+    <div>STAY<span>3 泊</span></div>
+    <div>DAY TRIP<span>Capri</span></div>
     <div>PICKS<span>36</span></div>
-    <div>CITIES<span>12+</span></div>
-    <div>UPDATED<span>2026.05</span></div>
+    <div>UPDATED<span>2026.05.31</span></div>
   </div>
 </header>
+
+<!-- ===== ITINERARY STRIP ===== -->
+<aside class="itinerary">
+  <div class="day">
+    <div class="label">Day 1 · ARRIVAL</div>
+    <div class="date">6/28 (日)</div>
+    <div class="what">夜FCO着 → トレヴィ夜景</div>
+  </div>
+  <div class="day">
+    <div class="label">Day 2 · VATICAN</div>
+    <div class="date">6/29 (月)</div>
+    <div class="what">ヴァチカン → 旧市街街ブラ</div>
+  </div>
+  <div class="day">
+    <div class="label">Day 3 · CAPRI</div>
+    <div class="date">6/30 (火)</div>
+    <div class="what">青の洞窟日帰り → トラステヴェレ</div>
+  </div>
+  <div class="day">
+    <div class="label">Day 4 · DEPART</div>
+    <div class="date">7/1 (水)</div>
+    <div class="what">朝便でパリへ</div>
+  </div>
+</aside>
 
 <!-- ===== CHAPTER 1: 観光 ===== -->
 <section class="chapter" id="ch-sight">
@@ -282,94 +341,124 @@
     <div class="num"><em>01</em></div>
     <div>
       <div class="label">CHAPTER ONE · SIGHTSEEING</div>
-      <h2>観光スポット<br>12の目的地</h2>
-      <p>はじめてのイタリアでも、5回目のイタリアでも刺さる選定。3都市の象徴と、ガイドブックの端にしか載らない6つの場所。</p>
+      <h2>観光スポット<br>定番6＋穴場6</h2>
+      <p>旅程に組み込み済みの聖地と、徒歩圏で寄り道できる穴場。所要時間と Day を併記。</p>
     </div>
   </div>
 
   <!-- 定番 -->
   <div class="subhead">
     <span class="pill classic">定番</span>
-    <h3>THE CLASSICS</h3>
+    <h3>THE CLASSICS · 旅程に組込み済み</h3>
     <span class="line"></span>
   </div>
 
   <div class="grid">
-    <article class="card">
-      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/3840px-Colosseo_2020.jpg');">
-        <span class="city">Roma · Lazio</span>
-      </div>
-      <span class="badge">MUST</span>
-      <div class="body">
-        <div class="num">N° 01</div>
-        <h4>コロッセオ</h4>
-        <div class="sub">80 A.D. · UNESCO</div>
-        <p>古代ローマ帝国の円形闘技場。地下迷宮の見学チケットを取れれば、観光客の波から離れて建築の真価がわかる。早朝7:30の予約がおすすめ。</p>
-      </div>
-    </article>
-
     <article class="card">
       <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg/3840px-Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg');">
         <span class="city">Vaticano</span>
       </div>
       <span class="badge">MUST</span>
       <div class="body">
-        <div class="num">N° 02</div>
-        <h4>サン・ピエトロ大聖堂／ヴァチカン</h4>
-        <div class="sub">SMALLEST COUNTRY · POPE</div>
-        <p>世界最小の国家にしてカトリックの総本山。クーポラに登ると、ベルニーニのコロネードとローマ市街が一望できる。早朝開門前から並ぶのが正解。</p>
+        <div class="num">N° 01</div>
+        <h4>ヴァチカン美術館＋サン・ピエトロ大聖堂</h4>
+        <div class="sub">SISTINE CHAPEL · MICHELANGELO</div>
+        <p>システィーナ礼拝堂の天井画とラファエロの間。<strong>朝8時の開館直後</strong>に入って4時間。その後サン・ピエトロ大聖堂（無料・無予約）の流れがゴールデン。</p>
+        <div class="info">
+          <span>所要</span> 4-5h<br>
+          <span>予約</span> museivaticani.va で必須
+          <div class="day-tag">DAY 2 · 6/29 (月)</div>
+        </div>
       </div>
     </article>
 
     <article class="card">
-      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Cattedrale_di_Santa_Maria_del_Fiore_%E2%80%93_Il_Duomo_di_Firenze.jpg/3840px-Cattedrale_di_Santa_Maria_del_Fiore_%E2%80%93_Il_Duomo_di_Firenze.jpg');">
-        <span class="city">Firenze · Toscana</span>
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/3840px-Colosseo_2020.jpg');">
+        <span class="city">Roma · Lazio</span>
+      </div>
+      <span class="badge">MUST</span>
+      <div class="body">
+        <div class="num">N° 02</div>
+        <h4>コロッセオ</h4>
+        <div class="sub">80 A.D. · UNESCO</div>
+        <p>古代ローマ帝国の円形闘技場。<strong>地下迷宮チケット</strong>が取れれば観光客の波から離れて建築の真価が分かる。Day 2の夕方、夕日に映える外観が美しい。</p>
+        <div class="info">
+          <span>所要</span> 外観のみ30分 / 内部1.5h<br>
+          <span>予約</span> coopculture.it
+          <div class="day-tag">DAY 2 · 18:00頃</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Pantheon_%28Rome%29_-_Right_side_and_front.jpg/3840px-Pantheon_%28Rome%29_-_Right_side_and_front.jpg');">
+        <span class="city">Roma · Lazio</span>
       </div>
       <span class="badge">MUST</span>
       <div class="body">
         <div class="num">N° 03</div>
-        <h4>サンタ・マリア・デル・フィオーレ大聖堂</h4>
-        <div class="sub">DUOMO · BRUNELLESCHI'S DOME</div>
-        <p>赤い屋根が連なるフィレンツェの街に、ぽつんと突き出す巨大なクーポラ。ジョットの鐘楼に登る方が空いていて、ドゥオモを正面から撮れる隠れ技あり。</p>
+        <h4>パンテオン</h4>
+        <div class="sub">128 A.D. · ORACULUS</div>
+        <p>無柱ドームとしては今も世界最大。天井の<strong>「目（オクルス）」</strong>から差し込む光が時間で動く。Day 2の街ブラで17:00頃が混雑のピークを外せる。</p>
+        <div class="info">
+          <span>所要</span> 30-45分<br>
+          <span>予約</span> €5・pantheonroma.com
+          <div class="day-tag">DAY 2 · 17:00</div>
+        </div>
       </div>
     </article>
 
     <article class="card">
-      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Piazza_San_Marco_%28Venice%29_at_night-msu-2021-6449-.jpg/3840px-Piazza_San_Marco_%28Venice%29_at_night-msu-2021-6449-.jpg');">
-        <span class="city">Venezia · Veneto</span>
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Trevi_Fountain_-_Roma.jpg/3840px-Trevi_Fountain_-_Roma.jpg');">
+        <span class="city">Roma · Lazio</span>
       </div>
       <span class="badge">MUST</span>
       <div class="body">
         <div class="num">N° 04</div>
-        <h4>サン・マルコ広場</h4>
-        <div class="sub">ST. MARK'S BASILICA · CAMPANILE</div>
-        <p>ナポレオンが「世界一美しい応接間」と評した広場。鐘楼の眺望、サン・マルコ寺院のモザイク、運河ぎわの夜景まで。早朝の無人状態が映え。</p>
+        <h4>トレヴィの泉</h4>
+        <div class="sub">FONTANA DI TREVI · NICOLA SALVI</div>
+        <p>夜のライトアップは別物。Day 1の到着後（21:30頃）に軽く見て、Day 2の街ブラ夜（19:30）にもう一度。<strong>後ろ向きでコインを投げると再訪が叶う</strong>言い伝え。</p>
+        <div class="info">
+          <span>所要</span> 15-30分<br>
+          <span>料金</span> 無料・24時間
+          <div class="day-tag">DAY 1 夜 / DAY 2 夜</div>
+        </div>
       </div>
     </article>
 
     <article class="card">
-      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/4b/Italy_-_Pisa_-_Leaning_Tower.jpg');">
-        <span class="city">Pisa · Toscana</span>
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Piazza_Navona_%28Rome%29_at_night.jpg/3840px-Piazza_Navona_%28Rome%29_at_night.jpg');">
+        <span class="city">Roma · Lazio</span>
       </div>
       <span class="badge">MUST</span>
       <div class="body">
         <div class="num">N° 05</div>
-        <h4>ピサの斜塔</h4>
-        <div class="sub">CAMPO DEI MIRACOLI</div>
-        <p>「奇跡の広場」に並ぶ大聖堂・洗礼堂・斜塔のトリオ。塔を「支える」ベタ写真は通過儀礼。フィレンツェから日帰り1時間半で手軽。</p>
+        <h4>ナヴォーナ広場</h4>
+        <div class="sub">BERNINI · FOUNTAIN OF 4 RIVERS</div>
+        <p>古代競技場の輪郭をそのまま残した楕円形広場。中央にベルニーニ作<strong>「四大河の噴水」</strong>。テラスカフェでひと休み、夜の屋外コンサートも風物詩。</p>
+        <div class="info">
+          <span>所要</span> 30分-1h<br>
+          <span>料金</span> 無料・24時間
+          <div class="day-tag">DAY 2 · 15:30</div>
+        </div>
       </div>
     </article>
 
     <article class="card">
-      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d4/Theathres_of_Pompeii.jpg');">
-        <span class="city">Pompei · Campania</span>
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/5d/Grotta_azzurra.jpg');">
+        <span class="city">Capri · Campania</span>
       </div>
-      <span class="badge">MUST</span>
+      <span class="badge">DAY TRIP</span>
       <div class="body">
         <div class="num">N° 06</div>
-        <h4>ポンペイ遺跡</h4>
-        <div class="sub">79 A.D. · VESUVIUS</div>
-        <p>ヴェスヴィオ火山に一晩で埋もれた古代都市。パン屋、居酒屋、邸宅の壁画まで生活の痕跡がそのまま残る。ナポリから列車で30分。</p>
+        <h4>青の洞窟（カプリ島）</h4>
+        <div class="sub">GROTTA AZZURRA · BLUE LIGHT</div>
+        <p>太陽光が海面下から差し込み、洞窟内が<strong>蛍光ブルーに発光</strong>する自然現象。Day 3にみゅうツアー（¥50,342・ランチ付き）で参加予定。波の状態次第で入場可否が決まる（閉鎖率30-40%）。</p>
+        <div class="info">
+          <span>ツアー</span> みゅう・日本語<br>
+          <span>注意</span> 当日朝に波情報確認
+          <div class="day-tag">DAY 3 · 6/30 (火) 終日</div>
+        </div>
       </div>
     </article>
   </div>
@@ -377,272 +466,357 @@
   <!-- 穴場 -->
   <div class="subhead">
     <span class="pill hidden">穴場</span>
-    <h3>HIDDEN GEMS</h3>
+    <h3>HIDDEN GEMS · 余白があれば寄り道</h3>
     <span class="line"></span>
   </div>
 
   <div class="grid">
     <article class="card hidden">
-      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Cinque_Terre_%28Italy%2C_October_2020%29_-_24_%2850543603956%29.jpg/3840px-Cinque_Terre_%28Italy%2C_October_2020%29_-_24_%2850543603956%29.jpg');">
-        <span class="city">Liguria</span>
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/de/Santa_Maria_in_Trastevere_fountain.jpg');">
+        <span class="city">Trastevere</span>
       </div>
       <span class="badge">HIDDEN</span>
       <div class="body">
         <div class="num">N° 07</div>
-        <h4>チンクエ・テッレ</h4>
-        <div class="sub">5 VILLAGES · UNESCO</div>
-        <p>断崖にへばりつくパステルカラーの5つの漁村。村をつなぐハイキング道とローカル列車で巡る、地中海の絶景行脚。ジェノヴァから列車1.5h。</p>
+        <h4>トラステヴェレ地区</h4>
+        <div class="sub">COBBLESTONE · NIGHTLIFE</div>
+        <p>テヴェレ川南側の下町。曲がりくねった石畳と蔦のからまる建物、夕方からは地元バー・レストランで賑わう。<strong>Day 3夜のカルボナーラ夕食</strong>はこのエリアで。</p>
+        <div class="info">
+          <span>所要</span> 2-3h (散策+食事)<br>
+          <span>ベスト</span> 17:00以降
+          <div class="day-tag">DAY 3 · 夜</div>
+        </div>
       </div>
     </article>
 
     <article class="card hidden">
-      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Alberobello_-_View_from_Piazza_Giangirolamo_II_-_03.jpg/3840px-Alberobello_-_View_from_Piazza_Giangirolamo_II_-_03.jpg');">
-        <span class="city">Puglia</span>
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a2/Quartiere_Copped%C3%A9_09.jpg');">
+        <span class="city">Quartiere Coppedè</span>
       </div>
       <span class="badge">HIDDEN</span>
       <div class="body">
         <div class="num">N° 08</div>
-        <h4>アルベロベッロ</h4>
-        <div class="sub">TRULLI · UNESCO</div>
-        <p>とんがり屋根の白い家「トゥルッリ」が約1,500軒密集する世界遺産の街。屋根の数だけ住む家族の数を示すと言われる独特の集落。</p>
+        <h4>コッペデ地区</h4>
+        <div class="sub">ART NOUVEAU · 1915-1927</div>
+        <p>トリエステ地区にある<strong>おとぎ話のような建築群</strong>。アール・ヌーヴォーとバロックが混ざった独特の世界。観光客がほぼいない映えスポット。テルミニから地下鉄B線。</p>
+        <div class="info">
+          <span>所要</span> 30-45分<br>
+          <span>料金</span> 無料・常時開放
+        </div>
       </div>
     </article>
 
     <article class="card hidden">
-      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Matera_-_View_from_Sant%27Agostino.jpg/3840px-Matera_-_View_from_Sant%27Agostino.jpg');">
-        <span class="city">Basilicata</span>
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/90/Ripa_-_Aventino_-_CavalieriDiMalta.JPG');">
+        <span class="city">Aventino</span>
       </div>
       <span class="badge">HIDDEN</span>
       <div class="body">
         <div class="num">N° 09</div>
-        <h4>マテーラ</h4>
-        <div class="sub">SASSI · CAVE DWELLINGS</div>
-        <p>9,000年前から人が住む洞窟住居「サッシ」で知られる、世界最古級の街。映画『パッション』『007』のロケ地。夜のライトアップは別世界。</p>
+        <h4>マルタ騎士団の鍵穴</h4>
+        <div class="sub">AVENTINE HILL · 3 COUNTRIES</div>
+        <p>扉の鍵穴から覗くと、3つの国（イタリア・マルタ騎士団・バチカン）越しに<strong>サン・ピエトロ大聖堂が一直線</strong>。所要5分の名物スポット。すぐ近くにアランチ庭園。</p>
+        <div class="info">
+          <span>所要</span> 5-10分<br>
+          <span>料金</span> 無料
+        </div>
       </div>
     </article>
 
     <article class="card hidden">
-      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Urbino_dalla_Strada_Rossa.jpg/3840px-Urbino_dalla_Strada_Rossa.jpg');">
-        <span class="city">Marche</span>
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e3/Ripa_-_giardino_degli_aranci_01.JPG');">
+        <span class="city">Aventino</span>
       </div>
       <span class="badge">HIDDEN</span>
       <div class="body">
         <div class="num">N° 10</div>
-        <h4>ウルビーノ</h4>
-        <div class="sub">RENAISSANCE · UNESCO</div>
-        <p>ラファエロが生まれた完璧なルネサンス都市。城壁に囲まれた丘の上の街は中世から時が止まっているよう。日本人観光客が驚くほど少ない。</p>
+        <h4>アランチ庭園</h4>
+        <div class="sub">GIARDINO DEGLI ARANCI · SUNSET</div>
+        <p>鍵穴のすぐ近く、オレンジの木に囲まれた展望テラス。<strong>夕日の時間帯にローマの街並みを一望</strong>できる無料スポット。テヴェレ川とサン・ピエトロ大聖堂のドームが正面に。</p>
+        <div class="info">
+          <span>所要</span> 30分<br>
+          <span>ベスト</span> 日没1h前
+        </div>
       </div>
     </article>
 
     <article class="card hidden">
-      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Castello_di_ninfa_e_giardino.jpg/3840px-Castello_di_ninfa_e_giardino.jpg');">
-        <span class="city">Lazio</span>
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Basilica_di_San_Clemente_al_Laterano_-_esterno.jpg/3840px-Basilica_di_San_Clemente_al_Laterano_-_esterno.jpg');">
+        <span class="city">Roma · Lazio</span>
       </div>
       <span class="badge">HIDDEN</span>
       <div class="body">
         <div class="num">N° 11</div>
-        <h4>ニンファの庭園</h4>
-        <div class="sub">ENGLISH GARDEN · RUINS</div>
-        <p>ローマから南へ80km、廃墟となった中世の街跡に英国式庭園が作られた幻想空間。「世界一ロマンチックな庭」とNYTが評した。月数日のみ公開。</p>
+        <h4>サン・クレメンテ教会</h4>
+        <div class="sub">3 LAYERS · 12C · 4C · 1C BC</div>
+        <p>コロッセオ徒歩5分。地下に降りていくと中世教会の下に4世紀バシリカ、さらに下に<strong>古代ローマの邸宅</strong>が3層構造で残る。Day 2のコロッセオついでに。</p>
+        <div class="info">
+          <span>所要</span> 1h<br>
+          <span>料金</span> €10
+        </div>
       </div>
     </article>
 
     <article class="card hidden">
-      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e9/Castello_di_Sammezzano01.JPG');">
-        <span class="city">Toscana</span>
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/9e/Le_mus%C3%A9e_de_la_centrale_Montemartini_%28Rome%29_%2834321364485%29.jpg');">
+        <span class="city">Ostiense</span>
       </div>
       <span class="badge">HIDDEN</span>
       <div class="body">
         <div class="num">N° 12</div>
-        <h4>サンメッザーノ城</h4>
-        <div class="sub">MOORISH · 19C</div>
-        <p>フィレンツェから車1時間、19世紀のオリエンタル様式の幻想的な城。「孔雀の間」など色彩の洪水。完全予約制で年に数日のみ公開。</p>
+        <h4>チェントラーレ・モンテマルティーニ</h4>
+        <div class="sub">ANCIENT × INDUSTRIAL</div>
+        <p>旧火力発電所の機械の前に古代彫刻が並ぶ<strong>唯一無二の展示空間</strong>。バチカン美術館の混雑と真逆の、静かな鑑賞体験。メトロB線ガルバテッラ駅。</p>
+        <div class="info">
+          <span>所要</span> 1.5-2h<br>
+          <span>料金</span> €11
+        </div>
       </div>
     </article>
   </div>
 </section>
 
-<!-- ===== CHAPTER 2: 食事 ===== -->
+<!-- ===== CHAPTER 2: レストラン ===== -->
 <section class="chapter" id="ch-food">
   <div class="ch-head">
     <div class="num"><em>02</em></div>
     <div>
-      <div class="label">CHAPTER TWO · FOOD</div>
-      <h2>食事<br>12皿の風景</h2>
-      <p>イタリアは地方料理の連邦。6つの「これは食べておけ」と、6軒の「ここで食べておけ」を分けてみた。</p>
+      <div class="label">CHAPTER TWO · RESTAURANTS</div>
+      <h2>レストラン<br>定番店6＋穴場店6</h2>
+      <p>日本人ブロガー・ロコタビ・在住者レビューから選定。<strong>店名・名物・要予約か</strong>まで明記。Day 3夜のトラステヴェレ夕食候補も含む。</p>
     </div>
   </div>
 
-  <!-- 定番 -->
+  <!-- 定番店 -->
   <div class="subhead">
     <span class="pill classic">定番</span>
-    <h3>THE CLASSICS</h3>
+    <h3>RESTAURANT CLASSICS · 日本人観光客の鉄板6軒</h3>
     <span class="line"></span>
   </div>
 
   <div class="grid">
     <article class="card">
       <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/33/Espaguetis_carbonara.jpg');">
-        <span class="city">Roma · Lazio</span>
+        <span class="city">Campo de' Fiori</span>
       </div>
       <span class="badge">MUST EAT</span>
       <div class="body">
         <div class="num">N° 13</div>
-        <h4>カルボナーラ</h4>
-        <div class="sub">GUANCIALE · PECORINO · EGG YOLK</div>
-        <p>本場ローマでは生クリームを使わず、卵黄・グアンチャーレ・ペコリーノ・黒胡椒のみ。<strong>Roscioli</strong> または <strong>Da Enzo al 29</strong> が日本人ブロガー定番。</p>
+        <h4>Roscioli（ロッショリ）</h4>
+        <div class="sub">SALUMERIA CON CUCINA · ★★</div>
+        <p>カンポ・デ・フィオーリ近く。<strong>「ローマで一番のカルボナーラ」</strong>と日本のメディアで紹介され続けるデリ＋レストラン。生クリーム無し、卵黄＆グアンチャーレ＆ペコリーノの本場仕様。</p>
+        <div class="info">
+          <span>名物</span> カルボナーラ・グリチャ<br>
+          <span>予約</span> 必須・1ヶ月前から<br>
+          <span>予算</span> €50-70/人
+        </div>
       </div>
     </article>
 
     <article class="card">
-      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/12/Bistecca_alla_fiorentina-01.jpg');">
-        <span class="city">Firenze · Toscana</span>
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/99/Cacio_e_pepe.jpg');">
+        <span class="city">Trastevere</span>
       </div>
       <span class="badge">MUST EAT</span>
       <div class="body">
         <div class="num">N° 14</div>
-        <h4>ビステッカ・アッラ・フィオレンティーナ</h4>
-        <div class="sub">CHIANINA BEEF · 1KG</div>
-        <p>キアーナ牛のTボーン・ステーキを塩・胡椒・炭火だけで。レアが正義。<strong>Trattoria Mario</strong>（昼のみ・現金）が老舗。1kgを2-3人でシェア。</p>
+        <h4>Da Enzo al 29（ダ・エンツォ）</h4>
+        <div class="sub">TRASTEVERE · TINY TRATTORIA</div>
+        <p>トラステヴェレの行列必至店。<strong>カチョ・エ・ペペ</strong>と<strong>カルボナーラ</strong>がローマの代表格。20席のみで予約取りにくく、開店19:00前に並ぶのが基本。Day 3夜に最適。</p>
+        <div class="info">
+          <span>名物</span> カチョ・エ・ペペ／カルボナーラ<br>
+          <span>予約</span> 電話のみ・取れない時は並ぶ<br>
+          <span>予算</span> €30-40/人
+        </div>
       </div>
     </article>
 
     <article class="card">
-      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/57/Neapolitan_pizza_at_Trappica_%2848701940197%29.jpg');">
-        <span class="city">Napoli · Campania</span>
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Bucatini_allamatriciana.jpg/3840px-Bucatini_allamatriciana.jpg');">
+        <span class="city">Pantheon</span>
       </div>
       <span class="badge">MUST EAT</span>
       <div class="body">
         <div class="num">N° 15</div>
-        <h4>ピッツァ・マルゲリータ</h4>
-        <div class="sub">DOC · 60-90 SEC IN OVEN</div>
-        <p>水牛モッツァレラ・トマト・バジルの三色でイタリア国旗を表す原点。<strong>L'Antica Pizzeria da Michele</strong>（ジュリア・ロバーツの店）が聖地。</p>
+        <h4>Armando al Pantheon</h4>
+        <div class="sub">SINCE 1961 · FAMILY-RUN</div>
+        <p>パンテオン裏の老舗トラットリア。<strong>アマトリチャーナ</strong>と<strong>サルティンボッカ</strong>が看板。3代続く家族経営でローマ料理の正統派。Day 2のパンテオン後の昼/夜にぴったり。</p>
+        <div class="info">
+          <span>名物</span> アマトリチャーナ・サルティンボッカ<br>
+          <span>予約</span> 必須・サイトから可<br>
+          <span>予算</span> €40-50/人
+        </div>
       </div>
     </article>
 
     <article class="card">
-      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a5/Risotto_with_speck_and_goat_cheese_%286101067436%29.jpg');">
-        <span class="city">Milano · Lombardia</span>
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/43/Pizza_al_taglio.jpg');">
+        <span class="city">Vaticano近</span>
       </div>
       <span class="badge">MUST EAT</span>
       <div class="body">
         <div class="num">N° 16</div>
-        <h4>リゾット・アッラ・ミラネーゼ</h4>
-        <div class="sub">SAFFRON · 1574 RECIPE</div>
-        <p>サフランで黄金色に染まるミラノの誇り。バターと骨髄を加える濃厚レシピが本流。<strong>Trattoria Milanese</strong> や <strong>Ratanà</strong> で。</p>
+        <h4>Pizzarium Bonci</h4>
+        <div class="sub">BY GABRIELE BONCI · TAKE-AWAY</div>
+        <p>「ローマピザの神」ボンチの店。<strong>ピザ・アル・タリオ（切り売り）</strong>の聖地として日本人観光客が必ず立ち寄る。立ち食いオンリーだが20種類以上のフレーバー。Day 2のヴァチカン後のランチ候補。</p>
+        <div class="info">
+          <span>名物</span> 切り売りピザ全般<br>
+          <span>予約</span> 不要・並ぶ覚悟<br>
+          <span>予算</span> €10-15/人
+        </div>
       </div>
     </article>
 
     <article class="card">
-      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/59/Spaghetti_vongole_2.jpg');">
-        <span class="city">Venezia · Veneto</span>
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/29/Saltimbocca_01.jpg');">
+        <span class="city">Trastevere</span>
       </div>
       <span class="badge">MUST EAT</span>
       <div class="body">
         <div class="num">N° 17</div>
-        <h4>スパゲッティ・ヴォンゴレ／イカ墨パスタ</h4>
-        <div class="sub">SEAFOOD · LAGOON</div>
-        <p>潟の魚介を直接味わうのがヴェネツィア流。アサリのヴォンゴレに加え、真っ黒な<strong>イカ墨パスタ（Spaghetti al nero di seppia）</strong>は外せない名物。</p>
+        <h4>Tonnarello</h4>
+        <div class="sub">TRASTEVERE · LIVELY</div>
+        <p>トラステヴェレの賑やかなテラス席。店名のとおり<strong>トンナレッリ（手打ち四角形パスタ）</strong>のカルボナーラが名物。雰囲気重視派の日本人観光客に大人気。</p>
+        <div class="info">
+          <span>名物</span> トンナレッリ各種<br>
+          <span>予約</span> 推奨・サイトから<br>
+          <span>予算</span> €25-35/人
+        </div>
       </div>
     </article>
 
     <article class="card">
-      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c9/BasilPesto.JPG');">
-        <span class="city">Genova · Liguria</span>
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c8/Pizza_Margherita_stu_spivack.jpg');">
+        <span class="city">Napoli</span>
       </div>
-      <span class="badge">MUST EAT</span>
+      <span class="badge">CAPRI 経由</span>
       <div class="body">
         <div class="num">N° 18</div>
-        <h4>ペスト・ジェノヴェーゼ</h4>
-        <div class="sub">BASIL · PINE NUT · TROFIE</div>
-        <p>本場ジェノヴァのバジル＆松の実のペースト。短いねじれパスタ<strong>トロフィエ</strong>に絡め、じゃがいもとインゲンを加えるのが伝統。香りが別物。</p>
+        <h4>L'Antica Pizzeria da Michele</h4>
+        <div class="sub">SINCE 1870 · NAPLES</div>
+        <p>『食べて、祈って、恋をして』でジュリア・ロバーツが食べた<strong>ナポリピッツァの聖地</strong>。マルゲリータとマリナーラの2種のみ。Day 3カプリ島ツアー往復でナポリ経由ならランチに。</p>
+        <div class="info">
+          <span>名物</span> マルゲリータ／マリナーラ<br>
+          <span>予約</span> 不可・並ぶ<br>
+          <span>予算</span> €10-15/人
+        </div>
       </div>
     </article>
   </div>
 
-  <!-- 穴場 -->
+  <!-- 穴場店 -->
   <div class="subhead">
     <span class="pill hidden">穴場</span>
-    <h3>HIDDEN TABLES</h3>
+    <h3>HIDDEN TABLES · 在住者と通の6軒</h3>
     <span class="line"></span>
   </div>
 
   <div class="grid">
     <article class="card hidden">
-      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/ed/Al_Borgat_1.jpg');">
-        <span class="city">Firenze · Toscana</span>
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/7b/Pasta_alla_Gricia.jpg');">
+        <span class="city">Monteverde</span>
       </div>
       <span class="badge">HIDDEN</span>
       <div class="body">
         <div class="num">N° 19</div>
-        <h4>Trattoria Sostanza</h4>
-        <div class="sub">SINCE 1869 · CASH ONLY</div>
-        <p>「Il Troia」の愛称で呼ばれる老舗トラットリア。看板はバターたっぷりの<strong>チキン・バター・カツレツ</strong>。常連客のために席を空ける、地元密着の店。</p>
+        <h4>Da Cesare al Casaletto</h4>
+        <div class="sub">TRAM-ONLY · LOCAL FAVORITE</div>
+        <p>トラステヴェレ郊外、<strong>路面電車8番でしか行けない</strong>立地。ローマ四大パスタ（カルボナーラ・アマトリチャーナ・グリチャ・カチョエペペ）を学術的に正確に出す。観光客ゼロの本物。</p>
+        <div class="info">
+          <span>名物</span> グリチャ・トンナレッリ<br>
+          <span>予約</span> 必須<br>
+          <span>予算</span> €35-45/人
+        </div>
+      </div>
+    </article>
+
+    <article class="card hidden">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Carciofo_alla_Giudia.jpg/3840px-Carciofo_alla_Giudia.jpg');">
+        <span class="city">Testaccio</span>
+      </div>
+      <span class="badge">HIDDEN</span>
+      <div class="body">
+        <div class="num">N° 20</div>
+        <h4>Felice a Testaccio</h4>
+        <div class="sub">SINCE 1936 · CACIO E PEPE</div>
+        <p>食肉市場のあったテスタッチョ地区の老舗。<strong>テーブルで仕上げるカチョ・エ・ペペ</strong>のパフォーマンスが名物。ローマ料理の真髄を味わえる、在住日本人が必ず挙げる店。</p>
+        <div class="info">
+          <span>名物</span> カチョ・エ・ペペ・トンナレッリ<br>
+          <span>予約</span> 必須・電話／サイト<br>
+          <span>予算</span> €40-55/人
+        </div>
+      </div>
+    </article>
+
+    <article class="card hidden">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a9/Suppl%C3%AC.jpg');">
+        <span class="city">Ostiense</span>
+      </div>
+      <span class="badge">HIDDEN</span>
+      <div class="body">
+        <div class="num">N° 21</div>
+        <h4>Trattoria Pennestri</h4>
+        <div class="sub">OSTIENSE · CREATIVE ROMAN</div>
+        <p>オスティエンセ地区の新世代トラットリア。<strong>クラシックなローマ料理を現代的に再解釈</strong>。シェフの即興スペシャルが楽しめる。地元若手フーディーに人気上昇中。</p>
+        <div class="info">
+          <span>名物</span> 日替わりスペシャル<br>
+          <span>予約</span> 必須・サイト<br>
+          <span>予算</span> €40-55/人
+        </div>
       </div>
     </article>
 
     <article class="card hidden">
       <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/df/Italian_food.JPG');">
-        <span class="city">Roma · Lazio</span>
-      </div>
-      <span class="badge">HIDDEN</span>
-      <div class="body">
-        <div class="num">N° 20</div>
-        <h4>Da Cesare al Casaletto</h4>
-        <div class="sub">TRASTEVERE OUTSKIRTS</div>
-        <p>トラステヴェレ郊外、トラムでしか行けない立地。カルボナーラ・アマトリチャーナの<strong>「ローマ四大パスタ」</strong>を学術的に正確に出す名店。観光客ゼロ。</p>
-      </div>
-    </article>
-
-    <article class="card hidden">
-      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/42/Tortellini_Bolognesi.jpg');">
-        <span class="city">Bologna · Emilia-Romagna</span>
-      </div>
-      <span class="badge">HIDDEN</span>
-      <div class="body">
-        <div class="num">N° 21</div>
-        <h4>Ristorante Pappagallo</h4>
-        <div class="sub">SINCE 1919 · MICHELIN HERITAGE</div>
-        <p>「美食の都」ボローニャの老舗中の老舗。<strong>トルテッリーニ・イン・ブロード</strong>（ブロードのスープに浮かぶ手作りパスタ）の決定版。100年超の歴史。</p>
-      </div>
-    </article>
-
-    <article class="card hidden">
-      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/8d/Modena_Motor_Valley_Fest.jpg');">
-        <span class="city">Modena · Emilia-Romagna</span>
+        <span class="city">Centro Storico</span>
       </div>
       <span class="badge">HIDDEN</span>
       <div class="body">
         <div class="num">N° 22</div>
-        <h4>Hosteria Giusti</h4>
-        <div class="sub">4 TABLES · LUNCH ONLY</div>
-        <p>1605年創業の食料品店奥にある、わずか<strong>4テーブル・昼のみ</strong>の幻の食堂。<strong>バルサミコ酢</strong>とパルマハム発祥地の極致。何ヶ月も前から予約必須。</p>
+        <h4>Pianostrada</h4>
+        <div class="sub">FOUR WOMEN · FRESH ROMAN</div>
+        <p>女性4人で営む創作的ローマ料理店。<strong>自家製パン・フォカッチャ・季節野菜</strong>へのこだわりが評判。中庭テラスがロマンチック。日本人ブロガーの新発見系。</p>
+        <div class="info">
+          <span>名物</span> フォカッチャ・自家製パン<br>
+          <span>予約</span> 必須・サイト<br>
+          <span>予算</span> €45-60/人
+        </div>
       </div>
     </article>
 
     <article class="card hidden">
-      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Burano_Venice_17.jpg/3840px-Burano_Venice_17.jpg');">
-        <span class="city">Burano · Veneto</span>
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/ed/Al_Borgat_1.jpg');">
+        <span class="city">Campo de' Fiori</span>
       </div>
       <span class="badge">HIDDEN</span>
       <div class="body">
         <div class="num">N° 23</div>
-        <h4>Trattoria da Romano</h4>
-        <div class="sub">SINCE 1947 · BURANO ISLAND</div>
-        <p>カラフルな漁村ブラーノ島の老舗。<strong>魚介リゾット（Risotto di Gò）</strong>がイタリア中から客を呼ぶ。海と島の景色付きの本格イタリアン体験。</p>
+        <h4>Salumeria Roscioli（立ち食い）</h4>
+        <div class="sub">DELI COUNTER · NO RESERVATION</div>
+        <p>Roscioli本店の隣、<strong>同じ厨房で作る料理を立ち食い／予約不要</strong>で食べられる隠れ業。チーズ・サラミの目利きにも定評。本店が取れなかった時の保険にも。</p>
+        <div class="info">
+          <span>名物</span> サラミ・チーズ盛り合わせ<br>
+          <span>予約</span> 不可・立ち食い<br>
+          <span>予算</span> €25-40/人
+        </div>
       </div>
     </article>
 
     <article class="card hidden">
-      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/ad/Cannoli_siciliani_al_Caff%C3%A8_Impero%2C_ad_Alcamo.jpg');">
-        <span class="city">Trapani · Sicilia</span>
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/59/Spaghetti_vongole_2.jpg');">
+        <span class="city">Trevi 近く</span>
       </div>
       <span class="badge">HIDDEN</span>
       <div class="body">
         <div class="num">N° 24</div>
-        <h4>Cantina Siciliana</h4>
-        <div class="sub">COUSCOUS · NORTH AFRICAN</div>
-        <p>シチリア西端トラパニ。北アフリカ文化と融合した<strong>シーフード・クスクス</strong>の名店。シチリアの歴史を一皿で。観光地から外れた本物のシチリア体験。</p>
+        <h4>Hostaria Romana</h4>
+        <div class="sub">SINCE 1962 · OLD-SCHOOL</div>
+        <p>トレヴィの泉から徒歩5分、観光地ど真ん中なのに<strong>地元ローマっ子が通う</strong>古風な店。壁中にお客の落書き。アンティパストブッフェが楽しい。日本人観光客は少なめ。</p>
+        <div class="info">
+          <span>名物</span> アンティパストブッフェ・ローマ料理全般<br>
+          <span>予約</span> 必須・電話／サイト<br>
+          <span>予算</span> €40-55/人
+        </div>
       </div>
     </article>
   </div>
@@ -654,94 +828,118 @@
     <div class="num"><em>03</em></div>
     <div>
       <div class="label">CHAPTER THREE · GELATO</div>
-      <h2>ジェラート<br>12軒の至福</h2>
-      <p>1日3個でも飽きない。日本人ブロガーが必ず名前を挙げる定番6軒、地元客の列が伸びる穴場6軒。</p>
+      <h2>ジェラート<br>定番6軒＋穴場6軒</h2>
+      <p>1日3個でも飽きない、ローマのジェラテリア12軒。<strong>立地</strong>と<strong>名物フレーバー</strong>を併記。</p>
     </div>
   </div>
 
   <!-- 定番 -->
   <div class="subhead">
     <span class="pill classic">定番</span>
-    <h3>THE CLASSICS</h3>
+    <h3>GELATO CLASSICS · 日本人観光客の定番6軒</h3>
     <span class="line"></span>
   </div>
 
   <div class="grid">
     <article class="card">
       <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/01/GiolittiCafeRoma.jpg');">
-        <span class="city">Roma · Lazio</span>
+        <span class="city">Pantheon</span>
       </div>
       <span class="badge">SINCE 1900</span>
       <div class="body">
         <div class="num">N° 25</div>
         <h4>Giolitti（ジョリッティ）</h4>
         <div class="sub">PANTHEON · 4TH GENERATION</div>
-        <p>『ローマの休日』でアン王女が食べた老舗。パンテオン近く、座って食べられる希少なジェラテリア。日本（有楽町・新宿）にも進出した世界的人気。</p>
+        <p>『ローマの休日』のジェラート。<strong>パンテオン徒歩2分</strong>、座って食べられる希少なジェラテリア。日本（有楽町・新宿）にも進出。Day 2の街ブラに組み込みやすい。</p>
+        <div class="info">
+          <span>名物</span> ザバイオーネ・ピスタチオ<br>
+          <span>場所</span> Via degli Uffici del Vicario, 40
+        </div>
       </div>
     </article>
 
     <article class="card">
       <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/47/CafeMia.jpg');">
-        <span class="city">Firenze · Toscana</span>
+        <span class="city">Trevi</span>
       </div>
-      <span class="badge">SINCE 1930</span>
+      <span class="badge">PURIST</span>
       <div class="body">
         <div class="num">N° 26</div>
-        <h4>Vivoli（ヴィヴォリ）</h4>
-        <div class="sub">FLORENCE · OLDEST</div>
-        <p>サンタ・クローチェ広場近く、フィレンツェ最古のジェラテリア。<strong>米のジェラート（Riso）</strong>が看板。コーンはなくカップのみという伝統。</p>
-      </div>
-    </article>
-
-    <article class="card">
-      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/FirenzeDec092023_01.jpg/3840px-FirenzeDec092023_01.jpg');">
-        <span class="city">Firenze · Toscana</span>
-      </div>
-      <span class="badge">CLASSIC</span>
-      <div class="body">
-        <div class="num">N° 27</div>
-        <h4>Perchè No!（ペルケ・ノ）</h4>
-        <div class="sub">SINCE 1939 · DUOMO AREA</div>
-        <p>ドゥオモ近く、フィレンツェ初の冷蔵ジェラテリア。<strong>セサミ</strong>や<strong>ホワイトチョコ・ローズマリー</strong>など実験的フレーバーの先駆者。</p>
+        <h4>Il Gelato di San Crispino</h4>
+        <div class="sub">TREVI · NO CONE POLICY</div>
+        <p>トレヴィの泉徒歩5分。<strong>コーンを出さない</strong>主義（風味を消すから）、フレーバーには蓋。職人気質の極致。蜂蜜・カラメル・グラッパ系の大人味。</p>
+        <div class="info">
+          <span>名物</span> ミエーレ（蜂蜜）・ザバイオーネ<br>
+          <span>場所</span> Via della Panetteria, 42
+        </div>
       </div>
     </article>
 
     <article class="card">
       <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Venice_-_Ice_cream_parlor_-_4017.jpg/3840px-Venice_-_Ice_cream_parlor_-_4017.jpg');">
-        <span class="city">Italia 全土</span>
+        <span class="city">Roma 各地</span>
       </div>
       <span class="badge">CHAIN · TRUSTED</span>
       <div class="body">
-        <div class="num">N° 28</div>
+        <div class="num">N° 27</div>
         <h4>Grom（グロム）</h4>
         <div class="sub">FROM TURIN · 1957 FARM</div>
-        <p>トリノ発、全国＆世界展開の<strong>「ハズレなし」チェーン</strong>。自社農場でフルーツを栽培。観光地で外したくない時の安全パイ。</p>
-      </div>
-    </article>
-
-    <article class="card">
-      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/de/Santa_Maria_in_Trastevere_fountain.jpg');">
-        <span class="city">Firenze · Toscana</span>
-      </div>
-      <span class="badge">LOCAL FAVORITE</span>
-      <div class="body">
-        <div class="num">N° 29</div>
-        <h4>Gelateria della Passera</h4>
-        <div class="sub">OLTRARNO · TINY SHOP</div>
-        <p>ピッティ宮裏のオルトラルノ地区。<strong>「日本人ホテル経営者が必ず教える」</strong>という小さな名店。リコッタ＆イチジクなど大人な味わい。</p>
+        <p>トリノ発、ハズレなしの<strong>全国チェーン</strong>。自社農場でフルーツを栽培。観光地で外したくない時の安全パイ。Day 2のパンテオン近く店舗が便利。</p>
+        <div class="info">
+          <span>名物</span> ピスタチオ・ノチョーラ<br>
+          <span>場所</span> Via della Maddalena, 30A（パンテオン近）
+        </div>
       </div>
     </article>
 
     <article class="card">
       <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/47/CafeMia.jpg');">
-        <span class="city">Roma · Lazio</span>
+        <span class="city">Vaticano</span>
       </div>
-      <span class="badge">PURIST</span>
+      <span class="badge">VATICAN AREA</span>
+      <div class="body">
+        <div class="num">N° 28</div>
+        <h4>Old Bridge Gelateria</h4>
+        <div class="sub">VATICAN · LATE NIGHT</div>
+        <p>ヴァチカン美術館徒歩2分。<strong>1ユーロから盛りが超大盛り</strong>で日本人観光客に大人気。Day 2のヴァチカン後のおやつにジャストフィット。深夜まで営業。</p>
+        <div class="info">
+          <span>名物</span> 大盛り全般・ストラッチャテッラ<br>
+          <span>場所</span> Viale dei Bastioni di Michelangelo, 5
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/ad/Cannoli_siciliani_al_Caff%C3%A8_Impero%2C_ad_Alcamo.jpg');">
+        <span class="city">Navona</span>
+      </div>
+      <span class="badge">INSTAGRAM</span>
+      <div class="body">
+        <div class="num">N° 29</div>
+        <h4>Frigidarium</h4>
+        <div class="sub">NAVONA · CHOCOLATE COAT</div>
+        <p>ナヴォーナ広場徒歩3分。<strong>追加料金なしでホワイト or ダークチョコ皮で外側コーティング</strong>してくれる映えジェラート。Day 2の街ブラ途中の写真スポット。</p>
+        <div class="info">
+          <span>名物</span> Frigidarium（自家製）・チョコ皮<br>
+          <span>場所</span> Via del Governo Vecchio, 112
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/47/CafeMia.jpg');">
+        <span class="city">Navona 近</span>
+      </div>
+      <span class="badge">SEASONAL</span>
       <div class="body">
         <div class="num">N° 30</div>
-        <h4>Il Gelato di San Crispino</h4>
-        <div class="sub">TREVI · NO CONE POLICY</div>
-        <p>トレビの泉近く。<strong>コーンを出さない</strong>主義（風味を消すから）、フレーバーには蓋。職人気質の極致。蜂蜜・カラメル・グラッパ系の大人味。</p>
+        <h4>Gelateria del Teatro</h4>
+        <div class="sub">SEASONAL FRUIT · TV FAMOUS</div>
+        <p>テレビでも紹介された<strong>季節フルーツ</strong>のジェラート。バジル＆ラズベリーなど香草系の大胆フレーバーの先駆者。隠れ家的な路地裏立地でナヴォーナ近く。</p>
+        <div class="info">
+          <span>名物</span> ローズ・ラベンダー・バジル<br>
+          <span>場所</span> Via dei Coronari, 65
+        </div>
       </div>
     </article>
   </div>
@@ -749,86 +947,110 @@
   <!-- 穴場 -->
   <div class="subhead">
     <span class="pill hidden">穴場</span>
-    <h3>HIDDEN SCOOPS</h3>
+    <h3>HIDDEN SCOOPS · 通好みの6軒</h3>
     <span class="line"></span>
   </div>
 
   <div class="grid">
     <article class="card hidden">
-      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/47/CafeMia.jpg');">
-        <span class="city">Roma · Lazio</span>
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e2/Spumonipic.jpg');">
+        <span class="city">Monti / Trastevere</span>
       </div>
-      <span class="badge">HIDDEN</span>
+      <span class="badge">EXPERIMENTAL</span>
       <div class="body">
         <div class="num">N° 31</div>
-        <h4>Gelateria del Teatro</h4>
-        <div class="sub">SEASONAL · NEAR NAVONA</div>
-        <p>テレビでも紹介された季節フルーツのジェラート。バジル＆ラズベリーなど<strong>香草系の大胆フレーバー</strong>の先駆者。隠れ家的な路地裏立地。</p>
-      </div>
-    </article>
-
-    <article class="card hidden">
-      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/ad/Cannoli_siciliani_al_Caff%C3%A8_Impero%2C_ad_Alcamo.jpg');">
-        <span class="city">Roma · Lazio</span>
-      </div>
-      <span class="badge">HIDDEN</span>
-      <div class="body">
-        <div class="num">N° 32</div>
         <h4>Fatamorgana（ファタモルガーナ）</h4>
-        <div class="sub">EXPERIMENTAL · GLUTEN-FREE</div>
+        <div class="sub">CULT · GLUTEN-FREE</div>
         <p>チーズ、ハーブ、スパイス系の<strong>変わり種フレーバー</strong>でローマっ子を驚かせ続ける。グルテンフリー対応。モンティ・トラステヴェレ両方に支店。</p>
+        <div class="info">
+          <span>名物</span> ケンタッキー（タバコ味）・ローズハチミツ<br>
+          <span>場所</span> Piazza degli Zingari, 5（Monti）
+        </div>
       </div>
     </article>
 
     <article class="card hidden">
       <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/47/CafeMia.jpg');">
-        <span class="city">Firenze · Toscana</span>
+        <span class="city">Trastevere</span>
+      </div>
+      <span class="badge">CULT</span>
+      <div class="body">
+        <div class="num">N° 32</div>
+        <h4>Otaleg（オタレグ）</h4>
+        <div class="sub">"GELATO" SPELLED BACKWARDS</div>
+        <p>店名は<strong>「Gelato」の逆さ綴り</strong>。トラステヴェレの裏路地、職人がガラス越しに見える工房ジェラテリア。バジル・パセリ・トマトなど野菜系フレーバーが攻め。</p>
+        <div class="info">
+          <span>名物</span> 野菜系・チーズ系<br>
+          <span>場所</span> Via di San Cosimato, 14a
+        </div>
+      </div>
+    </article>
+
+    <article class="card hidden">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/58/Tiramisu_-_Raffaele_Diomede.jpg');">
+        <span class="city">Termini 近</span>
       </div>
       <span class="badge">HIDDEN</span>
       <div class="body">
         <div class="num">N° 33</div>
-        <h4>Carapina（カラピーナ）</h4>
-        <div class="sub">SHORT MENU · INTENSE</div>
-        <p>「素材の数だけフレーバーがある」をモットーに、メニューを絞り込む実力派。<strong>シチリア風レモン</strong>と<strong>リコッタ＆イチジク</strong>が評判。</p>
+        <h4>Come il Latte</h4>
+        <div class="sub">"LIKE MILK" · CREAMY</div>
+        <p>店名の通り<strong>「ミルクのような」濃厚クリーミー</strong>食感がウリ。チョコソースとホイップ無料追加。テルミニ近くで滞在中のホテル帰り道に最適。</p>
+        <div class="info">
+          <span>名物</span> ジャンドゥーヤ・ミエーレ<br>
+          <span>場所</span> Via Silvio Spaventa, 24
+        </div>
       </div>
     </article>
 
     <article class="card hidden">
-      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/1_Aerial_pano_san_gimignano_%282%29a.jpg/3840px-1_Aerial_pano_san_gimignano_%282%29a.jpg');">
-        <span class="city">San Gimignano · Toscana</span>
-      </div>
-      <span class="badge">WORLD CHAMPION</span>
-      <div class="body">
-        <div class="num">N° 34</div>
-        <h4>Gelateria Dondoli</h4>
-        <div class="sub">WORLD CHAMPION · 4 TIMES</div>
-        <p>世界ジェラート選手権<strong>4度の優勝者</strong>セルジオ・ドンドーリの店。中世の塔の街サン・ジミニャーノで、サフラン＆松の実が必食。</p>
-      </div>
-    </article>
-
-    <article class="card hidden">
-      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Venice_-_Ice_cream_parlor_-_4017.jpg/3840px-Venice_-_Ice_cream_parlor_-_4017.jpg');">
-        <span class="city">Venezia · Veneto</span>
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Granita_originelle_au_citron_de_Sicile.jpg/1920px-Granita_originelle_au_citron_de_Sicile.jpg');">
+        <span class="city">Roma 各地</span>
       </div>
       <span class="badge">HIDDEN</span>
       <div class="body">
-        <div class="num">N° 35</div>
-        <h4>Suso</h4>
-        <div class="sub">NEAR RIALTO BRIDGE</div>
-        <p>リアルト橋すぐの細い路地。<strong>「マニウィン（マシュマロ＆ピスタチオ）」</strong>がInstagram時代のヴェネツィアっ子に大人気。地元客の長蛇の列。</p>
+        <div class="num">N° 34</div>
+        <h4>La Romana</h4>
+        <div class="sub">SINCE 1947 · RIMINI ROOTS</div>
+        <p>リミニ発祥の本格派ジェラテリア。<strong>カップの底にメレンゲやチョコソースを敷く</strong>独自スタイル。テルミニ近くの本店が便利。深夜まで営業。</p>
+        <div class="info">
+          <span>名物</span> クリーマ・ダル1947<br>
+          <span>場所</span> Via Venti Settembre, 60
+        </div>
       </div>
     </article>
 
     <article class="card hidden">
       <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/47/CafeMia.jpg');">
-        <span class="city">Roma · Trastevere</span>
+        <span class="city">Roma 各地</span>
       </div>
-      <span class="badge">CULT</span>
+      <span class="badge">HIDDEN</span>
+      <div class="body">
+        <div class="num">N° 35</div>
+        <h4>Neve di Latte（ネヴェ・ディ・ラッテ）</h4>
+        <div class="sub">PURE · MILK-FIRST</div>
+        <p>「ミラノ最高」と評される本格派がローマ進出。<strong>厳選乳とフルーツのみ</strong>、着色料・香料一切なし。バニラに使うのはマダガスカル産ブルボン種のみという徹底ぶり。</p>
+        <div class="info">
+          <span>名物</span> バニラ・ピスタチオ<br>
+          <span>場所</span> Via Federico Confalonieri, 5
+        </div>
+      </div>
+    </article>
+
+    <article class="card hidden">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/01/GiolittiCafeRoma.jpg');">
+        <span class="city">Esquilino</span>
+      </div>
+      <span class="badge">SINCE 1880</span>
       <div class="body">
         <div class="num">N° 36</div>
-        <h4>Otaleg（オタレグ）</h4>
-        <div class="sub">"GELATO" SPELLED BACKWARDS</div>
-        <p>店名は<strong>「Gelato」の逆さ綴り</strong>。トラステヴェレの裏路地、職人がガラス越しに見える工房ジェラテリア。バジル・パセリ・トマトなど野菜系も。</p>
+        <h4>Fassi（パラッツォ・デル・フレッド）</h4>
+        <div class="sub">OLDEST IN ROME · 1880</div>
+        <p>1880年創業、<strong>ローマ最古のジェラテリア</strong>。「氷の宮殿」を意味する Palazzo del Freddo の異名。観光地から少し外れたエスクィリーノ地区。歴史好きの日本人ブロガーが推す。</p>
+        <div class="info">
+          <span>名物</span> サンビューカ・カテリネッタ<br>
+          <span>場所</span> Via Principe Eugenio, 65/67
+        </div>
       </div>
     </article>
   </div>
@@ -836,8 +1058,8 @@
 
 <!-- ===== FOOTER ===== -->
 <footer>
-  <div class="logo">Italia.</div>
-  <p>2026年版・日本人観光客のためのキュレーション・ガイド</p>
+  <div class="logo">Roma.</div>
+  <p>2026年6月28日〜7月1日（3泊4日＋カプリ島日帰り）<br>のためのキュレーション・ガイド</p>
   <p class="legal">36 picks · 3 chapters · curated may 2026</p>
   <p class="sources">Images: Wikimedia Commons · Sources: ロコタビ／トリップアドバイザー／JTB／TARIP／Trip.com／各種日本人ブログ</p>
 </footer>
