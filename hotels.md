@@ -12,11 +12,12 @@
 - ⚠️ Hotel Hiberia / Hotel Damaso は観光立地は良いがテルミニから遠く、深夜着・早朝発のアクセスが不利 → 今回は非推奨。
 
 ### パリ（4泊 7/1〜7/5）本命
-**▶ オペラ9区の2択（どちらもMSMツアー集合地に近い）**
-- コスパ・安心重視 → **Hotel Joyce - Astotel**：4泊 €480〜720（約¥77,000〜115,000）／TripAdvisor パリ50位・無料オープンバー・日本語スタッフ
-- ツアー集合最寄り → **Hotel 10 Opéra by HappyCulture**：4泊 €640〜840（約¥102,000〜134,000・朝食込）／ギャラリー・ラファイエット徒歩5分
-- マレ地区派 → **Caron de Beaumarchais**（€680〜900・19室で満室になりやすい・要即予約）
+**▶ Timhotel Opéra Blanche Fontaine（★★★★・9区ブランシュ）** — 4泊 **実勢¥143,892（2名・≈€900）**
+- 喧騒を離れた中庭の静かな4つ星。エアコン・朝食good・無料アペリティフ・多言語スタッフ。GaLa徒歩15分。
+- **2番手: Villa Alessandra**（17区テルヌ・静か／4泊 **実勢¥105,627**・本命より安い）
+- 以降の候補: **Hotel Joyce**（無料バー・日本語）／**Hotel 10 Opéra**（GaLa徒歩5分）／マレ派 **Caron de Beaumarchais**
 - ⚠️ Hôtel de la Bretonnerie は**エアコンなし** → 7月は非推奨。
+- ※Timhotelのブランシュ/ピガールはムーラン・ルージュ近く。南ピガール(SoPi)はおしゃれで概ね安全だが夜は賑やかな面も。
 
 ---
 
@@ -68,7 +69,8 @@
 
 #### 3. Augusta Lucilla Palace
 **予約サイト：**
-[Agoda](https://www.agoda.com/augusta-lucilla-palace-hotel/hotel/rome-it.html) | [Booking.com](https://www.booking.com/hotel/it/roman-palece.html) | [Trip.com](https://us.trip.com/hotels/rome-hotel-detail-759628/augusta-lucilla-palace-roma/) | [Expedia](https://www.expedia.com/Rome-Hotels-Augusta-Lucilla-Palace.h2046331.Hotel-Information)
+**▶ [Agoda（6/28〜7/1・3泊・2名・JPY）](https://www.agoda.com/ja-jp/augusta-lucilla-palace-hotel/hotel/rome-it.html?checkIn=2026-06-28&checkOut=2026-07-01&los=3&adults=2&rooms=1&currencyCode=JPY&cid=1922867)** ← 日付入り（※元リンクは los=2＝2泊だったため los=3 に修正済）
+[Agoda(日付なし)](https://www.agoda.com/augusta-lucilla-palace-hotel/hotel/rome-it.html) | [Booking.com](https://www.booking.com/hotel/it/roman-palece.html) | [Trip.com](https://us.trip.com/hotels/rome-hotel-detail-759628/augusta-lucilla-palace-roma/) | [Expedia](https://www.expedia.com/Rome-Hotels-Augusta-Lucilla-Palace.h2046331.Hotel-Information)
 
 **評価スコア：** Booking.com 9.1/10 / Trip.com 4.4/5 / TripAdvisor 4.0/5
 
@@ -136,6 +138,9 @@
 | 6 | **Hotel Joyce - Astotel** | ★★★ | 9区 オペラ地区 | €90〜180 (¥14,500〜29,000) | **無料オープンバー（14時〜深夜2時）**。Booking.com 8.8。TripAdvisor 57位 |
 | 7 | **Hôtel de la Bretonnerie** | ★★★ | 4区 マレ地区 | €120〜220 (¥19,000〜35,000) | 17世紀建物リノベ。Agoda 8.5。ポンピドゥー・ピカソ美術館近く |
 | 8 | **Le Relais Saint Honoré** | ★★★★ | 1区 チュイルリー | €150〜280 (¥24,000〜45,000) | **ルーブル徒歩10分**。Booking.com 8.9。TripAdvisor 183位。17世紀建物改装 |
+| 9 | **Hotel Opera Deauville**（追加候補） | ★★★ | 9区 サン＝ラザール | €90〜150 (¥14,000〜24,000) | 40 Rue d'Amsterdam。GaLa徒歩10分。TripAdvisor 7.4とやや低め・"dated"の声。**立地&コスト重視枠** |
+| 10 | **Villa Alessandra**（2番手） | ★★★ | 17区 テルヌ/凱旋門 | 4泊¥105,627(実勢2名) | 静かな高級住宅街。凱旋門徒歩10分。HotelsCombined 7.8・立地評価9.2。ツアー集合地(GaLa)からやや遠め |
+| 11 | **Timhotel Opéra Blanche Fontaine**（本命） | ★★★★ | 9区 ブランシュ | 4泊¥143,892(実勢2名) | 中庭の静か立地・エアコン・朝食good・無料アペリティフ。GaLa徒歩15分。ムーラン・ルージュ近く（夜は賑やか） |
 
 ### パリ 観光地アクセス比較
 
@@ -226,6 +231,44 @@
 **日本人の総評：**
 チュイルリー庭園とオペラ・ガルニエの間という最高の立地。17世紀の建物を完全リノベーション。「室内は狭いが快適なベッドで良く眠れた」「朝食が€13で手頃」「スタッフが非常に親切で英語も通じる」と高評価。毎日チョコレートが提供される細やかなサービスも好評。ルーブル美術館まで徒歩10分で観光の中心拠点として最適。
 
+#### 9. Hotel Opera Deauville（追加候補・立地&コスト重視）
+**予約サイト：**
+**▶ [Agoda（7/1〜7/5・4泊・2名・JPY）](https://www.agoda.com/ja-jp/opera-deauville-hotel/hotel/paris-fr.html?checkIn=2026-07-01&los=4&adults=2&rooms=1&currencyCode=JPY&cid=1844104)** ← 日付入り
+[Agoda(日付なし)](https://www.agoda.com/ja-jp/opera-deauville-hotel/hotel/paris-fr.html) | [公式](https://www.paris-hotel-deauville-opera.com/en/) | [TripAdvisor](https://www.tripadvisor.com/Hotel_Review-g187147-d228822-Reviews-Hotel_Opera_Deauville-Paris_Ile_de_France.html)
+
+**所在地：** 40 Rue d'Amsterdam, 75009（サン＝ラザール駅至近・9区）
+
+**評価スコア：** TripAdvisor 7.4/10（2,478件）／Trip.com 103件
+
+**総評（要注意）：**
+9区サン＝ラザールの小規模ホテル。ギャラリー・ラファイエットまで徒歩約10分、オペラ・ガルニエやマドレーヌも徒歩圏で**立地は良好**、料金も**€90〜150/泊と安い**のが魅力。ただし**スコア7.4は今回のパリ候補で最も低く**、レビューには「設備が古い（dated）」「当たり外れがある」との指摘あり。**立地とコスト最優先の人向け**で、快適性・安心重視ならJoyceやHotel 10 Opéraが上。
+
+#### 10. Villa Alessandra（パリ2番手・静かな高級住宅街）
+**予約サイト：**
+**▶ [Agoda（7/1〜7/5・4泊・2名・JPY）](https://www.agoda.com/ja-jp/villa-alessandra-hotel/hotel/paris-fr.html?checkIn=2026-07-01&los=4&adults=2&rooms=1&currencyCode=JPY&cid=1844104)** ← 日付入り
+[Agoda(日付なし)](https://www.agoda.com/ja-jp/villa-alessandra-hotel/hotel/paris-fr.html) | [公式](https://www.villa-alessandra.com/en/) | [TripAdvisor](https://www.tripadvisor.com/Hotel_Review-g187147-d228775-Reviews-Villa_Alessandra-Paris_Ile_de_France.html)
+
+**所在地：** 17区 テルヌ／エトワール（Ternes駅徒歩6分・凱旋門徒歩約10分）・49室
+**料金：** 4泊 **実勢¥105,627**（2名・本命Timhotelより安い）
+
+**評価スコア：** HotelsCombined 7.8/10（1,241件）／立地評価 9.2/10（864件）
+
+**総評：**
+石畳の中庭を抜けるプロヴァンス風の中級ホテル。**静かで安全な高級住宅街（17区南西部）**にあり、凱旋門・シャンゼリゼへ徒歩約10分（7/2の凱旋門観光と好相性）。一方で**MSMツアー集合地（ギャラリー・ラファイエット）や中心部（ルーブル/オペラ）からはメトロで15〜20分とやや遠め**。レビューは立地を高評価する一方、「設備に古さがある」「騒音・接客に当たり外れ」との指摘も。**静けさ・凱旋門エリア重視向け**。
+
+#### 11. Timhotel Opéra Blanche Fontaine（パリ本命・9区ブランシュ）
+**予約サイト：**
+**▶ [Agoda（7/1〜7/5・4泊・2名・JPY）](https://www.agoda.com/ja-jp/timhotel-opera-blanche-fontaine/hotel/paris-fr.html?checkIn=2026-07-01&checkOut=2026-07-05&los=4&adults=2&rooms=1&currencyCode=JPY&cid=1922867)** ← 日付入り
+[Agoda(日付なし)](https://www.agoda.com/ja-jp/timhotel-opera-blanche-fontaine/hotel/paris-fr.html) | [公式](https://www.timhotel.com/en/page/opera-blanche-fontaine/home.19092.html) | [Booking.com](https://www.booking.com/hotel/fr/timhotel-blanche-fontaine.html)
+
+**所在地：** 9区 ブランシュ（Blanche駅徒歩約2分・ムーラン・ルージュ200m）・★★★★
+**料金：** 4泊 **実勢¥143,892**（2名）
+
+**特徴：** 喧騒を離れた**私設中庭／テラス**、エアコン、好評の朝食、多言語スタッフ、無料の夕方アペリティフ（マネージャーレセプション）。
+
+**総評：**
+9区の4つ星。中庭のある静かな造りで、エアコン完備（7月の暑さ対策◎）・朝食・スタッフ対応が好評。ギャラリー・ラファイエット／オペラ座まで徒歩約15分（MSMツアー集合地までもやや歩くが許容範囲）。ブランシュ／ピガールはムーラン・ルージュ至近で**夜は賑やか・雑多な面**もあるが、ホテルのある南ピガール(SoPi)側は近年おしゃれで概ね安全。
+
 ---
 
 ## 治安メモ
@@ -237,7 +280,7 @@
 ### パリ
 - **最も治安良好**：マレ地区（4区）、オペラ地区（1-2-9区）
 - **文化的で落ち着き**：左岸カルチェ・ラタン（5-6区）
-- **避けるべき**：10区北部、17-18区（特に夜間）
+- **避けるべき**：10区北部、17区北部〜18区（特に夜間）。※17区でも**テルヌ／凱旋門周辺（南西部）は高級住宅街で安全**
 
 ---
 

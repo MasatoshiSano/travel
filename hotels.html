@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ローマ＆パリ ホテル候補カタログ｜2026年6-7月</title>
+<style>
+  :root{
+    --cream:#f7f4ef; --ink:#2b2b2b; --muted:#6f6a62;
+    --rome:#c75b39; --rome-d:#8c3b22; --paris:#2d4a7c; --paris-l:#6b8cc7;
+    --gold:#d9a441; --green:#3f9d6b; --amber:#e0913a; --red:#d64545;
+    --card:#fff; --line:#e7e0d6; --shadow:0 6px 22px rgba(60,40,20,.10);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--cream);color:var(--ink);line-height:1.6;
+    font-family:'Hiragino Kaku Gothic ProN','Yu Gothic','Meiryo',-apple-system,'Helvetica Neue',Arial,sans-serif;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 20px 64px}
+  h1,h2,h3{font-family:Georgia,'Times New Roman','Yu Mincho',serif;letter-spacing:.02em}
+
+  .hero{position:relative;overflow:hidden;color:#fff;
+    background:linear-gradient(110deg,#a8472b 0%,#c75b39 34%,#5e6f95 62%,#2d4a7c 100%)}
+  .hero svg.scene{position:absolute;inset:0;width:100%;height:100%;opacity:.9}
+  .heroinner{position:relative;z-index:2;max-width:1180px;margin:0 auto;padding:32px 24px 26px}
+  .kicker{font-size:13px;letter-spacing:.3em;text-transform:uppercase;opacity:.92;margin:0 0 6px}
+  .hero h1{font-size:clamp(25px,4.2vw,42px);margin:0;text-shadow:0 2px 14px rgba(0,0,0,.28)}
+  .hero .sub{margin:8px 0 0;font-size:14.5px;opacity:.95}
+  .facts{display:flex;flex-wrap:wrap;gap:9px;margin-top:16px}
+  .fact{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.34);backdrop-filter:blur(3px);
+    padding:7px 13px;border-radius:999px;font-size:13px;font-weight:600}
+
+  .picks{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:22px 0 6px}
+  @media(max-width:680px){.picks{grid-template-columns:1fr}}
+  .pick{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:14px 16px;border-left:6px solid var(--rome)}
+  .pick.p{border-left-color:var(--paris)}
+  .pick h3{margin:0 0 6px;font-size:16px}
+  .pick p{margin:3px 0;font-size:13px}
+  .pick .star{color:var(--gold);font-weight:800}
+
+  .cityhead{display:flex;align-items:center;gap:14px;margin:34px 0 16px;padding-bottom:10px;border-bottom:3px solid var(--line)}
+  .cityhead .badge{width:48px;height:48px;border-radius:12px;display:grid;place-items:center;color:#fff;flex:0 0 48px}
+  .cityhead.rome .badge{background:linear-gradient(135deg,#c75b39,#8c3b22)}
+  .cityhead.paris .badge{background:linear-gradient(135deg,#2d4a7c,#1d335a)}
+  .cityhead h2{margin:0;font-size:24px}
+  .cityhead .meta{color:var(--muted);font-size:13px}
+
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  @media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:580px){.grid{grid-template-columns:1fr}}
+  .hcard{background:var(--card);border:1px solid var(--line);border-radius:15px;box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column}
+  .thumb{position:relative;height:128px;display:grid;place-items:center}
+  .thumb .photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+  .thumb .bld{opacity:.96;z-index:0}
+  .thumb .ribbon,.thumb .score,.thumb .stars{z-index:2}
+  .thumb .score{position:absolute;top:9px;right:9px;background:#fff;color:var(--ink);border-radius:10px;
+    padding:3px 8px;font-weight:800;font-size:15px;line-height:1;box-shadow:0 2px 8px rgba(0,0,0,.25);text-align:center}
+  .thumb .score small{display:block;font-size:8.5px;font-weight:700;color:var(--muted);letter-spacing:.02em;margin-top:1px}
+  .thumb .stars{position:absolute;bottom:8px;left:10px;color:#ffd86b;font-size:14px;letter-spacing:1px;text-shadow:0 1px 4px rgba(0,0,0,.7)}
+  .thumb .ribbon{position:absolute;top:9px;left:9px;background:var(--gold);color:#4a3500;font-size:11px;font-weight:800;padding:3px 9px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+  .thumb .ribbon.alt{background:#fff;color:var(--paris)}
+  .thumb .ribbon.altr{background:#fff;color:var(--rome-d)}
+  .body{padding:13px 15px 6px;flex:1}
+  .body h3{margin:0;font-size:16.5px;line-height:1.3}
+  .area{margin:5px 0 8px;font-size:12.5px;color:var(--muted)}
+  .price{margin:0 0 9px;font-weight:800;font-size:17px;color:var(--rome-d)}
+  .paris-card .price{color:var(--paris)}
+  .price span{display:block;font-weight:600;font-size:11.5px;color:#888;margin-top:1px}
+  .price .real{display:inline-block;background:#e4f3ea;color:#2c7a52;font-size:10px;font-weight:800;padding:1px 6px;border-radius:6px;vertical-align:middle;margin-left:5px}
+  .chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:9px}
+  .chip{font-size:11px;font-weight:700;padding:3px 9px;border-radius:999px;background:#f0ebe2;color:#5b544a}
+  .chip.good{background:#e4f3ea;color:#2c7a52}
+  .chip.warn{background:#fcefe0;color:#b46a1c}
+  .cmt{font-size:12.6px;color:#3c3c3c;margin:0 0 4px;padding-top:9px;border-top:1px dashed var(--line)}
+  .foot{padding:10px 15px 15px;display:flex;flex-wrap:wrap;gap:8px}
+  .btn{flex:1;text-align:center;text-decoration:none;font-weight:800;font-size:12.5px;padding:9px 10px;border-radius:10px;white-space:nowrap}
+  .btn.agoda{background:var(--rome);color:#fff}
+  .paris-card .btn.agoda{background:var(--paris)}
+  .btn.book{background:#fff;border:1.5px solid var(--line);color:var(--ink)}
+  .note-pending{font-size:11px;color:var(--amber);font-weight:700;align-self:center}
+
+  .safety{margin-top:36px;background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:18px 20px}
+  .safety h2{margin:0 0 12px;font-size:21px;display:flex;align-items:center;gap:10px}
+  .safety .cols{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media(max-width:680px){.safety .cols{grid-template-columns:1fr}}
+  .safety h4{margin:0 0 6px;font-size:14.5px}
+  .safety ul{margin:0;padding-left:18px;font-size:13px;color:#3c3c3c}
+  .safety li{margin:4px 0}
+  .safety .ok{color:var(--green);font-weight:700}
+  .safety .ng{color:var(--red);font-weight:700}
+
+  footer{margin-top:30px;border-top:1px solid var(--line);padding-top:16px;color:var(--muted);font-size:12px}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <svg class="scene" viewBox="0 0 1180 210" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <g fill="rgba(255,255,255,.16)"><path d="M40 200 V150 a66 42 0 0 1 132 0 V200 Z"/>
+      <g fill="rgba(0,0,0,.10)"><rect x="56" y="158" width="11" height="18" rx="5"/><rect x="78" y="158" width="11" height="18" rx="5"/><rect x="100" y="158" width="11" height="18" rx="5"/><rect x="122" y="158" width="11" height="18" rx="5"/><rect x="144" y="158" width="11" height="18" rx="5"/></g></g>
+    <g fill="rgba(255,255,255,.2)" transform="translate(1050,34)"><path d="M30 168 L42 56 Q44 46 46 56 L58 168 L48 168 L44 92 L40 168 Z"/><path d="M30 168 C40 148 48 148 58 168 L52 168 C48 158 40 158 36 168 Z"/><rect x="40" y="40" width="8" height="20"/></g>
+    <path d="M190 116 C440 40,720 40,1040 116" fill="none" stroke="rgba(255,255,255,.6)" stroke-width="2.2" stroke-dasharray="3 10" stroke-linecap="round"/>
+    <g transform="translate(615,52) rotate(8)" fill="#fff"><path d="M0 0 L34 8 L34 12 L6 16 L0 30 L-4 30 L-1 15 L-12 17 L-15 23 L-18 23 L-16 14 L-18 6 L-15 6 L-12 12 L-1 11 L-3 -4 Z"/></g>
+  </svg>
+  <div class="heroinner">
+    <p class="kicker">Hotel Catalogue · Rome &amp; Paris</p>
+    <h1>ローマ＆パリ ホテル候補カタログ</h1>
+    <p class="sub">2026年 ｜ 大人2名・1室 ｜ 価格は概算（¥160/€）。「実勢」表記は予約サイトで確認した実額</p>
+    <div class="facts">
+      <span class="fact">🏛 ローマ 3泊（6/28〜7/1）</span>
+      <span class="fact">🗼 パリ 4泊（7/1〜7/5）</span>
+      <span class="fact">🛏 候補 ローマ8・パリ11</span>
+      <span class="fact">📅 一部は日付入りで料金即確認</span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- PICKS -->
+  <div class="picks">
+    <div class="pick">
+      <h3>🏛 ローマの本命 <span class="star">★★★★</span></h3>
+      <p><b>Augusta Lucilla Palace</b> … 朝食込・テルミニ徒歩5分・Booking 9.1。予算内で深夜着/早朝発に強い。</p>
+      <p>次点: <b>iQ Hotel Roma</b>（最高スコア・屋上プール）／朝食重視: <b>Hotel Artemide</b>（北側で夜も安全）</p>
+    </div>
+    <div class="pick p">
+      <h3>🗼 パリの本命 <span class="star">★★★★</span></h3>
+      <p><b>Timhotel Opéra Blanche Fontaine</b> … 9区4つ星・中庭・エアコン。実勢 4泊2名 <b>¥143,892</b>。</p>
+      <p>2番手: <b>Villa Alessandra</b>（17区・静か／実勢 <b>¥105,627</b>）／集合地最寄り: <b>Hotel 10 Opéra</b></p>
+    </div>
+  </div>
+
+  <!-- ================= ROME ================= -->
+  <div class="cityhead rome">
+    <span class="badge">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V8l7-4 7 4v13"/><path d="M9 21v-5h6v5"/><path d="M9 11h.01M15 11h.01"/></svg>
+    </span>
+    <div><h2>ローマ — 3泊</h2><div class="meta">6/28(日)着 21時頃IN ／ 7/1(水) 早朝OUT → FCO空港。テルミニ近接＝空港アクセス重視</div></div>
+  </div>
+
+  <div class="grid">
+
+    <article class="hcard">
+      <div class="thumb" style="background:linear-gradient(135deg,#c75b39,#8c3b22)">
+        <img class="photo" src="https://cdn.blastness.biz/media/1664/augusta-top/thumbs/full/1920-camere-augusta-lucilla-palace-01.jpg" alt="Augusta Lucilla Palace" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+        <span class="ribbon">⭐ 本命</span><span class="score">9.1<small>Booking</small></span>
+        <svg class="bld" width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.96)" stroke-width="1.5" stroke-linejoin="round"><rect x="4" y="3" width="9" height="18"/><rect x="13" y="8" width="7" height="13"/><path d="M7 7h2M7 11h2M7 15h2M16 12h1.5M16 16h1.5"/></svg>
+        <span class="stars">★★★★</span>
+      </div>
+      <div class="body">
+        <h3>Augusta Lucilla Palace</h3>
+        <p class="area">📍 テルミニ駅 徒歩5分</p>
+        <p class="price">3泊 €360〜480<span>約¥57,500〜77,000 ・ €120〜160/泊</span></p>
+        <div class="chips"><span class="chip">朝食込</span><span class="chip">屋上テラス</span><span class="chip good">コスパ◎</span></div>
+        <p class="cmt">19世紀建物の上品な4つ星。深夜着・早朝発の両方に強く、予算内に収まる唯一の朝食込。</p>
+      </div>
+      <div class="foot"><a class="btn agoda" target="_blank" rel="noopener" href="https://www.agoda.com/ja-jp/augusta-lucilla-palace-hotel/hotel/rome-it.html?checkIn=2026-06-28&amp;checkOut=2026-07-01&amp;los=3&amp;adults=2&amp;rooms=1&amp;currencyCode=JPY&amp;cid=1922867">📅 Agoda 3泊（6/28〜7/1）</a></div>
+    </article>
+
+    <article class="hcard">
+      <div class="thumb" style="background:linear-gradient(135deg,#d98c5f,#b5582f)">
+        <img class="photo" src="https://www.iqhotelroma.it/static/2840ab9773366979165b78549f84963c/07dfe/b06fa424-a3d3-4530-aa7c-4e02f4536c05.jpg" alt="iQ Hotel Roma" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+        <span class="ribbon altr">次点</span><span class="score">9.3<small>Booking</small></span>
+        <svg class="bld" width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.96)" stroke-width="1.5" stroke-linejoin="round"><rect x="4" y="3" width="9" height="18"/><rect x="13" y="8" width="7" height="13"/><path d="M7 7h2M7 11h2M7 15h2M16 12h1.5M16 16h1.5"/></svg>
+        <span class="stars">★★★★</span>
+      </div>
+      <div class="body">
+        <h3>iQ Hotel Roma</h3>
+        <p class="area">📍 テルミニ駅 徒歩5分</p>
+        <p class="price">3泊 €480〜600<span>約¥77,000〜96,000 ・ €160〜200/泊</span></p>
+        <div class="chips"><span class="chip">朝食別€9.9</span><span class="chip good">屋上プール</span><span class="chip good">遮音◎</span></div>
+        <p class="cmt">全候補で最高スコア。屋上プールと快適性・遮音性。朝食別で予算は上限ぎりぎり。</p>
+      </div>
+      <div class="foot"><a class="btn agoda" target="_blank" rel="noopener" href="https://www.agoda.com/ja-jp/iq-hotel-roma/hotel/rome-it.html?checkIn=2026-06-28&amp;los=3&amp;adults=2&amp;rooms=1&amp;currencyCode=JPY&amp;cid=1917614">📅 Agoda 3泊（6/28〜7/1）</a></div>
+    </article>
+
+    <article class="hcard">
+      <div class="thumb" style="background:linear-gradient(135deg,#bf6a44,#7a3318)">
+        <img class="photo" src="https://www.hotelartemide.it/static/ee6ae7db978739bb0f8f969d03796604/ff2b2/8dfdb95c-05ea-4fbc-92cd-c22fb3a54562.jpg" alt="Hotel Artemide" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+        <span class="ribbon altr">夜の安全◎</span><span class="score">8.9<small>Booking</small></span>
+        <svg class="bld" width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.96)" stroke-width="1.5" stroke-linejoin="round"><rect x="4" y="3" width="9" height="18"/><rect x="13" y="8" width="7" height="13"/><path d="M7 7h2M7 11h2M7 15h2M16 12h1.5M16 16h1.5"/></svg>
+        <span class="stars">★★★★</span>
+      </div>
+      <div class="body">
+        <h3>Hotel Artemide</h3>
+        <p class="area">📍 Via Nazionale沿い（北側・テルミニ徒歩7分）</p>
+        <p class="price">3泊 €480〜660<span>約¥77,000〜105,000 ・ €160〜220/泊</span></p>
+        <div class="chips"><span class="chip">朝食込（タルト10種）</span><span class="chip good">大通りで夜安全</span><span class="chip">トレビ徒歩8分</span></div>
+        <p class="cmt">北側の明るい大通り沿いで夜も安心。朝食の質が随一。夜間治安を最優先するならコレ。</p>
+      </div>
+      <div class="foot"><a class="btn agoda" target="_blank" rel="noopener" href="https://www.agoda.com/ja-jp/hotel-artemide_6/hotel/rome-it.html?checkIn=2026-06-28&amp;los=3&amp;adults=2&amp;rooms=1&amp;currencyCode=JPY&amp;cid=1844104">📅 Agoda 3泊（6/28〜7/1）</a></div>
+    </article>
+
+    <article class="hcard">
+      <div class="thumb" style="background:linear-gradient(135deg,#c75b39,#8c3b22)">
+        <img class="photo" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/04/0c/7c/esterno.jpg" alt="UNAHOTELS Deco Roma" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+        <span class="score">8.6<small>Booking</small></span>
+        <svg class="bld" width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.96)" stroke-width="1.5" stroke-linejoin="round"><rect x="4" y="3" width="9" height="18"/><rect x="13" y="8" width="7" height="13"/><path d="M7 7h2M7 11h2M7 15h2M16 12h1.5M16 16h1.5"/></svg>
+        <span class="stars">★★★★</span>
+      </div>
+      <div class="body">
+        <h3>UNAHOTELS Decò Roma</h3>
+        <p class="area">📍 テルミニ駅 徒歩1分</p>
+        <p class="price">3泊 €600〜840<span>約¥96,000〜134,000 ・ €200〜280/泊</span></p>
+        <div class="chips"><span class="chip">朝食別</span><span class="chip">アールデコ</span><span class="chip warn">予算高め</span></div>
+        <p class="cmt">駅徒歩1分の最強アクセス。深夜着・早朝発に無敵だが、料金は候補中最高水準。</p>
+      </div>
+      <div class="foot"><a class="btn book" target="_blank" rel="noopener" href="https://www.booking.com/hotel/it/una-roma.html">予約サイトで見る</a></div>
+    </article>
+
+    <article class="hcard">
+      <div class="thumb" style="background:linear-gradient(135deg,#d98c5f,#b5582f)">
+        <img class="photo" src="https://www.hotelariston.it/data/1366/gallery-home-1.jpg" alt="Hotel Ariston" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+        <span class="score">8.1<small>Booking</small></span>
+        <svg class="bld" width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.96)" stroke-width="1.5" stroke-linejoin="round"><rect x="4" y="3" width="9" height="18"/><rect x="13" y="8" width="7" height="13"/><path d="M7 7h2M7 11h2M7 15h2M16 12h1.5M16 16h1.5"/></svg>
+        <span class="stars">★★★★</span>
+      </div>
+      <div class="body">
+        <h3>Hotel Ariston</h3>
+        <p class="area">📍 テルミニ駅 徒歩3分</p>
+        <p class="price">3泊 €360〜480<span>約¥57,500〜77,000 ・ €120〜160/泊</span></p>
+        <div class="chips"><span class="chip">朝食込</span><span class="chip good">日本語スタッフ</span><span class="chip warn">壁が薄め</span></div>
+        <p class="cmt">日本語対応スタッフ＆ドアマンで安心感。コスパ良好だが防音はやや難の声。</p>
+      </div>
+      <div class="foot"><a class="btn book" target="_blank" rel="noopener" href="https://www.booking.com/hotel/it/ariston-roma.html">予約サイトで見る</a></div>
+    </article>
+
+    <article class="hcard">
+      <div class="thumb" style="background:linear-gradient(135deg,#bf6a44,#7a3318)">
+        <img class="photo" src="https://www.hotelhiberia.it/static/359e64d0f20ea73af213a2d54c7b75bb/5267c/37175af2-a638-4756-bac3-fb437a680b77.jpg" alt="Hotel Hiberia" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+        <span class="score">8.9<small>Booking</small></span>
+        <svg class="bld" width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.96)" stroke-width="1.5" stroke-linejoin="round"><rect x="4" y="3" width="9" height="18"/><rect x="13" y="8" width="7" height="13"/><path d="M7 7h2M7 11h2M7 15h2M16 12h1.5M16 16h1.5"/></svg>
+        <span class="stars">★★★</span>
+      </div>
+      <div class="body">
+        <h3>Hotel Hiberia</h3>
+        <p class="area">📍 トレビの泉 徒歩5分（テルミニは遠い）</p>
+        <p class="price">3泊 €300〜420<span>約¥48,000〜67,000 ・ €100〜140/泊</span></p>
+        <div class="chips"><span class="chip">朝食込</span><span class="chip good">観光立地◎</span><span class="chip warn">空港アクセス不向き</span></div>
+        <p class="cmt">トレビ至近の観光特化。ただしテルミニから遠く、深夜着・早朝発の動線には不向き。</p>
+      </div>
+      <div class="foot"><a class="btn book" target="_blank" rel="noopener" href="https://www.booking.com/hotel/it/hiberiahotelrome.html">予約サイトで見る</a></div>
+    </article>
+
+    <article class="hcard">
+      <div class="thumb" style="background:linear-gradient(135deg,#c75b39,#8c3b22)">
+        <img class="photo" src="https://www.hoteldamaso.it/images/damas-mid1.jpg" alt="Hotel Damaso" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+        <span class="score">4.0<small>TripAdvisor</small></span>
+        <svg class="bld" width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.96)" stroke-width="1.5" stroke-linejoin="round"><rect x="4" y="3" width="9" height="18"/><rect x="13" y="8" width="7" height="13"/><path d="M7 7h2M7 11h2M7 15h2M16 12h1.5M16 16h1.5"/></svg>
+        <span class="stars">★★★★</span>
+      </div>
+      <div class="body">
+        <h3>Hotel Damaso</h3>
+        <p class="area">📍 ナヴォーナ広場 徒歩2分（テルミニは遠い）</p>
+        <p class="price">3泊 €360〜480<span>約¥57,500〜77,000 ・ €120〜160/泊</span></p>
+        <div class="chips"><span class="chip">朝食込</span><span class="chip good">パノラマテラス</span><span class="chip warn">空港アクセス不向き</span></div>
+        <p class="cmt">旧市街の中心という絶好の観光立地。テルミニから遠く今回の動線には不向き。</p>
+      </div>
+      <div class="foot"><a class="btn book" target="_blank" rel="noopener" href="https://www.booking.com/hotel/it/damaso.html">予約サイトで見る</a></div>
+    </article>
+
+    <article class="hcard">
+      <div class="thumb" style="background:linear-gradient(135deg,#d98c5f,#b5582f)">
+        <img class="photo" src="https://pix8.agoda.net/hotelImages/233340/0/f4d8885584b8f4a20039913b3ab780e2.jpeg?s=1024x768" alt="Hotel Celio" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+        <span class="score">8.2<small>Booking</small></span>
+        <svg class="bld" width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.96)" stroke-width="1.5" stroke-linejoin="round"><rect x="4" y="3" width="9" height="18"/><rect x="13" y="8" width="7" height="13"/><path d="M7 7h2M7 11h2M7 15h2M16 12h1.5M16 16h1.5"/></svg>
+        <span class="stars">★★★</span>
+      </div>
+      <div class="body">
+        <h3>Hotel Celio</h3>
+        <p class="area">📍 コロッセオ 徒歩3分</p>
+        <p class="price">3泊 €450〜630<span>約¥72,000〜101,000 ・ €150〜210/泊</span></p>
+        <div class="chips"><span class="chip good">コロッセオ眺望</span><span class="chip">歴史建物</span><span class="chip warn">エレベーターなし</span></div>
+        <p class="cmt">コロッセオ徒歩3分・屋根裏テラスからの眺望が魅力。階段のみが難点。</p>
+      </div>
+      <div class="foot"><a class="btn book" target="_blank" rel="noopener" href="https://www.booking.com/hotel/it/celio.html">予約サイトで見る</a></div>
+    </article>
+
+  </div><!-- /grid rome -->
+
+  <!-- ================= PARIS ================= -->
+  <div class="cityhead paris">
+    <span class="badge">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v3"/><path d="M9 21l3-14 3 14"/><path d="M7 21h10"/><path d="M10 12h4"/></svg>
+    </span>
+    <div><h2>パリ — 4泊</h2><div class="meta">7/1(水)着→マレ初日 ／ 7/4 MSMツアー集合はギャラリー・ラファイエット ／ 7/5 CDG帰国。オペラ9区が便利</div></div>
+  </div>
+
+  <div class="grid">
+
+    <!-- Timhotel 本命 -->
+    <article class="hcard paris-card">
+      <div class="thumb" style="background:linear-gradient(135deg,#2d4a7c,#16294a)">
+        <img class="photo" src="https://cf.bstatic.com/xdata/images/hotel/608x352/667788373.webp?k=e84e712fbc1d3d5a4186709595713b182e6245a8bf2742e783c32a150d8cd881&amp;o=" alt="Timhotel Opera Blanche Fontaine" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+        <span class="ribbon">⭐ 本命</span><span class="score">4★<small>4つ星</small></span>
+        <svg class="bld" width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.96)" stroke-width="1.5" stroke-linejoin="round"><rect x="4" y="3" width="9" height="18"/><rect x="13" y="8" width="7" height="13"/><path d="M7 7h2M7 11h2M7 15h2M16 12h1.5M16 16h1.5"/></svg>
+        <span class="stars">★★★★</span>
+      </div>
+      <div class="body">
+        <h3>Timhotel Opéra Blanche Fontaine</h3>
+        <p class="area">📍 9区 ブランシュ（Blanche駅徒歩2分・南ピガール）</p>
+        <p class="price">4泊 ¥143,892<span class="real">実勢・2名</span><span>≈€900 ・ ¥35,973/泊</span></p>
+        <div class="chips"><span class="chip good">中庭の静か立地</span><span class="chip good">エアコン・朝食good</span><span class="chip">無料アペリティフ</span></div>
+        <p class="cmt">9区の4つ星。喧騒を離れた中庭が魅力。エアコン・朝食・多言語スタッフが好評。GaLa徒歩15分。</p>
+      </div>
+      <div class="foot"><a class="btn agoda" target="_blank" rel="noopener" href="https://www.agoda.com/ja-jp/timhotel-opera-blanche-fontaine/hotel/paris-fr.html?checkIn=2026-07-01&amp;checkOut=2026-07-05&amp;los=4&amp;adults=2&amp;rooms=1&amp;currencyCode=JPY&amp;cid=1922867">📅 Agoda 4泊（7/1〜7/5）</a></div>
+    </article>
+
+    <!-- Villa Alessandra 2番手 -->
+    <article class="hcard paris-card">
+      <div class="thumb" style="background:linear-gradient(135deg,#3b517d,#26365b)">
+        <img class="photo" src="https://hapi.mmcreation.com/media/46/2023/CHAMBRES/Twin/Twin_3.jpg" alt="Villa Alessandra" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+        <span class="ribbon alt">2番手</span><span class="score">7.8<small>HotelsCombined</small></span>
+        <svg class="bld" width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.96)" stroke-width="1.5" stroke-linejoin="round"><rect x="4" y="3" width="9" height="18"/><rect x="13" y="8" width="7" height="13"/><path d="M7 7h2M7 11h2M7 15h2M16 12h1.5M16 16h1.5"/></svg>
+        <span class="stars">★★★</span>
+      </div>
+      <div class="body">
+        <h3>Villa Alessandra</h3>
+        <p class="area">📍 17区 テルヌ／凱旋門（Ternes 徒歩6分）</p>
+        <p class="price">4泊 ¥105,627<span class="real">実勢・2名</span><span>≈€660 ・ ¥26,407/泊</span></p>
+        <div class="chips"><span class="chip good">凱旋門徒歩10分</span><span class="chip good">静か・安全</span><span class="chip warn">集合地から遠い</span></div>
+        <p class="cmt">静かな高級住宅街のプロヴァンス風。本命より安い。凱旋門近いが集合地(GaLa)・中心部はメトロ15〜20分。</p>
+      </div>
+      <div class="foot"><a class="btn agoda" target="_blank" rel="noopener" href="https://www.agoda.com/ja-jp/villa-alessandra-hotel/hotel/paris-fr.html?checkIn=2026-07-01&amp;los=4&amp;adults=2&amp;rooms=1&amp;currencyCode=JPY&amp;cid=1844104">📅 Agoda 4泊（7/1〜7/5）</a></div>
+    </article>
+
+    <!-- Joyce -->
+    <article class="hcard paris-card">
+      <div class="thumb" style="background:linear-gradient(135deg,#2d4a7c,#1d335a)">
+        <img class="photo" src="https://cf.bstatic.com/xdata/images/hotel/608x352/85304746.webp?k=7668829f48053c1ab5d98d8941e4b4b6c505ea1dd3dbcd420879187397c1592e&amp;o=" alt="Hotel Joyce Astotel" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+        <span class="ribbon alt">候補</span><span class="score">4.7<small>TA・パリ50位</small></span>
+        <svg class="bld" width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.96)" stroke-width="1.5" stroke-linejoin="round"><rect x="4" y="3" width="9" height="18"/><rect x="13" y="8" width="7" height="13"/><path d="M7 7h2M7 11h2M7 15h2M16 12h1.5M16 16h1.5"/></svg>
+        <span class="stars">★★★</span>
+      </div>
+      <div class="body">
+        <h3>Hotel Joyce - Astotel</h3>
+        <p class="area">📍 9区 オペラ（Saint-Georges）</p>
+        <p class="price">4泊 €480〜720<span>約¥77,000〜115,000 ・ €120〜180/泊</span></p>
+        <div class="chips"><span class="chip good">無料オープンバー</span><span class="chip good">日本語スタッフ</span><span class="chip">朝食別</span></div>
+        <p class="cmt">TripAdvisorパリ50位。14時〜深夜2時の無料バーで実質コスパ◎。日本語スタッフで安心。</p>
+      </div>
+      <div class="foot"><a class="btn agoda" target="_blank" rel="noopener" href="https://www.agoda.com/ja-jp/hotel-joyce-astotel/hotel/paris-fr.html?checkIn=2026-07-01&amp;los=4&amp;adults=2&amp;rooms=1&amp;currencyCode=JPY&amp;cid=1844104">📅 Agoda 4泊（7/1〜7/5）</a></div>
+    </article>
+
+    <!-- 10 Opéra -->
+    <article class="hcard paris-card">
+      <div class="thumb" style="background:linear-gradient(135deg,#3b517d,#26365b)">
+        <img class="photo" src="https://cf.bstatic.com/xdata/images/hotel/608x352/284660666.webp?k=d289f395627bf08d629cb76c48912946ac79ebbcf638b49c20499f7bea9a1e2b&amp;o=" alt="Hotel 10 Opera by HappyCulture" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+        <span class="ribbon alt">集合地最寄り</span><span class="score">9.0<small>Booking</small></span>
+        <svg class="bld" width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.96)" stroke-width="1.5" stroke-linejoin="round"><rect x="4" y="3" width="9" height="18"/><rect x="13" y="8" width="7" height="13"/><path d="M7 7h2M7 11h2M7 15h2M16 12h1.5M16 16h1.5"/></svg>
+        <span class="stars">★★★</span>
+      </div>
+      <div class="body">
+        <h3>Hotel 10 Opéra by HappyCulture</h3>
+        <p class="area">📍 9区 オペラ（旧Opera Vivaldi・10 Rue du Helder）</p>
+        <p class="price">4泊 €640〜840<span>約¥102,000〜134,000 ・ €160〜210/泊</span></p>
+        <div class="chips"><span class="chip">朝食込</span><span class="chip good">GaLa徒歩5分</span><span class="chip">オペラ座至近</span></div>
+        <p class="cmt">MSMツアー集合地まで徒歩5分の最強動線。朝食込で費用対効果◎。客室少なめ＝早期予約を。</p>
+      </div>
+      <div class="foot"><a class="btn agoda" target="_blank" rel="noopener" href="https://www.agoda.com/ja-jp/hotel-opera-vivaldi/hotel/paris-fr.html?checkIn=2026-07-01&amp;checkOut=2026-07-05&amp;los=4&amp;adults=2&amp;rooms=1&amp;currencyCode=JPY&amp;cid=1922867">📅 Agoda 4泊（7/1〜7/5）</a></div>
+    </article>
+
+    <!-- Caron -->
+    <article class="hcard paris-card">
+      <div class="thumb" style="background:linear-gradient(135deg,#5a6f99,#33486f)">
+        <img class="photo" src="https://cf.bstatic.com/xdata/images/hotel/608x352/696572556.webp?k=de9afbc1ebaca9fbfc95456ad41be20df540513be23b2e72d9332105d9391abe&amp;o=" alt="Caron de Beaumarchais" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+        <span class="ribbon alt">マレ派◎</span><span class="score">8.9<small>Booking</small></span>
+        <svg class="bld" width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.96)" stroke-width="1.5" stroke-linejoin="round"><rect x="4" y="3" width="9" height="18"/><rect x="13" y="8" width="7" height="13"/><path d="M7 7h2M7 11h2M7 15h2M16 12h1.5M16 16h1.5"/></svg>
+        <span class="stars">★★★</span>
+      </div>
+      <div class="body">
+        <h3>Hôtel Caron de Beaumarchais</h3>
+        <p class="area">📍 4区 マレ（Saint-Paul 徒歩4分）</p>
+        <p class="price">4泊 €680〜900<span>約¥109,000〜144,000 ・ €170〜225/泊</span></p>
+        <div class="chips"><span class="chip good">ブティック部門1位</span><span class="chip">初日ランチ動線◎</span><span class="chip warn">19室・満室注意</span></div>
+        <p class="cmt">マレの名物ブティック。7/1着→ランチ動線に最適だが19室で即満室・予算やや超過。</p>
+      </div>
+      <div class="foot"><a class="btn book" target="_blank" rel="noopener" href="https://www.booking.com/hotel/fr/caron-de-beaumarchais.html">予約サイトで見る</a><span class="note-pending">日付入りリンク未</span></div>
+    </article>
+
+    <!-- Deauville -->
+    <article class="hcard paris-card">
+      <div class="thumb" style="background:linear-gradient(135deg,#5a6f99,#33486f)">
+        <img class="photo" src="https://www.paris-hotel-deauville-opera.com/uploads/2016/10/Cohen-OPERA-DEAUVILLE-2-2.jpg" alt="Hotel Opera Deauville" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+        <span class="ribbon alt">立地&amp;コスト</span><span class="score">7.4<small>TripAdvisor</small></span>
+        <svg class="bld" width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.96)" stroke-width="1.5" stroke-linejoin="round"><rect x="4" y="3" width="9" height="18"/><rect x="13" y="8" width="7" height="13"/><path d="M7 7h2M7 11h2M7 15h2M16 12h1.5M16 16h1.5"/></svg>
+        <span class="stars">★★★</span>
+      </div>
+      <div class="body">
+        <h3>Hotel Opera Deauville</h3>
+        <p class="area">📍 9区 サン＝ラザール（40 Rue d'Amsterdam）</p>
+        <p class="price">4泊 €360〜600<span>約¥58,000〜96,000 ・ €90〜150/泊</span></p>
+        <div class="chips"><span class="chip good">GaLa徒歩10分</span><span class="chip good">安い</span><span class="chip warn">スコア低め・設備古め</span></div>
+        <p class="cmt">立地とコスト最優先の枠。安いが施設は古め・当たり外れの声あり。快適性ならTimhotel/Joyce。</p>
+      </div>
+      <div class="foot"><a class="btn agoda" target="_blank" rel="noopener" href="https://www.agoda.com/ja-jp/opera-deauville-hotel/hotel/paris-fr.html?checkIn=2026-07-01&amp;los=4&amp;adults=2&amp;rooms=1&amp;currencyCode=JPY&amp;cid=1844104">📅 Agoda 4泊（7/1〜7/5）</a></div>
+    </article>
+
+    <!-- du Printemps -->
+    <article class="hcard paris-card">
+      <div class="thumb" style="background:linear-gradient(135deg,#3b517d,#26365b)">
+        <img class="photo" src="https://cf.bstatic.com/xdata/images/hotel/608x352/273174052.webp?k=573e2aeb5d069ab15700ca8b4948f9dea631232f2f7481aa5a6d1438110c6a2b&amp;o=" alt="Hotel du Printemps" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+        <span class="score">8.5<small>Booking</small></span>
+        <svg class="bld" width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.96)" stroke-width="1.5" stroke-linejoin="round"><rect x="4" y="3" width="9" height="18"/><rect x="13" y="8" width="7" height="13"/><path d="M7 7h2M7 11h2M7 15h2M16 12h1.5M16 16h1.5"/></svg>
+        <span class="stars">★★</span>
+      </div>
+      <div class="body">
+        <h3>Hôtel du Printemps</h3>
+        <p class="area">📍 9区 サン＝ラザール（GaLa徒歩10〜12分）</p>
+        <p class="price">4泊 €480〜680<span>約¥77,000〜109,000 ・ €120〜170/泊</span></p>
+        <div class="chips"><span class="chip">静か</span><span class="chip good">コスパ</span><span class="chip warn">設備は最小限</span></div>
+        <p class="cmt">閑静な2つ星。アップグレードでバスタブ付きも。価格の割に満足度が高い。</p>
+      </div>
+      <div class="foot"><a class="btn book" target="_blank" rel="noopener" href="https://www.booking.com/hotel/fr/du-printemps.html">予約サイトで見る</a></div>
+    </article>
+
+    <!-- André Latin -->
+    <article class="hcard paris-card">
+      <div class="thumb" style="background:linear-gradient(135deg,#5a6f99,#33486f)">
+        <img class="photo" src="https://d255bez5tafa8g.cloudfront.net/cache/img/18720ed1175af012ce98cfb3d80db7d0e7bf1272-18720e-1200-627-crop.jpg" alt="Hotel Andre Latin" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+        <span class="score">8.8<small>Booking</small></span>
+        <svg class="bld" width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.96)" stroke-width="1.5" stroke-linejoin="round"><rect x="4" y="3" width="9" height="18"/><rect x="13" y="8" width="7" height="13"/><path d="M7 7h2M7 11h2M7 15h2M16 12h1.5M16 16h1.5"/></svg>
+        <span class="stars">★★★</span>
+      </div>
+      <div class="body">
+        <h3>Hôtel André Latin</h3>
+        <p class="area">📍 5区 カルチェ・ラタン（左岸）</p>
+        <p class="price">4泊 €440〜680<span>約¥70,000〜109,000 ・ €110〜170/泊</span></p>
+        <div class="chips"><span class="chip good">左岸の文化的エリア</span><span class="chip">パンテオン徒歩5分</span><span class="chip warn">集合地は遠め</span></div>
+        <p class="cmt">リュクサンブール公園至近。CDG直通RER Bが便利。オペラ集合地からは距離あり。</p>
+      </div>
+      <div class="foot"><a class="btn book" target="_blank" rel="noopener" href="https://www.booking.com/hotel/fr/comfort-andre-latin.html">予約サイトで見る</a></div>
+    </article>
+
+    <!-- Bretonnerie -->
+    <article class="hcard paris-card">
+      <div class="thumb" style="background:linear-gradient(135deg,#3b517d,#26365b)">
+        <img class="photo" src="https://hapi.mmcreation.com/hapidam/26b6b49d-4388-4c68-b335-54d9d75f0c59/hotel-de-la-bretonnerie-triple-elegance-002.jpeg" alt="Hotel de la Bretonnerie" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+        <span class="score">8.4<small>Booking</small></span>
+        <svg class="bld" width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.96)" stroke-width="1.5" stroke-linejoin="round"><rect x="4" y="3" width="9" height="18"/><rect x="13" y="8" width="7" height="13"/><path d="M7 7h2M7 11h2M7 15h2M16 12h1.5M16 16h1.5"/></svg>
+        <span class="stars">★★★</span>
+      </div>
+      <div class="body">
+        <h3>Hôtel de la Bretonnerie</h3>
+        <p class="area">📍 4区 マレ（Hôtel de Ville 徒歩4分）</p>
+        <p class="price">4泊 €540〜800<span>約¥86,000〜128,000 ・ €135〜200/泊</span></p>
+        <div class="chips"><span class="chip">17世紀建物</span><span class="chip good">マレ中心</span><span class="chip warn">エアコンなし（7月）</span></div>
+        <p class="cmt">歴史的建物の趣あるマレの3つ星。ただしエアコンなしで7月の猛暑には要注意。</p>
+      </div>
+      <div class="foot"><a class="btn book" target="_blank" rel="noopener" href="https://www.booking.com/hotel/fr/de-la-bretonnerie.html">予約サイトで見る</a></div>
+    </article>
+
+    <!-- Le Relais Saint Honoré -->
+    <article class="hcard paris-card">
+      <div class="thumb" style="background:linear-gradient(135deg,#5a6f99,#33486f)">
+        <img class="photo" src="https://hotel-relais-saint-honore.com/wp-content/uploads/sites/3/19a5972-etoile-1.jpg" alt="Le Relais Saint Honore" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+        <span class="score">8.9<small>Booking</small></span>
+        <svg class="bld" width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.96)" stroke-width="1.5" stroke-linejoin="round"><rect x="4" y="3" width="9" height="18"/><rect x="13" y="8" width="7" height="13"/><path d="M7 7h2M7 11h2M7 15h2M16 12h1.5M16 16h1.5"/></svg>
+        <span class="stars">★★★★</span>
+      </div>
+      <div class="body">
+        <h3>Le Relais Saint Honoré</h3>
+        <p class="area">📍 1区 チュイルリー（Tuileries 徒歩5分）</p>
+        <p class="price">4泊 €840〜1,200<span>約¥134,000〜192,000 ・ €210〜300/泊</span></p>
+        <div class="chips"><span class="chip good">ルーブル徒歩10分</span><span class="chip">朝食込（有機）</span><span class="chip warn">予算超過</span></div>
+        <p class="cmt">パリの心臓部の4つ星。立地は最高だが価格は予算オーバー。カップル向け。</p>
+      </div>
+      <div class="foot"><a class="btn book" target="_blank" rel="noopener" href="https://www.booking.com/hotel/fr/lerelaissainthonore.html">予約サイトで見る</a></div>
+    </article>
+
+    <!-- Hana 5star -->
+    <article class="hcard paris-card">
+      <div class="thumb" style="background:linear-gradient(135deg,#1d335a,#0e1c34)">
+        <img class="photo" src="https://hotelhana-paris.com/_next/static/media/Hotel-Hana-Opera-1.9f823d93.jpg" alt="Hotel Hana Paris" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+        <span class="ribbon">💎 5つ星</span><span class="score">9.2<small>Booking</small></span>
+        <svg class="bld" width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.96)" stroke-width="1.5" stroke-linejoin="round"><rect x="4" y="3" width="9" height="18"/><rect x="13" y="8" width="7" height="13"/><path d="M7 7h2M7 11h2M7 15h2M16 12h1.5M16 16h1.5"/></svg>
+        <span class="stars">★★★★★</span>
+      </div>
+      <div class="body">
+        <h3>Hôtel Hana Paris</h3>
+        <p class="area">📍 2区 オペラ</p>
+        <p class="price">4泊 €1,600〜2,000<span>約¥256,000〜320,000 ・ €400〜500/泊</span></p>
+        <div class="chips"><span class="chip good">和洋融合</span><span class="chip good">スパ・室内プール</span><span class="chip warn">記念日向け・高級</span></div>
+        <p class="cmt">和の美意識とパリの優雅さが融合する5つ星。特別な1泊・記念日に。予算とは別枠の憧れ。</p>
+      </div>
+      <div class="foot"><a class="btn book" target="_blank" rel="noopener" href="https://www.booking.com/hotel/fr/hana-paris.html">予約サイトで見る</a></div>
+    </article>
+
+  </div><!-- /grid paris -->
+
+  <!-- SAFETY -->
+  <section class="safety">
+    <h2>🛡 治安メモ（エリア別）</h2>
+    <div class="cols">
+      <div>
+        <h4>🏛 ローマ</h4>
+        <ul>
+          <li><span class="ok">安全</span>：テルミニ<b>北側</b>（Via Nazionale／Repubblica方面）、トレビ〜スペイン広場</li>
+          <li><span class="ng">夜は注意</span>：テルミニ<b>南側</b>（エスクイリーノ／Piazza Vittorio方面）、駅前広場の暗い抜け道</li>
+          <li>スリ・客引きに注意。荷物は前持ち・ファスナー閉。7/1早朝のFCO移動は<b>正規タクシー（定額€50）</b>推奨</li>
+        </ul>
+      </div>
+      <div>
+        <h4>🗼 パリ</h4>
+        <ul>
+          <li><span class="ok">安全</span>：マレ4区、オペラ1・2・9区、左岸カルチェ・ラタン5・6区</li>
+          <li><span class="ok">安全</span>：17区でも<b>テルヌ／凱旋門周辺（南西部）は高級住宅街</b></li>
+          <li><span class="ng">夜は注意</span>：10区北部、<b>17区北部〜18区</b>。本命Timhotel周辺の<b>ブランシュ／ピガール</b>はムーラン・ルージュ近くで夜は賑やか（南ピガール側は概ね安全）</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p><b>注意：</b>「実勢」表記（Timhotel・Villa Alessandra）は予約サイトで確認した4泊2名の実額です。それ以外は 2026-05-31 時点の概算（¥160/€・ハイシーズン係数込）で、実額は各サイトで要確認。別途、ローマ市税 €7.50/人/泊（2人3泊≒€45）、パリ滞在税 €2〜5/人/泊。</p>
+    <p>写真は各ホテルの予約サイト／公式サイトの画像です（読み込めない場合はイラストにフォールバック）。「📅 Agoda 日付入り」は宿泊日・大人2名・1室で検索した状態で開きます。</p>
+    <p>関連：<b>todo_decisions_0628.html</b>（やるべきこと/選ぶべきこと）／<b>schedule_asiana_0628.md</b>（全日程）／<b>hotels.md</b>（詳細テキスト版）</p>
+  </footer>
+
+</div>
+</body>
+</html>
