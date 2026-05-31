@@ -1,6 +1,26 @@
 # ホテル候補リスト（2026年7月）
 
-## ローマ（4泊）
+## 🔍 実勢価格調査サマリー（2026-05-31時点・大人2名／価格は概算・予約時に要確認）
+
+> 7月初旬はローマ・パリともハイシーズン。小規模ブティックは満室になりやすく早期予約推奨。
+> 別途課税: ローマ市税 €7.50/人/泊（2人3泊=約€45）、パリ滞在税 約€2〜5/人/泊。
+
+### ローマ（3泊 6/28〜7/1）本命
+**▶ Augusta Lucilla Palace（★★★★・テルミニ徒歩5分・朝食込）** — 3泊総額 概算 **€360〜480（約¥57,500〜77,000）** ／ Booking 9.1
+- 6/28深夜着・7/1早朝発の両方に強いテルミニ近接。予算内に収まる唯一の「朝食込4つ星」。
+- 次点: **iQ Hotel Roma**（Booking 9.3・屋上プール／€480〜600・朝食別）、**Hotel Artemide**（朝食絶品／€480〜660）
+- ⚠️ Hotel Hiberia / Hotel Damaso は観光立地は良いがテルミニから遠く、深夜着・早朝発のアクセスが不利 → 今回は非推奨。
+
+### パリ（4泊 7/1〜7/5）本命
+**▶ オペラ9区の2択（どちらもMSMツアー集合地に近い）**
+- コスパ・安心重視 → **Hotel Joyce - Astotel**：4泊 €480〜720（約¥77,000〜115,000）／TripAdvisor パリ50位・無料オープンバー・日本語スタッフ
+- ツアー集合最寄り → **Hotel 10 Opéra by HappyCulture**：4泊 €640〜840（約¥102,000〜134,000・朝食込）／ギャラリー・ラファイエット徒歩5分
+- マレ地区派 → **Caron de Beaumarchais**（€680〜900・19室で満室になりやすい・要即予約）
+- ⚠️ Hôtel de la Bretonnerie は**エアコンなし** → 7月は非推奨。
+
+---
+
+## ローマ（3泊・6/28〜7/1）
 
 | # | ホテル名 | 星 | エリア | 1泊概算 | 特徴 |
 |---|---------|---|--------|---------|------|
@@ -57,7 +77,8 @@
 
 #### 4. iQ Hotel Roma
 **予約サイト：**
-[Agoda](https://www.agoda.com/iq-hotel-roma/hotel/rome-it.html) | [Booking.com](https://www.booking.com/hotel/it/iq-roma.html) | [Trip.com](https://us.trip.com/hotels/rome-hotel-detail-761439/iq-hotel-roma/) | [Expedia](https://www.expedia.com/Rome-Hotels-IQ-Hotel-Roma.h3546384.Hotel-Information)
+**▶ [Agoda（6/28〜7/1・3泊・2名・JPY）](https://www.agoda.com/ja-jp/iq-hotel-roma/hotel/rome-it.html?checkIn=2026-06-28&los=3&adults=2&rooms=1&currencyCode=JPY&cid=1917614)** ← 日付入り（※元リンクは los=2＝2泊だったため los=3 に修正済）
+[Agoda(日付なし)](https://www.agoda.com/ja-jp/iq-hotel-roma/hotel/rome-it.html) | [Booking.com](https://www.booking.com/hotel/it/iq-roma.html) | [Trip.com](https://us.trip.com/hotels/rome-hotel-detail-761439/iq-hotel-roma/) | [Expedia](https://www.expedia.com/Rome-Hotels-IQ-Hotel-Roma.h3546384.Hotel-Information)
 
 **評価スコア：** Booking.com 9.3/10 / Trip.com 9.7/10 / TripAdvisor 4.0/5（11位）
 
@@ -75,7 +96,8 @@
 
 #### 6. Hotel Artemide
 **予約サイト：**
-[Agoda](https://www.agoda.com/ja-jp/hotel-artemide/reviews/rome-it.html) | [Booking.com](https://www.booking.com/hotel/it/artemide.html) | [Trip.com](https://us.trip.com/hotels/rome-hotel-detail-760667/hotel-artemide/) | [Expedia](https://www.expedia.com/Rome-Hotels-Hotel-Artemide.h45856.Hotel-Information)
+**▶ [Agoda（6/28〜7/1・3泊・2名・JPY）](https://www.agoda.com/ja-jp/hotel-artemide_6/hotel/rome-it.html?checkIn=2026-06-28&los=3&adults=2&rooms=1&currencyCode=JPY&cid=1844104)** ← 日付入り
+[Agoda(日付なし)](https://www.agoda.com/ja-jp/hotel-artemide_6/hotel/rome-it.html) | [Booking.com](https://www.booking.com/hotel/it/artemide.html) | [Trip.com](https://us.trip.com/hotels/rome-hotel-detail-760667/hotel-artemide/) | [Expedia](https://www.expedia.com/Rome-Hotels-Hotel-Artemide.h45856.Hotel-Information)
 
 **評価スコア：** Booking.com 8.9/10 / フォートラベル 3.36/5 / TripAdvisor 4.0/5
 
@@ -102,7 +124,7 @@
 
 ---
 
-## パリ（4泊）
+## パリ（4泊・7/1〜7/5）
 
 | # | ホテル名 | 星 | エリア | 1泊概算 | 特徴 |
 |---|---------|---|--------|---------|------|
@@ -130,9 +152,10 @@
 
 ### パリ 予約サイトリンク・日本人総評
 
-#### 1. Hotel 10 Opéra by HappyCulture
+#### 1. Hotel 10 Opéra by HappyCulture（旧名: Hotel Opera Vivaldi・10 Rue du Helder 75009）
 **予約サイト：**
-[Agoda](https://www.agoda.com/hotel-10-opera-by-happyculture-h85154705/hotel/paris-fr.html) | [Booking.com](https://www.booking.com/hotel/fr/royal-opera.html) | [Trip.com](https://trip.com/hotels/paris-hotel-detail-718429/hotel-opera-vivaldi-paris) | [Expedia](https://www.expedia.com/Paris-Hotels-Hotel-10-Opera.h1542774.Hotel-Information)
+**▶ [Agoda（7/1〜7/5・4泊・2名・JPY）](https://www.agoda.com/ja-jp/hotel-opera-vivaldi/hotel/paris-fr.html?checkIn=2026-07-01&checkOut=2026-07-05&los=4&adults=2&rooms=1&currencyCode=JPY&cid=1922867)** ← 日付入り（※Agoda上は旧名「Hotel Opera Vivaldi」表記＝同一物件・10 Rue du Helder 75009）
+[Agoda(日付なし)](https://www.agoda.com/hotel-10-opera-by-happyculture-h85154705/hotel/paris-fr.html) | [Booking.com](https://www.booking.com/hotel/fr/royal-opera.html) | [Trip.com](https://trip.com/hotels/paris-hotel-detail-718429/hotel-opera-vivaldi-paris) | [Expedia](https://www.expedia.com/Paris-Hotels-Hotel-10-Opera.h1542774.Hotel-Information)
 
 **評価スコア：** Booking.com 9.0/10 / Google 4.5/5
 
@@ -177,7 +200,8 @@
 
 #### 6. Hotel Joyce - Astotel
 **予約サイト：**
-[Agoda](https://www.agoda.com/hotel-joyce-astotel/hotel/paris-fr.html) | [Booking.com](https://www.booking.com/hotel/fr/joyce.html) | [Trip.com](https://jp.trip.com/hotels/paris-hotel-detail-718546/hotel-joyce-astotel-paris/)
+**▶ [Agoda（7/1〜7/5・4泊・2名・JPY）](https://www.agoda.com/ja-jp/hotel-joyce-astotel/hotel/paris-fr.html?checkIn=2026-07-01&los=4&adults=2&rooms=1&currencyCode=JPY&cid=1844104)** ← 日付入り
+[Agoda(日付なし)](https://www.agoda.com/ja-jp/hotel-joyce-astotel/hotel/paris-fr.html) | [Booking.com](https://www.booking.com/hotel/fr/joyce.html) | [Trip.com](https://jp.trip.com/hotels/paris-hotel-detail-718546/hotel-joyce-astotel-paris/)
 
 **評価スコア：** Booking.com 8.8/10（1,224件） / TripAdvisor 4.0/5（57位/1,874） / Agoda 8.5/10
 

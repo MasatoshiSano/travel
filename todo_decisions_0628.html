@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>パリ＆ローマ旅行 — やるべきこと / 選ぶべきこと</title>
+<style>
+  :root{
+    --cream:#f7f4ef; --ink:#2b2b2b; --muted:#6f6a62;
+    --rome:#c75b39; --rome-d:#8c3b22; --paris:#2d4a7c; --paris-l:#6b8cc7;
+    --gold:#d9a441; --red:#d64545; --amber:#e0913a; --green:#3f9d6b;
+    --card:#ffffff; --line:#e7e0d6; --shadow:0 6px 22px rgba(60,40,20,.10);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--cream);color:var(--ink);
+    font-family:'Hiragino Kaku Gothic ProN','Yu Gothic','Meiryo',-apple-system,'Helvetica Neue',Arial,sans-serif;
+    line-height:1.65;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 20px 60px}
+  h1,h2,h3{font-family:Georgia,'Times New Roman','Yu Mincho',serif;letter-spacing:.02em}
+
+  /* ===== HERO ===== */
+  .hero{position:relative;overflow:hidden;color:#fff;
+    background:linear-gradient(110deg,#a8472b 0%, #c75b39 32%, #5e6f95 60%, #2d4a7c 100%);}
+  .hero .heroinner{max-width:1120px;margin:0 auto;padding:34px 24px 26px;position:relative;z-index:2}
+  .hero svg.scene{position:absolute;inset:0;width:100%;height:100%;z-index:1;opacity:.9}
+  .kicker{font-size:13px;letter-spacing:.32em;text-transform:uppercase;opacity:.9;margin:0 0 6px}
+  .hero h1{font-size:clamp(26px,4.4vw,44px);margin:0;text-shadow:0 2px 14px rgba(0,0,0,.28)}
+  .hero .sub{margin:8px 0 0;font-size:15px;opacity:.95}
+  .countbar{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+  .chip{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);
+    backdrop-filter:blur(3px);padding:8px 14px;border-radius:999px;font-size:13.5px;font-weight:600}
+  .chip b{font-size:18px}
+
+  /* ===== LEGEND ===== */
+  .legend{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 6px;align-items:center}
+  .badge{display:inline-flex;align-items:center;gap:6px;padding:3px 11px;border-radius:999px;
+    font-size:12.5px;font-weight:700;color:#fff}
+  .b-red{background:var(--red)} .b-amber{background:var(--amber)} .b-green{background:var(--green)}
+  .b-ok{background:#2f8f5b} .b-star{background:var(--gold);color:#4a3500}
+  .legend .note{color:var(--muted);font-size:12.5px;margin-left:auto}
+
+  /* ===== SECTION ===== */
+  section{margin-top:34px}
+  .sec-head{display:flex;align-items:center;gap:12px;margin-bottom:14px;
+    border-bottom:3px solid var(--line);padding-bottom:10px}
+  .sec-head .ic{width:42px;height:42px;flex:0 0 42px;border-radius:11px;display:grid;place-items:center;color:#fff}
+  .sec-head h2{margin:0;font-size:23px}
+  .sec-head .lead{color:var(--muted);font-size:13.5px;margin-left:2px}
+
+  /* TODO columns */
+  .cols{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  @media(max-width:920px){.cols{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:560px){.cols{grid-template-columns:1fr}}
+  .col{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);overflow:hidden}
+  .col h3{margin:0;font-size:15px;padding:12px 14px;color:#fff;display:flex;align-items:center;gap:8px}
+  .col.prio h3{background:linear-gradient(135deg,#e05656,#c0392b)}
+  .col.soon h3{background:linear-gradient(135deg,#e8a14a,#d07d22)}
+  .col.local h3{background:linear-gradient(135deg,#46ad77,#2f8a5d)}
+  .col.done h3{background:linear-gradient(135deg,#5c6f95,#3b517d)}
+  .col ul{list-style:none;margin:0;padding:8px 12px 14px}
+  .col li{padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.6px;display:flex;gap:9px;align-items:flex-start}
+  .col li:last-child{border-bottom:0}
+  .col li .dot{flex:0 0 auto;margin-top:3px}
+  .col li small{display:block;color:var(--muted);font-size:11.6px;line-height:1.45}
+  .done li{opacity:.86;text-decoration:none}
+  .strike{text-decoration:line-through;text-decoration-color:rgba(0,0,0,.35)}
+
+  /* DECISIONS */
+  .decision{background:var(--card);border:1px solid var(--line);border-radius:16px;
+    box-shadow:var(--shadow);padding:18px 18px 16px;margin-bottom:18px}
+  .decision .dhead{display:flex;align-items:center;gap:12px;margin-bottom:4px}
+  .decision .num{width:34px;height:34px;border-radius:9px;background:var(--ink);color:#fff;
+    display:grid;place-items:center;font-weight:800;font-family:Georgia,serif;flex:0 0 34px}
+  .decision .dhead h3{margin:0;font-size:18px}
+  .decision .dhead .tag{margin-left:auto;font-size:12px;font-weight:700;color:#fff;background:var(--red);padding:3px 10px;border-radius:999px}
+  .decision .q{color:var(--muted);font-size:13.4px;margin:2px 0 14px}
+  .opts{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
+  .opts.two{grid-template-columns:repeat(2,1fr)}
+  @media(max-width:760px){.opts,.opts.two{grid-template-columns:1fr}}
+  .opt{position:relative;border:1.5px solid var(--line);border-radius:13px;padding:13px 13px 12px;background:#fcfaf6}
+  .opt.best{border-color:var(--gold);background:#fffdf4;box-shadow:0 0 0 3px rgba(217,164,65,.16)}
+  .opt .ribbon{position:absolute;top:-11px;left:13px;background:var(--gold);color:#4a3500;
+    font-size:11px;font-weight:800;padding:3px 9px;border-radius:7px;letter-spacing:.04em}
+  .opt .oimg{height:58px;margin:-2px 0 8px;display:flex;align-items:flex-end;gap:8px}
+  .opt h4{margin:0 0 3px;font-size:15px}
+  .opt .meta{font-size:12.4px;color:var(--muted);margin:0 0 7px}
+  .opt .price{font-weight:800;font-size:15px;color:var(--rome-d)}
+  .opt.paris .price{color:var(--paris)}
+  .opt .why{font-size:12.4px;margin:7px 0 0;padding-top:7px;border-top:1px dashed var(--line);color:#3c3c3c}
+  .opt .why b{color:var(--ink)}
+  .ab .opt{background:#fff}
+  .ab .opt h4{font-size:15.5px}
+
+  /* TIMELINE */
+  .timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  @media(max-width:760px){.timeline{grid-template-columns:1fr 1fr}}
+  @media(max-width:460px){.timeline{grid-template-columns:1fr}}
+  .tcard{background:var(--card);border:1px solid var(--line);border-radius:13px;box-shadow:var(--shadow);
+    padding:14px;border-top:5px solid var(--paris)}
+  .tcard.now{border-top-color:var(--red)}
+  .tcard .when{font-size:12px;font-weight:800;letter-spacing:.04em;color:var(--red)}
+  .tcard.t2 .when{color:var(--amber)} .tcard.t3 .when{color:var(--paris)} .tcard.t4 .when{color:var(--green)}
+  .tcard h4{margin:5px 0 7px;font-size:14.5px}
+  .tcard ul{margin:0;padding-left:17px;font-size:12.7px;color:#3c3c3c}
+  .tcard li{margin:3px 0}
+
+  footer{margin-top:34px;border-top:1px solid var(--line);padding-top:16px;color:var(--muted);font-size:12px}
+  footer b{color:var(--ink)}
+  .pin{color:var(--rome)}
+</style>
+</head>
+<body>
+
+<!-- ===================== HERO ===================== -->
+<header class="hero">
+  <svg class="scene" viewBox="0 0 1120 230" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <!-- Rome: Colosseum silhouette (left) -->
+    <g fill="rgba(255,255,255,.16)">
+      <path d="M40 210 V150 a70 45 0 0 1 140 0 V210 Z"/>
+      <rect x="46" y="150" width="128" height="60" fill="rgba(0,0,0,.05)"/>
+      <g fill="rgba(0,0,0,.12)">
+        <rect x="58" y="160" width="12" height="20" rx="5"/><rect x="80" y="160" width="12" height="20" rx="5"/>
+        <rect x="102" y="160" width="12" height="20" rx="5"/><rect x="124" y="160" width="12" height="20" rx="5"/>
+        <rect x="146" y="160" width="12" height="20" rx="5"/>
+        <rect x="69" y="186" width="12" height="18" rx="5"/><rect x="91" y="186" width="12" height="18" rx="5"/>
+        <rect x="113" y="186" width="12" height="18" rx="5"/><rect x="135" y="186" width="12" height="18" rx="5"/>
+      </g>
+    </g>
+    <!-- Paris: Eiffel Tower silhouette (right) -->
+    <g fill="rgba(255,255,255,.2)" transform="translate(990,40)">
+      <path d="M30 170 L42 60 Q44 50 46 60 L58 170 L48 170 L44 96 L40 170 Z"/>
+      <path d="M30 170 C40 150 48 150 58 170 L52 170 C48 160 40 160 36 170 Z"/>
+      <rect x="40" y="44" width="8" height="22"/>
+      <rect x="42" y="30" width="4" height="16"/>
+    </g>
+    <!-- dashed flight path + plane -->
+    <path d="M190 120 C420 40, 700 40, 980 120" fill="none" stroke="rgba(255,255,255,.65)" stroke-width="2.4" stroke-dasharray="3 10" stroke-linecap="round"/>
+    <g transform="translate(585,55) rotate(8)" fill="#fff">
+      <path d="M0 0 L34 8 L34 12 L6 16 L0 30 L-4 30 L-1 15 L-12 17 L-15 23 L-18 23 L-16 14 L-18 6 L-15 6 L-12 12 L-1 11 L-3 -4 Z"/>
+    </g>
+    <circle cx="190" cy="120" r="5" fill="#fff"/><circle cx="980" cy="120" r="5" fill="#fff"/>
+  </svg>
+
+  <div class="heroinner">
+    <p class="kicker">Rome &nbsp;✈&nbsp; Paris · 8泊9日</p>
+    <h1>残タスク &amp; 意思決定ボード</h1>
+    <p class="sub">2026/6/28(日) 出発 → 7/6(月) 帰着 ｜ アシアナ航空（PNR: Y452HO）｜ 更新: 2026-05-31</p>
+    <div class="countbar">
+      <span class="chip">出発まで <b id="cd">—</b> 日</span>
+      <span class="chip">✅ 確定 <b>3</b> 件</span>
+      <span class="chip">🔴 未予約・要決定 <b>4</b> 件</span>
+      <span class="chip">🎟️ 要予約スポット <b>5</b> 件</span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- legend -->
+  <div class="legend">
+    <span class="badge b-red">🔴 最優先</span>
+    <span class="badge b-amber">🟡 早めに</span>
+    <span class="badge b-green">🟢 現地で</span>
+    <span class="badge b-ok">✅ 確定済み</span>
+    <span class="badge b-star">⭐ おすすめ</span>
+    <span class="note">価格はすべて概算・2人分／予約時に要確認（¥160/€換算）</span>
+  </div>
+
+  <!-- ===================== TODO ===================== -->
+  <section>
+    <div class="sec-head">
+      <span class="ic" style="background:linear-gradient(135deg,#c0392b,#e05656)">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+      </span>
+      <div>
+        <h2>やるべきこと（予約・準備）</h2>
+        <div class="lead">出発前に終わらせる予約と、現地での確認事項</div>
+      </div>
+    </div>
+
+    <div class="cols">
+      <!-- 最優先 -->
+      <div class="col prio">
+        <h3>🔴 最優先（今すぐ）</h3>
+        <ul>
+          <li><span class="dot">✈️</span><div><b>伊→仏フライト予約</b><small>ローマ→パリ 7/1午前。下の「選ぶべきこと①」で便を決定</small></div></li>
+          <li><span class="dot">🏨</span><div><b>ローマ ホテル予約</b><small>3泊（6/28〜7/1）。7月は満室リスク高</small></div></li>
+          <li><span class="dot">🏨</span><div><b>パリ ホテル予約</b><small>4泊（7/1〜7/5）。小規模ブティックは即埋まる</small></div></li>
+          <li><span class="dot">🎟️</span><div><b>ヴァチカン美術館</b> 予約<small>6/29 開館直後／museivaticani.va</small></div></li>
+          <li><span class="dot">🎟️</span><div><b>ルーブル美術館</b> 予約<small>7/2／GetYourGuide（日本カード可）</small></div></li>
+          <li><span class="dot">🎟️</span><div><b>ヴェルサイユ宮殿</b> 予約<small>7/3／GetYourGuide（日本カード可）</small></div></li>
+        </ul>
+      </div>
+
+      <!-- 早めに -->
+      <div class="col soon">
+        <h3>🟡 早めに</h3>
+        <ul>
+          <li><span class="dot">🏛️</span><div><b>コロッセオ＋フォロロマーノ</b><small>6/29夕・要事前予約／coopculture.it</small></div></li>
+          <li><span class="dot">🏛️</span><div><b>パンテオン</b> 予約<small>6/29・€5／pantheonroma.com</small></div></li>
+          <li><span class="dot">💶</span><div><b>現地費用の準備</b><small>食事・交通・入場料 約5〜8万円。両替/カード/IC</small></div></li>
+          <li><span class="dot">📶</span><div><b>eSIM・通信手配</b><small>イタリア＆フランス対応のデータプラン</small></div></li>
+        </ul>
+      </div>
+
+      <!-- 現地で -->
+      <div class="col local">
+        <h3>🟢 現地で確認</h3>
+        <ul>
+          <li><span class="dot">🌊</span><div><b>MSM 潮汐チェック</b><small>7/4の潮位／maree.info</small></div></li>
+          <li><span class="dot">⛵</span><div><b>青の洞窟 天候・波</b><small>6/30当日朝。閉鎖率 約30〜40%</small></div></li>
+          <li><span class="dot">🚖</span><div><b>7/1早朝のFCO送迎</b><small>ホテルで前夜にタクシー手配（定額€50）</small></div></li>
+        </ul>
+      </div>
+
+      <!-- 確定済み -->
+      <div class="col done">
+        <h3>✅ 確定済み</h3>
+        <ul>
+          <li><span class="dot">✈️</span><div><span class="strike">アシアナ航空 関空往復</span><small>Trip.com予約済（PNR: Y452HO）</small></div></li>
+          <li><span class="dot">⛵</span><div><span class="strike">青の洞窟ツアー by みゅう</span><small>6/30・3コースランチ込 ¥50,342/人</small></div></li>
+          <li><span class="dot">🏰</span><div><span class="strike">モン・サン・ミッシェル日帰り</span><small>7/4・修道院/オムレツ/バス込 ¥38,725/人</small></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DECISIONS ===================== -->
+  <section>
+    <div class="sec-head">
+      <span class="ic" style="background:linear-gradient(135deg,#3b517d,#6b8cc7)">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3"/><path d="M5 7h14l-2 5H7z"/><path d="M9 12l-2 9"/><path d="M15 12l2 9"/><path d="M7 21h10"/></svg>
+      </span>
+      <div>
+        <h2>選ぶべきこと（意思決定）</h2>
+        <div class="lead">⭐がおすすめ。決めたら上の「やるべきこと」を予約へ</div>
+      </div>
+    </div>
+
+    <!-- ① flight -->
+    <div class="decision">
+      <div class="dhead">
+        <span class="num">1</span>
+        <h3>伊→仏フライト便（ローマ → パリ・7/1午前）</h3>
+        <span class="tag">未予約</span>
+      </div>
+      <p class="q">スーツケースあり前提の「荷物込み総額」で比較。便名・価格は変動するため Google Flights で7/1の最新便を最終確認。</p>
+      <div class="opts">
+        <div class="opt best paris">
+          <span class="ribbon">⭐ 本命（安心）</span>
+          <div class="oimg">
+            <svg width="46" height="46" viewBox="0 0 24 24" fill="#2d4a7c"><path d="M21 16v-2l-8-5V3.5A1.5 1.5 0 0 0 11.5 2 1.5 1.5 0 0 0 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z"/></svg>
+          </div>
+          <h4>Air France AF1205</h4>
+          <p class="meta">FCO → <b>CDG</b>／10:00→12:10・直行</p>
+          <p class="price">€200〜260 <span style="font-weight:600;font-size:12px;color:#777">（約¥32,000〜41,600・荷物込）</span></p>
+          <p class="why"><b>帰国便と同じCDG</b>・RER B直通・遅延少・受託手荷物込みで安心。</p>
+        </div>
+        <div class="opt paris">
+          <div class="oimg">
+            <svg width="46" height="46" viewBox="0 0 24 24" fill="#3f9d6b"><path d="M21 16v-2l-8-5V3.5A1.5 1.5 0 0 0 11.5 2 1.5 1.5 0 0 0 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z"/></svg>
+          </div>
+          <h4>💰 Transavia TO3911</h4>
+          <p class="meta">FCO → <b>ORY</b>／09:50→12:00・直行</p>
+          <p class="price" style="color:var(--green)">€81〜140 <span style="font-weight:600;font-size:12px;color:#777">（約¥13,000〜22,400）</span></p>
+          <p class="why"><b>最安。</b>ORY着→Metro14直通。<b>荷物は予約時に追加必須</b>（後付け割高）。</p>
+        </div>
+        <div class="opt paris">
+          <div class="oimg">
+            <svg width="46" height="46" viewBox="0 0 24 24" fill="#9a8255"><path d="M21 16v-2l-8-5V3.5A1.5 1.5 0 0 0 11.5 2 1.5 1.5 0 0 0 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z"/></svg>
+          </div>
+          <h4>据置案 ITA AZ316</h4>
+          <p class="meta">FCO → <b>CDG</b>／08:34→10:46・直行</p>
+          <p class="price" style="color:#9a8255">€161〜330 <span style="font-weight:600;font-size:12px;color:#777">（Classic〜Flex）</span></p>
+          <p class="why">旧プランの<b>€330.72はFlexで割高</b>。Classic（荷物込€161〜200）が取れれば据置可。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ② Rome hotel -->
+    <div class="decision">
+      <div class="dhead">
+        <span class="num">2</span>
+        <h3>ローマ ホテル（3泊 6/28〜7/1）<span class="pin">📍テルミニ近接</span></h3>
+        <span class="tag">未予約</span>
+      </div>
+      <p class="q">深夜21時着＋7/1早朝発のため「テルミニ近接＝空港アクセスの楽さ」を重視。別途ローマ市税 約€45。</p>
+      <div class="opts">
+        <div class="opt best">
+          <span class="ribbon">⭐ 迷ったらコレ</span>
+          <div class="oimg">
+            <svg width="62" height="48" viewBox="0 0 80 56" aria-hidden="true"><rect x="14" y="10" width="52" height="46" rx="2" fill="#c75b39"/><rect x="14" y="10" width="52" height="8" fill="#8c3b22"/><g fill="#fdf6ec"><rect x="20" y="24" width="9" height="9"/><rect x="35" y="24" width="9" height="9"/><rect x="50" y="24" width="9" height="9"/><rect x="20" y="40" width="9" height="9"/><rect x="50" y="40" width="9" height="9"/></g><rect x="36" y="40" width="9" height="16" fill="#5a2614"/></svg>
+          </div>
+          <h4>Augusta Lucilla Palace ★★★★</h4>
+          <p class="meta">テルミニ徒歩5分・朝食込・Booking 9.1</p>
+          <p class="price">€360〜480 <span style="font-weight:600;font-size:12px;color:#777">（約¥57,500〜77,000）</span></p>
+          <p class="why"><b>予算内に収まる唯一の朝食込4つ星。</b>深夜着・早朝発の両方に強い。</p>
+        </div>
+        <div class="opt">
+          <div class="oimg">
+            <svg width="62" height="48" viewBox="0 0 80 56" aria-hidden="true"><rect x="14" y="6" width="52" height="50" rx="2" fill="#d98c5f"/><rect x="20" y="2" width="40" height="6" rx="2" fill="#7fb0c9"/><g fill="#fdf6ec"><rect x="20" y="18" width="9" height="9"/><rect x="35" y="18" width="9" height="9"/><rect x="50" y="18" width="9" height="9"/><rect x="20" y="32" width="9" height="9"/><rect x="35" y="32" width="9" height="9"/><rect x="50" y="32" width="9" height="9"/></g><rect x="36" y="44" width="9" height="12" fill="#5a2614"/></svg>
+          </div>
+          <h4>iQ Hotel Roma ★★★★</h4>
+          <p class="meta">テルミニ徒歩5分・屋上プール・Booking 9.3</p>
+          <p class="price">€480〜600 <span style="font-weight:600;font-size:12px;color:#777">（約¥77,000〜96,000・朝食別）</span></p>
+          <p class="why">全候補で<b>最高スコア</b>。遮音性◎で深夜着も安心。予算上限ぎりぎり。</p>
+          <p style="margin:9px 0 0;font-size:12px"><a href="https://www.agoda.com/ja-jp/iq-hotel-roma/hotel/rome-it.html?checkIn=2026-06-28&amp;los=3&amp;adults=2&amp;rooms=1&amp;currencyCode=JPY&amp;cid=1917614" target="_blank" rel="noopener" style="color:#c75b39;font-weight:800;text-decoration:none">▶ Agodaで料金・空室を見る（6/28〜7/1・3泊）</a></p>
+        </div>
+        <div class="opt">
+          <div class="oimg">
+            <svg width="62" height="48" viewBox="0 0 80 56" aria-hidden="true"><rect x="14" y="10" width="52" height="46" rx="2" fill="#bf6a44"/><path d="M14 10 L40 0 L66 10 Z" fill="#8c3b22"/><g fill="#fdf6ec"><rect x="20" y="22" width="9" height="11"/><rect x="35" y="22" width="9" height="11"/><rect x="50" y="22" width="9" height="11"/></g><rect x="36" y="42" width="9" height="14" fill="#5a2614"/></svg>
+          </div>
+          <h4>Hotel Artemide ★★★★</h4>
+          <p class="meta">Via Nazionale沿い（北側・安全）・朝食絶品</p>
+          <p class="price">€480〜660 <span style="font-weight:600;font-size:12px;color:#777">（約¥77,000〜105,000）</span></p>
+          <p class="why"><b>夜の安全を最優先するならコレ。</b>大通り沿いで明るくトレビ徒歩8分。</p>
+          <p style="margin:9px 0 0;font-size:12px"><a href="https://www.agoda.com/ja-jp/hotel-artemide_6/hotel/rome-it.html?checkIn=2026-06-28&amp;los=3&amp;adults=2&amp;rooms=1&amp;currencyCode=JPY&amp;cid=1844104" target="_blank" rel="noopener" style="color:#c75b39;font-weight:800;text-decoration:none">▶ Agodaで料金・空室を見る（6/28〜7/1・3泊）</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ③ Paris hotel -->
+    <div class="decision">
+      <div class="dhead">
+        <span class="num">3</span>
+        <h3>パリ ホテル（4泊 7/1〜7/5）<span class="pin">📍オペラ9区</span></h3>
+        <span class="tag">未予約</span>
+      </div>
+      <p class="q">MSMツアー集合（ギャラリー・ラファイエット）＆7/5のCDG帰国を踏まえオペラ地区が便利。別途滞在税。</p>
+      <div class="opts">
+        <div class="opt best paris">
+          <span class="ribbon">⭐ 本命（コスパ・安心）</span>
+          <div class="oimg">
+            <svg width="62" height="48" viewBox="0 0 80 56" aria-hidden="true"><rect x="14" y="8" width="52" height="48" rx="2" fill="#2d4a7c"/><rect x="14" y="8" width="52" height="7" fill="#1d335a"/><g fill="#f3f6fb"><rect x="20" y="22" width="9" height="9"/><rect x="35" y="22" width="9" height="9"/><rect x="50" y="22" width="9" height="9"/><rect x="20" y="38" width="9" height="9"/><rect x="50" y="38" width="9" height="9"/></g><rect x="36" y="40" width="9" height="16" fill="#cfa14a"/></svg>
+          </div>
+          <h4>Hotel Joyce – Astotel ★★★</h4>
+          <p class="meta">オペラ9区・無料オープンバー・日本語スタッフ</p>
+          <p class="price">€480〜720 <span style="font-weight:600;font-size:12px;color:#777">（約¥77,000〜115,000）</span></p>
+          <p class="why"><b>TripAdvisorパリ50位</b>。14時〜2時の無料バーで実質コスパ最強。</p>
+          <p style="margin:9px 0 0;font-size:12px"><a href="https://www.agoda.com/ja-jp/hotel-joyce-astotel/hotel/paris-fr.html?checkIn=2026-07-01&amp;los=4&amp;adults=2&amp;rooms=1&amp;currencyCode=JPY&amp;cid=1844104" target="_blank" rel="noopener" style="color:#2d4a7c;font-weight:800;text-decoration:none">▶ Agodaで料金・空室を見る（7/1〜7/5・4泊）</a></p>
+        </div>
+        <div class="opt paris">
+          <div class="oimg">
+            <svg width="62" height="48" viewBox="0 0 80 56" aria-hidden="true"><rect x="14" y="6" width="52" height="50" rx="2" fill="#3b517d"/><g fill="#f3f6fb"><rect x="20" y="16" width="9" height="9"/><rect x="35" y="16" width="9" height="9"/><rect x="50" y="16" width="9" height="9"/><rect x="20" y="30" width="9" height="9"/><rect x="35" y="30" width="9" height="9"/><rect x="50" y="30" width="9" height="9"/></g><rect x="36" y="44" width="9" height="12" fill="#cfa14a"/></svg>
+          </div>
+          <h4>Hotel 10 Opéra ★★★</h4>
+          <p class="meta">ツアー集合地（GaLa）徒歩5分・朝食込</p>
+          <p class="price">€640〜840 <span style="font-weight:600;font-size:12px;color:#777">（約¥102,000〜134,000）</span></p>
+          <p class="why"><b>動線最強。</b>集合地まで歩ける立地。客室数少なめで早期予約推奨。</p>
+          <p style="margin:9px 0 0;font-size:12px"><a href="https://www.agoda.com/ja-jp/hotel-opera-vivaldi/hotel/paris-fr.html?checkIn=2026-07-01&amp;checkOut=2026-07-05&amp;los=4&amp;adults=2&amp;rooms=1&amp;currencyCode=JPY&amp;cid=1922867" target="_blank" rel="noopener" style="color:#2d4a7c;font-weight:800;text-decoration:none">▶ Agodaで料金・空室を見る（7/1〜7/5・4泊）</a> <span style="color:#999">※旧Opera Vivaldi</span></p>
+        </div>
+        <div class="opt paris">
+          <div class="oimg">
+            <svg width="62" height="48" viewBox="0 0 80 56" aria-hidden="true"><rect x="14" y="10" width="52" height="46" rx="2" fill="#5a6f99"/><path d="M14 10 L40 1 L66 10 Z" fill="#3b517d"/><g fill="#f3f6fb"><rect x="22" y="22" width="8" height="10"/><rect x="36" y="22" width="8" height="10"/><rect x="50" y="22" width="8" height="10"/></g><rect x="36" y="42" width="9" height="14" fill="#cfa14a"/></svg>
+          </div>
+          <h4>Caron de Beaumarchais ★★★</h4>
+          <p class="meta">マレ4区・ブティック部門1位・19室</p>
+          <p class="price">€680〜900 <span style="font-weight:600;font-size:12px;color:#777">（約¥109,000〜144,000）</span></p>
+          <p class="why">マレ派の本命。<b>19室で7月は満室になりやすい→即予約</b>。予算やや超過。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ④ safety -->
+    <div class="decision">
+      <div class="dhead">
+        <span class="num">4</span>
+        <h3>テルミニ駅の夜間治安 — どう備える？</h3>
+        <span class="tag" style="background:var(--amber)">要選択</span>
+      </div>
+      <p class="q">テルミニは凶悪犯罪は稀だがスリ・客引きに注意。危険は<b>南側（エスクイリーノ）</b>、安全は<b>北側（Via Nazionale/Repubblica方面）</b>。夜の接点は「6/28夜着」「7/1早朝発」の2回だけ。</p>
+      <div class="opts two ab">
+        <div class="opt" style="border-color:var(--green)">
+          <div class="oimg">
+            <svg width="44" height="48" viewBox="0 0 24 24" fill="none" stroke="#3f9d6b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <h4>A：テルミニ北側で確定</h4>
+          <p class="meta">本命を北側ホテルに（Artemide/iQ/北側確認のAugusta）</p>
+          <p class="why">・7/1朝は<b>正規タクシーで直接FCO</b>（定額€50）<br>・到着夜は大通りを通る／荷物は前持ち<br>✅ <b>空港アクセス最良・コスパ良</b></p>
+        </div>
+        <div class="opt" style="border-color:var(--paris-l)">
+          <div class="oimg">
+            <svg width="44" height="48" viewBox="0 0 24 24" fill="none" stroke="#2d4a7c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5-7-11a7 7 0 0 1 14 0c0 6-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          </div>
+          <h4>B：中心部（モンティ／トレビ周辺）に変更</h4>
+          <p class="meta">夜の雰囲気が良く安心・テルミニを通らない</p>
+          <p class="why">・空港は<b>往復タクシー（各€50・計約€100）</b><br>・観光地は近いが空港アクセスはやや手間<br>🔁 <b>選ぶなら中心部ホテルを再調査します</b></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TIMELINE ===================== -->
+  <section>
+    <div class="sec-head">
+      <span class="ic" style="background:linear-gradient(135deg,#d9a441,#b9842a)">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+      </span>
+      <div>
+        <h2>いつまでに（おすすめ着手順）</h2>
+        <div class="lead">満室・売切れリスクの高い順に</div>
+      </div>
+    </div>
+    <div class="timeline">
+      <div class="tcard now">
+        <div class="when">▶ 今週中</div>
+        <h4>埋まる前に確保</h4>
+        <ul><li>ホテル（ローマ＆パリ）</li><li>伊→仏フライト（価格上昇前）</li></ul>
+      </div>
+      <div class="tcard t2">
+        <div class="when">〜2週間前（6/14頃）</div>
+        <h4>人気枠の予約</h4>
+        <ul><li>ヴァチカン美術館</li><li>ルーブル／ヴェルサイユ</li></ul>
+      </div>
+      <div class="tcard t3">
+        <div class="when">〜1週間前（6/21頃）</div>
+        <h4>残りの予約・手配</h4>
+        <ul><li>コロッセオ・パンテオン</li><li>eSIM・現地通貨</li></ul>
+      </div>
+      <div class="tcard t4">
+        <div class="when">前日〜当日</div>
+        <h4>現地チェック</h4>
+        <ul><li>MSM潮汐（7/4）</li><li>青の洞窟の波（6/30朝）</li><li>FCO送迎タクシー手配</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p><b>注意：</b>料金はすべて 2026-05-31 時点の概算（大人2名・¥160/€換算）です。航空運賃・ホテル料金は動的に変動するため、予約時に必ず各サイトで最終確認してください。便名・時刻は変更の可能性があり、フライトは Google Flights / Skyscanner で7/1の最新便を確認のうえ予約します。</p>
+    <p>関連ファイル：<b>schedule_asiana_0628.md</b>（全日程）／<b>hotels.md</b>（ホテル候補詳細）／<b>links.md</b>（リンク集）／<b>packing.md</b>（持ち物）</p>
+  </footer>
+
+</div>
+
+<script>
+  // 出発までの残り日数（目標: 2026-06-28）
+  (function(){
+    var dep = new Date(2026,5,28); // month is 0-indexed → 5 = June
+    var now = new Date();
+    var d0 = new Date(now.getFullYear(),now.getMonth(),now.getDate());
+    var diff = Math.round((dep - d0)/86400000);
+    document.getElementById('cd').textContent = diff >= 0 ? diff : '0';
+  })();
+</script>
+</body>
+</html>
