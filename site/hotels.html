@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ホテル｜Roma × Paris Honeymoon 2026</title>
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/nav.js" defer></script>
+<style>
+  /* ===== hotels page local styles ===== */
+  .page-hero{
+    background:linear-gradient(110deg,#8b2c1d 0%,#c44a35 38%,#4d6390 65%,#2d4a7c 100%);
+    color:#fff;padding:64px 6vw 52px;position:relative;overflow:hidden;
+  }
+  .page-hero::after{content:"";position:absolute;inset:0;
+    background:radial-gradient(ellipse at 70% 50%,rgba(255,255,255,.06) 0%,transparent 70%)}
+  .page-hero .kicker{font-family:"Helvetica Neue",Arial,sans-serif;font-size:11px;
+    letter-spacing:.5em;text-transform:uppercase;opacity:.85;margin-bottom:16px}
+  .page-hero h1{font-family:"Cormorant Garamond","Hiragino Mincho ProN",serif;
+    font-size:clamp(36px,7vw,72px);font-weight:400;font-style:italic;line-height:1.1;margin-bottom:18px}
+  .page-hero .lead{font-size:15px;opacity:.9;max-width:640px;line-height:1.85}
+  .picks-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:32px 0 0}
+  @media(max-width:680px){.picks-grid{grid-template-columns:1fr}}
+  .pick-box{background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.28);
+    backdrop-filter:blur(4px);border-radius:6px;padding:18px 20px}
+  .pick-box .city{font-family:"Helvetica Neue",Arial,sans-serif;font-size:10px;
+    letter-spacing:.4em;text-transform:uppercase;opacity:.8;margin-bottom:6px}
+  .pick-box strong{font-size:16px;display:block;margin-bottom:6px}
+  .pick-box p{font-size:13px;opacity:.9;line-height:1.7;margin:0}
+
+  /* ===== hotel card ===== */
+  .hotel-photo{border-radius:3px;height:170px;object-fit:cover;width:100%;
+    margin-bottom:12px;background:#e8ddd0}
+  .flatcard h4{font-size:17px;margin-bottom:4px}
+  .flatcard .meta{margin-bottom:8px}
+  .flatcard ul{margin-bottom:0}
+  .flatcard li{margin:3px 0}
+  .book-link{display:inline-block;margin-top:12px;font-family:"Helvetica Neue",Arial,sans-serif;
+    font-size:12px;letter-spacing:.1em;color:var(--c-classic);text-decoration:none;
+    border-bottom:1px solid currentColor;padding-bottom:1px}
+  .book-link:hover{opacity:.7}
+  .book-link.paris{color:var(--c-paris)}
+
+  /* tier badge variants */
+  .tier.gold{color:#6b4c0a;border-color:var(--c-hidden);background:rgba(201,169,97,.12)}
+  .tier.paris{color:var(--c-paris);border-color:var(--c-paris)}
+  .tier.warn{color:#7a4010;border-color:#c07038;background:rgba(192,112,56,.08)}
+
+  /* score badge */
+  .score-badge{display:inline-block;font-family:"Helvetica Neue",Arial,sans-serif;
+    font-size:11px;font-weight:700;background:var(--c-ink);color:#e8d9c8;
+    padding:2px 8px;border-radius:3px;margin-left:6px;vertical-align:middle}
+</style>
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="brand"><a href="index.html">ROMA — PARIS · 2026</a></div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shiori.html">しおり</a></li>
+    <li><a href="schedule.html">日程</a></li>
+    <li><a href="roma.html">Roma</a></li>
+    <li><a href="paris.html">Paris</a></li>
+    <li><a class="active" href="hotels.html">Hotel</a></li>
+    <li><a href="packing.html">持ち物</a></li>
+    <li><a href="checklist.html">準備</a></li>
+  </ul>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <p class="kicker">Hotel Guide · Roma &amp; Paris · 2026</p>
+  <h1>ホテルガイド</h1>
+  <p class="lead">
+    ローマ 3泊（6/28〜7/1）とパリ 4泊（7/1〜7/5）の宿泊候補をまとめました。<br>
+    本命・2番手をランキング順に掲載しています。料金は各予約サイトでご確認ください。
+  </p>
+  <div class="picks-grid">
+    <div class="pick-box">
+      <div class="city">Roma · 本命</div>
+      <strong>Augusta Lucilla Palace</strong>
+      <p>★★★★ · テルミニ徒歩5分 · 朝食込 · Booking 9.1。深夜着・早朝発の両方に強く、予算内に収まる唯一の4つ星朝食付き。</p>
+    </div>
+    <div class="pick-box">
+      <div class="city">Paris · 本命</div>
+      <strong>Timhotel Opéra Blanche Fontaine</strong>
+      <p>★★★★ · 9区ブランシュ · 中庭 · エアコン。喧騒を離れた中庭が魅力の4つ星。エアコン・朝食・多言語スタッフが好評。</p>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== ROMA ==================== -->
+<section class="chapter" id="roma">
+  <div class="ch-head">
+    <div class="num">01</div>
+    <div>
+      <div class="label">Roma · 3 Nights</div>
+      <h2>ローマのホテル</h2>
+      <p>6/28（日）深夜着 → 7/1（水）早朝発・フィウミチーノ空港。テルミニ駅近接 = 空港アクセス重視のエリア選び。</p>
+    </div>
+  </div>
+
+  <div class="cardgrid">
+
+    <!-- Augusta Lucilla Palace / 本命 -->
+    <div class="flatcard">
+      <img
+        src="https://cdn.blastness.biz/media/1664/augusta-top/thumbs/full/1920-camere-augusta-lucilla-palace-01.jpg"
+        alt="Augusta Lucilla Palace" class="hotel-photo"
+        loading="lazy" referrerpolicy="no-referrer"
+        onerror="this.style.display='none'">
+      <h4>Augusta Lucilla Palace <span class="tier gold">本命</span></h4>
+      <div class="meta">📍 テルミニ駅 徒歩5分 · ★★★★ <span class="score-badge">Booking 9.1</span></div>
+      <ul>
+        <li>無料朝食ブッフェ込み（予算内唯一）</li>
+        <li>屋上テラスからローマの眺望</li>
+        <li>深夜着・早朝発の両方に強い立地</li>
+        <li>19世紀建物改装の上品な4つ星</li>
+      </ul>
+      <p style="margin-top:10px">
+        <a href="https://www.agoda.com/ja-jp/augusta-lucilla-palace-hotel/hotel/rome-it.html?checkIn=2026-06-28&checkOut=2026-07-01&los=3&adults=2&rooms=1&currencyCode=JPY&cid=1922867"
+           target="_blank" rel="noopener" class="book-link">Agoda で見る（6/28〜7/1・3泊）→</a>
+      </p>
+    </div>
+
+    <!-- iQ Hotel Roma / 次点 -->
+    <div class="flatcard">
+      <img
+        src="https://www.iqhotelroma.it/static/2840ab9773366979165b78549f84963c/07dfe/b06fa424-a3d3-4530-aa7c-4e02f4536c05.jpg"
+        alt="iQ Hotel Roma" class="hotel-photo"
+        loading="lazy" referrerpolicy="no-referrer"
+        onerror="this.style.display='none'">
+      <h4>iQ Hotel Roma <span class="tier">次点</span></h4>
+      <div class="meta">📍 テルミニ駅 徒歩5分 · ★★★★ <span class="score-badge">Booking 9.3</span></div>
+      <ul>
+        <li>全候補で最高スコア</li>
+        <li>屋上プール＆バーからのローマ眺望</li>
+        <li>遮音性に優れた快適な客室</li>
+        <li>朝食は別途（リーズナブルな価格）</li>
+      </ul>
+      <p style="margin-top:10px">
+        <a href="https://www.agoda.com/ja-jp/iq-hotel-roma/hotel/rome-it.html?checkIn=2026-06-28&los=3&adults=2&rooms=1&currencyCode=JPY&cid=1917614"
+           target="_blank" rel="noopener" class="book-link">Agoda で見る（6/28〜7/1・3泊）→</a>
+      </p>
+    </div>
+
+    <!-- Hotel Artemide -->
+    <div class="flatcard">
+      <img
+        src="https://www.hotelartemide.it/static/ee6ae7db978739bb0f8f969d03796604/ff2b2/8dfdb95c-05ea-4fbc-92cd-c22fb3a54562.jpg"
+        alt="Hotel Artemide" class="hotel-photo"
+        loading="lazy" referrerpolicy="no-referrer"
+        onerror="this.style.display='none'">
+      <h4>Hotel Artemide <span class="tier">朝食重視</span></h4>
+      <div class="meta">📍 Via Nazionale・テルミニ徒歩7分 · ★★★★ <span class="score-badge">Booking 8.9</span></div>
+      <ul>
+        <li>タルト10種以上の豊富な朝食ブッフェ</li>
+        <li>大通り沿いで夜も安全・安心</li>
+        <li>トレビの泉 徒歩8分</li>
+        <li>フレンドリーな多言語スタッフ</li>
+      </ul>
+      <p style="margin-top:10px">
+        <a href="https://www.agoda.com/ja-jp/hotel-artemide_6/hotel/rome-it.html?checkIn=2026-06-28&los=3&adults=2&rooms=1&currencyCode=JPY&cid=1844104"
+           target="_blank" rel="noopener" class="book-link">Agoda で見る（6/28〜7/1・3泊）→</a>
+      </p>
+    </div>
+
+    <!-- UNAHOTELS Decò -->
+    <div class="flatcard">
+      <img
+        src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/04/0c/7c/esterno.jpg"
+        alt="UNAHOTELS Decò Roma" class="hotel-photo"
+        loading="lazy" referrerpolicy="no-referrer"
+        onerror="this.style.display='none'">
+      <h4>UNAHOTELS Decò Roma <span class="tier warn">高め €€€</span></h4>
+      <div class="meta">📍 テルミニ駅 徒歩1分 · ★★★★ <span class="score-badge">Booking 8.6</span></div>
+      <ul>
+        <li>駅徒歩1分・深夜着・早朝発に無敵</li>
+        <li>アールデコ調のデザインホテル</li>
+        <li>朝食は別途</li>
+        <li>料金は候補中最高水準</li>
+      </ul>
+      <p style="margin-top:10px">
+        <a href="https://www.booking.com/hotel/it/una-roma.html"
+           target="_blank" rel="noopener" class="book-link">予約サイトで見る →</a>
+      </p>
+    </div>
+
+    <!-- Hotel Ariston -->
+    <div class="flatcard">
+      <img
+        src="https://www.hotelariston.it/data/1366/gallery-home-1.jpg"
+        alt="Hotel Ariston" class="hotel-photo"
+        loading="lazy" referrerpolicy="no-referrer"
+        onerror="this.style.display='none'">
+      <h4>Hotel Ariston <span class="tier">日本語対応</span></h4>
+      <div class="meta">📍 テルミニ駅 徒歩3分 · ★★★★ <span class="score-badge">Booking 8.1</span></div>
+      <ul>
+        <li>日本語スタッフ在籍・ドアマン常駐</li>
+        <li>朝食込でコスパ良好</li>
+        <li>モダンデザイン・フィットネス完備</li>
+        <li>壁がやや薄め（防音注意）</li>
+      </ul>
+      <p style="margin-top:10px">
+        <a href="https://www.booking.com/hotel/it/ariston-roma.html"
+           target="_blank" rel="noopener" class="book-link">予約サイトで見る →</a>
+      </p>
+    </div>
+
+    <!-- Hotel Hiberia -->
+    <div class="flatcard">
+      <img
+        src="https://www.hotelhiberia.it/static/359e64d0f20ea73af213a2d54c7b75bb/5267c/37175af2-a638-4756-bac3-fb437a680b77.jpg"
+        alt="Hotel Hiberia" class="hotel-photo"
+        loading="lazy" referrerpolicy="no-referrer"
+        onerror="this.style.display='none'">
+      <h4>Hotel Hiberia <span class="tier">観光立地</span></h4>
+      <div class="meta">📍 トレビの泉 徒歩5分 · ★★★ <span class="score-badge">Booking 8.9</span></div>
+      <ul>
+        <li>トレビの泉・スペイン広場に至近</li>
+        <li>朝食込み・スタッフ対応が親切</li>
+        <li>テルミニから遠く空港アクセス不向き</li>
+        <li>深夜着・早朝発には要注意</li>
+      </ul>
+      <p style="margin-top:10px">
+        <a href="https://www.booking.com/hotel/it/hiberiahotelrome.html"
+           target="_blank" rel="noopener" class="book-link">予約サイトで見る →</a>
+      </p>
+    </div>
+
+    <!-- Hotel Damaso -->
+    <div class="flatcard">
+      <img
+        src="https://www.hoteldamaso.it/images/damas-mid1.jpg"
+        alt="Hotel Damaso" class="hotel-photo"
+        loading="lazy" referrerpolicy="no-referrer"
+        onerror="this.style.display='none'">
+      <h4>Hotel Damaso <span class="tier">旧市街</span></h4>
+      <div class="meta">📍 ナヴォーナ広場 徒歩2分 · ★★★★ <span class="score-badge">TA 4.0</span></div>
+      <ul>
+        <li>パノラマテラスからローマ市街を一望</li>
+        <li>パンテオン・カンポ・デ・フィオーリ近く</li>
+        <li>朝食込み・19世紀建造物改装</li>
+        <li>テルミニから遠く今回の動線には不向き</li>
+      </ul>
+      <p style="margin-top:10px">
+        <a href="https://www.booking.com/hotel/it/damaso.html"
+           target="_blank" rel="noopener" class="book-link">予約サイトで見る →</a>
+      </p>
+    </div>
+
+    <!-- Hotel Celio -->
+    <div class="flatcard">
+      <img
+        src="https://pix8.agoda.net/hotelImages/233340/0/f4d8885584b8f4a20039913b3ab780e2.jpeg?s=1024x768"
+        alt="Hotel Celio" class="hotel-photo"
+        loading="lazy" referrerpolicy="no-referrer"
+        onerror="this.style.display='none'">
+      <h4>Hotel Celio <span class="tier">コロッセオ近</span></h4>
+      <div class="meta">📍 コロッセオ 徒歩3分 · ★★★ <span class="score-badge">Booking 8.2</span></div>
+      <ul>
+        <li>屋根裏テラスからコロッセオを眺望</li>
+        <li>1870年のパラッツォ改装・モザイクタイル</li>
+        <li>エレベーターなし（階段のみ）</li>
+        <li>ロマンティックな雰囲気</li>
+      </ul>
+      <p style="margin-top:10px">
+        <a href="https://www.booking.com/hotel/it/celio.html"
+           target="_blank" rel="noopener" class="book-link">予約サイトで見る →</a>
+      </p>
+    </div>
+
+  </div><!-- /cardgrid roma -->
+
+  <div class="note" style="margin-top:32px">
+    <strong>治安メモ（ローマ）：</strong>テルミニ駅の<strong>北側</strong>（Via Nazionale・Repubblica方面）は夜も安全。
+    <strong>南側</strong>（エスクイリーノ・Piazza Vittorio方面）は夜間要注意。
+    7/1早朝の空港移動は正規タクシー利用推奨。スリ対策は荷物前持ち・ファスナー閉。
+  </div>
+</section>
+
+<!-- ==================== PARIS ==================== -->
+<section class="chapter" id="paris">
+  <div class="ch-head">
+    <div class="num paris">02</div>
+    <div>
+      <div class="label">Paris · 4 Nights</div>
+      <h2>パリのホテル</h2>
+      <p>7/1（水）着 → 7/5（日）シャルル・ド・ゴール空港出発。7/4のMSMツアー集合地（ギャラリー・ラファイエット）へのアクセスも考慮。</p>
+    </div>
+  </div>
+
+  <div class="cardgrid">
+
+    <!-- Timhotel Opéra Blanche Fontaine / 本命 -->
+    <div class="flatcard">
+      <img
+        src="https://cf.bstatic.com/xdata/images/hotel/608x352/667788373.webp?k=e84e712fbc1d3d5a4186709595713b182e6245a8bf2742e783c32a150d8cd881&o="
+        alt="Timhotel Opéra Blanche Fontaine" class="hotel-photo"
+        loading="lazy" referrerpolicy="no-referrer"
+        onerror="this.style.display='none'">
+      <h4>Timhotel Opéra Blanche Fontaine <span class="tier gold">本命</span></h4>
+      <div class="meta">📍 9区 ブランシュ（Blanche駅 徒歩2分） · ★★★★</div>
+      <ul>
+        <li>喧騒を離れた私設中庭・テラス</li>
+        <li>エアコン完備（7月の暑さ対策◎）</li>
+        <li>朝食好評・無料夕方アペリティフ</li>
+        <li>多言語スタッフ・ムーラン・ルージュ近く</li>
+        <li>ギャラリー・ラファイエット 徒歩約15分</li>
+      </ul>
+      <p style="margin-top:10px">
+        <a href="https://www.agoda.com/ja-jp/timhotel-opera-blanche-fontaine/hotel/paris-fr.html?checkIn=2026-07-01&checkOut=2026-07-05&los=4&adults=2&rooms=1&currencyCode=JPY&cid=1922867"
+           target="_blank" rel="noopener" class="book-link paris">Agoda で見る（7/1〜7/5・4泊）→</a>
+      </p>
+    </div>
+
+    <!-- Villa Alessandra / 2番手 -->
+    <div class="flatcard">
+      <img
+        src="https://hapi.mmcreation.com/media/46/2023/CHAMBRES/Twin/Twin_3.jpg"
+        alt="Villa Alessandra" class="hotel-photo"
+        loading="lazy" referrerpolicy="no-referrer"
+        onerror="this.style.display='none'">
+      <h4>Villa Alessandra <span class="tier paris">2番手</span></h4>
+      <div class="meta">📍 17区 テルヌ（Ternes駅 徒歩6分） · ★★★ <span class="score-badge">HC 7.8</span></div>
+      <ul>
+        <li>静かな高級住宅街・プロヴァンス風中庭</li>
+        <li>凱旋門 徒歩約10分（7/2観光と好相性）</li>
+        <li>本命より低価格帯</li>
+        <li>MSMツアー集合地まではメトロ15〜20分</li>
+      </ul>
+      <p style="margin-top:10px">
+        <a href="https://www.agoda.com/ja-jp/villa-alessandra-hotel/hotel/paris-fr.html?checkIn=2026-07-01&los=4&adults=2&rooms=1&currencyCode=JPY&cid=1844104"
+           target="_blank" rel="noopener" class="book-link paris">Agoda で見る（7/1〜7/5・4泊）→</a>
+      </p>
+    </div>
+
+    <!-- Hotel 10 Opéra -->
+    <div class="flatcard">
+      <img
+        src="https://cf.bstatic.com/xdata/images/hotel/608x352/284660666.webp?k=d289f395627bf08d629cb76c48912946ac79ebbcf638b49c20499f7bea9a1e2b&o="
+        alt="Hotel 10 Opéra by HappyCulture" class="hotel-photo"
+        loading="lazy" referrerpolicy="no-referrer"
+        onerror="this.style.display='none'">
+      <h4>Hotel 10 Opéra <span class="tier">集合地最寄り</span></h4>
+      <div class="meta">📍 9区 オペラ（10 Rue du Helder） · ★★★ <span class="score-badge">Booking 9.0</span></div>
+      <ul>
+        <li>ギャラリー・ラファイエット 徒歩5分</li>
+        <li>オペラ座・ガルニエ 徒歩3分</li>
+        <li>朝食込み・モダンで可愛らしい内装</li>
+        <li>客室数少なめ → 早期予約を推奨</li>
+      </ul>
+      <p style="margin-top:10px">
+        <a href="https://www.agoda.com/ja-jp/hotel-opera-vivaldi/hotel/paris-fr.html?checkIn=2026-07-01&checkOut=2026-07-05&los=4&adults=2&rooms=1&currencyCode=JPY&cid=1922867"
+           target="_blank" rel="noopener" class="book-link paris">Agoda で見る（7/1〜7/5・4泊）→</a>
+      </p>
+    </div>
+
+    <!-- Hotel Joyce -->
+    <div class="flatcard">
+      <img
+        src="https://cf.bstatic.com/xdata/images/hotel/608x352/85304746.webp?k=7668829f48053c1ab5d98d8941e4b4b6c505ea1dd3dbcd420879187397c1592e&o="
+        alt="Hotel Joyce Astotel" class="hotel-photo"
+        loading="lazy" referrerpolicy="no-referrer"
+        onerror="this.style.display='none'">
+      <h4>Hotel Joyce - Astotel <span class="tier">無料バー</span></h4>
+      <div class="meta">📍 9区 サン＝ジョルジュ · ★★★ <span class="score-badge">Booking 8.8</span></div>
+      <ul>
+        <li>14時〜深夜2時まで無料オープンバー</li>
+        <li>日本語スタッフ在籍・安心感◎</li>
+        <li>TripAdvisor パリ上位50位</li>
+        <li>朝食は別途</li>
+      </ul>
+      <p style="margin-top:10px">
+        <a href="https://www.agoda.com/ja-jp/hotel-joyce-astotel/hotel/paris-fr.html?checkIn=2026-07-01&los=4&adults=2&rooms=1&currencyCode=JPY&cid=1844104"
+           target="_blank" rel="noopener" class="book-link paris">Agoda で見る（7/1〜7/5・4泊）→</a>
+      </p>
+    </div>
+
+    <!-- Caron de Beaumarchais -->
+    <div class="flatcard">
+      <img
+        src="https://cf.bstatic.com/xdata/images/hotel/608x352/696572556.webp?k=de9afbc1ebaca9fbfc95456ad41be20df540513be23b2e72d9332105d9391abe&o="
+        alt="Hôtel Caron de Beaumarchais" class="hotel-photo"
+        loading="lazy" referrerpolicy="no-referrer"
+        onerror="this.style.display='none'">
+      <h4>Hôtel Caron de Beaumarchais <span class="tier">マレ</span></h4>
+      <div class="meta">📍 4区 マレ（Saint-Paul 徒歩4分） · ★★★ <span class="score-badge">Booking 8.9</span></div>
+      <ul>
+        <li>マレのブティック部門1位（Conde Nast選出）</li>
+        <li>7/1着→ランチ・マレ散策の動線に最適</li>
+        <li>19室・満室になりやすいので早期予約を</li>
+        <li>ノートルダム・セーヌ川近く</li>
+      </ul>
+      <p style="margin-top:10px">
+        <a href="https://www.booking.com/hotel/fr/caron-de-beaumarchais.html"
+           target="_blank" rel="noopener" class="book-link paris">予約サイトで見る →</a>
+      </p>
+    </div>
+
+    <!-- Opera Deauville -->
+    <div class="flatcard">
+      <img
+        src="https://www.paris-hotel-deauville-opera.com/uploads/2016/10/Cohen-OPERA-DEAUVILLE-2-2.jpg"
+        alt="Hotel Opera Deauville" class="hotel-photo"
+        loading="lazy" referrerpolicy="no-referrer"
+        onerror="this.style.display='none'">
+      <h4>Hotel Opera Deauville <span class="tier">コスト重視</span></h4>
+      <div class="meta">📍 9区 サン＝ラザール（40 Rue d'Amsterdam） · ★★★ <span class="score-badge">TA 7.4</span></div>
+      <ul>
+        <li>ギャラリー・ラファイエット 徒歩10分</li>
+        <li>料金は今回の候補で最も安め</li>
+        <li>スコアはやや低め・設備に古さあり</li>
+        <li>立地とコスト最優先の枠</li>
+      </ul>
+      <p style="margin-top:10px">
+        <a href="https://www.agoda.com/ja-jp/opera-deauville-hotel/hotel/paris-fr.html?checkIn=2026-07-01&los=4&adults=2&rooms=1&currencyCode=JPY&cid=1844104"
+           target="_blank" rel="noopener" class="book-link paris">Agoda で見る（7/1〜7/5・4泊）→</a>
+      </p>
+    </div>
+
+    <!-- du Printemps -->
+    <div class="flatcard">
+      <img
+        src="https://cf.bstatic.com/xdata/images/hotel/608x352/273174052.webp?k=573e2aeb5d069ab15700ca8b4948f9dea631232f2f7481aa5a6d1438110c6a2b&o="
+        alt="Hôtel du Printemps" class="hotel-photo"
+        loading="lazy" referrerpolicy="no-referrer"
+        onerror="this.style.display='none'">
+      <h4>Hôtel du Printemps <span class="tier">閑静 €</span></h4>
+      <div class="meta">📍 9区 サン＝ラザール · ★★ <span class="score-badge">Booking 8.5</span></div>
+      <ul>
+        <li>閑静・アップグレードでバスタブ付き</li>
+        <li>価格の割に満足度が高い</li>
+        <li>環境配慮（グリーンキー認証）</li>
+        <li>設備は最小限</li>
+      </ul>
+      <p style="margin-top:10px">
+        <a href="https://www.booking.com/hotel/fr/du-printemps.html"
+           target="_blank" rel="noopener" class="book-link paris">予約サイトで見る →</a>
+      </p>
+    </div>
+
+    <!-- André Latin -->
+    <div class="flatcard">
+      <img
+        src="https://d255bez5tafa8g.cloudfront.net/cache/img/18720ed1175af012ce98cfb3d80db7d0e7bf1272-18720e-1200-627-crop.jpg"
+        alt="Hôtel André Latin" class="hotel-photo"
+        loading="lazy" referrerpolicy="no-referrer"
+        onerror="this.style.display='none'">
+      <h4>Hôtel André Latin <span class="tier">左岸</span></h4>
+      <div class="meta">📍 5区 カルチェ・ラタン · ★★★ <span class="score-badge">Booking 8.8</span></div>
+      <ul>
+        <li>リュクサンブール公園・パンテオン 徒歩5分</li>
+        <li>CDG空港直通 RER B線が便利</li>
+        <li>2020年リノベ・フランス製高品質寝具</li>
+        <li>MSMツアー集合地からは距離あり</li>
+      </ul>
+      <p style="margin-top:10px">
+        <a href="https://www.booking.com/hotel/fr/comfort-andre-latin.html"
+           target="_blank" rel="noopener" class="book-link paris">予約サイトで見る →</a>
+      </p>
+    </div>
+
+    <!-- de la Bretonnerie -->
+    <div class="flatcard">
+      <img
+        src="https://hapi.mmcreation.com/hapidam/26b6b49d-4388-4c68-b335-54d9d75f0c59/hotel-de-la-bretonnerie-triple-elegance-002.jpeg"
+        alt="Hôtel de la Bretonnerie" class="hotel-photo"
+        loading="lazy" referrerpolicy="no-referrer"
+        onerror="this.style.display='none'">
+      <h4>Hôtel de la Bretonnerie <span class="tier warn">エアコン無し注意</span></h4>
+      <div class="meta">📍 4区 マレ（Hôtel de Ville 徒歩4分） · ★★★ <span class="score-badge">Booking 8.4</span></div>
+      <ul>
+        <li>17世紀建物・露出した梁や石造りの装飾</li>
+        <li>ピカソ美術館・ポンピドゥー近く</li>
+        <li><strong>エアコンなし → 7月の猛暑に要注意</strong></li>
+        <li>歴史的雰囲気重視向け</li>
+      </ul>
+      <p style="margin-top:10px">
+        <a href="https://www.booking.com/hotel/fr/de-la-bretonnerie.html"
+           target="_blank" rel="noopener" class="book-link paris">予約サイトで見る →</a>
+      </p>
+    </div>
+
+    <!-- Le Relais Saint Honoré -->
+    <div class="flatcard">
+      <img
+        src="https://hotel-relais-saint-honore.com/wp-content/uploads/sites/3/19a5972-etoile-1.jpg"
+        alt="Le Relais Saint Honoré" class="hotel-photo"
+        loading="lazy" referrerpolicy="no-referrer"
+        onerror="this.style.display='none'">
+      <h4>Le Relais Saint Honoré <span class="tier warn">高め €€€</span></h4>
+      <div class="meta">📍 1区 チュイルリー（Tuileries 徒歩5分） · ★★★★ <span class="score-badge">Booking 8.9</span></div>
+      <ul>
+        <li>ルーブル美術館 徒歩10分の絶好立地</li>
+        <li>有機素材の朝食込み・毎日チョコレートサービス</li>
+        <li>17世紀建物を完全リノベ</li>
+        <li>料金は予算上限を超えるため記念日向け</li>
+      </ul>
+      <p style="margin-top:10px">
+        <a href="https://www.booking.com/hotel/fr/lerelaissainthonore.html"
+           target="_blank" rel="noopener" class="book-link paris">予約サイトで見る →</a>
+      </p>
+    </div>
+
+    <!-- Hôtel Hana Paris -->
+    <div class="flatcard">
+      <img
+        src="https://hotelhana-paris.com/_next/static/media/Hotel-Hana-Opera-1.9f823d93.jpg"
+        alt="Hôtel Hana Paris" class="hotel-photo"
+        loading="lazy" referrerpolicy="no-referrer"
+        onerror="this.style.display='none'">
+      <h4>Hôtel Hana Paris <span class="tier gold">5つ星</span></h4>
+      <div class="meta">📍 2区 オペラ · ★★★★★ <span class="score-badge">Booking 9.2</span></div>
+      <ul>
+        <li>和の美意識とパリの優雅さが融合</li>
+        <li>スパ・室内プール・酒バー完備</li>
+        <li>TripAdvisor 5.0・日本人旅行者に特に好評</li>
+        <li>特別な1泊・記念日向けの高級枠</li>
+      </ul>
+      <p style="margin-top:10px">
+        <a href="https://www.booking.com/hotel/fr/hana-paris.html"
+           target="_blank" rel="noopener" class="book-link paris">予約サイトで見る →</a>
+      </p>
+    </div>
+
+  </div><!-- /cardgrid paris -->
+
+  <div class="note" style="margin-top:32px">
+    <strong>治安メモ（パリ）：</strong>
+    マレ4区・オペラ1〜2〜9区・左岸カルチェ・ラタン5〜6区は安全。
+    17区テルヌ／凱旋門周辺（南西部）は高級住宅街で安心。
+    本命Timhotelのブランシュ／ピガールはムーラン・ルージュ至近で夜は賑やかだが、南ピガール（SoPi）側は概ね安全。
+    10区北部・17区北部〜18区は夜間要注意。
+  </div>
+</section>
+
+<footer class="site">
+  <div class="ftop">
+    <div class="brand">ROMA — PARIS · HONEYMOON 2026</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="schedule.html">日程</a>
+      <a href="roma.html">Roma</a>
+      <a href="paris.html">Paris</a>
+      <a href="hotels.html">Hotel</a>
+      <a href="packing.html">持ち物</a>
+      <a href="checklist.html">準備</a>
+    </nav>
+  </div>
+  <div class="fine">2026/6/28–7/6 · 8泊9日 · 料金・予約番号は非掲載。写真は各予約/公式サイトより。地図 © OpenStreetMap contributors.</div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roma × Paris — Honeymoon 2026｜旅のトップ</title>
+<meta name="description" content="2026年6月28日〜7月6日 ローマ＆パリ 8泊9日の旅。日程・地図・ガイド。">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/nav.js" defer></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="assets/maps.js" defer></script>
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="brand"><a href="index.html">ROMA — PARIS · 2026</a></div>
+  <ul>
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="shiori.html">しおり</a></li>
+    <li><a href="schedule.html">日程</a></li>
+    <li><a href="roma.html">Roma</a></li>
+    <li><a href="paris.html">Paris</a></li>
+    <li><a href="hotels.html">Hotel</a></li>
+    <li><a href="packing.html">持ち物</a></li>
+    <li><a href="checklist.html">準備</a></li>
+  </ul>
+</nav>
+
+<header class="hero" style="background-color:#1a1410;background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Trevi_Fountain_-_Roma.jpg/3840px-Trevi_Fountain_-_Roma.jpg');">
+  <div class="small">A Honeymoon Field Guide · Asiana 2026</div>
+  <h1>Roma <em style="font-style:normal;opacity:.7">×</em> Paris<span>2026.06.28 — 07.06 · 8泊9日</span></h1>
+  <p class="lead">関空からソウル経由でローマへ。永遠の都で3泊し、空路でアルプスを越えてパリへ4泊。<br>二人で巡る、定番と路地裏の9日間。日程・地図・ガイドをこの一冊に。</p>
+  <div class="meta-bar">
+    <div>ROUTE<span>関空 → 仁川 → Roma → Paris → 仁川 → 関空</span></div>
+    <div>STAY<span>ローマ3泊・パリ4泊</span></div>
+    <div>DAY TRIPS<span>Capri · Mont-St-Michel · Versailles</span></div>
+  </div>
+</header>
+
+<div style="text-align:center;padding:30px 5vw 6px">
+  <a href="shiori.html" style="display:inline-block;background:#8b2c1d;color:#fbf8f3;text-decoration:none;font-weight:700;padding:16px 36px;border-radius:40px;letter-spacing:.06em;box-shadow:0 8px 26px rgba(139,44,29,.35)">✦ 旅のしおりを開く — 見どころ・食べる価値・注意点</a>
+  <div style="font-size:13px;opacity:.6;margin-top:10px">写真たっぷりで、各日の楽しみ方がわかる読み物ページ</div>
+</div>
+
+<aside class="itinerary">
+  <div class="day"><div class="label">Day 1</div><div class="date">6/28 日</div><div class="what">関空発 → 夜ローマ着</div></div>
+  <div class="day"><div class="label">Day 2</div><div class="date">6/29 月</div><div class="what">青の洞窟（カプリ島）</div></div>
+  <div class="day"><div class="label">Day 3</div><div class="date">6/30 火</div><div class="what">ヴァチカン → 旧市街</div></div>
+  <div class="day"><div class="label">Day 4</div><div class="date">7/1 水</div><div class="what">ITAでパリへ → 凱旋門・エッフェル夜景</div></div>
+  <div class="day"><div class="label">Day 5</div><div class="date">7/2 木</div><div class="what">モン・サン・ミッシェル</div></div>
+  <div class="day"><div class="label">Day 6</div><div class="date">7/3 金</div><div class="what">ルーブル（金曜夜間）＋オルセー</div></div>
+  <div class="day"><div class="label">Day 7</div><div class="date">7/4 土</div><div class="what">ヴェルサイユ宮殿</div></div>
+  <div class="day"><div class="label">Day 8</div><div class="date">7/5 日</div><div class="what">パリ自由散策 → 帰国便</div></div>
+  <div class="day"><div class="label">Day 9</div><div class="date">7/6 月</div><div class="what">仁川乗継 → 関空着</div></div>
+</aside>
+
+<section class="chapter">
+  <div class="ch-head">
+    <div class="num"><em>01</em></div>
+    <div>
+      <div class="label">THE ROUTE · 旅の全体像</div>
+      <h2>ローマからパリへ、<br>そして日帰りの寄り道</h2>
+      <p>ローマで3泊して街と青の洞窟を堪能し、7/1にITA航空でパリへ。パリを拠点に、ヴェルサイユとモン・サン・ミッシェルへ足をのばします。</p>
+    </div>
+  </div>
+
+  <div class="mapwrap">
+    <div class="maplabel">Overview Map · 全体ルート</div>
+    <div id="map-overview" class="leaflet-map"></div>
+    <div class="map-legend">
+      <span class="lg"><span class="dot r"></span>① ローマ（3泊）</span>
+      <span class="lg"><span class="dot p"></span>② パリ（4泊）</span>
+      <span class="lg">— ITA航空 ローマ→パリ ／ ・・・ パリ↔モン・サン・ミッシェル日帰り</span>
+    </div>
+  </div>
+</section>
+
+<section class="chapter" style="padding-top:0">
+  <div class="subhead"><span class="pill">CONTENTS</span><h3>この旅のページ</h3><span class="line"></span></div>
+  <div class="pagegrid">
+    <a class="pagecard" href="schedule.html" style="background-color:#2a2018;background-image:linear-gradient(135deg,#8b2c1d,#1a1410)">
+      <div class="inner"><div class="knum">01 · Itinerary</div><h3>旅のスケジュール</h3><p>9日間のタイムラインと、観光をどの順に巡るかの地図。</p></div>
+    </a>
+    <a class="pagecard" href="roma.html" style="background-color:#2a2018;background-image:linear-gradient(135deg,#c44a35,#5a1d12)">
+      <div class="inner"><div class="knum">02 · Italy</div><h3>ローマ・ガイド</h3><p>定番6＋穴場6。観光・レストラン・ジェラート＋地図。</p></div>
+    </a>
+    <a class="pagecard" href="paris.html" style="background-color:#1a2338;background-image:linear-gradient(135deg,#2d4a7c,#16243f)">
+      <div class="inner"><div class="knum">03 · France</div><h3>パリ・ガイド</h3><p>定番6＋穴場6。観光・レストラン・スイーツ＋地図。</p></div>
+    </a>
+    <a class="pagecard" href="hotels.html" style="background-color:#2a2018;background-image:linear-gradient(135deg,#c9a961,#7a6b58)">
+      <div class="inner"><div class="knum">04 · Stay</div><h3>ホテル</h3><p>ローマ・パリの宿。本命と候補を写真付きで。</p></div>
+    </a>
+    <a class="pagecard" href="packing.html" style="background-color:#2a2018;background-image:linear-gradient(135deg,#3a3026,#1a1410)">
+      <div class="inner"><div class="knum">05 · Pack</div><h3>持ち物・準備</h3><p>夏の南欧＆パリの持ち物と、出発前チェック。</p></div>
+    </a>
+    <a class="pagecard" href="checklist.html" style="background-color:#1a2338;background-image:linear-gradient(135deg,#5a76a8,#1a1410)">
+      <div class="inner"><div class="knum">06 · To-Do</div><h3>準備チェックリスト</h3><p>予約すべきもの・現地で確認することの一覧。</p></div>
+    </a>
+    <a class="pagecard" href="budget.html" style="background-color:#2a2018;background-image:linear-gradient(135deg,#8b2c1d,#c9a961)">
+      <div class="inner"><div class="knum">07 · Budget</div><h3>費用・予算</h3><p>航空・ホテル・ツアー・入場料の内訳と総額。</p></div>
+    </a>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="ftop">
+    <div class="brand">ROMA — PARIS · HONEYMOON 2026</div>
+    <nav><a href="index.html">Home</a><a href="schedule.html">日程</a><a href="roma.html">Roma</a><a href="paris.html">Paris</a><a href="hotels.html">Hotel</a><a href="packing.html">持ち物</a><a href="checklist.html">準備</a></nav>
+  </div>
+  <div class="fine">2026/6/28–7/6 · 8泊9日 · 機微情報（予約番号・金額）は非掲載。地図 © OpenStreetMap contributors.</div>
+</footer>
+
+</body>
+</html>

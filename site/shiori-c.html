@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>旅のしおり C・スクラップブック風｜Roma × Paris 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yomogi&family=Caveat:wght@500;700&family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:"Zen Maru Gothic",sans-serif;color:#4a3f33;line-height:1.85;
+    background:#cdb89a;
+    background-image:radial-gradient(rgba(120,95,60,.18) 1px,transparent 1px);background-size:5px 5px}
+  .sw{background:#4a3f33;color:#f0e6d2;text-align:center;padding:10px;font-size:13px;font-family:"Zen Maru Gothic";position:sticky;top:0;z-index:6}
+  .sw a{color:#f0e6d2;text-decoration:none;margin:0 8px}.sw a.on{color:#ffce5c;font-weight:700}
+  .book{max-width:960px;margin:0 auto;padding:30px 16px 70px}
+  .title{text-align:center;color:#fff;margin:22px 0 30px}
+  .title h1{font-family:"Caveat";font-size:clamp(46px,11vw,86px);line-height:.95;text-shadow:2px 3px 0 rgba(0,0,0,.18)}
+  .title .jp{font-family:"Yomogi";font-size:18px;background:rgba(255,255,255,.35);display:inline-block;padding:4px 18px;border-radius:20px;color:#4a3f33;margin-top:10px}
+  /* page card */
+  .pg{background:#fdfaf2;border-radius:6px;box-shadow:0 8px 26px rgba(0,0,0,.22);padding:26px 24px 30px;margin:26px 0;position:relative}
+  .pg::before{content:"";position:absolute;top:-12px;left:50%;transform:translateX(-50%) rotate(-3deg);width:120px;height:26px;
+    background:repeating-linear-gradient(45deg,rgba(255,210,90,.7),rgba(255,210,90,.7) 6px,rgba(255,225,140,.7) 6px,rgba(255,225,140,.7) 12px);box-shadow:0 2px 4px rgba(0,0,0,.1)}
+  .pg .dn{font-family:"Caveat";font-size:30px;color:#c0392b;transform:rotate(-2deg);display:inline-block}
+  .pg h2{font-family:"Yomogi";font-size:23px;color:#8b2c1d;margin:2px 0 10px}
+  /* 並走レイアウト：左=チケット風タイムライン / 右=ポラロイド＆メモ */
+  .lay{display:grid;grid-template-columns:240px 1fr;gap:22px;align-items:start;margin-top:6px}
+  .lay.rev{grid-template-columns:1fr 240px}
+  .lay.rev .timeline{order:2}
+  .timeline{background:#fff8e1;border:1px dashed #b89b5a;border-radius:8px;padding:12px 10px 12px 14px;box-shadow:2px 2px 0 rgba(180,150,100,.25);transform:rotate(-.6deg);position:relative}
+  .timeline::before{content:"⌚ Timeline";position:absolute;top:-14px;left:10px;background:#fff;padding:1px 10px;font-family:"Caveat";font-size:18px;color:#8b2c1d;border:1px dashed #c0392b;border-radius:20px;transform:rotate(-2deg)}
+  .timeline ol{list-style:none;padding:6px 0 0;margin:0;counter-reset:tlc}
+  .timeline li{display:grid;grid-template-columns:64px 1fr;gap:8px;align-items:start;padding:5px 0;border-bottom:1px dotted #d6c39a;font-size:14px}
+  .timeline li:last-child{border:none}
+  /* タイムラインの時刻はマスキングテープ風 */
+  .tt{background:linear-gradient(90deg,rgba(255,210,90,.95),rgba(255,225,140,.95));font-family:"Caveat";font-weight:700;color:#8b2c1d;font-size:16px;text-align:center;padding:1px 4px;transform:rotate(-1.5deg);border-radius:2px;box-shadow:1px 1px 2px rgba(0,0,0,.08);white-space:nowrap}
+  .tt.b{background:linear-gradient(90deg,rgba(170,210,250,.95),rgba(200,225,255,.95));color:#365e88}
+  .tt.g{background:linear-gradient(90deg,rgba(190,230,180,.95),rgba(210,240,200,.95));color:#3f7a3a}
+  .tt.p{background:linear-gradient(90deg,rgba(255,180,200,.95),rgba(255,210,225,.95));color:#a84272}
+  .ta{font-family:"Zen Maru Gothic";color:#4a3f33;font-size:13.6px;line-height:1.55}
+  .ta b{color:#8b2c1d}
+  /* 右側の本文・ポラロイド集合 */
+  .side{display:flex;flex-direction:column;gap:14px}
+  .row{display:flex;gap:18px;flex-wrap:wrap;align-items:flex-start}
+  .col{flex:1;min-width:220px}
+  /* polaroid */
+  .pola{background:#fff;padding:10px 10px 38px;box-shadow:0 6px 16px rgba(0,0,0,.25);width:240px;max-width:100%;transform:rotate(-2.5deg);position:relative}
+  .pola:nth-child(even){transform:rotate(2deg)}
+  .pola img{display:block;width:100%;height:170px;object-fit:cover}
+  .pola figcaption{font-family:"Caveat";font-size:19px;text-align:center;color:#4a3f33;padding-top:6px}
+  .stamp{position:absolute;top:-10px;right:-10px;background:#c0392b;color:#fff;font-family:"Zen Maru Gothic";font-size:11px;
+    width:54px;height:54px;border-radius:50%;display:grid;place-items:center;transform:rotate(12deg);border:2px dashed #fff;line-height:1.2;text-align:center}
+  .note{font-family:"Yomogi"}
+  .note b{color:#c0392b}
+  .chip{display:inline-block;font-family:"Yomogi";font-size:13px;border-radius:14px;padding:2px 12px;margin:3px 4px 0 0}
+  .chip.s{background:#fff0c2}.chip.e{background:#ffd9c9}.chip.w{background:#d6e8d2}.chip.b{background:#cfe3f4}
+  /* 注目ポイント＝チケット片 */
+  .ticket{background:#fff;border:1px dashed #c0392b;border-radius:6px;padding:10px 12px;margin:10px 0;font-family:"Yomogi";font-size:14.5px;color:#4a3f33;position:relative;box-shadow:2px 2px 0 rgba(192,57,43,.15)}
+  .ticket::before,.ticket::after{content:"";position:absolute;top:50%;width:14px;height:14px;background:#cdb89a;border-radius:50%;transform:translateY(-50%)}
+  .ticket::before{left:-7px}.ticket::after{right:-7px}
+  .ticket b{font-family:"Caveat";font-size:18px;color:#c0392b;margin-right:6px}
+  /* メモ付箋 */
+  .memo{background:#fff7c2;border-left:6px solid #ffce5c;padding:8px 12px;margin:8px 0;font-family:"Yomogi";font-size:14px;color:#5e4d2a;box-shadow:1px 1px 3px rgba(0,0,0,.08);transform:rotate(-.4deg)}
+  .love{background:#ffe3e6;border-left:6px solid #e8888d;padding:8px 12px;margin:8px 0;font-family:"Yomogi";font-size:14px;color:#8b3a4a;box-shadow:1px 1px 3px rgba(0,0,0,.08);transform:rotate(.5deg)}
+  .doodle{text-align:center;font-family:"Caveat";font-size:30px;color:#fff;margin:18px 0;text-shadow:1px 2px 0 rgba(0,0,0,.15)}
+  @media(max-width:700px){
+    .lay,.lay.rev{grid-template-columns:1fr}
+    .lay.rev .timeline{order:0}
+    .pola{width:100%}
+    .timeline{transform:none}
+  }
+</style>
+</head>
+<body>
+<div class="sw">✦ デザイン｜<a href="shiori-a.html">① 手書き</a> ／ <a href="shiori-b.html">② 雑誌</a> ／ <a class="on" href="shiori-c.html">③ スクラップ</a>　|　<a href="index.html">Home</a>　|　<a href="schedule.html">詳細日程</a></div>
+
+<div class="book">
+  <div class="title">
+    <h1>Roma &amp; Paris</h1>
+    <div class="jp">二人のハネムーン記録 ／ 2026.6.28-7.6 ／ 8泊9日</div>
+  </div>
+
+  <!-- DAY 1 -->
+  <div class="pg">
+    <span class="dn">Day 1 — 6/28 (日)</span>
+    <h2>関空 → 仁川 → 夜のローマに到着 ✈🪙</h2>
+    <div class="lay">
+      <div class="timeline">
+        <ol>
+          <li><span class="tt">09:00</span><span class="ta">関空 国際線 集合（KE）</span></li>
+          <li><span class="tt b">11:35</span><span class="ta">関空 → 仁川（KE）</span></li>
+          <li><span class="tt b">17:30</span><span class="ta">仁川 → ローマFCO（KE）</span></li>
+          <li><span class="tt">20:30</span><span class="ta">FCO着 → レオナルド・エクスプレス</span></li>
+          <li><span class="tt g">22:00</span><span class="ta">Augusta Lucilla Palace チェックイン</span></li>
+          <li><span class="tt p">22:30</span><span class="ta"><b>夜のトレヴィの泉</b>＆ジェラート🍦</span></li>
+        </ol>
+      </div>
+      <div class="side">
+        <div class="row">
+          <figure class="pola"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Trevi_Fountain_-_Roma.jpg/1280px-Trevi_Fountain_-_Roma.jpg" alt="トレヴィ"><figcaption>夜のトレヴィの泉🪙</figcaption><span class="stamp">ROMA</span></figure>
+          <div class="col note">
+            到着したらまず<b>トレヴィの泉</b>へ！22時台は人もまばらで彫刻のディテールがよく見える✨<br>
+            コインは右手で左肩越しに1枚＝また戻れるおまじない♡
+            <div><span class="chip s">見 トレヴィ夜景</span><span class="chip e">食 ジェラート・生ハム</span><span class="chip w">注 空港→市内32分・スリ</span></div>
+          </div>
+        </div>
+        <div class="ticket"><b>👀 注目</b>中央は海神オケアノス／左右の馬は「荒れる海と凪の海」／年間€140万のコインは恵まれない人々の支援へ</div>
+        <div class="memo">💡 水のペットボトル：フリッツァンテ＝炭酸、ナトゥラーレ＝普通水。慣れないと驚くよ</div>
+        <div class="love">💌 二人へ：荷物はホテルに置いて軽装で。深夜のトレヴィは一生モノの写真📸</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 2 -->
+  <div class="pg">
+    <span class="dn">Day 2 — 6/29 (月)</span>
+    <h2>青の洞窟（カプリ島・日帰り）💙</h2>
+    <div class="lay rev">
+      <div class="timeline">
+        <ol>
+          <li><span class="tt">05:35</span><span class="ta">ホテル発（カフェ持参）</span></li>
+          <li><span class="tt b">06:00</span><span class="ta">テルミニ → ナポリ（Italo）</span></li>
+          <li><span class="tt">07:12</span><span class="ta">ナポリ着 → <b>FreeNow</b>で港</span></li>
+          <li><span class="tt g">09:00</span><span class="ta">ZENZERO貸切ツアー集合</span></li>
+          <li><span class="tt p">10:00</span><span class="ta"><b>青の洞窟</b>（手漕ぎボート🛶）</span></li>
+          <li><span class="tt">12:00</span><span class="ta">アナカプリで昼食🍅</span></li>
+          <li><span class="tt g">13:00</span><span class="ta">ソラーロ山リフト（589m）</span></li>
+          <li><span class="tt">17:00</span><span class="ta">ベヴェレッロ港 解散</span></li>
+          <li><span class="tt b">18:35</span><span class="ta">Italo #9996 → ローマ</span></li>
+          <li><span class="tt p">19:46</span><span class="ta">テルミニ → トラステヴェレ夕食</span></li>
+        </ol>
+      </div>
+      <div class="side">
+        <div class="row">
+          <div class="col note">
+            手漕ぎボートで入る<b>蛍光ブルーの洞窟</b>。世界でここだけ！<br>
+            ソラーロ山のリフトから地中海も360°一望🏔／夜はトラステヴェレでカルボナーラ🍝
+            <div><span class="chip s">見 青の洞窟・ソラーロ山</span><span class="chip e">食 レモン菓子・カルボナーラ</span><span class="chip w">注 波次第／FreeNow必須</span><span class="chip b">予 ✅ZENZERO ／ 🔴Italo</span></div>
+          </div>
+          <figure class="pola"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Grotta_azzurra.jpg" alt="青の洞窟"><figcaption>奇跡のブルー✨</figcaption><span class="stamp">CAPRI</span></figure>
+        </div>
+        <div class="ticket"><b>👀 注目</b>入口は高さ約1m＝寝そべってくぐる／滞在5分の一瞬／皇帝ティベリウスの専用水浴場伝説</div>
+        <div class="memo">📌 ✅予約済：ZENZERO（VELTRA a/115941）｜🔴要予約：往復Italo（往06:00／復18:35 #9996）</div>
+        <div class="love">💌 二人へ：前夜は早寝！酔いやすい方は酔い止め忘れずに🌊</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 3 -->
+  <div class="pg">
+    <span class="dn">Day 3 — 6/30 (火)</span>
+    <h2>ヴァチカン＆旧市街グランドツアー ⛪</h2>
+    <div class="lay">
+      <div class="timeline">
+        <ol>
+          <li><span class="tt">08:00</span><span class="ta">ヴァチカン美術館出口前 集合（Mybus）</span></li>
+          <li><span class="tt g">08:30</span><span class="ta">美術館入場 → <b>システィーナ礼拝堂</b></span></li>
+          <li><span class="tt p">10:30</span><span class="ta">特別通路でサン・ピエトロへ直通</span></li>
+          <li><span class="tt">11:10</span><span class="ta">大聖堂前で解散 → ランチ🍝</span></li>
+          <li><span class="tt b">14:30</span><span class="ta">カステル・サンタンジェロ</span></li>
+          <li><span class="tt">15:30</span><span class="ta">ナヴォーナ広場</span></li>
+          <li><span class="tt g">16:30</span><span class="ta">カンポ・デ・フィオーリ市場</span></li>
+          <li><span class="tt p">17:00</span><span class="ta"><b>パンテオン</b>（要予約）</span></li>
+          <li><span class="tt b">18:00</span><span class="ta">コロッセオ外観・夕景</span></li>
+          <li><span class="tt">19:30</span><span class="ta">トレヴィの泉ライトアップ＆ジェラート🍦</span></li>
+          <li><span class="tt g">20:00</span><span class="ta">リナシェンテ屋上（〜22時・夜景＋水道橋遺構）🍸</span></li>
+        </ol>
+      </div>
+      <div class="side">
+        <div class="row">
+          <figure class="pola"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg/1280px-Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg" alt="サンピエトロ"><figcaption>サン・ピエトロ大聖堂</figcaption><span class="stamp">VATICAN</span></figure>
+          <figure class="pola"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Pantheon_%28Rome%29_-_Right_side_and_front.jpg/1280px-Pantheon_%28Rome%29_-_Right_side_and_front.jpg" alt="パンテオン"><figcaption>パンテオンの“目”</figcaption></figure>
+        </div>
+        <div class="note">
+          <b>システィーナ礼拝堂</b>の天井画は必見。特別通路でサン・ピエトロへ直通！<br>
+          午後はカステル・サンタンジェロ→ナヴォーナ→カンポ→パンテオン→コロッセオ夕景→トレヴィのライトアップ→リナシェンテ屋上（22時まで）と盛りだくさん。
+          <div><span class="chip s">見 システィーナ・パンテオン</span><span class="chip e">食 4大パスタ・ジョリッティ</span><span class="chip w">注 パスポート・服装</span><span class="chip b">予 ✅Mybus／🔴パンテオン</span></div>
+        </div>
+        <div class="ticket"><b>👀 注目</b>『最後の審判』の聖バルトロマイの“剥がれた人皮”はミケランジェロの自画像／パンテオンのオクルスは雨が床の小穴へ流れる仕組み⛪</div>
+        <div class="memo">💡 リナシェンテ屋上には古代ローマ水道橋の遺構あり！買い物しなくても見学OK</div>
+        <div class="love">💌 二人へ：歩きまくる日。途中でナソーニ（公共水飲み場）で給水できるよ💧</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 4 -->
+  <div class="pg">
+    <span class="dn">Day 4 — 7/1 (水)</span>
+    <h2>ITAでパリへ → マレ → エッフェル夜景 🗼</h2>
+    <div class="lay rev">
+      <div class="timeline">
+        <ol>
+          <li><span class="tt">05:30</span><span class="ta">早朝チェックアウト → FCO</span></li>
+          <li><span class="tt b">06:30</span><span class="ta">FCO着・チェックイン</span></li>
+          <li><span class="tt p">08:34</span><span class="ta"><b>ITA AZ316</b> FCO → CDG</span></li>
+          <li><span class="tt">10:46</span><span class="ta">パリCDG着 → RER B</span></li>
+          <li><span class="tt g">12:00</span><span class="ta">Timhotel 荷物預け</span></li>
+          <li><span class="tt">13:00</span><span class="ta">マレ地区でランチ🥙＋ヴォージュ広場</span></li>
+          <li><span class="tt b">15:30</span><span class="ta">凱旋門（284段）＋シャンゼリゼ</span></li>
+          <li><span class="tt">17:30</span><span class="ta">トロカデロ夕景</span></li>
+          <li><span class="tt p">19:00</span><span class="ta"><b>エッフェル塔スパークル</b>✨</span></li>
+        </ol>
+      </div>
+      <div class="side">
+        <div class="row">
+          <div class="col note">
+            朝の便でローマ→パリ。午後は<b>マレ地区</b>でファラフェル🥙＋ヴォージュ広場。<br>
+            夕方は凱旋門→トロカデロで夕景待ち→<b>エッフェル塔スパークル</b>（毎時0分から5分間キラキラ）✨
+            <div><span class="chip s">見 凱旋門・エッフェル</span><span class="chip e">食 ファラフェル・ラデュレ</span><span class="chip w">注 時差ボケ／RER B 30分</span><span class="chip b">予 🔴ITA AZ316</span></div>
+          </div>
+          <figure class="pola"><img src="https://upload.wikimedia.org/wikipedia/commons/8/85/Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg" alt="エッフェル塔"><figcaption>初日の夜のキラキラ✨</figcaption><span class="stamp">PARIS</span></figure>
+        </div>
+        <div class="ticket"><b>👀 注目</b>凱旋門の「無名戦士の墓」永遠の炎🔥は1923年から不滅／エッフェルは完成時パリ市民から“鉄の醜怪”と酷評された逆転ヒロイン</div>
+        <div class="memo">💡 CDG→市内：RER B（30分・約€11）or タクシー定額（右岸€56）。配車はUber／Bolt</div>
+        <div class="love">💌 二人へ：時差ボケが残るから、スパークル見たら無理せずホテルへ🌙</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 5 -->
+  <div class="pg">
+    <span class="dn">Day 5 — 7/2 (木)</span>
+    <h2>モン・サン・ミッシェル 🌊</h2>
+    <div class="lay">
+      <div class="timeline">
+        <ol>
+          <li><span class="tt">06:30</span><span class="ta">朝食・ホテル発</span></li>
+          <li><span class="tt b">07:20</span><span class="ta">ギャラリー・ラファイエット集合（みゅう）</span></li>
+          <li><span class="tt">12:00</span><span class="ta">MSM到着</span></li>
+          <li><span class="tt p">12:30</span><span class="ta"><b>スフレオムレツ</b>ランチ🍳（込み）</span></li>
+          <li><span class="tt g">13:30</span><span class="ta">修道院・城壁・回廊・干潟</span></li>
+          <li><span class="tt">16:30</span><span class="ta">島内自由散策・写真</span></li>
+          <li><span class="tt b">17:30</span><span class="ta">帰路バス出発</span></li>
+          <li><span class="tt p">21:00</span><span class="ta">パリ帰着（オペラ座付近）</span></li>
+        </ol>
+      </div>
+      <div class="side">
+        <div class="row">
+          <figure class="pola"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Mont-Saint-Michel_vu_du_ciel.jpg/1280px-Mont-Saint-Michel_vu_du_ciel.jpg" alt="MSM"><figcaption>一生に一度は♡</figcaption><span class="stamp">MSM</span></figure>
+          <div class="col note">
+            海に浮かぶ<b>奇跡の修道院</b>。坂道のグランド・リュを上って大天使ミカエルへ。<br>
+            名物のふわふわスフレオムレツ＆シードルも楽しみ🍳🍎
+            <div><span class="chip s">見 修道院・干潟</span><span class="chip e">食 スフレオムレツ</span><span class="chip w">注 潮汐(7/2)・長い1日</span><span class="chip b">予 ✅MSMみゅう</span></div>
+          </div>
+        </div>
+        <div class="ticket"><b>👀 注目</b>修道院は3層構造「上＝教会／中＝回廊／下＝食料庫」＝神に近いほど上の思想／干満差最大14mはヨーロッパ随一</div>
+        <div class="memo">💡 居住者は約30人だけ。お土産は塩キャラメル・塩・ボーダーシャツ</div>
+        <div class="love">💌 二人へ：帰路はバスで爆睡OK。サービスエリアでカフェ休憩あり☕</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 6 -->
+  <div class="pg">
+    <span class="dn">Day 6 — 7/3 (金)</span>
+    <h2>ルーブル（金曜ノクターン）🖼️</h2>
+    <div class="lay rev">
+      <div class="timeline">
+        <ol>
+          <li><span class="tt">09:00</span><span class="ta">サン＝ジェルマンのカフェでブランチ☕</span></li>
+          <li><span class="tt g">11:00</span><span class="ta"><b>オランジュリー</b>（モネ睡蓮）or オルセー</span></li>
+          <li><span class="tt">13:30</span><span class="ta">テュイルリー庭園でランチ</span></li>
+          <li><span class="tt p">16:00</span><span class="ta"><b>ルーブル金曜ノクターン</b>入場</span></li>
+          <li><span class="tt b">19:00</span><span class="ta">モナリザは19時以降が空く！</span></li>
+          <li><span class="tt">21:00</span><span class="ta">セーヌ沿いで夕食・夜のピラミッド</span></li>
+          <li><span class="tt p">21:45</span><span class="ta">ルーブル閉館</span></li>
+        </ol>
+      </div>
+      <div class="side">
+        <div class="row">
+          <div class="col note">
+            朝はカフェ・ド・フロール、昼に軽く<b>オランジュリー or オルセー</b>。<b>16時からルーブル</b>（金曜ノクターン）で夕方〜夜にゆったり。19時以降はモナリザも空く狙い目！
+            <div><span class="chip s">見 ルーブル・オルセー</span><span class="chip e">食 オニオングラタン・ブリュレ</span><span class="chip w">注 火曜休／7/1夕に凱旋門済</span><span class="chip b">予 🔴ルーブル金曜枠</span></div>
+          </div>
+          <figure class="pola"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Louvre_Museum_Wikimedia_Commons.jpg/3840px-Louvre_Museum_Wikimedia_Commons.jpg" alt="ルーブル"><figcaption>金曜は21:45まで✨</figcaption><span class="stamp">★夜</span></figure>
+        </div>
+        <div class="ticket"><b>👀 注目</b>モナリザは77×53cm＆防弾ガラス／空いてるリシュリュー翼のフェルメール『レースを編む女』も推し</div>
+        <div class="memo">💡 オランジュリーの睡蓮は楕円形の専用部屋で360°モネに包まれる体験</div>
+        <div class="love">💌 二人へ：歩き疲れたらセーヌ川沿いのベンチでひと息🕊</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 7 -->
+  <div class="pg">
+    <span class="dn">Day 7 — 7/4 (土)</span>
+    <h2>ヴェルサイユ宮殿＋大噴水ショー ⛲</h2>
+    <div class="lay">
+      <div class="timeline">
+        <ol>
+          <li><span class="tt">07:30</span><span class="ta">ホテル発・メトロでオペラ駅</span></li>
+          <li><span class="tt b">08:20</span><span class="ta">ギャラリー・ラファイエット集合（みゅう）</span></li>
+          <li><span class="tt p">09:30</span><span class="ta">宮殿 優先入場 → <b>鏡の間</b></span></li>
+          <li><span class="tt">11:15</span><span class="ta">離団・庭園券へ切替</span></li>
+          <li><span class="tt p">11:30</span><span class="ta"><b>大噴水ショー</b>開始🎶</span></li>
+          <li><span class="tt g">12:30</span><span class="ta">La Flottilleでランチ</span></li>
+          <li><span class="tt p">17:20</span><span class="ta">ネプチューンのフィナーレ✨</span></li>
+          <li><span class="tt b">18:30</span><span class="ta">RER Cでパリへ</span></li>
+        </ol>
+      </div>
+      <div class="side">
+        <div class="row">
+          <figure class="pola"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Versailles-Chateau-Jardins02.jpg" alt="ヴェルサイユ"><figcaption>太陽王の庭園</figcaption><span class="stamp">★7/4</span></figure>
+          <div class="col note">
+            午前は日本語ガイドで<b>鏡の間</b>（優先入場）。11:15離団→<b>大噴水ショー11:30開始</b>！<br>
+            ネプチューンの泉のフィナーレ17:20が主役🎶／夜の花火は遅いので今回はパス
+            <div><span class="chip s">見 鏡の間・大噴水</span><span class="chip e">食 La Flottille・ピクニック</span><span class="chip w">注 庭園券€16・最混雑</span><span class="chip b">予 ✅みゅう／🔴庭園券</span></div>
+          </div>
+        </div>
+        <div class="ticket"><b>👀 注目</b>鏡の間は357枚の鏡＋17の窓／第一次大戦のヴェルサイユ条約調印の舞台／庭園はル・ノートルの幾何学美</div>
+        <div class="memo">💡 ルート：ラトナの泉→アポロの泉→大運河→ネプチューンの泉が王道。庭園は広いのでマップ必須</div>
+        <div class="love">💌 二人へ：マリー・アントワネットのプチ・トリアノンは別世界の素朴さ。時間あれば寄り道を🌸</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 8 -->
+  <div class="pg">
+    <span class="dn">Day 8 — 7/5 (日)</span>
+    <h2>最後のパリ → 帰国 🎁</h2>
+    <div class="lay rev">
+      <div class="timeline">
+        <ol>
+          <li><span class="tt">08:30</span><span class="ta">朝の支度・パッキング</span></li>
+          <li><span class="tt g">09:30</span><span class="ta"><b>サン＝マルタン運河</b>ブランチ🥐</span></li>
+          <li><span class="tt">11:00</span><span class="ta">マレ街ブラ・最後のお土産</span></li>
+          <li><span class="tt b">12:00</span><span class="ta">ポンピドゥー周辺・現代アート</span></li>
+          <li><span class="tt">13:30</span><span class="ta">ホテル戻り・チェックアウト準備</span></li>
+          <li><span class="tt p">15:30</span><span class="ta">Timhotel発 → CDG（RER B）</span></li>
+          <li><span class="tt">17:00</span><span class="ta">CDG着・お土産買い足し</span></li>
+          <li><span class="tt b">19:10</span><span class="ta">CDG → 仁川（KE便）</span></li>
+        </ol>
+      </div>
+      <div class="side">
+        <div class="row">
+          <div class="col note">
+            サン＝マルタン運河でブランチ → <b>マレでお土産</b>。<br>
+            空港で最後のワインで乾杯🥂 ありがとう、パリ！翌7/6に関空着でおかえり🇯🇵
+            <div><span class="chip s">見 運河・マレ・ポンピドゥー</span><span class="chip e">食 マカロン・クロワッサン</span><span class="chip w">注 日曜休多・15:30発</span></div>
+          </div>
+          <figure class="pola"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Le_sacre_coeur.jpg" alt="サクレクール"><figcaption>丘の上のサクレ・クール</figcaption><span class="stamp">★最終日</span></figure>
+        </div>
+        <div class="ticket"><b>👀 注目</b>運河は映画『アメリ』の石切り場面／ポンピドゥーは設備配管が外側（赤＝交通／青＝空調／緑＝水／黄＝電気）／マレは日曜営業</div>
+        <div class="memo">💡 液体物は機内持込100ml以下。お土産のリモンチェッロやワインはスーツケースへ</div>
+        <div class="love">💌 二人へ：8日間お疲れさま！機内は枕とアイマスクで爆睡を💤</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- お土産＆メモまとめ -->
+  <div class="pg">
+    <h2>🛍 おみやげ＆持ち物メモ</h2>
+    <div class="row">
+      <div class="col note">
+        <b>ローマ</b>：スーパーConad（パスタ／Baci）・ヴァチカン近くのCastroni・夜のリナシェンテ<br>
+        <b>パリ</b>：Monoprix（雑貨）・マリアージュフレール（紅茶）・シティファルマ（コスメ激安）<br>
+        <b>配車</b>：伊=FreeNow／仏=Uber・Bolt（料金事前確定・ぼったくり回避）<br>
+        <b>注意</b>：スリ対策（貴重品は前に）・教会は肩膝隠す・自然次第（青の洞窟＝波／MSM＝潮汐）
+      </div>
+      <div class="col">
+        <div class="ticket"><b>✅予約済</b>アシアナ往復／Augusta Lucilla Palace／Timhotel／カプリZENZERO／ヴァチカンMybus／MSMみゅう／ヴェルサイユみゅう</div>
+        <div class="ticket"><b>🔴要予約</b>往復Italo（往06:00／復18:35 #9996）／コロッセオ／パンテオン／ルーブル金曜ナイト／ヴェルサイユ庭園券€16／ITA AZ316</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="doodle">♡ Have a wonderful trip, two of us ♡</div>
+</div>
+</body>
+</html>

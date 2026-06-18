@@ -3,3 +3,6 @@
 .claude/
 .omc/
 hooks
+.playwright-mcp/
+site/.omc/
+site/.ruff_cache/
