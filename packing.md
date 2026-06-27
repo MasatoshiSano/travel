@@ -299,6 +299,101 @@ Email : masatoshi.sano1021@gmail.com
 Phone : +81-90-XXXX-XXXX
 ```
 
+<details>
+<summary><b>📖 日本語訳（送るのは英文・これは内容確認用）</b></summary>
+
+```
+Augusta Lucilla Palace のみなさま
+
+私たち夫婦は、ハネムーン旅行で Augusta Lucilla Palace に滞在いたします。
+Agoda 予約番号は #XXXXXXXX です。
+
+滞在詳細:
+  チェックイン  : 2026年6月28日（日）
+  チェックアウト: 2026年7月1日（水）
+  3泊・2名・ダブルルーム1室（朝食付きで予約）
+  到着 : 21:00頃（フィウミチーノ空港からレオナルド・エクスプレスで）
+  出発 : 2026年7月1日 早朝（ITA便のため06:00頃）
+
+これは私たちのハネムーンで、ローマに泊まるのも初めてです。
+とても楽しみにしております。
+滞在をより思い出深いものにできるような、ささやかなご手配を
+いただければ大変嬉しく思います。たとえば:
+
+  - 静かなお部屋、もし可能なら眺めの良いお部屋
+  - 高層階
+  - ハネムーン向けの何かちょっとしたウェルカム（貴ホテルが
+    新婚者向けの特別な対応をされていることをウェブサイトで
+    拝見し、大変ワクワクしております！）
+
+実務的なお願いも2点ございます:
+  - 2026年7月1日 朝6:00頃の早朝チェックアウトは可能でしょうか？
+  - 同日朝のフィウミチーノ空港行きのタクシーを事前予約して
+    いただくことは可能でしょうか？
+
+もちろんすべて空き状況次第ですので、もしご対応が難しい
+場合は構いません。
+
+どうぞよろしくお願い申し上げます。
+
+敬具
+佐野 雅敏 ＆ ［パートナーの氏名］
+Email: masatoshi.sano1021@gmail.com
+電話 : +81-90-XXXX-XXXX
+```
+
+</details>
+
+<details>
+<summary><b>🇮🇹 イタリア語版（こちらでも送信OK・好印象を狙うなら）</b></summary>
+
+**件名（Subject）**: `Soggiorno di luna di miele — richiesta speciale (prenotazione Agoda #XXXXXXXX)`
+
+```
+Gentile Team di Augusta Lucilla Palace,
+
+Mia moglie ed io soggiorneremo presso l'Augusta Lucilla Palace
+per il nostro viaggio di nozze, prenotazione Agoda #XXXXXXXX.
+
+Dettagli del soggiorno:
+  Check-in : 28 giugno 2026 (domenica)
+  Check-out: 1 luglio 2026 (mercoledì)
+  3 notti, 2 ospiti, 1 camera matrimoniale (con colazione inclusa)
+  Arrivo  : intorno alle 21:00 (con il Leonardo Express da FCO)
+  Partenza: la mattina molto presto del 1 luglio 2026
+            (intorno alle 06:00, per il volo ITA)
+
+Questa è la nostra luna di miele e la nostra prima volta a Roma,
+e non vediamo l'ora di scoprirla.
+Vi saremmo molto grati per qualsiasi piccola attenzione che possa
+rendere il nostro soggiorno indimenticabile — ad esempio:
+
+  - una camera tranquilla, o con una bella vista se possibile
+  - un piano alto
+  - un piccolo benvenuto per la luna di miele (abbiamo letto sul
+    vostro sito che Augusta Lucilla Palace offre qualcosa di
+    speciale per i novelli sposi, e questo ci ha resi molto
+    entusiasti!)
+
+Avremmo anche due piccole richieste pratiche:
+  - Sarebbe possibile effettuare il check-out anticipato,
+    intorno alle 06:00 del 1 luglio 2026?
+  - Potreste aiutarci a prenotare un taxi per l'aeroporto FCO
+    per quella mattina presto?
+
+Naturalmente, tutto dipende dalla disponibilità e comprendiamo
+perfettamente se qualcuna di queste richieste non fosse possibile.
+
+Vi ringraziamo molto in anticipo.
+
+Cordiali saluti,
+Masatoshi Sano & [nome completo del partner]
+Email   : masatoshi.sano1021@gmail.com
+Telefono: +81-90-XXXX-XXXX
+```
+
+</details>
+
 > 📞 **電話で押さえる場合**: +39 06 4893 9942（イタリア時間 9:00-18:00 = 日本時間 16:00-翌1:00）
 
 ---
@@ -341,9 +436,12 @@ make this stay memorable — for example:
 
 Two practical favors that would help us a lot:
   - On 2026-07-02 we will leave the hotel at around 06:50 for
-    a day trip to Mont-Saint-Michel. Would the front desk
-    already be staffed at that time, or should we plan around
-    that?
+    a day trip to Mont-Saint-Michel, which is before your
+    breakfast service starts. Would it be possible to arrange
+    a small "grab-and-go" continental breakfast (croissant,
+    fruit, coffee in a takeaway cup) — and could you also let
+    us know if the front desk will already be staffed at that
+    early hour?
   - On 2026-07-05 we may need to leave our luggage at the hotel
     after check-out (around 15:30 departure to CDG). Is that
     possible?
@@ -358,6 +456,118 @@ Masatoshi Sano & [partner's full name]
 Email : masatoshi.sano1021@gmail.com
 Phone : +81-90-XXXX-XXXX
 ```
+
+<details>
+<summary><b>📖 日本語訳（送るのは英文・これは内容確認用）</b></summary>
+
+```
+Timhotel Opéra Blanche Fontaine のみなさま
+
+私たち夫婦は、ハネムーン旅行で貴ホテルに滞在いたします。
+Agoda 予約番号は #XXXXXXXX です。
+
+滞在詳細:
+  チェックイン  : 2026年7月1日（水）
+  チェックアウト: 2026年7月5日（日）
+  4泊・2名・ダブルルーム1室
+  到着 : 12:00頃（シャルル・ド・ゴール空港から RER B で）
+  出発 : 2026年7月5日 15:30頃（夜の便のため CDG へ）
+
+これは私たちのハネムーンで、パリに二人で旅するのも初めてです。
+ブランシュ／南ピガールにある美しい貴ホテルに滞在することを、
+心から楽しみにしております。
+
+滞在をより思い出深いものにできるような、ささやかなご手配を
+いただければ大変嬉しく思います。たとえば:
+
+  - 中庭側の静かなお部屋（貴ホテルに素敵な中庭テラスが
+    あると伺いました）
+  - 高層階（可能であれば）
+  - ハネムーン向けの何かちょっとしたウェルカム — どんな
+    小さな心遣いでも、本当に嬉しく思います
+
+実務的なお願いも2点ございます:
+  - 2026年7月2日、モン・サン・ミッシェルへの日帰り旅行のため、
+    ホテルを 06:50頃 出発します。これは朝食サービス開始前の
+    時間帯になります。前夜にお部屋まで、または当日朝早くに
+    ロビーで受け取れる形で、簡単な "to-go" コンチネンタル朝食
+    （クロワッサン・フルーツ・テイクアウトカップのコーヒー
+    など）をご手配いただくことは可能でしょうか？
+    また、その早朝の時間帯にフロントはすでに開いて
+    いますでしょうか？
+  - 2026年7月5日、チェックアウト後（15:30頃 CDG へ出発）に
+    手荷物をホテルでお預かりいただくことは可能でしょうか？
+
+もちろんすべて空き状況次第ですので、もしご対応が難しい
+場合は構いません。
+
+どうぞよろしくお願い申し上げます。
+
+敬具
+佐野 雅敏 ＆ ［パートナーの氏名］
+Email: masatoshi.sano1021@gmail.com
+電話 : +81-90-XXXX-XXXX
+```
+
+</details>
+
+<details>
+<summary><b>🇫🇷 フランス語版（こちらでも送信OK・好印象を狙うなら）</b></summary>
+
+**件名（Sujet）**: `Séjour de lune de miel — demande spéciale (réservation Agoda #XXXXXXXX)`
+
+```
+Cher Team du Timhotel Opéra Blanche Fontaine,
+
+Mon épouse et moi séjournerons dans votre hôtel pour notre
+voyage de noces, sous la réservation Agoda #XXXXXXXX.
+
+Détails du séjour :
+  Arrivée : 1er juillet 2026 (mercredi)
+  Départ  : 5 juillet 2026 (dimanche)
+  4 nuits, 2 personnes, 1 chambre double
+  Arrivée prévue : vers 12h00 (depuis CDG par le RER B)
+  Départ prévu   : 5 juillet 2026 vers 15h30 (vers CDG pour le vol du soir)
+
+C'est notre lune de miel et notre premier voyage à Paris ensemble.
+Nous sommes vraiment impatients de séjourner dans votre bel hôtel
+dans le quartier Blanche / SoPi.
+
+Nous vous serions très reconnaissants pour toute petite attention
+qui pourrait rendre ce séjour mémorable — par exemple :
+
+  - une chambre calme donnant sur la cour intérieure (nous avons
+    lu que votre hôtel dispose d'un charmant patio privé)
+  - un étage élevé si possible
+  - un petit geste de bienvenue pour notre lune de miel —
+    nous serions vraiment ravis de toute attention de votre part
+
+Deux petites demandes pratiques nous aideraient beaucoup :
+  - Le 2 juillet 2026, nous quitterons l'hôtel vers 06h50 pour
+    une excursion d'une journée au Mont-Saint-Michel, ce qui est
+    avant le début de votre service de petit-déjeuner. Serait-il
+    possible d'organiser un petit petit-déjeuner continental
+    "à emporter" (croissant, fruits, café à emporter), à livrer
+    dans notre chambre la veille au soir ou à récupérer au lobby
+    très tôt le matin ? Et la réception sera-t-elle déjà ouverte
+    à cette heure matinale ?
+  - Le 5 juillet 2026, nous aurons peut-être besoin de laisser
+    nos bagages à l'hôtel après le check-out (départ vers 15h30
+    pour CDG). Est-ce possible ?
+
+Bien entendu, tout dépend de la disponibilité, et nous
+comprenons parfaitement si certaines de ces demandes ne sont
+pas réalisables.
+
+Nous vous remercions par avance.
+
+Cordialement,
+Masatoshi Sano & [nom complet du partenaire]
+Email    : masatoshi.sano1021@gmail.com
+Téléphone: +81-90-XXXX-XXXX
+```
+
+</details>
 
 > 📞 **電話で押さえる場合**: +33 1 44 63 54 95（フランス時間 8:00-22:00 = 日本時間 15:00-翌5:00）
 
