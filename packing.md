@@ -9,10 +9,11 @@
 
 ### 出発3ヶ月前
 - [ ] パスポート有効期限確認（帰国日+3ヶ月以上必要）
-- [ ] ETIAS申請（2026年Q4以降は必要）
+- [ ] ~~ETIAS申請（2026年Q4以降は必要）~~ **→ 2026年6月時点では適用前。EU公式の運用開始（2026年Q4予定）アナウンスを出発直前にもう一度確認。出発時点ではETIAS不要**
 - [ ] 航空券予約
 - [ ] ホテル予約
 - [ ] 海外旅行保険加入（またはクレジットカード付帯確認）
+- [ ] **ハネムーン特別ディナーの予約**（特に Felice a Testaccio・Roscioli・Le Comptoir du Relais は3ヶ月前から）
 
 ### 出発1ヶ月前
 - [ ] コロッセオ・バチカン・ルーブル・エッフェル塔のチケット事前予約
@@ -24,12 +25,15 @@
 - [ ] スリ対策グッズ購入（セキュリティポーチ、スマホストラップ等）
 - [ ] 高機能ウォーキングシューズを買って履き慣らし開始
 
-### 出発1週間前
+### 出発1〜2週間前
+- [ ] **ホテル2軒へ「Honeymoon trip」事前連絡メール** → 下記 **L. ハネムーン特別依頼メール（テンプレ付き）** 参照
 - [ ] Google Mapsオフラインマップダウンロード（ローマ・パリ）
 - [ ] Google翻訳オフライン言語パックDL（イタリア語・フランス語）
 - [ ] 変換プラグ（Cタイプ）準備
 - [ ] Wise カードにユーロをチャージ
 - [ ] レストラン予約（TheFork等）
+- [ ] **€1・€2硬貨を €15〜20分確保**（公衆トイレ・コインロッカー用・空港の両替所で「small change please」と頼む）
+- [ ] **緊急時連絡先カードを印刷**（大使館・保険会社・カード会社の盗難紛失デスク）
 - [ ] パッキング（下記の持ち物リスト参照）
 
 ---
@@ -208,6 +212,11 @@
 ポーチD：スキンケア・化粧品
 ```
 
+**洗濯物干し（速乾衣類で枚数を減らす場合は必須）**
+- **折りたたみハンガー × 2〜3本**（ホテルの備付ハンガーは下着・速乾Tの乾燥には不向き）
+- **ミニ洗濯ロープ＋ピンチ 4〜6個**（バスルームに張る・吸盤フック式が便利）
+- **無香料の旅行用洗剤シート 10枚**（液体より軽量・かさばらない）
+
 **街歩き用サブバッグ**
 - **斜め掛けボディバッグ or ショルダーバッグ** が最適（リュックは背後が見えずスリに狙われやすい）
 - ファスナー付き・切り裂き防止素材・ダブルジッパー
@@ -228,6 +237,227 @@
 | 多額の現金 | キャッシュレス化が進んでいる。€200〜300あれば十分 |
 | 携帯ドアロック | ヨーロッパのホテルドアには構造上ほぼ装着不可 |
 | 変圧器 | 最近のスマホ充電器・PC充電器は100-240V対応。変換プラグだけでOK |
+
+---
+
+## L. ハネムーン特別依頼メール（**そのままコピペで送れる完全版**）
+
+> **いつ送る**: 出発1〜2週間前（2026年6月中旬）
+> **何のため**: 追加費用なしで部屋アップグレード／シャンパン／チョコ等のサプライズを受ける確率を上げる
+> **Augusta Lucilla Palace** は[公式サイトで "honeymoon suites" を明示](https://www.augustalucillapalace.com/en/hotel-rome-termini/romantic-hotel-in-rome)（積極依頼すべき）／**Timhotel** は公式ハネムーンプランなしだが個別連絡で対応可
+
+---
+
+### 📮 メール①：Augusta Lucilla Palace（ローマ）に送る
+
+**宛先（To）**: `info@augustalucillapalace.com`
+**Cc**: 自分のもう片方のメールアドレス（送信ログ保持用）
+**件名（Subject）**:
+```
+Honeymoon stay — special request (Agoda reservation #XXXXXXXX)
+```
+
+**本文（そのままコピペ・XXXXXXXX と名前2箇所のみ差替）**:
+```
+Dear Augusta Lucilla Palace Team,
+
+My wife and I will be staying at Augusta Lucilla Palace for
+our honeymoon trip, under Agoda reservation #XXXXXXXX.
+
+Stay details:
+  Check-in : 2026-06-28 (Sunday)
+  Check-out: 2026-07-01 (Wednesday)
+  3 nights, 2 guests, 1 double room (booked with breakfast)
+  Arrival : around 21:00 (after Leonardo Express from FCO)
+  Departure: very early on 2026-07-01 (around 06:00 for ITA flight)
+
+This is our honeymoon and our first time staying in Rome,
+and we are very much looking forward to it.
+We would be very grateful for any small arrangement that could
+make this stay memorable — for example:
+
+  - a quiet room, or a room with a nice view if available
+  - a high floor
+  - any small honeymoon welcome touch (we have read on your
+    website that Augusta Lucilla Palace offers something
+    special for newlyweds, which made us very excited!)
+
+Two practical favors that would help us a lot:
+  - Could you please confirm whether early check-out around
+    06:00 on 2026-07-01 is possible?
+  - Could you please help us pre-book a taxi to FCO airport
+    for that early morning?
+
+Of course, everything depends on availability and we fully
+understand if some of these are not possible.
+
+Thank you very much in advance.
+
+Warm regards,
+Masatoshi Sano & [partner's full name]
+Email : masatoshi.sano1021@gmail.com
+Phone : +81-90-XXXX-XXXX
+```
+
+> 📞 **電話で押さえる場合**: +39 06 4893 9942（イタリア時間 9:00-18:00 = 日本時間 16:00-翌1:00）
+
+---
+
+### 📮 メール②：Timhotel Opéra Blanche Fontaine（パリ）に送る
+
+**宛先（To）**: `opera.blanche@timhotel.com`
+**Cc**: 自分のもう片方のメールアドレス
+**件名（Subject）**:
+```
+Honeymoon stay — special request (Agoda reservation #XXXXXXXX)
+```
+
+**本文（そのままコピペ・XXXXXXXX と名前2箇所のみ差替）**:
+```
+Dear Timhotel Opéra Blanche Fontaine Team,
+
+My wife and I will be staying at your hotel for our honeymoon
+trip, under Agoda reservation #XXXXXXXX.
+
+Stay details:
+  Check-in : 2026-07-01 (Wednesday)
+  Check-out: 2026-07-05 (Sunday)
+  4 nights, 2 guests, 1 double room
+  Arrival : around 12:00 (from CDG via RER B)
+  Departure: 2026-07-05 around 15:30 (to CDG for evening flight)
+
+This is our honeymoon and our first trip to Paris together.
+We are very much looking forward to staying in your beautiful
+hotel in the Blanche / SoPi area.
+
+We would be very grateful for any small arrangement that could
+make this stay memorable — for example:
+
+  - a quiet courtyard-facing room (we have read that your
+    hotel has a lovely private patio)
+  - a high floor if available
+  - any small honeymoon welcome touch — we would be truly
+    delighted by any kind gesture
+
+Two practical favors that would help us a lot:
+  - On 2026-07-02 we will leave the hotel at around 06:50 for
+    a day trip to Mont-Saint-Michel. Would the front desk
+    already be staffed at that time, or should we plan around
+    that?
+  - On 2026-07-05 we may need to leave our luggage at the hotel
+    after check-out (around 15:30 departure to CDG). Is that
+    possible?
+
+Of course, everything depends on availability and we fully
+understand if some of these are not possible.
+
+Thank you very much in advance.
+
+Warm regards,
+Masatoshi Sano & [partner's full name]
+Email : masatoshi.sano1021@gmail.com
+Phone : +81-90-XXXX-XXXX
+```
+
+> 📞 **電話で押さえる場合**: +33 1 44 63 54 95（フランス時間 8:00-22:00 = 日本時間 15:00-翌5:00）
+
+---
+
+### ✅ 送信前チェック
+
+- [ ] **Agoda 予約番号 #XXXXXXXX** を実際の番号に差し替えた（Agodaアプリ／予約確認メールで確認）
+- [ ] **名前2箇所**（"Masatoshi Sano & [partner's full name]"）を実名に
+- [ ] **電話番号**を実際のものに差し替え（+81 はそのままでよい・先頭の0を取る）
+- [ ] **Cc に自分のもう一つのアドレス**を入れた（送信ログ保管）
+- [ ] 件名・本文に Agoda 予約番号が入っている
+- [ ] 送信から **2〜3日返信なし**なら、電話で軽くフォロー
+
+---
+
+## M. ハネムーン用ディナー・ドレッシーウェア
+
+> 今回の予約候補には **Au Bon Accueil（エッフェル塔ビュー）・Le Comptoir du Relais（オデオン）・Felice a Testaccio・Roscioli・Armando al Pantheon** など**雰囲気重視のレストラン**が複数あり、速乾パンツ＋Tシャツでは浮く可能性。1セットだけドレッシー寄りを忍ばせる。
+
+| カテゴリ | アイテム | 備考 |
+|---------|---------|------|
+| 男性ボトムス | チノ or 細身スラックス 1本（黒/紺/ベージュ） | 速乾パンツでも色が黒・濃紺なら兼用可 |
+| 男性トップス | **襟付きシャツ 1〜2枚**（白or薄色・ノーアイロン素材推奨） | リネン素材なら7月の暑さも◎ |
+| 男性靴 | **きれいめスニーカー or ローファー 1足** | ウォーキング兼用OKなレザーローファーが理想 |
+| 女性ワンピース | **ノースリーブ不可の袖付きワンピース 1着** | 教会対応＆ディナー兼用・しわになりにくい素材 |
+| 女性靴 | きれいめストラップサンダル or 低めヒール 1足 | 石畳でも痛まない3-4cmヒールまで |
+| 女性アクセサリー | 簡単なネックレス・ピアス 1セット | スーツケース内で潰れないハードケース |
+| 共通 | **小さめのクラッチ or ミニショルダー** | ディナー時に防犯リュックを置き換える用 |
+| 共通 | **香水・コロン（30ml以下）** | 機内持ち込みなら100ml以下透明袋に |
+
+### ディナー想定店ごとのドレスコード感
+- **Au Bon Accueil（エッフェル塔ビュー）**: スマートカジュアル必須・ノースリーブ可・ジーンズ避ける
+- **Le Comptoir du Relais**: スマートカジュアル
+- **Felice a Testaccio / Roscioli**: カジュアル可だが Tシャツ×短パンは避ける
+- **Restaurant Kei（特別枠）**: ジャケット推奨・スニーカー不可レベル
+
+---
+
+## N. カプリ青の洞窟 水濡れ対策（Day 2 · 6/29 特化）
+
+> 手漕ぎボートで洞窟入口の波が荒く、**頭から海水しぶき** という体験談多数。スマホ・パスポート・現金は完全防水必須。
+
+| 持ち物 | 用途 |
+|--------|------|
+| **ジップロック大（フリーザーバッグ）× 3枚以上** | パスポート・スマホ・現金を二重防水。シール式の方が確実 |
+| **完全防水バッグ（10L程度）** | カメラ・予備の服を入れて船上に持ち込む。AmazonベーシックのIPX8級で十分 |
+| **速乾Tシャツ予備 1枚** | 船上で濡れた場合、島に上陸後に着替え。元のTシャツはジップロックへ |
+| **速乾タオル小** | 船を降りてから髪・顔・カメラを拭く |
+| **ビーチサンダル or 濡れてもいい靴** | 港・船乗り場が濡れていることが多い。歩きやすい運動靴と別途 |
+| **防水スマホケース（首掛け）** | ボートで両手を使うので首掛けが必須 |
+| **小銭 €2〜5** | 入場料・ボートチップは現金。ジップロック内に小銭袋ごと |
+| **酔い止め薬** | 港〜洞窟は小型ボートで揺れる。空腹も避ける（朝食を軽く済ます） |
+| **日焼け止め（顔・首・腕に重ね塗り）** | 船上の照り返しで顔が真っ赤になる体験談多数 |
+
+> ⚠️ **波次第で入場不可日もあり**（夏でも30〜40%）→ 入れない場合もこの装備は **カプリ島本島散策**で活きる。
+
+---
+
+## O. 機内持ち込み液体ルール（TSA 100ml透明袋）
+
+> 機内で**保湿ミスト・化粧水・ぬれマスク・ハンドクリーム・コンタクト洗浄液**等を使うなら必須準備。
+
+- **透明ジップ袋（縦20×横20cm以内・容量1L以下）× 1枚／人**（100均で「機内持ち込み 透明ポーチ」として購入可）
+- 各容器は **100ml以下**（容器の表示容量。中身の量ではない）
+- 1袋に収まらない量は受託荷物へ
+- 関空のセキュリティでは**袋を出して別レーンへ**置くよう案内される
+
+| 機内で使うもの | 100ml以下版の入手先 |
+|---------------|-------------------|
+| 化粧水・乳液 | 無印良品 PETボトル80ml or 詰替容器 |
+| 日焼け止め | 50ml・80ml サイズで購入 |
+| 保湿ミスト | アベンヌウォーター 50g 等 |
+| ハンドクリーム | 30g チューブ |
+| 歯磨き粉 | 30g 旅行用 |
+| コンタクト洗浄液 | 60ml トラベルサイズ |
+| 香水 | 4ml アトマイザー詰替 |
+
+---
+
+## P. 個人衛生・身だしなみ用品
+
+> 既存のI（衛生・医薬品）と重複しないよう **必須の身だしなみ系を網羅**。
+
+| カテゴリ | 持ち物 | 備考 |
+|---------|--------|------|
+| 口腔ケア | 歯ブラシ × 2本／旅行用歯磨き粉 30g／**歯間ブラシ or フロス** | ホテル備付は硬すぎる事多い。フロスは特に欧米で大事（観光客はみんな歯間が綺麗） |
+| 口腔ケア | マウスウォッシュ 50ml | 食後リフレッシュ・ニンニク料理後に必須 |
+| 髪 | **ヘアブラシ / ヘアゴム / ピン** | スーツケース内のヘアアクセは100均ハードケースで潰れ防止 |
+| 髪 | 海外対応ヘアアイロン（100-240V）or 折りたたみブラシ | ヘアアイロンは ROHM TOO 等の dual voltage モデル |
+| シェービング | T字カミソリ × 数本 or 電動シェーバー | 電動なら100-240V対応の充電式 |
+| コンタクト | 1日使い捨て × 滞在日数+予備3日 / 予備メガネ | 紛失時の保険でメガネ必携 |
+| コンタクト | 携帯用洗浄液 60ml（透明袋へ） | |
+| 生理用品 | 普段使いの倍量 | フランス・イタリア品は日本人に合わないことが多い・ピル使用者は遅延に備えて余分に |
+| ピル | **避妊薬・常用薬は機内持ち込み** | 受託荷物の紛失リスク回避 |
+| メイク | **メイク道具 1ポーチ／メイク落とし** | クレンジングシートが万能（拭くだけ） |
+| 香水 | 香水（4mlアトマイザー） | ハネムーンディナー時のひと吹き |
+| その他 | 爪切り（受託荷物） / 耳栓 / 安全ピン 数本 / 簡易裁縫セット | 服のほつれ応急処置用 |
+| その他 | **撮影系**：SDカード予備 32GB×2 / クリーニングクロス / レンズキャップ予備 | 旅行中バックアップ用 |
+| その他 | フェイスタオル 1枚（薄手・速乾以外） | ホテルの硬いタオル時の補助 |
 
 ---
 
