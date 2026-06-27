@@ -162,9 +162,17 @@
 | **10:46** | **パリCDG着** |
 | 11:20 | RER B線でパリ市内へ（CDG → 北駅 約30〜35分・€14）→ メトロでブランシュ方面 |
 | 12:00 | **Timhotel Opéra Blanche Fontaine** へ（9区ブランシュ・早着なら荷物預け） |
-| 13:00 | **マレ地区**でパリ初ランチ（ファラフェル・カフェ）・ヴォージュ広場 |
-| 15:30 | **凱旋門＋シャンゼリゼ**（展望台）→ **トロカデロ**夕景 |
-| 19:00 | **エッフェル塔ライトアップ＆スパークル**（毎時0分・5分間）／体力次第でセーヌ散歩 |
+| 13:00 | **マレ地区**でランチ→ **[L'As du Fallafel](https://www.google.com/maps/search/?api=1&query=L'As+du+Fallafel+Paris)** | ファラフェル聖地・€6.50・予約不可。予備: [Breizh Café](https://breizhcafe.com/)（ガレット） |
+| 14:30 | ヴォージュ広場 → マレ散策 | |
+| 15:30 | **凱旋門＋シャンゼリゼ**（展望台）→ **トロカデロ**夕景 | |
+| 19:00 | **エッフェル塔ライトアップ＆スパークル**（毎時0分・5分間） | |
+| 20:30 | **夕食：[Au Bon Accueil](https://www.aubonaccueilparis.com/)**（エッフェル塔ビュー・要予約） | 疲労時は [Higuma 味噌ラーメン](https://www.google.com/maps/search/?api=1&query=Higuma+Paris+Opera)（ホテル徒歩圏） |
+
+**🍝 Day 4 のレストラン候補**
+- **ランチ本命：[L'As du Fallafel](https://www.google.com/maps/search/?api=1&query=L'As+du+Fallafel+Paris)**（マレ・ロジエ通り・「キング・オブ・ファラフェル」・€6.50・予約不可・⚠️**金曜は16:00閉店**・水曜13:00ならOK）参照：[note ファラフェル食べ比べ](https://note.com/01hiroko02/n/n24d88cb44427)
+- **ランチ予備：[Breizh Café](https://breizhcafe.com/)**（マレ系列・本場ブルターニュガレット・€25-35）参照：[ameblo BOSS ガレット聖地](https://ameblo.jp/wanwancocococo/entry-12708039188.html)
+- **夜本命：[Au Bon Accueil](https://www.aubonaccueilparis.com/)**（7区・エッフェル塔南正面のテラス・要予約・€40-60）参照：[O'BON PARIS エッフェル塔景レポ](https://ameblo.jp/obonparisjapan/entry-12813305854.html)
+- **疲労時の保険：[Higuma](https://www.google.com/maps/search/?api=1&query=Higuma+Paris+Opera)**（オペラ・サンタンヌ通り・味噌ラーメン・€10-12・〜22時・ホテル徒歩圏）参照：[note パリの日本食](https://note.com/mizuhooooo/n/n6818d84fd517)
 
 > ⚠️ 早朝出発。前日（ヴァチカン＆街ブラDay）は早めに就寝。Augustaは前夜に**早朝チェックアウト可否**を確認。
 > ✅ 便は **ITA AZ316（08:34→10:46 CDG）に決定**（未購入）。CDGからRER Bで北駅→メトロでブランシュ（Timhotel）。
@@ -186,14 +194,16 @@
 | **07:20** | **ギャラリー・ラファイエット本館**（ショセダンタン角玄関口）集合 | |
 | 07:30 | 出発（トイレ付バス・日本語アシスタント）| 片道 約4.5h・途中トイレ休憩1回 |
 | 12:00頃 | **モン・サン・ミッシェル**着 | |
-| 12:30 | 名物**ふわふわオムレツ**ランチ（込み）| |
+| 12:30 | 名物 **[La Mère Poulard](https://www.google.com/maps/search/?api=1&query=La+Mere+Poulard+Mont+Saint+Michel)** の**ふわふわオムレツ**ランチ（ツアー込み）| 1888年創業の島内老舗・銅鍋で泡立てるパフォーマンス |
 | 13:30 | **修道院**見学（入場込み）・城壁・回廊 | |
 | 15:00 | 干潟・島外周さんぽ | |
 | 15:30 | バスで帰路へ | 約4.5h・トイレ休憩1回 |
 | **21:00** | パリ（オペラ座付近）帰着・解散 | ホテルまでメトロ約10分 |
+| 21:30 | 深夜小腹に **[Higuma 味噌ラーメン](https://www.google.com/maps/search/?api=1&query=Higuma+Paris+Opera)** | オペラ徒歩圏・〜22時・€10-12 |
 
 > ⚠️ **潮汐チェック**：[maree.info](https://www.maree.info/) で **7/2** の潮位を確認（大潮だと島が海に囲まれる絶景）。
 > 予約：[VELTRA a/111916](https://www.veltra.com/jp/europe/france/paris/a/111916)（7/2・大人2名）。毎日催行。
+> 🍳 **昼の La Mère Poulard はツアーランチに含まれる**ので別途予約不要。個人ならオムレツ €55-65。参照：[ameblo MSM オムレツ訪問](https://ameblo.jp/kisouan-miwa0015/entry-12827996240.html)
 
 ---
 
@@ -203,11 +213,18 @@
 
 | 時刻 | 内容 | 移動 |
 |------|------|------|
-| 午前 | サン＝ジェルマンの**老舗カフェ**でブランチ（カフェ・ド・フロール／レ・ドゥ・マゴ）| |
+| 08:00 | 朝食 **[Café de Flore](https://www.google.com/maps/search/?api=1&query=Cafe+de+Flore+Paris)** | サン=ジェルマンの老舗・1887年創業・開店直後で混雑回避 |
 | 12:00 | 軽く**1スポット**：オランジュリー（モネ睡蓮・約1h）or オルセー | |
+| 15:00 | ティータイム **[Angelina](https://www.google.com/maps/search/?api=1&query=Angelina+Paris+Rivoli)** | ルーブル向かい・モンブラン＆ショコラ・ショー アフリカン |
 | 16:00 | **ルーブル美術館**（**金曜ノクターン**・要予約）｜3〜4時間ゆったり | メトロ約15分 |
 | 〜21:45 | モナリザ・ニケ・ヴィーナス（**19時以降は空く**）・夜のガラスピラミッド | 最終入場20:45 |
-| 夜 | セーヌ川沿いで夕食 | ホテルまでメトロ約20分 |
+| 22:00 | 遅め夕食 or 軽食 → Le Petit Verdot（日本語可・要予約）/ オペラ周辺で気軽に | |
+
+**🍝 Day 6 のレストラン候補**
+- **朝食本命：[Café de Flore](https://ameblo.jp/bangkok-housewife/entry-12368703371.html)**（6区サン=ジェルマン・サルトル&カミュの聖地・1887年〜・コーヒー&クロワッサンで「映画みたいなパリの朝」体験・€6-15）
+- **ティータイム：[Angelina](https://note.com/f_snowflakes/n/n9121837c752a)**（1区リヴォリ・1903年〜・モンブラン＆ショコラショー アフリカン・€8-15・ハネムーン感◎）
+- **夜遅め本命：[Le Petit Verdot](https://note.com/f00b4r/n/nd385cdaef87d)**（6区・日本人ソムリエ石塚秀哉氏・**日本語メール予約可**・€30-50・要予約）
+- **ハネムーン特別枠：[Restaurant Kei](https://www.restaurant-kei.fr/)**（1区・日本人初ミシュラン三つ星・小林圭・€180-250・**3ヶ月前予約必須**・選ぶ場合は金夜のルーブル ノクターン を諦めて土曜ヴェルサイユ夜の代替に）参照：[ameblo Kei訪問記](https://ameblo.jp/paris2020/entry-12863744040.html)
 
 > ルーブルは**金曜21:45まで夜間開館（最終入場20:45）**。入場料 **€32/人**。**事前予約必須**：ticketshop.louvre.fr（日本カードは決済エラー多いので [GetYourGuide](https://www.getyourguide.com/) 推奨）。
 > 💡 **凱旋門・トロカデロ・エッフェル夜景は到着日(7/1)夕方に前倒し済み**。7/3はルーブルに集中＝夜間開館で**モナリザの混雑を回避**。余力でオルセー。
@@ -235,7 +252,12 @@
 | 14:00〜17:20 | **午後の大噴水 → ネプチューンのフィナーレ17:20**（目玉）| |
 | 17:30 | 庭園閉門 → リヴ・ゴーシュ駅へ | 徒歩約12分 |
 | 〜18:30 | **RER C**でパリへ | 約40分・€4前後 |
-| 19:30 | 市内で夕食 | |
+| 20:00 | **夕食本命：[Le Comptoir du Relais](https://www.google.com/maps/search/?api=1&query=Le+Comptoir+du+Relais+Paris)** | 6区オデオン・シェフ Yves Camdeborde・**3ヶ月前予約必須** |
+
+**🍝 Day 7 のレストラン候補（ヴェルサイユ帰路後）**
+- **本命：[Le Comptoir du Relais](https://www.hotel-paris-relais-saint-germain.com/)**（6区オデオン・ネオビストロの原点・ステーキフリット&パテ&コンフィ・€80夜コース・**夜は3ヶ月前から予約必須**・電話 +33 1 44 27 07 50）参照：[ameblo 人気ビストロ訪問](https://ameblo.jp/france-mei/entry-12401725008.html)
+- **予備：[Bouillon Chartier](https://www.google.com/maps/search/?api=1&query=Bouillon+Chartier+Paris)**（9区・1896年創業の歴史的建造物指定・€20-25・**予約不可・夜45分待ち**・予算節約しつつ歴史体験）参照：[ameblo シャルティエ訪問](https://ameblo.jp/you158you/entry-12818148697.html)
+- **疲労時の保険：[Higuma 味噌ラーメン](https://www.google.com/maps/search/?api=1&query=Higuma+Paris+Opera)**（オペラ・ホテル徒歩圏・€10-12）
 
 > 🌊 **大噴水ショー（Grandes Eaux Musicales）は有料・庭園入場券＝€16/人（非EEA）**。宮殿入場（ツアー込み）とは別。事前購入推奨：[tickets.chateauversailles-spectacles.fr](https://tickets.chateauversailles-spectacles.fr/)。
 > 🌙 **夜の噴水ショー＆花火は今回は見送り**（〜23:05終了＝帰着深夜・翌7/5は帰国日のため）。日中のネプチューン17:20フィナーレで十分豪華。
@@ -248,10 +270,15 @@
 | 時間 | 内容 |
 |------|------|
 | ゆっくり起床 | （前日の疲れを回復） |
-| 09:30 | **サン＝マルタン運河**周辺・カフェでブランチ |
-| 10:30 | **マレ地区**でお土産購入（アパレル・チョコ・マカロン） |
+| 09:30 | **サン＝マルタン運河**ブランチ → **[Du Pain et des Idées](https://www.google.com/maps/search/?api=1&query=Du+Pain+et+des+Idees+Paris)**（パン楽園）+ **[Ten Belles](https://www.google.com/maps/search/?api=1&query=Ten+Belles+Paris)**（コーヒー） |
+| 10:30 | **マレ地区**でお土産購入 → **[Mariage Frères 本店](https://www.mariagefreres.com/)**（紅茶・マルコポーロ）・チョコ・マカロン |
 | 12:00 | **ポンピドゥーセンター**外観・周辺ブラブラ |
 | 13:00 | 自由行動（お土産・カフェ・モンマルトル等） |
+
+**🍝 Day 8 のレストラン候補（朝〜出発まで）**
+- **ブランチ本命：[Du Pain et des Idées](https://note.com/rakuentanbouka/n/n0e60cba1144d)**（10区サン=マルタン運河近・「パリ最高のパン屋」・エスカルゴ&36時間仕込みパンデザミ・€3-8・⚠️ **日曜閉店の可能性大** → 出発前にInstagram or 公式で7/5営業確認）
+- **ブランチ予備：[Ten Belles](https://ameblo.jp/obonparisjapan/entry-12388529127.html)**（10区運河沿い・パリのサードウェーブコーヒー先駆・スコーン&サンド・€5-12・**日曜営業**）
+- **ランチ軽食：[L'As du Fallafel](https://www.google.com/maps/search/?api=1&query=L'As+du+Fallafel+Paris)** テイクアウト（マレお土産動線上・日曜は通常営業）
 | 15:30 | **Timhotel** チェックアウト・CDG空港へ出発（メトロ→RER B 約45分） |
 | 16:30 | CDG空港(T1)着・OZ502チェックイン・出国手続き |
 | 18:00 | 空港内で最後のフランス料理・ワイン |
@@ -378,6 +405,12 @@
 | ローマ予約優先：Felice a Testaccio（Day3 夜本命） | [feliceatestaccio.com](https://www.feliceatestaccio.com/) ／ 電話 +39 06 574 6800 |
 | ローマ予約優先：Roscioli（Day3 夜予備） | [rosciolirestaurants.com](https://www.rosciolirestaurants.com/) |
 | ローマ予約優先：Armando al Pantheon（街ブラ） | [armandoalpantheon.it](https://www.armandoalpantheon.it/) |
+| **パリ レストラン候補一覧（日本人ブログ頻出店 43軒）** | [paris_restaurants.md](paris_restaurants.md) ／ パリガイドページ [site/paris.html#ch-food](site/paris.html#ch-food) |
+| パリ予約優先：Le Comptoir du Relais（Day7 夜本命） | [hotel-paris-relais-saint-germain.com](https://www.hotel-paris-relais-saint-germain.com/) ／ 電話 +33 1 44 27 07 50（3ヶ月前〜） |
+| パリ予約優先：Au Bon Accueil（Day4 夜・エッフェル塔ビュー） | [aubonaccueilparis.com](https://www.aubonaccueilparis.com/) |
+| パリ予約優先：Le Petit Verdot（Day6 夜・日本語可） | 日本人ソムリエ・[note記事](https://note.com/f00b4r/n/nd385cdaef87d) |
+| パリ ハネムーン特別枠：Restaurant Kei（三つ星・3ヶ月前） | [restaurant-kei.fr](https://www.restaurant-kei.fr/) |
+| パリ ブーランジェリー：Du Pain et des Idées（Day8 朝） | 7/5（日）営業確認必須・[note 記事](https://note.com/rakuentanbouka/n/n0e60cba1144d) |
 | アシアナ航空（日本語） | [m.flyasiana.com](https://m.flyasiana.com/C/JP/JA/index) |
 | Trip.com | [jp.trip.com](https://jp.trip.com/) |
 | ITA Airways | [ita-airways.com](https://www.ita-airways.com/) |
