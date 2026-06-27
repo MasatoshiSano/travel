@@ -282,11 +282,10 @@ make this stay memorable — for example:
     website that Augusta Lucilla Palace offers something
     special for newlyweds, which made us very excited!)
 
-Two practical favors that would help us a lot:
+One small practical favor:
   - Could you please confirm whether early check-out around
-    06:00 on 2026-07-01 is possible?
-  - Could you please help us pre-book a taxi to FCO airport
-    for that early morning?
+    05:50 on 2026-07-01 is possible? We will be leaving for
+    the 06:05 Leonardo Express train from Termini to FCO airport.
 
 Of course, everything depends on availability and we fully
 understand if some of these are not possible.
@@ -326,13 +325,13 @@ Agoda 予約番号は #XXXXXXXX です。
     新婚者向けの特別な対応をされていることをウェブサイトで
     拝見し、大変ワクワクしております！）
 
-実務的なお願いも2点ございます:
-  - 2026年7月1日 朝6:00頃の早朝チェックアウトは可能でしょうか？
-  - 同日朝のフィウミチーノ空港行きのタクシーを事前予約して
-    いただくことは可能でしょうか？
+ちょっとした実務的なお願いも1点ございます:
+  - 2026年7月1日 朝5:50頃の早朝チェックアウトは可能でしょうか？
+    （Termini 駅 06:05発のレオナルド・エクスプレスで
+    フィウミチーノ空港へ向かう予定です）
 
-もちろんすべて空き状況次第ですので、もしご対応が難しい
-場合は構いません。
+もちろん空き状況次第ですので、もしご対応が難しい場合は
+構いません。
 
 どうぞよろしくお願い申し上げます。
 
@@ -375,14 +374,13 @@ rendere il nostro soggiorno indimenticabile — ad esempio:
     speciale per i novelli sposi, e questo ci ha resi molto
     entusiasti!)
 
-Avremmo anche due piccole richieste pratiche:
+Avremmo anche una piccola richiesta pratica:
   - Sarebbe possibile effettuare il check-out anticipato,
-    intorno alle 06:00 del 1 luglio 2026?
-  - Potreste aiutarci a prenotare un taxi per l'aeroporto FCO
-    per quella mattina presto?
+    intorno alle 05:50 del 1 luglio 2026? Prenderemo il
+    Leonardo Express delle 06:05 da Termini per l'aeroporto FCO.
 
-Naturalmente, tutto dipende dalla disponibilità e comprendiamo
-perfettamente se qualcuna di queste richieste non fosse possibile.
+Naturalmente dipende dalla disponibilità e comprendiamo
+perfettamente se non fosse possibile.
 
 Vi ringraziamo molto in anticipo.
 
