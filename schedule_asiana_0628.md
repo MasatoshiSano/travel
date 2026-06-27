@@ -54,9 +54,11 @@
 | 13:20 | **OZ561** 仁川ICN(T2) → ローマFCO 出発 |
 | 19:35 | **ローマ・フィウミチーノ空港（FCO・T3）**着 |
 | 20:30 | レオナルド・エクスプレスでテルミニ駅（約30分）→ **Augusta Lucilla Palace** チェックイン（駅徒歩5分・北側） |
-| 21:30 | 軽食 or **トレヴィの泉**を軽く見学（夏のローマは21時頃まで明るい） |
+| 21:30 | **トレヴィの泉**を軽く見学（夏のローマは21時頃まで明るい）→ 軽食 |
 
 > 🏨 **宿泊：Augusta Lucilla Palace**（テルミニ駅 徒歩5分・北側／6/28〜6/30の3泊・朝食込）。FCO→テルミニは**レオナルド・エクスプレス 約32分・€14**。
+> 🍕 **Day 1 夜の食事（本命）：[Pinsere](https://www.google.com/maps/search/?api=1&query=Pinsere+Rome)**（テルミニ北徒歩6分・ピンサ €5前後・予約不要・Googleレビュー★4.7）。到着後の軽食にちょうど良い。参照：[ローマ街グルメ note](https://note.com/gohanidea/n/n8c748d8a29f4)
+> 🍝 **保険：[Trattoria Antica Bohème](https://www.google.com/maps/search/?api=1&query=Antica+Boheme+Rome)**（テルミニ徒歩5分・〜22時・「日本人観光客が多く安心」「外れない」）。参照：[アーモイタリア 訪問記](https://amoitalia.com/area/lazio/roma/trattoria-antica-boheme/)
 
 ---
 
@@ -86,7 +88,12 @@
 | **17:00** | ベヴェレッロ港 着・解散 | → FreeNow/地下鉄でナポリ中央駅へ |
 | **18:35** | **ナポリ中央駅 発 Italo 9996** | €26・🔴要予約 |
 | 19:46 | **ローマ・テルミニ 着** | |
-| 夜 | **トラステヴェレ地区**でカルボナーラ夕食 | 翌日ヴァチカンなので無理せず |
+| 21:00頃 | **トラステヴェレ地区**で夕食（カプリ帰り後） | 翌日ヴァチカンなので無理せず |
+
+**🍝 Day 2 夜のレストラン候補**（19:46テルミニ着→21:00トラステヴェレ着想定）
+- **本命：[Tonnarello](https://www.google.com/maps/search/?api=1&query=Tonnarello+Trastevere+Rome)**（自家製トンナレッリのカチョエペペ／カルボナーラ・**予約不可で並ぶ覚悟**・〜22時・Googleレビュー★4.7）参照：[Triplovers 厳選](https://triplovers.jp/blogs/overseas/4396) ／ [VOKKA 在住15選](https://vokka.jp/10741/)
+- **予備：[Da Enzo al 29](https://www.google.com/maps/search/?api=1&query=Da+Enzo+al+29+Rome)**（カルボナーラ・アマトリチャーナ・トリッパ・〜23時・20席のみ。当日電話 `+39 06 581 2260` or 開店19:00前並び）参照：[ロコタビ 在住者29選](https://locotabi.jp/roma/recommends/gourmet)
+- **疲労時の保険：[Antica Bohème](https://www.google.com/maps/search/?api=1&query=Antica+Boheme+Rome)**（ホテル徒歩5分に切替・〜22時）
 
 **🚕 港までの移動（ぼったくり対策）**
 - **第一候補：FreeNow**（渡航前にインストール＋日本のクレカ登録）。正規タクシー・料金目安表示・アプリ決済＝交渉不要。
@@ -113,7 +120,7 @@
 | 08:10〜 | **ヴァチカン美術館**（優先入場）→ ラオコーン像・タペストリー/地図の回廊 | |
 | 〜 | **システィーナ礼拝堂**（最後の審判・天地創造）※礼拝堂内はガイド不可・各自見学 | |
 | 〜11:10 | **サン・ピエトロ大聖堂**（システィーナから**特別通路で直通**）→ 大聖堂前で解散 | ガイド解説は聖堂外 |
-| 11:30 | バチカン周辺でランチ | |
+| 11:30 | **ランチ：[Pizzarium Bonci](https://www.google.com/maps/search/?api=1&query=Pizzarium+Bonci+Rome)** | サン・ピエトロ→メトロA線Ottaviano→Cipro徒歩2分 / 切り売りピザ・予約不要・€3-6/カット |
 | 14:30 | 🚶 **ローマ街ブラ**スタート | |
 
 **街ブラルート（テヴェレ川沿い → 旧市街）**
@@ -127,7 +134,14 @@
 | 18:00 | **コロッセオ**外観（夕日に映えるライトアップ） |
 | 19:30 | **トレヴィの泉**ライトアップ（夜は昼より幻想的） |
 | 20:00 | **ラ・リナシェンテ**（百貨店・トリトーネ店／屋上テラスで夜景＋館内に古代ローマ水道橋遺構・〜22時・トレヴィ徒歩5分）|
-| 21:00 | ジェラートを食べながら夜散歩 |
+| 20:30 | ⭐ **ローマ最後の晩餐：[Felice a Testaccio](https://www.google.com/maps/search/?api=1&query=Felice+a+Testaccio+Rome)** | Trevi→B線Piramide駅 約15分 |
+| 22:30 | テルミニへ戻り **[Come il Latte](https://www.google.com/maps/search/?api=1&query=Come+il+Latte+Rome)** で締めジェラート | ホテル徒歩10分 |
+
+**🍝 Day 3 夜のレストラン候補（ローマ最後の晩餐）**
+- ⭐ **本命：[Felice a Testaccio](https://www.feliceatestaccio.com/)**（1936年創業・**目の前で和えるカチョ・エ・ペペのパフォーマンス**が日本人ブロガー全員感動・€35-45/人・**要予約**）。テルミニからB線Piramide駅まで6分→徒歩。参照：[ローマより愛をこめて](https://romamayumi.exblog.jp/30122258/) ／ [ままのまり 訪問記](https://ameblo.jp/mamanomari/entry-12878679593.html)
+- **予備①：[Roscioli](https://www.rosciolirestaurants.com/)**（Gambero Rosso誌「ローマ最高のカルボナーラ」1位・€50-70/人・**1ヶ月前から予約必須**・カンポ・デ・フィオーリ近）。参照：[TravelBook 5選](https://www.travelbook.co.jp/topic/620) ／ [トラリブ 食べ比べ](https://www.tra-live.com/entry/Rome/carbonara)
+- **予備②：[Armando al Pantheon](https://www.armandoalpantheon.it/)**（1961年〜・パンテオン横の老舗・€40-50/人・**要予約**）。街ブラ動線上で時短可。
+- **Feliceが取れない時の保険：[Flavio al Velavevodetto](https://www.google.com/maps/search/?api=1&query=Flavio+al+Velavevodetto+Rome)**（同じテスタッチョ地区で完結）
 
 > 🏛 予約：[VELTRA a/9893](https://www.veltra.com/jp/europe/italy/roma/a/9893)（6/30・大人2名）。**美術館＋システィーナ＋サン・ピエトロ大聖堂が1ツアー込み・優先入場＆特別通路**でシスティーナから大聖堂へ直通。当日は**パスポート携帯必須**。
 > ⚠️ 法王謁見・宗教行事でサン・ピエトロがクローズの場合は代替観光（ピナコテーカ等）に変更（返金なし）。
@@ -360,6 +374,10 @@
 
 | カテゴリ | リンク |
 |----------|--------|
+| **ローマ レストラン候補一覧（日本人ブログ頻出店）** | [rome_restaurants.md](rome_restaurants.md) ／ ローマガイドページ [site/roma.html#ch-food](site/roma.html#ch-food) |
+| ローマ予約優先：Felice a Testaccio（Day3 夜本命） | [feliceatestaccio.com](https://www.feliceatestaccio.com/) ／ 電話 +39 06 574 6800 |
+| ローマ予約優先：Roscioli（Day3 夜予備） | [rosciolirestaurants.com](https://www.rosciolirestaurants.com/) |
+| ローマ予約優先：Armando al Pantheon（街ブラ） | [armandoalpantheon.it](https://www.armandoalpantheon.it/) |
 | アシアナ航空（日本語） | [m.flyasiana.com](https://m.flyasiana.com/C/JP/JA/index) |
 | Trip.com | [jp.trip.com](https://jp.trip.com/) |
 | ITA Airways | [ita-airways.com](https://www.ita-airways.com/) |

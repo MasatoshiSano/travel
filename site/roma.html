@@ -360,123 +360,176 @@
     <div class="num"><em>02</em></div>
     <div>
       <div class="label">CHAPTER TWO · RESTAURANTS</div>
-      <h2>レストラン<br>定番店6＋穴場店6</h2>
-      <p>日本人ブロガー・ロコタビ・在住者レビューから選定。<strong>店名・名物・要予約か</strong>まで明記。Day 2夜のトラステヴェレ夕食候補も含む。</p>
+      <h2>レストラン<br>Day別ディナープラン＋12軒</h2>
+      <p>ロコタビ／TravelBook／トラリブ／アーモイタリア／在住ブロガー（ローマより愛をこめて・ままのまり 他）を横串で確認した <strong>日本人ブログ頻出店</strong>を、3泊4日の動線に沿って配置。各カードに <strong>予約要否・特に推し・参照ブロガーのリンク</strong> を併記。</p>
     </div>
+  </div>
+
+  <!-- Day別ディナープラン callout -->
+  <div style="background:linear-gradient(180deg,#fdf5e8,#f3ebde);border-left:4px solid var(--c-classic);border-radius:3px;padding:28px 32px;margin-bottom:36px">
+    <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:11px;letter-spacing:.35em;text-transform:uppercase;color:var(--c-classic);font-weight:700;margin-bottom:14px">📅 Day別 食事プラン（推奨）</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;font-size:14px;line-height:1.7">
+      <div>
+        <div style="font-weight:700;color:var(--c-ink);border-bottom:1px dashed rgba(26,20,16,.25);padding-bottom:6px;margin-bottom:8px">DAY 1 · 6/28(日) 夜</div>
+        21:30 ホテル着 → 軽食<br>
+        <strong style="color:var(--c-classic)">本命: Pinsere</strong>（ピンサ €5・徒歩6分）<br>
+        保険: Antica Bohème（徒歩5分）
+      </div>
+      <div>
+        <div style="font-weight:700;color:var(--c-ink);border-bottom:1px dashed rgba(26,20,16,.25);padding-bottom:6px;margin-bottom:8px">DAY 2 · 6/29(月) 夜</div>
+        19:46 ナポリから帰着 → 21:00頃トラステヴェレ<br>
+        <strong style="color:var(--c-classic)">本命: Tonnarello</strong>（予約不可・並ぶ）<br>
+        予備: Da Enzo al 29 / 疲労時 Antica Bohème
+      </div>
+      <div>
+        <div style="font-weight:700;color:var(--c-ink);border-bottom:1px dashed rgba(26,20,16,.25);padding-bottom:6px;margin-bottom:8px">DAY 3 · 6/30(火) 昼</div>
+        11:30 ヴァチカン解散 → Cipro駅<br>
+        <strong style="color:var(--c-classic)">本命: Pizzarium Bonci</strong>（切り売りピザ・予約不要）
+      </div>
+      <div>
+        <div style="font-weight:700;color:var(--c-ink);border-bottom:1px dashed rgba(26,20,16,.25);padding-bottom:6px;margin-bottom:8px">DAY 3 · 6/30(火) 夜 ⭐</div>
+        ローマ最後の晩餐<br>
+        <strong style="color:var(--c-classic)">本命: Felice a Testaccio</strong>（目前カチョエペペ・要予約）<br>
+        予備: Roscioli / Armando al Pantheon
+      </div>
+    </div>
+  </div>
+
+  <!-- 予約優先順 callout -->
+  <div style="background:#1a1410;color:#ccbea8;border-radius:3px;padding:24px 32px;margin-bottom:48px">
+    <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:11px;letter-spacing:.35em;text-transform:uppercase;color:var(--c-hidden);font-weight:700;margin-bottom:14px">⚠️ 予約を急ぐ順（出発前に確定したい店）</div>
+    <ol style="margin:0;padding-left:22px;font-size:14.5px;line-height:1.85;color:#fff">
+      <li><strong>Felice a Testaccio</strong>（6/30 夜・本命）— <a href="https://www.feliceatestaccio.com/" target="_blank" rel="noopener" style="color:var(--c-hidden-soft);text-decoration:underline">feliceatestaccio.com</a> 公式予約 or 電話 <code style="background:#3a3026;padding:1px 6px;border-radius:2px">+39 06 574 6800</code></li>
+      <li><strong>Roscioli</strong>（6/30 夜・予備、特別感を出すなら本命でも可）— <a href="https://www.rosciolirestaurants.com/" target="_blank" rel="noopener" style="color:var(--c-hidden-soft);text-decoration:underline">rosciolirestaurants.com</a></li>
+      <li><strong>Armando al Pantheon</strong>（街ブラ昼／夜の予備）— <a href="https://www.armandoalpantheon.it/" target="_blank" rel="noopener" style="color:var(--c-hidden-soft);text-decoration:underline">armandoalpantheon.it</a></li>
+      <li><strong>Da Enzo al 29</strong>（6/29 夜・予備）— 電話 <code style="background:#3a3026;padding:1px 6px;border-radius:2px">+39 06 581 2260</code>（取れなければ開店19:00前に並ぶ）</li>
+    </ol>
   </div>
 
   <!-- 定番店 -->
   <div class="subhead">
     <span class="pill classic">定番</span>
-    <h3>RESTAURANT CLASSICS · 日本人観光客の鉄板6軒</h3>
+    <h3>RESTAURANT CLASSICS · 日本人ブログ殿堂入り 6軒</h3>
     <span class="line"></span>
   </div>
 
   <div class="grid">
-    <article class="card">
+    <article class="card" id="rest-felice">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/99/Cacio_e_pepe.jpg');">
+        <span class="city">Testaccio</span>
+      </div>
+      <span class="badge">DAY 3 夜・本命</span>
+      <div class="body">
+        <div class="num">N° 15</div>
+        <h4>Felice a Testaccio</h4>
+        <div class="sub">SINCE 1936 · CACIO E PEPE</div>
+        <p>テスタッチョ地区の老舗。<strong>目の前で和える「カチョ・エ・ペペ」のパフォーマンス</strong>が看板で、日本人ブロガーが全員感動して帰る名物体験。"ローマ最後のトラットリア"とも呼ばれる正統派。<strong>Day 3夜の本命</strong>として最優先で予約を。</p>
+        <div class="info">
+          <span>名物</span> カチョ・エ・ペペ（目前和え）・サルティンボッカ<br>
+          <span>予約</span> <strong>必須</strong>・<a href="https://www.feliceatestaccio.com/" target="_blank" rel="noopener">feliceatestaccio.com</a><br>
+          <span>予算</span> €35-45/人<br>
+          <span>参照</span> <a href="https://romamayumi.exblog.jp/30122258/" target="_blank" rel="noopener">ローマより愛をこめて</a> ／ <a href="https://ameblo.jp/mamanomari/entry-12878679593.html" target="_blank" rel="noopener">ままのまり 訪問記</a>
+          <div class="day-tag">DAY 3 · 6/30 夜 ⭐</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card" id="rest-roscioli">
       <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/33/Espaguetis_carbonara.jpg');">
         <span class="city">Campo de' Fiori</span>
       </div>
-      <span class="badge">MUST EAT</span>
-      <div class="body">
-        <div class="num">N° 15</div>
-        <h4>Roscioli（ロッショリ）</h4>
-        <div class="sub">SALUMERIA CON CUCINA · ★★</div>
-        <p>カンポ・デ・フィオーリ近く。<strong>「ローマで一番のカルボナーラ」</strong>と日本のメディアで紹介され続けるデリ＋レストラン。生クリーム無し、卵黄＆グアンチャーレ＆ペコリーノの本場仕様。</p>
-        <div class="info">
-          <span>名物</span> カルボナーラ・グリチャ<br>
-          <span>予約</span> 必須・1ヶ月前から<br>
-          <span>予算</span> €50-70/人
-        </div>
-      </div>
-    </article>
-
-    <article class="card">
-      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/99/Cacio_e_pepe.jpg');">
-        <span class="city">Trastevere</span>
-      </div>
-      <span class="badge">MUST EAT</span>
+      <span class="badge">DAY 3 夜・予備</span>
       <div class="body">
         <div class="num">N° 16</div>
-        <h4>Da Enzo al 29（ダ・エンツォ）</h4>
-        <div class="sub">TRASTEVERE · TINY TRATTORIA</div>
-        <p>トラステヴェレの行列必至店。<strong>カチョ・エ・ペペ</strong>と<strong>カルボナーラ</strong>がローマの代表格。20席のみで予約取りにくく、開店19:00前に並ぶのが基本。Day 2夜に最適。</p>
+        <h4>Roscioli</h4>
+        <div class="sub">SALUMERIA CON CUCINA · GAMBERO ROSSO 1位</div>
+        <p>カンポ・デ・フィオーリ近く、Gambero Rosso誌で<strong>「ローマ最高のカルボナーラ」1位</strong>に選出された名店。生クリーム無し・卵黄＆グアンチャーレ＆ペコリーノの本場仕様で、日本人ブログでは「人生一番」評多数。食料品店（サルメリア）併設。</p>
         <div class="info">
-          <span>名物</span> カチョ・エ・ペペ／カルボナーラ<br>
-          <span>予約</span> 電話のみ・取れない時は並ぶ<br>
-          <span>予算</span> €30-40/人
+          <span>名物</span> カルボナーラ・グリチャ・生ハム盛<br>
+          <span>予約</span> <strong>必須・1ヶ月前から</strong>・<a href="https://www.rosciolirestaurants.com/" target="_blank" rel="noopener">rosciolirestaurants.com</a><br>
+          <span>予算</span> €50-70/人<br>
+          <span>参照</span> <a href="https://www.travelbook.co.jp/topic/620" target="_blank" rel="noopener">TravelBook 5選</a> ／ <a href="https://www.tra-live.com/entry/Rome/carbonara" target="_blank" rel="noopener">トラリブ 食べ比べ</a>
+          <div class="day-tag">DAY 3 · 6/30 夜 予備</div>
         </div>
       </div>
     </article>
 
-    <article class="card">
-      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Bucatini_allamatriciana.jpg/3840px-Bucatini_allamatriciana.jpg');">
-        <span class="city">Pantheon</span>
-      </div>
-      <span class="badge">MUST EAT</span>
-      <div class="body">
-        <div class="num">N° 17</div>
-        <h4>Armando al Pantheon</h4>
-        <div class="sub">SINCE 1961 · FAMILY-RUN</div>
-        <p>パンテオン裏の老舗トラットリア。<strong>アマトリチャーナ</strong>と<strong>サルティンボッカ</strong>が看板。3代続く家族経営でローマ料理の正統派。Day 3のパンテオン後の昼/夜にぴったり。</p>
-        <div class="info">
-          <span>名物</span> アマトリチャーナ・サルティンボッカ<br>
-          <span>予約</span> 必須・サイトから可<br>
-          <span>予算</span> €40-50/人
-        </div>
-      </div>
-    </article>
-
-    <article class="card">
-      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/43/Pizza_al_taglio.jpg');">
-        <span class="city">Vaticano近</span>
-      </div>
-      <span class="badge">MUST EAT</span>
-      <div class="body">
-        <div class="num">N° 18</div>
-        <h4>Pizzarium Bonci</h4>
-        <div class="sub">BY GABRIELE BONCI · TAKE-AWAY</div>
-        <p>「ローマピザの神」ボンチの店。<strong>ピザ・アル・タリオ（切り売り）</strong>の聖地として日本人観光客が必ず立ち寄る。立ち食いオンリーだが20種類以上のフレーバー。Day 3のヴァチカン後のランチ候補。</p>
-        <div class="info">
-          <span>名物</span> 切り売りピザ全般<br>
-          <span>予約</span> 不要・並ぶ覚悟<br>
-          <span>予算</span> €10-15/人
-        </div>
-      </div>
-    </article>
-
-    <article class="card">
+    <article class="card" id="rest-daenzo">
       <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/29/Saltimbocca_01.jpg');">
         <span class="city">Trastevere</span>
       </div>
-      <span class="badge">MUST EAT</span>
+      <span class="badge">DAY 2 夜・予備</span>
       <div class="body">
-        <div class="num">N° 19</div>
-        <h4>Tonnarello</h4>
-        <div class="sub">TRASTEVERE · LIVELY</div>
-        <p>トラステヴェレの賑やかなテラス席。店名のとおり<strong>トンナレッリ（手打ち四角形パスタ）</strong>のカルボナーラが名物。雰囲気重視派の日本人観光客に大人気。</p>
+        <div class="num">N° 17</div>
+        <h4>Da Enzo al 29</h4>
+        <div class="sub">TRASTEVERE · 20席のミニトラットリア</div>
+        <p>トラステヴェレ最頻出店。<strong>カルボナーラ・アマトリチャーナ・トリッパ</strong>すべて高評。20席のみで電話予約も取りにくく、開店19:00前に並ぶのが基本。<strong>Day 2のカプリ帰り(19:46着)からだと21時前後でギリ間に合う</strong>可能性あり（23時まで営業）。</p>
         <div class="info">
-          <span>名物</span> トンナレッリ各種<br>
-          <span>予約</span> 推奨・サイトから<br>
-          <span>予算</span> €25-35/人
+          <span>名物</span> カルボナーラ・アマトリチャーナ・トリッパ<br>
+          <span>予約</span> 当日電話 <code>+39 06 581 2260</code> or 並ぶ<br>
+          <span>予算</span> €30-40/人<br>
+          <span>参照</span> <a href="https://locotabi.jp/roma/recommends/gourmet" target="_blank" rel="noopener">ロコタビ ローマ在住者29選</a>
+          <div class="day-tag">DAY 2 · 6/29 夜 予備</div>
         </div>
       </div>
     </article>
 
-    <article class="card">
-      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c8/Pizza_Margherita_stu_spivack.jpg');">
-        <span class="city">Napoli</span>
+    <article class="card" id="rest-tonnarello">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/99/Cacio_e_pepe.jpg');">
+        <span class="city">Trastevere</span>
       </div>
-      <span class="badge">CAPRI 経由</span>
+      <span class="badge">DAY 2 夜・本命</span>
+      <div class="body">
+        <div class="num">N° 18</div>
+        <h4>Tonnarello</h4>
+        <div class="sub">TRASTEVERE · 行列必至★4.7</div>
+        <p>トラステヴェレの賑やかテラス席。店名の<strong>自家製トンナレッリ（手打ち四角形パスタ）のカチョエペペ／カルボナーラ</strong>が看板。<strong>Googleレビュー5万件超★4.7</strong>でコスパ◎。<strong>予約不可・並ぶ覚悟</strong>だが22時まで営業なのでカプリ帰り後に現実的。</p>
+        <div class="info">
+          <span>名物</span> トンナレッリのカルボ／カチョエペペ<br>
+          <span>予約</span> <strong>不可</strong>（並ぶ・1h待ちあり）<br>
+          <span>予算</span> €20-30/人<br>
+          <span>参照</span> <a href="https://triplovers.jp/blogs/overseas/4396" target="_blank" rel="noopener">Triplovers 厳選</a> ／ <a href="https://vokka.jp/10741/" target="_blank" rel="noopener">VOKKA 在住15選</a>
+          <div class="day-tag">DAY 2 · 6/29 夜 ⭐</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card" id="rest-pizzarium">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/43/Pizza_al_taglio.jpg');">
+        <span class="city">Vaticano · Cipro</span>
+      </div>
+      <span class="badge">DAY 3 昼・本命</span>
+      <div class="body">
+        <div class="num">N° 19</div>
+        <h4>Pizzarium Bonci</h4>
+        <div class="sub">BY GABRIELE BONCI · 切り売りピザの聖地</div>
+        <p>「ローマピザの神」ガブリエレ・ボンチの本拠地。<strong>ピッツァ・アル・タリオ（切り売り）</strong>のトッピングは数十種・€3〜6/カット。立ち食いオンリーだが日本人ブロガー満場一致の名店。<strong>地下鉄A線Cipro駅徒歩2分</strong>でヴァチカンツアー解散後の動線にピッタリ。</p>
+        <div class="info">
+          <span>名物</span> ポテト＆モッツァレラ／ズッキーニの花<br>
+          <span>予約</span> <strong>不要</strong>（並ぶ覚悟）<br>
+          <span>予算</span> €10-15/人<br>
+          <span>参照</span> <a href="https://tabilover.jcb.jp/ita/blog/restaurant/20240314" target="_blank" rel="noopener">JCBたびらば 切り売りピザ</a>
+          <div class="day-tag">DAY 3 · 6/30 昼 ⭐</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card" id="rest-pinsere">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/43/Pizza_al_taglio.jpg');">
+        <span class="city">Termini 徒歩6分</span>
+      </div>
+      <span class="badge">DAY 1 夜・本命</span>
       <div class="body">
         <div class="num">N° 20</div>
-        <h4>L'Antica Pizzeria da Michele</h4>
-        <div class="sub">SINCE 1870 · NAPLES</div>
-        <p>『食べて、祈って、恋をして』でジュリア・ロバーツが食べた<strong>ナポリピッツァの聖地</strong>。マルゲリータとマリナーラの2種のみ。Day 2カプリ島ツアー往復でナポリ経由ならランチに。</p>
+        <h4>Pinsere</h4>
+        <div class="sub">PINSA ROMANA · €5前後</div>
+        <p>古代ローマ起源の<strong>ピンサ（楕円形の薄焼き）専門店</strong>。サクサク食感で1枚€5前後・コスパ最強。<strong>Googleレビュー★4.7</strong>。テルミニ駅北徒歩6分、ホテル Augusta Lucilla Palace から至近。<strong>Day 1 (6/28) 21:30 着後の軽食</strong>に最適。</p>
         <div class="info">
-          <span>名物</span> マルゲリータ／マリナーラ<br>
-          <span>予約</span> 不可・並ぶ<br>
-          <span>予算</span> €10-15/人
+          <span>名物</span> ピンサ（ポテト＆ローズマリー／プロシュート）<br>
+          <span>予約</span> <strong>不要</strong>（テイクアウト or 立ち食い）<br>
+          <span>予算</span> €5-12/人<br>
+          <span>参照</span> <a href="https://note.com/gohanidea/n/n8c748d8a29f4" target="_blank" rel="noopener">ローマ街グルメ note</a>
+          <div class="day-tag">DAY 1 · 6/28 夜 ⭐</div>
         </div>
       </div>
     </article>
@@ -485,118 +538,148 @@
   <!-- 穴場店 -->
   <div class="subhead">
     <span class="pill hidden">穴場</span>
-    <h3>HIDDEN TABLES · 在住者と通の6軒</h3>
+    <h3>HIDDEN TABLES · 保険＋ローカル本気の6軒</h3>
     <span class="line"></span>
   </div>
 
   <div class="grid">
-    <article class="card hidden">
-      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/7b/Pasta_alla_Gricia.jpg');">
-        <span class="city">Monteverde</span>
+    <article class="card hidden" id="rest-boheme">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/df/Italian_food.JPG');">
+        <span class="city">Termini 徒歩5分</span>
       </div>
-      <span class="badge">HIDDEN</span>
+      <span class="badge">ホテル徒歩圏</span>
       <div class="body">
         <div class="num">N° 21</div>
-        <h4>Da Cesare al Casaletto</h4>
-        <div class="sub">TRAM-ONLY · LOCAL FAVORITE</div>
-        <p>トラステヴェレ郊外、<strong>路面電車8番でしか行けない</strong>立地。ローマ四大パスタ（カルボナーラ・アマトリチャーナ・グリチャ・カチョエペペ）を学術的に正確に出す。観光客ゼロの本物。</p>
+        <h4>Trattoria Antica Bohème</h4>
+        <div class="sub">TERMINI · 日本人安心の保険</div>
+        <p>ホテル Augusta Lucilla Palace 徒歩5分。<strong>「日本人観光客が多く安心」「外れない」</strong>と紹介される広いダイニング。22時まで営業で、<strong>Day 1の到着後</strong>や <strong>Day 2のカプリ帰り疲労時</strong>の切り替え先として保険になる。</p>
         <div class="info">
-          <span>名物</span> グリチャ・トンナレッリ<br>
-          <span>予約</span> 必須<br>
-          <span>予算</span> €35-45/人
+          <span>名物</span> ローマ料理全般・コスパ◎<br>
+          <span>予約</span> 推奨（電話／GoogleMap予約）<br>
+          <span>予算</span> €25-35/人<br>
+          <span>参照</span> <a href="https://amoitalia.com/area/lazio/roma/trattoria-antica-boheme/" target="_blank" rel="noopener">アーモイタリア 訪問記</a>
+          <div class="day-tag">DAY 1 / DAY 2 保険</div>
         </div>
       </div>
     </article>
 
-    <article class="card hidden">
-      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Carciofo_alla_Giudia.jpg/3840px-Carciofo_alla_Giudia.jpg');">
-        <span class="city">Testaccio</span>
+    <article class="card hidden" id="rest-tema">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/df/Italian_food.JPG');">
+        <span class="city">Termini 徒歩3分</span>
       </div>
-      <span class="badge">HIDDEN</span>
+      <span class="badge">日本語メニュー</span>
       <div class="body">
         <div class="num">N° 22</div>
-        <h4>Felice a Testaccio</h4>
-        <div class="sub">SINCE 1936 · CACIO E PEPE</div>
-        <p>食肉市場のあったテスタッチョ地区の老舗。<strong>テーブルで仕上げるカチョ・エ・ペペ</strong>のパフォーマンスが名物。ローマ料理の真髄を味わえる、在住日本人が必ず挙げる店。</p>
+        <h4>Ristorante TEMA</h4>
+        <div class="sub">日本語メニュー · 初心者安心</div>
+        <p>サンタ・マリア・マッジョーレ徒歩3分。<strong>日本語メニューあり</strong>で初心者でも安心オーダー可。<strong>手長海老のリゾット</strong>が名物。テルミニ徒歩圏なので<strong>到着翌日の昼や疲労時の夜</strong>に。</p>
         <div class="info">
-          <span>名物</span> カチョ・エ・ペペ・トンナレッリ<br>
-          <span>予約</span> 必須・電話／サイト<br>
-          <span>予算</span> €40-55/人
+          <span>名物</span> 手長海老リゾット・パスタ全般<br>
+          <span>予約</span> 推奨（電話）<br>
+          <span>予算</span> €30-40/人<br>
+          <span>参照</span> <a href="https://locotabi.jp/roma/recommends/gourmet" target="_blank" rel="noopener">ロコタビ 在住者29選</a>
+          <div class="day-tag">滞在中いつでも</div>
         </div>
       </div>
     </article>
 
-    <article class="card hidden">
-      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a9/Suppl%C3%AC.jpg');">
-        <span class="city">Ostiense</span>
+    <article class="card hidden" id="rest-armando">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Bucatini_allamatriciana.jpg/3840px-Bucatini_allamatriciana.jpg');">
+        <span class="city">Pantheon</span>
       </div>
-      <span class="badge">HIDDEN</span>
+      <span class="badge">DAY 3 街ブラ</span>
       <div class="body">
         <div class="num">N° 23</div>
-        <h4>Trattoria Pennestri</h4>
-        <div class="sub">OSTIENSE · CREATIVE ROMAN</div>
-        <p>オスティエンセ地区の新世代トラットリア。<strong>クラシックなローマ料理を現代的に再解釈</strong>。シェフの即興スペシャルが楽しめる。地元若手フーディーに人気上昇中。</p>
+        <h4>Armando al Pantheon</h4>
+        <div class="sub">SINCE 1961 · 3代家族経営</div>
+        <p>パンテオン真横の老舗トラットリア。<strong>アマトリチャーナ・サルティンボッカ・ユダヤ風アーティチョーク</strong>が看板。3代続く家族経営のローマ料理正統派。<strong>Day 3 17:00のパンテオン</strong>後の早め夕食 or 翌昼に。</p>
         <div class="info">
-          <span>名物</span> 日替わりスペシャル<br>
-          <span>予約</span> 必須・サイト<br>
-          <span>予算</span> €40-55/人
+          <span>名物</span> アマトリチャーナ・カルチョーフィ<br>
+          <span>予約</span> <strong>必須</strong>・<a href="https://www.armandoalpantheon.it/" target="_blank" rel="noopener">armandoalpantheon.it</a><br>
+          <span>予算</span> €40-50/人<br>
+          <span>参照</span> <a href="https://www.travelbook.co.jp/topic/620" target="_blank" rel="noopener">TravelBook 5選</a>
+          <div class="day-tag">DAY 3 · 6/30 街ブラ</div>
         </div>
       </div>
     </article>
 
-    <article class="card hidden">
-      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/df/Italian_food.JPG');">
-        <span class="city">Centro Storico</span>
+    <article class="card hidden" id="rest-lacarbonara">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/33/Espaguetis_carbonara.jpg');">
+        <span class="city">Campo de' Fiori</span>
       </div>
-      <span class="badge">HIDDEN</span>
+      <span class="badge">街ブラ昼</span>
       <div class="body">
         <div class="num">N° 24</div>
-        <h4>Pianostrada</h4>
-        <div class="sub">FOUR WOMEN · FRESH ROMAN</div>
-        <p>女性4人で営む創作的ローマ料理店。<strong>自家製パン・フォカッチャ・季節野菜</strong>へのこだわりが評判。中庭テラスがロマンチック。日本人ブロガーの新発見系。</p>
+        <h4>La Carbonara</h4>
+        <div class="sub">SINCE 1906 · "発祥の店"看板</div>
+        <p>カンポ・デ・フィオーリの<strong>1906年創業</strong>。<strong>カルボナーラ発祥説の一つ</strong>を掲げる老舗。観光客寄りで観光地立地ながら安定の味。<strong>Day 3 16:30カンポ・デ・フィオーリ</strong>立ち寄り時のランチ・早め夕食に。</p>
         <div class="info">
-          <span>名物</span> フォカッチャ・自家製パン<br>
-          <span>予約</span> 必須・サイト<br>
-          <span>予算</span> €45-60/人
+          <span>名物</span> カルボナーラ（発祥説の店）<br>
+          <span>予約</span> 推奨（サイト／電話）<br>
+          <span>予算</span> €25-35/人<br>
+          <span>参照</span> <a href="https://www.tra-live.com/entry/Rome/carbonara" target="_blank" rel="noopener">トラリブ カルボナーラ食べ比べ</a>
+          <div class="day-tag">DAY 3 · 6/30 街ブラ</div>
         </div>
       </div>
     </article>
 
-    <article class="card hidden">
+    <article class="card hidden" id="rest-flavio">
+      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/7b/Pasta_alla_Gricia.jpg');">
+        <span class="city">Testaccio</span>
+      </div>
+      <span class="badge">Felice の予備</span>
+      <div class="body">
+        <div class="num">N° 25</div>
+        <h4>Flavio al Velavevodetto</h4>
+        <div class="sub">TESTACCIO · 古代陶器の壁</div>
+        <p>テスタッチョの<strong>古代ローマの陶器破片の山に建つ</strong>名店。<strong>カチョ・エ・ペペ・コーダ・アッラ・ヴァッチナーラ（牛尾の煮込み）</strong>が看板。在住日本人推し。<strong>Feliceの予約が取れない時の保険</strong>として同地区で完結。</p>
+        <div class="info">
+          <span>名物</span> カチョエペペ・コーダ・アマトリチャーナ<br>
+          <span>予約</span> <strong>必須</strong>（サイト／電話）<br>
+          <span>予算</span> €30-40/人<br>
+          <span>参照</span> <a href="https://vokka.jp/10741/" target="_blank" rel="noopener">VOKKA 在住15選</a>
+          <div class="day-tag">DAY 3 · 6/30 夜 予備2</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card hidden" id="rest-salumeria">
       <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/ed/Al_Borgat_1.jpg');">
         <span class="city">Campo de' Fiori</span>
       </div>
-      <span class="badge">HIDDEN</span>
-      <div class="body">
-        <div class="num">N° 25</div>
-        <h4>Salumeria Roscioli（立ち食い）</h4>
-        <div class="sub">DELI COUNTER · NO RESERVATION</div>
-        <p>Roscioli本店の隣、<strong>同じ厨房で作る料理を立ち食い／予約不要</strong>で食べられる隠れ業。チーズ・サラミの目利きにも定評。本店が取れなかった時の保険にも。</p>
-        <div class="info">
-          <span>名物</span> サラミ・チーズ盛り合わせ<br>
-          <span>予約</span> 不可・立ち食い<br>
-          <span>予算</span> €25-40/人
-        </div>
-      </div>
-    </article>
-
-    <article class="card hidden">
-      <div class="photo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/59/Spaghetti_vongole_2.jpg');">
-        <span class="city">Trevi 近く</span>
-      </div>
-      <span class="badge">HIDDEN</span>
+      <span class="badge">予約NG保険</span>
       <div class="body">
         <div class="num">N° 26</div>
-        <h4>Hostaria Romana</h4>
-        <div class="sub">SINCE 1962 · OLD-SCHOOL</div>
-        <p>トレヴィの泉から徒歩5分、観光地ど真ん中なのに<strong>地元ローマっ子が通う</strong>古風な店。壁中にお客の落書き。アンティパストブッフェが楽しい。日本人観光客は少なめ。</p>
+        <h4>Salumeria Roscioli</h4>
+        <div class="sub">DELI COUNTER · 立ち食い・予約不要</div>
+        <p>Roscioli本店の隣、<strong>同じ厨房で作る料理を立ち食いで・予約不要</strong>で食べられる隠れ業。チーズ・サラミの目利きにも定評。<strong>本店Roscioliが取れなかった時のフォールバック</strong>として超優秀。</p>
         <div class="info">
-          <span>名物</span> アンティパストブッフェ・ローマ料理全般<br>
-          <span>予約</span> 必須・電話／サイト<br>
-          <span>予算</span> €40-55/人
+          <span>名物</span> サラミ・チーズ盛り合わせ・カルボ<br>
+          <span>予約</span> 不可・<strong>立ち食い</strong><br>
+          <span>予算</span> €25-40/人<br>
+          <span>参照</span> <a href="https://www.travelbook.co.jp/topic/620" target="_blank" rel="noopener">TravelBook 5選</a>
+          <div class="day-tag">Roscioli NG時の保険</div>
         </div>
       </div>
     </article>
+  </div>
+
+  <!-- 参照ブロガー一覧 -->
+  <div style="margin-top:48px;padding:24px 28px;background:#fff;border:1px solid rgba(26,20,16,.1);border-radius:3px">
+    <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:11px;letter-spacing:.35em;text-transform:uppercase;color:var(--c-mute);font-weight:700;margin-bottom:14px">📚 参照した日本人ブログ・在住者まとめ（一次情報源）</div>
+    <ul style="margin:0;padding-left:20px;font-size:13.5px;line-height:1.9;color:var(--c-text);columns:2;column-gap:32px">
+      <li><a href="https://locotabi.jp/roma/recommends/gourmet" target="_blank" rel="noopener">ロコタビ — ローマ在住日本人のおすすめ29選</a></li>
+      <li><a href="https://www.travelbook.co.jp/topic/620" target="_blank" rel="noopener">TravelBook — 本当に美味しい店5選</a></li>
+      <li><a href="https://www.tra-live.com/entry/Rome/carbonara" target="_blank" rel="noopener">トラリブ — カルボナーラ食べ比べ</a></li>
+      <li><a href="https://romamayumi.exblog.jp/30122258/" target="_blank" rel="noopener">ローマより愛をこめて — Felice 訪問記</a></li>
+      <li><a href="https://ameblo.jp/mamanomari/entry-12878679593.html" target="_blank" rel="noopener">ままのまり — Felice テスタッチョ</a></li>
+      <li><a href="https://amoitalia.com/area/lazio/roma/trattoria-antica-boheme/" target="_blank" rel="noopener">アーモイタリア — Antica Bohème</a></li>
+      <li><a href="https://amoitalia.com/area/lazio/roma/gelato-giolitti/" target="_blank" rel="noopener">アーモイタリア — Giolitti</a></li>
+      <li><a href="https://tabilover.jcb.jp/ita/blog/restaurant/20240314" target="_blank" rel="noopener">JCBたびらば — Pizzarium 切り売り</a></li>
+      <li><a href="https://triplovers.jp/blogs/overseas/4396" target="_blank" rel="noopener">Triplovers — ローマ人気レストラン厳選</a></li>
+      <li><a href="https://note.com/gohanidea/n/n8c748d8a29f4" target="_blank" rel="noopener">note — ローマ街グルメ</a></li>
+      <li><a href="https://vokka.jp/10741/" target="_blank" rel="noopener">VOKKA — 在住者おすすめ15選</a></li>
+    </ul>
   </div>
 </section>
 
