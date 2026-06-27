@@ -294,7 +294,7 @@ understand if some of these are not possible.
 Thank you very much in advance.
 
 Warm regards,
-Masatoshi Sano & [partner's full name]
+Masatoshi Sano & Sanae Sano
 Email : masatoshi.sano1021@gmail.com
 Phone : +81-90-XXXX-XXXX
 ```
@@ -337,7 +337,7 @@ Agoda 予約番号は #XXXXXXXX です。
 どうぞよろしくお願い申し上げます。
 
 敬具
-佐野 雅敏 ＆ ［パートナーの氏名］
+佐野 雅俊 ＆ 佐野 紗那江
 Email: masatoshi.sano1021@gmail.com
 電話 : +81-90-XXXX-XXXX
 ```
@@ -387,7 +387,7 @@ perfettamente se qualcuna di queste richieste non fosse possibile.
 Vi ringraziamo molto in anticipo.
 
 Cordiali saluti,
-Masatoshi Sano & [nome completo del partner]
+Masatoshi Sano & Sanae Sano
 Email   : masatoshi.sano1021@gmail.com
 Telefono: +81-90-XXXX-XXXX
 ```
@@ -452,7 +452,7 @@ understand if some of these are not possible.
 Thank you very much in advance.
 
 Warm regards,
-Masatoshi Sano & [partner's full name]
+Masatoshi Sano & Sanae Sano
 Email : masatoshi.sano1021@gmail.com
 Phone : +81-90-XXXX-XXXX
 ```
@@ -504,7 +504,7 @@ Agoda 予約番号は #XXXXXXXX です。
 どうぞよろしくお願い申し上げます。
 
 敬具
-佐野 雅敏 ＆ ［パートナーの氏名］
+佐野 雅俊 ＆ 佐野 紗那江
 Email: masatoshi.sano1021@gmail.com
 電話 : +81-90-XXXX-XXXX
 ```
@@ -562,7 +562,7 @@ pas réalisables.
 Nous vous remercions par avance.
 
 Cordialement,
-Masatoshi Sano & [nom complet du partenaire]
+Masatoshi Sano & Sanae Sano
 Email    : masatoshi.sano1021@gmail.com
 Téléphone: +81-90-XXXX-XXXX
 ```
@@ -576,7 +576,7 @@ Téléphone: +81-90-XXXX-XXXX
 ### ✅ 送信前チェック
 
 - [ ] **Agoda 予約番号 #XXXXXXXX** を実際の番号に差し替えた（Agodaアプリ／予約確認メールで確認）
-- [ ] **名前2箇所**（"Masatoshi Sano & [partner's full name]"）を実名に
+- [ ] **名前2箇所**（"Masatoshi Sano & Sanae Sano"）を実名に
 - [ ] **電話番号**を実際のものに差し替え（+81 はそのままでよい・先頭の0を取る）
 - [ ] **Cc に自分のもう一つのアドレス**を入れた（送信ログ保管）
 - [ ] 件名・本文に Agoda 予約番号が入っている
