@@ -6,3 +6,17 @@ hooks
 .playwright-mcp/
 site/.omc/
 site/.ruff_cache/
+
+# OS-specific
+Thumbs.db
+ehthumbs.db
+desktop.ini
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*~
