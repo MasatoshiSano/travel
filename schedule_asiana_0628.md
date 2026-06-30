@@ -162,7 +162,7 @@
 | 06:37 | FCO 空港 着・ITA Airwaysカウンターでチェックイン・手荷物預け（出発まで 1h57m バッファ）|
 | **08:34** | **ITA Airways AZ316** ローマFCO → パリCDG 出発 |
 | **10:46** | **パリCDG着** |
-| 11:20 | RER B線でパリ市内へ（CDG → 北駅 約30〜35分・€14）→ メトロでブランシュ方面 |
+| 11:20 | ⭐ **RER B → Metro 4（Barbès-Rochechouart・1駅）→ Metro 2（Blanche・3駅）→ 徒歩4分**（全地下乗換45分・Navigo週パスで€0）／or タクシー定額 €56 |
 | 12:00 | **Timhotel Opéra Blanche Fontaine** へ（9区ブランシュ・早着なら荷物預け） |
 | 13:00 | **マレ地区**でランチ→ **[L'As du Fallafel](https://www.google.com/maps/search/?api=1&query=L'As+du+Fallafel+Paris)** | ファラフェル聖地・€6.50・予約不可。予備: [Breizh Café](https://breizhcafe.com/)（ガレット） |
 | 14:30 | ヴォージュ広場 → マレ散策 | |
@@ -179,7 +179,7 @@
 > ⚠️ 早朝出発。前日（ヴァチカン＆街ブラDay）は早めに就寝。Augustaは前夜に**早朝チェックアウト可否**を確認。
 > ✅ 便は **ITA AZ316（08:34→10:46 CDG）に決定**（未購入）。CDGからRER Bで北駅→メトロでブランシュ（Timhotel）。
 > 💡 **到着日(7/1)午後に凱旋門・トロカデロ・エッフェル夜景を前倒し**（初日の夜＝感動大／7/3はルーブルに集中できる）。早着なら荷物を預けて出発。
-> 🏨 宿泊：この日から **Timhotel Opéra Blanche Fontaine**（9区ブランシュ／7/1〜7/4の4泊）。CDG→市内は **RER B（CDG→北駅 約30分・€14前後）→メトロでブランシュ 約10分**、またはタクシー定額（CDG→右岸 €56・約50分）。パリの配車は **Uber / Bolt** が便利（後述）。
+> 🏨 宿泊：この日から **Timhotel Opéra Blanche Fontaine**（9区ブランシュ／7/1〜7/4の4泊）。CDG→Timhotel は **⭐ RER B → Metro 4（Barbès-Rochechouart 1駅）→ Metro 2 Direction Porte Dauphine（Blanche 3駅）→ 徒歩4分 = 全地下45分・Navigo週パス€0**、または タクシー定額（CDG→右岸 €56・約50分・大荷物時推奨）。パリの配車は **Uber / Bolt** が便利。詳細はサイト [paris.html#ch-transit](site/paris.html#ch-transit)。
 
 ---
 
@@ -288,7 +288,7 @@
 
 > CDGは広大なため、空港には**2.5時間前到着**（16:30頃）推奨。
 > OZ502は19:10発のため、当日は遅くとも 15:30 にはホテルを出る。
-> 🏨 この日 **Timhotel チェックアウト**（4泊終了）。空港へは **RER B（北駅→CDG 約30分）** で計約45〜60分、または **タクシー/Uber 定額 右岸→CDG €56**（荷物ありなら楽）。日曜はマレ地区が数少ない営業エリア＝**お土産はマレで**。
+> 🏨 この日 **Timhotel チェックアウト**（4泊終了）。空港へは **⭐ Metro 2（Blanche→Barbès・3駅）→ Metro 4（→Gare du Nord・1駅）→ RER B → CDG（全地下45分・Navigo週パス€0）**、または **タクシー/Uber 定額 右岸→CDG €56**（大荷物時楽）。日曜はマレ地区が数少ない営業エリア＝**お土産はマレで**。
 
 ---
 
