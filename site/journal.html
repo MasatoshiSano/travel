@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>旅の記録 — ローマ・カプリ 実費 & 実店舗｜Honeymoon 2026</title>
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/nav.js" defer></script>
+<style>
+  .day-block { margin-bottom: 60px; }
+  .day-hd {
+    display: grid; grid-template-columns: 100px 1fr; gap: 24px;
+    padding: 20px 0 16px; margin-bottom: 20px;
+    border-bottom: 2px solid var(--c-classic);
+    align-items: end;
+  }
+  .day-hd .num {
+    font-family: "Cormorant Garamond", serif; font-style: italic;
+    font-size: 70px; line-height: 0.9; color: var(--c-classic);
+  }
+  .day-hd h3 { font-size: 22px; margin-bottom: 4px; }
+  .day-hd .meta { font-size: 13px; color: var(--c-mute); }
+
+  .receipt-tbl { width: 100%; border-collapse: collapse; margin: 12px 0 20px; font-size: 14px; }
+  .receipt-tbl th, .receipt-tbl td { padding: 10px 12px; text-align: left; border-bottom: 1px dashed rgba(26,20,16,.15); vertical-align: top; }
+  .receipt-tbl th { background: var(--c-cream); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--c-mute); }
+  .receipt-tbl tr:hover td { background: rgba(139,44,29,.03); }
+  .receipt-tbl .time { font-family: "Helvetica Neue", monospace; white-space: nowrap; color: var(--c-classic); font-weight: 600; }
+  .receipt-tbl .amount { text-align: right; font-weight: 700; white-space: nowrap; }
+  .receipt-tbl .star { color: var(--c-classic); }
+
+  .summary-box {
+    background: linear-gradient(180deg, #fdf5e8, #f3ebde);
+    border-left: 4px solid var(--c-classic); padding: 24px 28px;
+    border-radius: 3px; margin: 30px 0;
+  }
+  .summary-box table { width: 100%; border-collapse: collapse; }
+  .summary-box td { padding: 8px 0; border-bottom: 1px dashed rgba(26,20,16,.25); font-size: 15px; }
+  .summary-box tr:last-child td {
+    border-bottom: none; padding-top: 14px; font-size: 18px; font-weight: 700; color: var(--c-classic);
+  }
+  .summary-box td:last-child { text-align: right; }
+
+  .change-card {
+    background: #fff; border: 1px solid rgba(26,20,16,.1); border-radius: 3px;
+    padding: 20px 24px; margin-bottom: 16px;
+  }
+  .change-card h5 { font-size: 15px; color: var(--c-classic); margin-bottom: 8px; }
+  .change-card p { font-size: 14px; line-height: 1.75; color: var(--c-text); }
+</style>
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="brand"><a href="index.html">ROMA — PARIS · 2026</a></div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shiori.html">しおり</a></li>
+    <li><a href="schedule.html">日程</a></li>
+    <li><a href="roma.html">Roma</a></li>
+    <li><a href="journal.html" class="active">📓 旅の記録</a></li>
+    <li><a href="paris.html">Paris</a></li>
+    <li><a href="paris.html#ch-transit">🚇 交通</a></li>
+    <li><a href="hotels.html">Hotel</a></li>
+    <li><a href="packing.html">持ち物</a></li>
+    <li><a href="checklist.html">準備</a></li>
+  </ul>
+</nav>
+
+<!-- ===== HERO ===== -->
+<header class="hero" style="min-height:56vh;background:linear-gradient(180deg,rgba(0,0,0,.2),rgba(26,20,16,.75)),url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Trevi_Fountain_-_Roma.jpg/3840px-Trevi_Fountain_-_Roma.jpg');background-size:cover;background-position:center">
+  <div class="small">RECEIPTS · TRAVEL JOURNAL</div>
+  <h1 style="font-size:clamp(48px,9vw,120px)">Journal.<span>ローマ・カプリ 実費記録</span></h1>
+  <p class="lead">レシート18件から復元した3泊4日の実店舗・実費データ。計画通りだった項目と、賢く変更した項目を旅程と照合。合計 <strong>約 €355</strong>（¥57,000 相当）。</p>
+</header>
+
+<!-- ===== SUMMARY ===== -->
+<section class="chapter" style="padding-top:60px;padding-bottom:40px">
+  <div class="summary-box">
+    <table>
+      <tr><td><strong>Day 1</strong>（6/28 日）ローマ到着夜</td><td>€13.18</td></tr>
+      <tr><td><strong>Day 2</strong>（6/29 月）カプリ島日帰り</td><td>€204.30</td></tr>
+      <tr><td><strong>Day 3</strong>（6/30 火）ヴァチカン＋コロッセオ＋TEMA</td><td>€92.50</td></tr>
+      <tr><td><strong>Day 4</strong>（7/1 水）Augusta 都市税精算</td><td>€45.00</td></tr>
+      <tr><td>合計（レシート判明分）</td><td>€355（約 ¥57,000）</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- ===== DAY 1 ===== -->
+<section class="chapter" style="padding-top:20px">
+
+<div class="day-block">
+  <div class="day-hd">
+    <div class="num">01</div>
+    <div>
+      <h3>Day 1 — 6/28（日）ローマ到着夜</h3>
+      <div class="meta">21:30 Trevi 夜景 → 夜遊びの締めジェラート</div>
+    </div>
+  </div>
+  <table class="receipt-tbl">
+    <thead><tr><th>時刻</th><th>店</th><th>内容</th><th style="text-align:right">金額</th></tr></thead>
+    <tbody>
+      <tr><td class="time">23:16</td><td><strong>Captain Candy</strong>（トレヴィ近く）</td><td>Candy Mix 0.174kg</td><td class="amount">€8.68</td></tr>
+      <tr><td class="time">23:29</td><td><strong>Amorino</strong>（ローマ）</td><td>Coppa piccola ジェラート</td><td class="amount">€4.50</td></tr>
+    </tbody>
+  </table>
+  <p style="font-size:13.5px;color:var(--c-mute)">→ 21:30 Trevi 夜景予定通り・夜遊びの締めジェラート ✅</p>
+</div>
+
+<!-- ===== DAY 2 ===== -->
+<div class="day-block">
+  <div class="day-hd">
+    <div class="num">02</div>
+    <div>
+      <h3>Day 2 — 6/29（月）カプリ島日帰り</h3>
+      <div class="meta">06:00 Italo → 07:12 Napoli → 09:00 Zenzero → 青の洞窟入場成功 → 22:51 Da Romeo 夕食</div>
+    </div>
+  </div>
+
+  <h4 style="margin-top:20px;color:var(--c-classic);font-size:14px">☕ 朝：ナポリ到着後の朝食</h4>
+  <table class="receipt-tbl">
+    <thead><tr><th>時刻</th><th>店</th><th>内容</th><th style="text-align:right">金額</th></tr></thead>
+    <tbody>
+      <tr><td class="time">08:08</td><td><strong>Caffetteria del Corso</strong> ナポリ</td><td>Caffè×2 + Cornetto farcito×2（現金）</td><td class="amount">€8.00</td></tr>
+    </tbody>
+  </table>
+
+  <h4 style="margin-top:20px;color:var(--c-classic);font-size:14px">🏝 カプリ島観光</h4>
+  <table class="receipt-tbl">
+    <thead><tr><th>時刻</th><th>店</th><th>内容</th><th style="text-align:right">金額</th></tr></thead>
+    <tbody>
+      <tr><td class="time">10:47</td><td><span class="star">⭐</span> <strong>Coop Battellieri Capresi</strong>（青の洞窟）</td><td>手漕ぎボート入場 1枚目</td><td class="amount">€12.00</td></tr>
+      <tr><td class="time">10:48</td><td><span class="star">⭐</span> <strong>Coop Battellieri Capresi</strong>（青の洞窟）</td><td>手漕ぎボート入場 2枚目</td><td class="amount">€12.00</td></tr>
+      <tr><td class="time">11:17</td><td>Stalano Autotrasporti（カプリバス）</td><td>島内バス チケット2枚</td><td class="amount">€4.80</td></tr>
+      <tr><td class="time">13:48</td><td><span class="star">⭐</span> <strong>Ristorante Due Pini</strong> アナカプリ・ヴィットーリア広場</td><td>Coperto×2 + 水 + Antipasto + Margherita Pizza + Spritz Bambini</td><td class="amount">€72.00</td></tr>
+      <tr><td class="time">14:11</td><td>Nino &amp; Friends アナカプリ</td><td>お菓子・食品</td><td class="amount">€12.00</td></tr>
+      <tr><td class="time">14:29</td><td><span class="star">⭐</span> <strong>Consorzio Fratelli Staia</strong> アナカプリ</td><td>ソラーロ山リフト €10×2人</td><td class="amount">€20.00</td></tr>
+    </tbody>
+  </table>
+
+  <h4 style="margin-top:20px;color:var(--c-classic);font-size:14px">🚤 カプリ→ナポリ→ローマ</h4>
+  <table class="receipt-tbl">
+    <thead><tr><th>時刻</th><th>店</th><th>内容</th><th style="text-align:right">金額</th></tr></thead>
+    <tbody>
+      <tr><td class="time">16:56</td><td><strong>Gran Bar Riviera</strong>（Piazzale Stazione Marit / ベヴェレッロ港）</td><td>港でひと休みドリンク</td><td class="amount">€5.00</td></tr>
+      <tr><td class="time">17:48</td><td><span class="star">⭐</span> <strong>ANM ナポリ地下鉄 Municipio</strong></td><td>メトロ1号線切符・Duomo駅→中央駅ダッシュエピソード</td><td class="amount">€3.00</td></tr>
+    </tbody>
+  </table>
+
+  <h4 style="margin-top:20px;color:var(--c-classic);font-size:14px">🍝 ローマ帰着後 夕食</h4>
+  <table class="receipt-tbl">
+    <thead><tr><th>時刻</th><th>店</th><th>内容</th><th style="text-align:right">金額</th></tr></thead>
+    <tbody>
+      <tr><td class="time">22:51</td><td><strong>Da Romeo</strong>（仮伝票）</td><td>水・モスカルディーニ（タコのトマト煮）・<strong>トンナレッリ カチョエペペ</strong>・ティラミス・海老クリームリゾット</td><td class="amount">€60.00</td></tr>
+      <tr><td class="time">22:52</td><td><strong>Da Romeo</strong>（Visa決済）</td><td>コンタクトレス</td><td class="amount">€60.00</td></tr>
+    </tbody>
+  </table>
+  <p style="font-size:13.5px;color:var(--c-mute)">→ 青の洞窟 入場成功（波OK）✅ / ソラーロ山リフト €20 通り / Da Romeo で名物カチョエペペとティラミス体験</p>
+</div>
+
+<!-- ===== DAY 3 ===== -->
+<div class="day-block">
+  <div class="day-hd">
+    <div class="num">03</div>
+    <div>
+      <h3>Day 3 — 6/30（火）ヴァチカン → コロッセオ → Rinascente → TEMA</h3>
+      <div class="meta">Felice の予定を TEMA に変更（賢い判断）</div>
+    </div>
+  </div>
+
+  <h4 style="margin-top:20px;color:var(--c-classic);font-size:14px">☕ 朝：ヴァチカン集合前</h4>
+  <table class="receipt-tbl">
+    <thead><tr><th>時刻</th><th>店</th><th>内容</th><th style="text-align:right">金額</th></tr></thead>
+    <tbody>
+      <tr><td class="time">08:09</td><td><strong>Doppioespresso S.r.l</strong> ローマ</td><td>Cornetto farcito 1つ（バンコマット）</td><td class="amount">€2.00</td></tr>
+    </tbody>
+  </table>
+
+  <h4 style="margin-top:20px;color:var(--c-classic);font-size:14px">🍦 ヴァチカン → コロッセオ 移動中</h4>
+  <table class="receipt-tbl">
+    <thead><tr><th>時刻</th><th>店</th><th>内容</th><th style="text-align:right">金額</th></tr></thead>
+    <tbody>
+      <tr><td class="time">12:43</td><td><strong>FLOR</strong> ローマ</td><td>Coppetta Regular ジェラート</td><td class="amount">€4.00</td></tr>
+    </tbody>
+  </table>
+
+  <h4 style="margin-top:20px;color:var(--c-classic);font-size:14px">🫒 コロッセオツアー後・Rinascente お土産</h4>
+  <table class="receipt-tbl">
+    <thead><tr><th>時刻</th><th>店</th><th>内容</th><th style="text-align:right">金額</th></tr></thead>
+    <tbody>
+      <tr>
+        <td class="time">18:17</td>
+        <td><span class="star">⭐</span> <strong>Rinascente Via del Tritone</strong></td>
+        <td>
+          <strong>LAUDEMIO Annata 2024 €22.50</strong><br>
+          LaFonte オリーブオイル €7.00 × 2本
+        </td>
+        <td class="amount">€36.50</td>
+      </tr>
+    </tbody>
+  </table>
+  <p style="font-size:13.5px;color:var(--c-mute)">→ ⭐ 推奨した Laudemio を Rinascente で購入完了・タックスフリー対応可</p>
+
+  <h4 style="margin-top:20px;color:var(--c-classic);font-size:14px">🍝 夕食（Felice → TEMA 変更）</h4>
+  <table class="receipt-tbl">
+    <thead><tr><th>時刻</th><th>店</th><th>内容</th><th style="text-align:right">金額</th></tr></thead>
+    <tbody>
+      <tr>
+        <td class="time">22:36</td>
+        <td><span class="star">⭐</span> <strong>Ristorante TEMA</strong> Via Panisperna 96</td>
+        <td>サービス料×2 + Alici（アンチョビ）+ Riso Pescatora（漁師風リゾット）+ Scaloppine al Limone（レモン子牛）+ 水</td>
+        <td class="amount">€50.00</td>
+      </tr>
+      <tr><td class="time">22:37</td><td><strong>Ristorante TEMA</strong>（Visa PIN 決済）</td><td>同上</td><td class="amount">€50.00</td></tr>
+    </tbody>
+  </table>
+  <p style="font-size:13.5px;color:var(--c-mute)">→ ⚠️ 予定は Felice a Testaccio だったが、疲労考慮で TEMA（テルミニ徒歩3分・日本語メニュー）へ賢く変更 / コスパ ★</p>
+</div>
+
+<!-- ===== DAY 4 ===== -->
+<div class="day-block">
+  <div class="day-hd">
+    <div class="num">04</div>
+    <div>
+      <h3>Day 4 — 7/1（水）ローマ出発日</h3>
+      <div class="meta">05:50 Augusta 早朝チェックアウト前に精算完了</div>
+    </div>
+  </div>
+  <table class="receipt-tbl">
+    <thead><tr><th>時刻</th><th>店</th><th>内容</th><th style="text-align:right">金額</th></tr></thead>
+    <tbody>
+      <tr>
+        <td class="time">05:08</td>
+        <td><strong>Augusta Lucilla Palace</strong></td>
+        <td>都市税 3泊分（€7.50/人/泊 × 2人 × 3泊）・宿泊者名 Sano Sanae</td>
+        <td class="amount">€45.00</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</section>
+
+<!-- ===== 計画からの変更 ===== -->
+<section class="chapter" style="padding-top:40px">
+  <div class="ch-head">
+    <div class="num"><em>★</em></div>
+    <div>
+      <div class="label">DIFF · 計画からの変更</div>
+      <h2>計画通り vs 変更点</h2>
+      <p>3泊 4日を振り返って、95% 計画通り・5% 賢く変更されました。以下に主な変更点をまとめます。</p>
+    </div>
+  </div>
+
+  <div class="change-card">
+    <h5>🔄 6/30 夜: Felice a Testaccio → Ristorante TEMA へ変更</h5>
+    <p>
+      予定していたテスタッチョの Felice a Testaccio（€35-45/人・カチョエペペ目前和え）ではなく、テルミニ徒歩3分の <strong>Ristorante TEMA</strong>（€50 for 2 = €25/人・漁師リゾット系）に変更。<br>
+      → <strong>ヴァチカン + コロッセオツアーの連日ハードスケジュール後の疲労を考慮</strong>した賢い判断。テスタッチョへの遠征なくホテル徒歩圏で済ませ、22:36 の遅め夕食にも間に合った。TEMA は当サイトの推奨で「疲労時の保険」枠として紹介済み。
+    </p>
+  </div>
+
+  <div class="change-card">
+    <h5>✅ 6/29 夜: Da Romeo（トラステヴェレ夕食候補）で名物カチョエペペ体験</h5>
+    <p>
+      予定していた Tonnarello / Da Enzo al 29（トラステヴェレの Day 2 夜候補）に代わって、<strong>Da Romeo</strong> で <strong>トンナレッリ カチョエペペ + ティラミス + 海老リゾット + タコのトマト煮</strong> の充実ローマ・ナポリ料理コース。€60 で満足度高。
+    </p>
+  </div>
+
+  <div class="change-card">
+    <h5>✅ 6/30 夕: Rinascente で Laudemio 500ml + LaFonte オリーブオイル計 €36.50</h5>
+    <p>
+      当サイト <a href="roma.html#ch-links">🔖 リンク集</a> で推奨した通り、Rinascente Via del Tritone 7階食品館で購入。Laudemio Annata 2024 €22.50、LaFonte オリーブオイル €7×2本。<strong>ハネムーン土産のフィナーレ</strong> ✨
+    </p>
+  </div>
+
+  <div class="change-card">
+    <h5>✅ 6/29 青の洞窟 入場成功</h5>
+    <p>
+      波OK・手漕ぎボート €12×2枚で入洞。事前準備した防水対策（ジップロック・防水バッグ）が活きた。 続いてソラーロ山リフト €20（€10×2）で山頂パノラマ。
+    </p>
+  </div>
+
+  <div class="change-card">
+    <h5>💡 ナポリ Duomo駅 → 中央駅 ダッシュエピソード</h5>
+    <p>
+      17:48 のメトロ €3 レシートが、事前予約タクシー到着せず → 地下鉄 → 下車駅間違い → Duomo駅から中央駅まで全力疾走 → 18:35 Frecciarossa 9668 セーフのエピソードを裏付ける。良い旅の記憶に。
+    </p>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site">
+  <div class="ftop">
+    <div class="brand">ROMA — PARIS · HONEYMOON 2026</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="schedule.html">日程</a>
+      <a href="roma.html">Roma</a>
+      <a href="journal.html">旅の記録</a>
+      <a href="paris.html">Paris</a>
+      <a href="hotels.html">Hotel</a>
+      <a href="packing.html">持ち物</a>
+      <a href="checklist.html">準備</a>
+    </nav>
+  </div>
+  <div class="fine">2026/6/28-7/6 · 8泊9日 · レシート18件から復元した実費記録・写真 © Wikimedia Commons contributors.</div>
+</footer>
+
+</body>
+</html>
