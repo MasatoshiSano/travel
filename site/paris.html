@@ -1337,10 +1337,22 @@
     .fr-block h4{font-family:"Cormorant Garamond","Hiragino Mincho ProN",serif;font-size:20px;font-style:italic;color:#2d4a7c;margin:0 0 12px;border-bottom:1px solid #d8c9ab;padding-bottom:6px}
     .fr-table{width:100%;border-collapse:collapse;font-size:13.5px}
     .fr-table th{text-align:left;background:#efe4cc;padding:6px 10px;font-size:11px;letter-spacing:.05em;color:#6b4c0a;text-transform:uppercase}
-    .fr-table td{padding:7px 10px;border-bottom:1px dotted #d8c9ab;vertical-align:top}
+    .fr-table td{padding:7px 10px;border-bottom:1px dotted #d8c9ab;vertical-align:top;word-break:break-word}
     .fr-table td:nth-child(1){font-weight:600;color:#2d4a7c;min-width:180px}
     .fr-table td:nth-child(2){color:#8b2c1d;font-family:"Hiragino Kaku Gothic Pro",sans-serif;min-width:120px;font-size:12.5px}
-    .fr-table td:nth-child(3){color:#333}
+    .fr-table td:nth-child(3){color:#333;min-width:180px;line-height:1.65}
+    /* ===== モバイル対応：カード風スタック表示 ===== */
+    @media(max-width:680px){
+      .fr-table thead{display:none}
+      .fr-table,.fr-table tbody{display:block;width:100%}
+      .fr-table tr{display:block;padding:12px 4px 12px;border-bottom:1px solid #d8c9ab;margin-bottom:2px}
+      .fr-table td{display:block;padding:3px 0;border:none;min-width:0;width:100%}
+      .fr-table td:nth-child(1){font-size:15px;font-weight:700;color:#2d4a7c;line-height:1.5;margin-bottom:2px}
+      .fr-table td:nth-child(2){font-size:13px;color:#8b2c1d;line-height:1.5}
+      .fr-table td:nth-child(2)::before{content:"🔊 ";opacity:.6}
+      .fr-table td:nth-child(3){font-size:14.5px;color:#222;line-height:1.7;padding-top:6px;margin-top:2px;border-top:1px dotted #eadfc7}
+      .fr-table td:nth-child(3)::before{content:"→ ";color:#c9a961;font-weight:700}
+    }
     .fr-callout{background:#fff5e6;border-left:4px solid #c44a35;padding:14px 18px;margin:14px 0;border-radius:0 4px 4px 0}
     .fr-callout strong{color:#8b2c1d}
     .fr-priority{display:inline-block;font-size:10px;font-weight:700;padding:2px 7px;border-radius:3px;margin-right:6px}
