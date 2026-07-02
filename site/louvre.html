@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ルーブル美術館 音声ガイド｜Roma × Paris Honeymoon 2026</title>
+<meta name="description" content="7/3(金) 16:00-19:00の3時間で王道+αを回る15作品ガイド。各1分の日本語音声付き。">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/nav.js" defer></script>
+<style>
+  /* ===== LOUVRE PAGE STYLES ===== */
+  .lv-hero{
+    background:linear-gradient(120deg,#1a1a2e 0%,#2d4a7c 50%,#8b6f2c 100%);
+    color:#f5ecd6;padding:70px 6vw 55px;position:relative;overflow:hidden;
+  }
+  .lv-hero::before{content:"";position:absolute;top:-40px;right:-40px;width:280px;height:280px;
+    background:radial-gradient(circle,rgba(212,175,55,.18) 0%,transparent 70%);border-radius:50%}
+  .lv-hero .kicker{font-family:"Helvetica Neue",Arial,sans-serif;font-size:11px;
+    letter-spacing:.6em;text-transform:uppercase;opacity:.75;margin-bottom:16px}
+  .lv-hero h1{font-family:"Cormorant Garamond","Hiragino Mincho ProN",serif;
+    font-size:clamp(38px,7.5vw,74px);font-weight:400;font-style:italic;line-height:1.05;
+    margin-bottom:14px}
+  .lv-hero .lead{font-size:15px;opacity:.92;max-width:600px;line-height:1.85}
+  .lv-hero .stats{display:flex;gap:32px;margin-top:26px;flex-wrap:wrap}
+  .lv-hero .stat{border-left:2px solid rgba(212,175,55,.6);padding-left:14px}
+  .lv-hero .stat b{display:block;font-family:"Cormorant Garamond",serif;font-size:26px;color:#f5d581}
+  .lv-hero .stat span{font-size:11px;letter-spacing:.15em;opacity:.7;text-transform:uppercase}
+
+  .lv-strategy{background:#faf6ef;border:1px solid #e6d9c0;border-radius:8px;padding:22px 24px;margin:20px 0}
+  .lv-strategy h3{font-family:"Cormorant Garamond",serif;font-size:22px;font-style:italic;color:#2d4a7c;margin:0 0 10px}
+  .lv-strategy .rule{background:#fff5e6;border-left:4px solid #c9a961;padding:12px 16px;margin:12px 0;border-radius:0 4px 4px 0}
+  .lv-strategy .rule strong{color:#8b6f2c}
+
+  .lv-time{width:100%;border-collapse:collapse;font-size:13.5px;margin:18px 0}
+  .lv-time th{background:#2d4a7c;color:#f5ecd6;padding:10px 12px;text-align:left;font-size:12px;letter-spacing:.05em;text-transform:uppercase}
+  .lv-time td{padding:8px 12px;border-bottom:1px dotted #d8c9ab;vertical-align:top}
+  .lv-time tr.stop td{background:#fdfaf3}
+  .lv-time tr.transit td{color:#888;font-size:12.5px;font-style:italic}
+  .lv-time .badge{display:inline-block;background:#c9a961;color:#3d2817;font-weight:700;
+    width:24px;height:24px;line-height:24px;text-align:center;border-radius:50%;font-size:12px;margin-right:6px}
+  .lv-time .badge.new{background:#c44a35;color:#fff}
+
+  .floor-plan{background:#faf6ef;border:1px solid #e6d9c0;border-radius:8px;padding:16px;margin:18px 0;overflow-x:auto}
+  .floor-plan svg{max-width:100%;height:auto;display:block;margin:0 auto}
+  .floor-plan .legend{margin-top:12px;display:flex;gap:20px;flex-wrap:wrap;font-size:12.5px}
+  .floor-plan .legend span{display:inline-block;width:14px;height:14px;border-radius:3px;margin-right:6px;vertical-align:middle}
+
+  .stop-card{background:#fff;border:1px solid #e6d9c0;border-radius:8px;padding:22px 22px 18px;
+    margin:14px 0;box-shadow:0 1px 3px rgba(0,0,0,.04);position:relative}
+  .stop-card::before{content:"";position:absolute;left:0;top:22px;bottom:18px;width:4px;background:linear-gradient(180deg,#c9a961,#8b6f2c);border-radius:2px}
+  .stop-card.new::before{background:linear-gradient(180deg,#c44a35,#8b2c1d)}
+  .stop-card .head{display:flex;gap:14px;align-items:flex-start;margin-bottom:12px;padding-left:12px}
+  .stop-card .num{background:#2d4a7c;color:#f5d581;width:44px;height:44px;line-height:44px;
+    text-align:center;border-radius:50%;font-family:"Cormorant Garamond",serif;font-size:22px;
+    font-weight:600;flex-shrink:0}
+  .stop-card.new .num{background:#8b2c1d;color:#fff}
+  .stop-card .titles h3{font-family:"Hiragino Mincho ProN",serif;font-size:19px;margin:0 0 3px;color:#1a1a2e}
+  .stop-card .titles .fr{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:14px;color:#8b6f2c;opacity:.85}
+  .stop-card .meta{padding-left:12px;font-size:12.5px;color:#666;margin-bottom:12px;line-height:1.65}
+  .stop-card .meta .tag{background:#efe4cc;padding:2px 9px;border-radius:3px;font-size:11px;margin-right:6px;font-weight:600;color:#5a4210}
+  .stop-card audio{width:100%;margin:10px 0 8px;height:38px}
+  .stop-card .script{font-size:14px;line-height:1.85;color:#333;padding:12px 14px;background:#faf6ef;border-radius:6px;margin-top:8px}
+  .stop-card .script::before{content:"🎧 ";opacity:.5}
+
+  .lv-tips{background:#faf0f0;border-left:4px solid #8b2c1d;padding:16px 20px;margin:16px 0;border-radius:0 6px 6px 0}
+  .lv-tips h4{color:#8b2c1d;margin:0 0 8px;font-size:15px}
+  .lv-tips ul{margin:0;padding-left:20px;line-height:1.8;font-size:13.5px}
+
+  @media(max-width:680px){
+    .stop-card .head{gap:10px}
+    .stop-card .num{width:38px;height:38px;line-height:38px;font-size:19px}
+    .stop-card .titles h3{font-size:17px}
+    .lv-time{font-size:12.5px}
+    .lv-time th,.lv-time td{padding:6px 8px}
+  }
+</style>
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="brand"><a href="index.html">ROMA — PARIS · 2026</a></div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shiori.html">しおり</a></li>
+    <li><a href="schedule.html">日程</a></li>
+    <li><a href="roma.html">Roma</a></li>
+    <li><a href="journal.html">📓 旅の記録</a></li>
+    <li><a class="active" href="paris.html">Paris</a></li>
+    <li><a href="hotels.html">Hotel</a></li>
+    <li><a href="packing.html">持ち物</a></li>
+    <li><a href="checklist.html">準備</a></li>
+  </ul>
+</nav>
+
+<div class="lv-hero">
+  <p class="kicker">Musée du Louvre · Audio Guide</p>
+  <h1>ルーブル美術館<br>音声ガイド</h1>
+  <p class="lead">
+    7月3日(金) 16:00-19:00、金曜夜間開館の3時間で王道+αを制覇。
+    <strong>15作品</strong>を1分/箇所の日本語音声ガイダンス付きでご案内します。
+    事実確認済み・現地でスマホからそのまま聞けます。
+  </p>
+  <div class="stats">
+    <div class="stat"><b>15</b><span>作品</span></div>
+    <div class="stat"><b>3h</b><span>コース</span></div>
+    <div class="stat"><b>16:00</b><span>入場</span></div>
+    <div class="stat"><b>21:45</b><span>閉館</span></div>
+  </div>
+</div>
+
+<section class="chapter">
+  <div class="ch-head">
+    <div class="num"><em>01</em></div>
+    <div>
+      <div class="label">STRATEGY · 攻略戦略</div>
+      <h2>金曜夜間開館の<br>ゴールデンタイム</h2>
+      <p>混雑ピークを回避しつつ、ライトアップ夜景まで楽しむ計画。</p>
+    </div>
+  </div>
+
+  <div class="lv-strategy">
+    <h3>入場・動線の3原則</h3>
+    <div class="rule">
+      <strong>① モナ・リザは16:30に先制</strong><br>
+      17:30-19:00は激混み。金曜夜間開館の21時前後も再び混雑。
+      到着直後にダリュ階段のニケ→そのままモナ・リザへ直行が最速。
+    </div>
+    <div class="rule">
+      <strong>② 動線は Denon → Sully → Richelieu の U字</strong><br>
+      ピラミッド地下から見て、南Denon翼2Fで9作品→Denon 0F彫刻→Richelieu 0Fハムラビ
+      →Sully 0F/1Fヴィーナス&書記官→Richelieu 2F フェルメール、
+      とU字を描いてピラミッドへ戻ります。
+    </div>
+    <div class="rule">
+      <strong>③ 18:15以降はライトアップ撮影</strong><br>
+      Cour Napoléonのピラミッドは日没後~21:45まで点灯。
+      18:15-19:00の空色×金光がベスト。二人の記念写真はここで。
+    </div>
+  </div>
+
+  <div class="lv-tips">
+    <h4>⚠️ 入場前チェック</h4>
+    <ul>
+      <li><strong>チケット</strong>：オンライン予約(公式)をスマホで表示→QRコード提示</li>
+      <li><strong>荷物預け</strong>：無料・ナポレオンホール地下・55×35×20cm超は不可</li>
+      <li><strong>持ち物軽量化</strong>：パスポート・現金・カード・充電済スマホ・イヤホン・水</li>
+      <li><strong>公式オーディオガイド不要</strong>：本ページの音声ガイドで代用可</li>
+      <li><strong>入口</strong>：ピラミッド入口が確実。Porte des Lionsは金曜閉鎖</li>
+    </ul>
+  </div>
+</section>
+
+<section class="chapter" style="padding-top:0">
+  <div class="subhead"><span class="pill gold">TIMELINE</span><h3>3時間の詳細タイムライン（15作品）</h3><span class="line"></span></div>
+
+  <table class="lv-time">
+    <thead>
+      <tr><th>時刻</th><th>アクション</th></tr>
+    </thead>
+    <tbody>
+      <tr class="transit"><td>16:00</td><td>ピラミッド入場・チケット提示・荷物預け</td></tr>
+      <tr class="transit"><td>16:15</td><td>Denon翼 Escalier Daru(ダリュ階段)へ</td></tr>
+      <tr class="stop"><td>16:22</td><td><span class="badge">1</span><a href="#stop-01">サモトラケのニケ</a></td></tr>
+      <tr class="stop"><td>16:28</td><td><span class="badge">2</span><a href="#stop-02">モナ・リザ</a> ← 混む前に先制！</td></tr>
+      <tr class="stop"><td>16:34</td><td><span class="badge">3</span><a href="#stop-03">カナの婚礼</a>(同室・記念撮影推奨)</td></tr>
+      <tr class="stop"><td>16:40</td><td><span class="badge new">4</span><a href="#stop-04">聖母の死(カラヴァッジョ)</a> ✨新規追加</td></tr>
+      <tr class="stop"><td>16:47</td><td><span class="badge">5</span><a href="#stop-05">民衆を導く自由の女神</a></td></tr>
+      <tr class="stop"><td>16:54</td><td><span class="badge">6</span><a href="#stop-06">メデューズ号の筏</a></td></tr>
+      <tr class="stop"><td>17:01</td><td><span class="badge">7</span><a href="#stop-07">ナポレオン一世の戴冠式</a></td></tr>
+      <tr class="stop"><td>17:08</td><td><span class="badge">8</span><a href="#stop-08">グランド・オダリスク</a></td></tr>
+      <tr class="stop"><td>17:15</td><td><span class="badge">9</span><a href="#stop-09">岩窟の聖母(ダ・ヴィンチ)</a></td></tr>
+      <tr class="transit"><td>17:22</td><td>Denon翼 階段で0Fへ下降</td></tr>
+      <tr class="stop"><td>17:28</td><td><span class="badge">10</span><a href="#stop-10">瀕死の奴隷(ミケランジェロ)</a></td></tr>
+      <tr class="transit"><td>17:35</td><td>Richelieu翼 0F へ横断(徒歩5分)</td></tr>
+      <tr class="stop"><td>17:42</td><td><span class="badge new">11</span><a href="#stop-11">ハムラビ法典</a> ✨新規追加</td></tr>
+      <tr class="transit"><td>17:50</td><td>Sully翼 0F へ移動</td></tr>
+      <tr class="stop"><td>17:56</td><td><span class="badge">12</span><a href="#stop-12">ミロのヴィーナス</a></td></tr>
+      <tr class="transit"><td>18:04</td><td>Sully翼 1F エジプト美術へ</td></tr>
+      <tr class="stop"><td>18:10</td><td><span class="badge new">13</span><a href="#stop-13">書記官坐像</a> ✨新規追加</td></tr>
+      <tr class="transit"><td>18:18</td><td>Richelieu翼 2F へ・カフェで小休憩可</td></tr>
+      <tr class="stop"><td>18:28</td><td><span class="badge">14</span><a href="#stop-14">レースを編む女(フェルメール)</a></td></tr>
+      <tr class="stop"><td>18:35</td><td><span class="badge">15</span><a href="#stop-15">天文学者(フェルメール)</a></td></tr>
+      <tr class="transit"><td>18:45</td><td>ピラミッド出口へ・荷物受取</td></tr>
+      <tr class="transit"><td>18:55</td><td>Cour Napoléonでライトアップ撮影 🌆</td></tr>
+      <tr class="transit"><td>19:00</td><td>ディナーへ or ホテル戻り</td></tr>
+    </tbody>
+  </table>
+
+  <div class="lv-tips">
+    <h4>💡 タイミングTIPS</h4>
+    <ul>
+      <li>金曜夜間開館は18:00から夜間券客が増える→朝一のような感覚は17時前まで</li>
+      <li>モナ・リザ周辺は17:30-19:00が混雑ピーク。<strong>16:28に必ず先制</strong></li>
+      <li>ハムラビ・書記官・カラヴァッジョはガイドツアーの通り道でないので比較的空いています</li>
+      <li>Cour Napoléonのライトアップ点灯は日没後(7月は21時頃)。18-19時は空色×薄暮の絶妙時間</li>
+      <li>閉館30分前(21:15)から徐々に警備が退出誘導開始</li>
+    </ul>
+  </div>
+</section>
+
+<section class="chapter" style="padding-top:0">
+  <div class="subhead"><span class="pill">FLOOR PLAN</span><h3>動線マップ(U字ルート・15箇所)</h3><span class="line"></span></div>
+
+  <div class="floor-plan">
+    <svg viewBox="0 0 720 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ルーブル美術館 15作品動線マップ">
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+          <polygon points="0 0, 9 3, 0 6" fill="#c9a961" />
+        </marker>
+        <linearGradient id="wingGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#f5ecd6"/>
+          <stop offset="100%" stop-color="#e6d9c0"/>
+        </linearGradient>
+      </defs>
+
+      <rect x="0" y="0" width="720" height="520" fill="#faf6ef"/>
+
+      <!-- Richelieu wing (top / north) -->
+      <rect x="60" y="40" width="600" height="110" fill="url(#wingGrad)" stroke="#8b6f2c" stroke-width="1.5" rx="3"/>
+      <text x="360" y="75" text-anchor="middle" font-family="Cormorant Garamond,serif" font-size="18" font-style="italic" fill="#5a4210">Richelieu Wing (北)</text>
+      <text x="360" y="93" text-anchor="middle" font-size="10" fill="#8b6f2c" letter-spacing="1">HAMMURABI · VERMEER · FRENCH SCULPTURES</text>
+      <text x="130" y="128" font-size="9" fill="#8b6f2c" font-style="italic">↑ 0F ハムラビ・2F フェルメール</text>
+
+      <!-- Sully wing (right / east) -->
+      <rect x="560" y="150" width="100" height="240" fill="url(#wingGrad)" stroke="#8b6f2c" stroke-width="1.5" rx="3"/>
+      <text x="610" y="270" text-anchor="middle" font-family="Cormorant Garamond,serif" font-size="16" font-style="italic" fill="#5a4210" transform="rotate(90 610 270)">Sully (東)</text>
+      <text x="610" y="378" text-anchor="middle" font-size="9" fill="#8b6f2c">0F ヴィーナス</text>
+      <text x="610" y="390" text-anchor="middle" font-size="9" fill="#8b6f2c">1F 書記官</text>
+
+      <!-- Denon wing (bottom / south) -->
+      <rect x="60" y="390" width="600" height="110" fill="url(#wingGrad)" stroke="#8b6f2c" stroke-width="1.5" rx="3"/>
+      <text x="360" y="422" text-anchor="middle" font-family="Cormorant Garamono,serif" font-size="18" font-style="italic" fill="#5a4210">Denon Wing (南)</text>
+      <text x="360" y="440" text-anchor="middle" font-size="10" fill="#8b6f2c" letter-spacing="1">MONA LISA · GRAND GALLERY · SCULPTURES</text>
+
+      <!-- West side connector -->
+      <rect x="60" y="150" width="60" height="240" fill="url(#wingGrad)" stroke="#8b6f2c" stroke-width="1.5" rx="3"/>
+
+      <!-- Cour Napoléon (center) -->
+      <rect x="120" y="150" width="440" height="240" fill="#fdfaf3" stroke="#c9a961" stroke-width="1" stroke-dasharray="4 3"/>
+      <text x="340" y="240" text-anchor="middle" font-family="Cormorant Garamond,serif" font-size="16" font-style="italic" fill="#c9a961">Cour Napoléon</text>
+      <polygon points="320,290 360,290 340,255" fill="none" stroke="#c9a961" stroke-width="1.5"/>
+      <text x="340" y="308" text-anchor="middle" font-size="10" fill="#8b6f2c">🔺 Pyramide</text>
+      <text x="340" y="325" text-anchor="middle" font-size="9" fill="#8b6f2c">↓ 入場</text>
+
+      <!-- ============ STOPS ============ -->
+      <!-- Phase 1: Denon 1F/2F (1-9) -->
+      <!-- 1 Nike (Denon staircase, southwest) -->
+      <circle cx="140" cy="450" r="16" fill="#2d4a7c"/>
+      <text x="140" y="455" text-anchor="middle" font-size="14" font-weight="bold" fill="#f5d581">1</text>
+      <text x="140" y="480" text-anchor="middle" font-size="9" fill="#333">ニケ</text>
+
+      <!-- 2 Mona Lisa -->
+      <circle cx="200" cy="450" r="16" fill="#8b2c1d"/>
+      <text x="200" y="455" text-anchor="middle" font-size="14" font-weight="bold" fill="#f5d581">2</text>
+      <text x="200" y="480" text-anchor="middle" font-size="9" fill="#333">モナ・リザ</text>
+
+      <!-- 3 Cana Wedding (same room) -->
+      <circle cx="222" cy="453" r="10" fill="#8b2c1d" opacity=".75"/>
+      <text x="222" y="457" text-anchor="middle" font-size="10" font-weight="bold" fill="#f5d581">3</text>
+
+      <!-- 4 NEW Caravaggio Death of Virgin (nearby Salle 712) -->
+      <circle cx="255" cy="450" r="16" fill="#c44a35" stroke="#8b2c1d" stroke-width="2"/>
+      <text x="255" y="455" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">4</text>
+      <text x="255" y="480" text-anchor="middle" font-size="9" fill="#8b2c1d">カラヴァッジョ✨</text>
+
+      <!-- 5 Liberty -->
+      <circle cx="310" cy="450" r="16" fill="#2d4a7c"/>
+      <text x="310" y="455" text-anchor="middle" font-size="14" font-weight="bold" fill="#f5d581">5</text>
+      <text x="310" y="480" text-anchor="middle" font-size="9" fill="#333">自由の女神</text>
+
+      <!-- 6 Medusa -->
+      <circle cx="360" cy="450" r="16" fill="#2d4a7c"/>
+      <text x="360" y="455" text-anchor="middle" font-size="14" font-weight="bold" fill="#f5d581">6</text>
+      <text x="360" y="480" text-anchor="middle" font-size="9" fill="#333">メデューズ</text>
+
+      <!-- 7 Coronation -->
+      <circle cx="410" cy="450" r="16" fill="#2d4a7c"/>
+      <text x="410" y="455" text-anchor="middle" font-size="14" font-weight="bold" fill="#f5d581">7</text>
+      <text x="410" y="480" text-anchor="middle" font-size="9" fill="#333">戴冠式</text>
+
+      <!-- 8 Odalisque -->
+      <circle cx="460" cy="450" r="16" fill="#2d4a7c"/>
+      <text x="460" y="455" text-anchor="middle" font-size="14" font-weight="bold" fill="#f5d581">8</text>
+      <text x="460" y="480" text-anchor="middle" font-size="9" fill="#333">オダリスク</text>
+
+      <!-- 9 Virgin of Rocks (Grande Galerie / same Denon 2F) -->
+      <circle cx="510" cy="450" r="16" fill="#8b2c1d" opacity=".85"/>
+      <text x="510" y="455" text-anchor="middle" font-size="14" font-weight="bold" fill="#f5d581">9</text>
+      <text x="510" y="480" text-anchor="middle" font-size="9" fill="#333">岩窟の聖母</text>
+
+      <!-- 10 Dying Slave (Denon 0F) - smaller shows floor change -->
+      <circle cx="90" cy="450" r="14" fill="#c9a961" stroke="#8b6f2c" stroke-width="1.5"/>
+      <text x="90" y="454" text-anchor="middle" font-size="12" font-weight="bold" fill="#3d2817">10</text>
+      <text x="90" y="475" text-anchor="middle" font-size="9" fill="#333">奴隷(0F)</text>
+
+      <!-- 11 NEW Hammurabi (Richelieu 0F) -->
+      <circle cx="140" cy="105" r="16" fill="#c44a35" stroke="#8b2c1d" stroke-width="2"/>
+      <text x="140" y="110" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">11</text>
+      <text x="140" y="132" text-anchor="middle" font-size="9" fill="#8b2c1d">ハムラビ✨</text>
+
+      <!-- 12 Venus (Sully 0F) -->
+      <circle cx="610" cy="270" r="16" fill="#2d4a7c"/>
+      <text x="610" y="275" text-anchor="middle" font-size="14" font-weight="bold" fill="#f5d581">12</text>
+      <text x="655" y="273" text-anchor="middle" font-size="9" fill="#333">ヴィーナス</text>
+
+      <!-- 13 NEW Seated Scribe (Sully 1F) -->
+      <circle cx="610" cy="215" r="16" fill="#c44a35" stroke="#8b2c1d" stroke-width="2"/>
+      <text x="610" y="220" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">13</text>
+      <text x="655" y="218" text-anchor="middle" font-size="9" fill="#8b2c1d">書記官✨</text>
+
+      <!-- 14 Lacemaker (Richelieu 2F) -->
+      <circle cx="450" cy="95" r="16" fill="#2d4a7c"/>
+      <text x="450" y="100" text-anchor="middle" font-size="14" font-weight="bold" fill="#f5d581">14</text>
+      <text x="450" y="122" text-anchor="middle" font-size="9" fill="#333">レース</text>
+
+      <!-- 15 Astronomer (same room) -->
+      <circle cx="500" cy="95" r="16" fill="#2d4a7c"/>
+      <text x="500" y="100" text-anchor="middle" font-size="14" font-weight="bold" fill="#f5d581">15</text>
+      <text x="500" y="122" text-anchor="middle" font-size="9" fill="#333">天文学者</text>
+
+      <!-- ============ ROUTE ARROWS ============ -->
+      <!-- 1→2 -->
+      <path d="M 155 450 L 185 450" stroke="#c9a961" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+      <!-- 2→3→4 -->
+      <path d="M 215 450 L 240 450" stroke="#c9a961" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+      <!-- 4→5 -->
+      <path d="M 271 450 L 295 450" stroke="#c9a961" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+      <!-- 5→6 -->
+      <path d="M 326 450 L 345 450" stroke="#c9a961" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+      <!-- 6→7 -->
+      <path d="M 376 450 L 395 450" stroke="#c9a961" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+      <!-- 7→8 -->
+      <path d="M 426 450 L 445 450" stroke="#c9a961" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+      <!-- 8→9 -->
+      <path d="M 476 450 L 495 450" stroke="#c9a961" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+      <!-- 9→10 back to west (long curve above pyramid) -->
+      <path d="M 495 445 Q 300 400 105 445" stroke="#c9a961" stroke-width="2" fill="none" marker-end="url(#arrowhead)" stroke-dasharray="4 3"/>
+      <!-- 10→11 up to Richelieu 0F -->
+      <path d="M 90 435 Q 90 250 130 115" stroke="#c9a961" stroke-width="2" fill="none" marker-end="url(#arrowhead)" stroke-dasharray="4 3"/>
+      <!-- 11→12 across to Sully 0F -->
+      <path d="M 155 110 Q 400 180 595 265" stroke="#c9a961" stroke-width="2" fill="none" marker-end="url(#arrowhead)" stroke-dasharray="6 4"/>
+      <!-- 12→13 up to Sully 1F (same wing) -->
+      <path d="M 610 254 L 610 231" stroke="#c9a961" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+      <!-- 13→14 to Richelieu 2F -->
+      <path d="M 595 210 Q 500 165 460 110" stroke="#c9a961" stroke-width="2" fill="none" marker-end="url(#arrowhead)" stroke-dasharray="6 4"/>
+      <!-- 14→15 same room -->
+      <path d="M 465 95 L 485 95" stroke="#c9a961" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+      <!-- 15→exit -->
+      <path d="M 500 110 Q 400 200 340 290" stroke="#8b2c1d" stroke-width="2" fill="none" marker-end="url(#arrowhead)" stroke-dasharray="2 3"/>
+    </svg>
+
+    <div class="legend">
+      <div><span style="background:#2d4a7c"></span>青=絵画</div>
+      <div><span style="background:#8b2c1d"></span>赤=モナリザ室(2/3/9)</div>
+      <div><span style="background:#c44a35;border:2px solid #8b2c1d"></span>橙=新規追加(4/11/13)</div>
+      <div><span style="background:#c9a961"></span>金線=移動ルート</div>
+      <div><span style="background:#8b2c1d"></span>赤線=出口へ</div>
+    </div>
+    <p style="font-size:12px;color:#666;margin-top:10px;line-height:1.7">
+      ※模式図：翼と大まかな位置関係を表示。現地では公式パンフレット(日本語版)を必ず入手。
+      ピラミッド地下インフォメーションで無料配布中。
+    </p>
+  </div>
+</section>
+
+<section class="chapter" style="padding-top:0">
+  <div class="subhead"><span class="pill gold">AUDIO GUIDE</span><h3>15作品 1分間ガイダンス</h3><span class="line"></span></div>
+
+  <p style="font-size:13px;color:#666;margin:0 0 18px">
+    ▶ 各作品の音声ガイダンス(約1分・日本語)を再生できます。
+    <strong>事実誤り再検証済み・2026年7月版</strong>。イヤホン推奨。
+  </p>
+
+  <div class="stop-card" id="stop-01">
+    <div class="head"><div class="num">1</div><div class="titles"><h3>サモトラケのニケ</h3><div class="fr">Victoire de Samothrace</div></div></div>
+    <div class="meta"><span class="tag">Denon 1F</span><span class="tag">Escalier Daru</span> 紀元前190年頃 · ヘレニズム</div>
+    <audio controls preload="none" src="assets/audio/louvre/01_サモトラケのニケ.mp3"></audio>
+    <div class="script">最初の一枚は、勝利の女神サモトラケのニケ。紀元前190年ごろ、エーゲ海の島の神殿を飾っていた大理石像です。頭も両腕も失われ、残るのは翼と船首に降り立つ一歩。強い海風を受けて衣が体に張りつく、その一瞬が2千年を越えて凍りついています。ダリュ階段の踊り場で右斜め下から見上げると、翼の躍動が空を切ります。ハネムーンの入り口を、この勝利の女神に見守られながら始めましょう。</div>
+  </div>
+
+  <div class="stop-card" id="stop-02">
+    <div class="head"><div class="num">2</div><div class="titles"><h3>モナ・リザ</h3><div class="fr">La Joconde</div></div></div>
+    <div class="meta"><span class="tag">Denon 2F</span><span class="tag">Salle 711</span> 1503-1519 · レオナルド・ダ・ヴィンチ</div>
+    <audio controls preload="none" src="assets/audio/louvre/02_モナ・リザ.mp3"></audio>
+    <div class="script">世界で最も有名な絵、モナ・リザ。レオナルドが16年間手放さず、死の直前まで筆を入れ続けた肖像画です。輪郭を溶かす技法スフマート、薄い層を数十回重ねた光の透明感、そして左右で表情の違う微笑み。金曜の夜間開館は比較的空いていますが、それでもここは急いで先に見ます。写真は防弾ガラス越しに一枚だけ、フラッシュは絶対禁止。隣にあるカナの婚礼を見忘れずに。</div>
+  </div>
+
+  <div class="stop-card" id="stop-03">
+    <div class="head"><div class="num">3</div><div class="titles"><h3>カナの婚礼</h3><div class="fr">Les Noces de Cana</div></div></div>
+    <div class="meta"><span class="tag">Denon 2F</span><span class="tag">Salle 711</span> 1563 · パオロ・ヴェロネーゼ</div>
+    <audio controls preload="none" src="assets/audio/louvre/03_カナの婚礼.mp3"></audio>
+    <div class="script">モナ・リザの真向かい、壁いっぱいを覆うのがカナの婚礼です。縦7メートル横10メートル、ルーブル最大の絵画。イエスが最初の奇跡、水をぶどう酒に変えた瞬間を描いています。ヴェネツィアの祝宴として翻案され、130人以上が笑い語らう賑やかさ。ハネムーンの二人が訪れるべき一枚がここです。手前中央の楽団に、ヴェロネーゼ自身が白衣で描き込まれています。二人で並んで一枚、記念撮影を。</div>
+  </div>
+
+  <div class="stop-card new" id="stop-04">
+    <div class="head"><div class="num">4</div><div class="titles"><h3>聖母の死 ✨新規</h3><div class="fr">La Mort de la Vierge</div></div></div>
+    <div class="meta"><span class="tag">Denon 2F</span><span class="tag">Salle 712</span> 1601-1606 · カラヴァッジョ</div>
+    <audio controls preload="none" src="assets/audio/louvre/04_聖母の死.mp3"></audio>
+    <div class="script">カラヴァッジョの聖母の死。1601年から1606年の作です。聖母マリアの臨終を弟子たちが囲む場面ですが、そこにあるのは光り輝く奇跡ではなく、一人の女性の生々しい死。素足を投げ出し、腹の膨らむマリアは、モデルがテヴェレ川で溺死した娼婦だったという逸話が残ります。教会からは拒絶されましたが、ルーベンスが即座に買い取り、ルイ十四世の手を経てここへ。写実主義の凄まじさに触れてください。</div>
+  </div>
+
+  <div class="stop-card" id="stop-05">
+    <div class="head"><div class="num">5</div><div class="titles"><h3>民衆を導く自由の女神</h3><div class="fr">La Liberté guidant le peuple</div></div></div>
+    <div class="meta"><span class="tag">Denon 2F</span><span class="tag">Salle 700</span> 1830 · ウジェーヌ・ドラクロワ</div>
+    <audio controls preload="none" src="assets/audio/louvre/05_民衆を導く自由の女神.mp3"></audio>
+    <div class="script">ドラクロワの民衆を導く自由の女神。1830年七月革命を、その年のうちに描き上げた宣言のような一枚です。三色旗と銃を掲げ、素足で瓦礫を踏む女神は自由の擬人化。右のシルクハットの青年はドラクロワ自身とも言われます。パリの原点を、パリで見ている今日を、二人で刻んでください。画面右奥の煙の向こうに、ノートルダム大聖堂が霞んで見えます。</div>
+  </div>
+
+  <div class="stop-card" id="stop-06">
+    <div class="head"><div class="num">6</div><div class="titles"><h3>メデューズ号の筏</h3><div class="fr">Le Radeau de la Méduse</div></div></div>
+    <div class="meta"><span class="tag">Denon 2F</span><span class="tag">Salle 700</span> 1819 · テオドール・ジェリコー</div>
+    <audio controls preload="none" src="assets/audio/louvre/06_メデューズ号の筏.mp3"></audio>
+    <div class="script">ジェリコーのメデューズ号の筏。1816年、モーリタニア沖で難破したフランス海軍艦から生まれた実話です。149人が乗せられた即席の筏、13日間の漂流で生き残ったのは15人。人肉食すら起きたと言われます。画面右奥の点は救助船、絶望のなかで振られる赤い布。ジェリコーは死体安置所でスケッチし、実物大で描き切りました。この五年後、彼はわずか32歳で世を去ります。ロマン主義の産声を上げた一枚です。</div>
+  </div>
+
+  <div class="stop-card" id="stop-07">
+    <div class="head"><div class="num">7</div><div class="titles"><h3>ナポレオン一世の戴冠式</h3><div class="fr">Le Sacre de Napoléon</div></div></div>
+    <div class="meta"><span class="tag">Denon 2F</span><span class="tag">Salle 702</span> 1805-1807 · ジャック=ルイ・ダヴィッド</div>
+    <audio controls preload="none" src="assets/audio/louvre/07_ナポレオン一世の戴冠式.mp3"></audio>
+    <div class="script">縦6メートル横10メートル、ダヴィッド作ナポレオン一世の戴冠式です。1804年12月、ノートルダムで自ら冠を戴いたナポレオンが、跪く妻ジョゼフィーヌに冠を授ける瞬間。教皇ピウス七世は左でただ祝福を与えるのみ。国家と結婚を同時に演出した政治絵画の最高峰です。150人以上の実在人物が描き分けられています。二人の結婚式もまた、二人にとっての戴冠式ですね。</div>
+  </div>
+
+  <div class="stop-card" id="stop-08">
+    <div class="head"><div class="num">8</div><div class="titles"><h3>グランド・オダリスク</h3><div class="fr">La Grande Odalisque</div></div></div>
+    <div class="meta"><span class="tag">Denon 2F</span><span class="tag">Salle 702</span> 1814 · ジャン=オーギュスト・ドミニク・アングル</div>
+    <audio controls preload="none" src="assets/audio/louvre/08_グランド・オダリスク.mp3"></audio>
+    <div class="script">アングルのグランド・オダリスク、東方の後宮に横たわる女性です。背骨が三つ多い、脚が長すぎる、腰がねじれすぎる。解剖学的には破綻していますが、そのゆがみが官能と神秘を生みます。アングルは正確さより理想を選びました。青いターバン、真珠の首飾り、薄い扇。滑らかな肌の艶と、絹の質感の対比が絶品です。完璧すぎない美しさこそが、心を捉えるという教えです。</div>
+  </div>
+
+  <div class="stop-card" id="stop-09">
+    <div class="head"><div class="num">9</div><div class="titles"><h3>岩窟の聖母</h3><div class="fr">La Vierge aux rochers</div></div></div>
+    <div class="meta"><span class="tag">Denon 2F</span><span class="tag">Grande Galerie</span> 1483-1486 · レオナルド・ダ・ヴィンチ</div>
+    <audio controls preload="none" src="assets/audio/louvre/09_岩窟の聖母.mp3"></audio>
+    <div class="script">モナリザから大回廊を戻ると出会うのが、ダ・ヴィンチ岩窟の聖母です。薄暗い洞窟の中、聖母マリア、幼子イエス、幼いヨハネ、そして天使ウリエル。四人が奇跡的な三角構図で結ばれ、間の空気は神秘のスフマートに包まれています。ダ・ヴィンチが到達した光と陰の魔術、母の慈しみが暗がりに柔らかく灯ります。同じ大回廊にある洗礼者ヨハネや聖アンナと合わせて、レオナルドの世界に浸ってください。</div>
+  </div>
+
+  <div class="stop-card" id="stop-10">
+    <div class="head"><div class="num">10</div><div class="titles"><h3>瀕死の奴隷</h3><div class="fr">L'Esclave mourant</div></div></div>
+    <div class="meta"><span class="tag">Denon 0F</span><span class="tag">Salle 403</span> 1513-1516 · ミケランジェロ</div>
+    <audio controls preload="none" src="assets/audio/louvre/10_瀕死の奴隷.mp3"></audio>
+    <div class="script">ミケランジェロの瀕死の奴隷。1513年から1516年、彼が四十歳前後、教皇ユリウス二世の墓廟のために彫った奴隷像です。うっとりと目を閉じ、束縛から解き放たれる恍惚の瞬間。眠りとも死ともとれる表情、しなやかに逆立つ体の螺旋。ミケランジェロが得意とした未完の美、大理石から人体が生まれ出る瞬間が凍結されています。隣に立つ反逆する奴隷と対で味わうと、諦めと抵抗の対比が際立ちます。</div>
+  </div>
+
+  <div class="stop-card new" id="stop-11">
+    <div class="head"><div class="num">11</div><div class="titles"><h3>ハムラビ法典 ✨新規</h3><div class="fr">Code de Hammurabi</div></div></div>
+    <div class="meta"><span class="tag">Richelieu 0F</span><span class="tag">Salle 227</span> 紀元前1754年頃 · バビロニア</div>
+    <audio controls preload="none" src="assets/audio/louvre/11_ハムラビ法典.mp3"></audio>
+    <div class="script">世界で最も古い成文法、ハムラビ法典。紀元前1754年ごろ、バビロニア王ハムラビが黒い玄武岩の柱に刻ませました。高さ2.25メートルの石碑には楔形文字で282条の条文が並びます。上部にはハムラビ王が太陽神シャマシュから法を授かる姿。目には目を、歯には歯を、その厳しさで知られる古代の法体系です。1901年にフランス隊がイランのスサ遺跡で発見しました。3800年を経て、法の始まりに触れる瞬間です。</div>
+  </div>
+
+  <div class="stop-card" id="stop-12">
+    <div class="head"><div class="num">12</div><div class="titles"><h3>ミロのヴィーナス</h3><div class="fr">Vénus de Milo</div></div></div>
+    <div class="meta"><span class="tag">Sully 0F</span><span class="tag">Salle 346</span> 紀元前100年頃 · ヘレニズム</div>
+    <audio controls preload="none" src="assets/audio/louvre/12_ミロのヴィーナス.mp3"></audio>
+    <div class="script">ミロのヴィーナス、愛と美の女神アフロディーテ。紀元前100年ごろの作。エーゲ海ミロス島の農夫が1820年に畑で見つけました。両腕は失われたままですが、その欠落こそが想像を掻き立てます。腰でひねる立ち姿、半分ずり落ちた衣、螺旋を描く体の軸。二千百年前の理想の女性像です。360度どこから見ても均整が取れるように計算されています。妻の隣で、静かに一周してみてください。</div>
+  </div>
+
+  <div class="stop-card new" id="stop-13">
+    <div class="head"><div class="num">13</div><div class="titles"><h3>書記官坐像 ✨新規</h3><div class="fr">Le Scribe accroupi</div></div></div>
+    <div class="meta"><span class="tag">Sully 1F</span><span class="tag">エジプト美術</span> 紀元前2600-2350年頃 · 古王国時代</div>
+    <audio controls preload="none" src="assets/audio/louvre/13_書記官坐像.mp3"></audio>
+    <div class="script">書記官坐像。紀元前2600年から2350年、エジプト古王国時代の名品です。1850年、フランス人考古学者マリエットがサッカラで発見しました。高さ53センチ、あぐらをかいて膝の上のパピルスに文字を書き入れようとする書記の像。特筆すべきはその瞳。水晶と方解石と銅で作られ、4500年を経た今も、こちらを見つめ返してくるようです。ハネムーンの旅で出会う、最も静かな眼差しかもしれません。</div>
+  </div>
+
+  <div class="stop-card" id="stop-14">
+    <div class="head"><div class="num">14</div><div class="titles"><h3>レースを編む女</h3><div class="fr">La Dentellière</div></div></div>
+    <div class="meta"><span class="tag">Richelieu 2F</span><span class="tag">Salle 837</span> 1669-1670 · ヨハネス・フェルメール</div>
+    <audio controls preload="none" src="assets/audio/louvre/14_レースを編む女.mp3"></audio>
+    <div class="script">フェルメールのレースを編む女。縦24センチ横21センチ、ルーブルで最も小さな傑作です。若い女性が糸巻きに顔を近づけ、細かい仕事に没頭する姿。左手前の赤い糸だけがぼやけて描かれ、視線の焦点を手元へと導きます。日常のなかの神聖、静けさの中の集中。フェルメール自身も、この繊細さで四十三年の生涯を編み続けました。二人の暮らしも、こんな一針一針で編まれていくのでしょう。</div>
+  </div>
+
+  <div class="stop-card" id="stop-15">
+    <div class="head"><div class="num">15</div><div class="titles"><h3>天文学者</h3><div class="fr">L'Astronome</div></div></div>
+    <div class="meta"><span class="tag">Richelieu 2F</span><span class="tag">Salle 837</span> 1668 · ヨハネス・フェルメール</div>
+    <audio controls preload="none" src="assets/audio/louvre/15_天文学者.mp3"></audio>
+    <div class="script">フェルメールが描いた男性像はわずか二枚、そのうちの一枚がこの天文学者です。窓辺に射す柔らかな光を受け、青いガウンを羽織った学者が天球儀に手を伸ばします。壁のモーセの絵は、神が導く知の象徴。レースを編む女と同じフェルメールが、女性の日常と男性の探求を並べて描いた二枚。旅の記憶に、この静かな知の光を持ち帰ってください。美術鑑賞の締めくくりに、これほど美しい沈黙はありません。</div>
+  </div>
+
+</section>
+
+<section class="chapter" style="padding-top:0">
+  <div class="subhead"><span class="pill">PRACTICAL</span><h3>実用情報</h3><span class="line"></span></div>
+
+  <div class="lv-tips">
+    <h4>📸 撮影ルール</h4>
+    <ul>
+      <li><strong>全館フラッシュ禁止</strong>・三脚NG</li>
+      <li>モナリザ：防弾ガラス越し可・<strong>二人一緒NG</strong>(セキュリティ)→ 一人ずつ or カナの婚礼で</li>
+      <li>カナの婚礼：<strong>ハネムーン記念撮影のベスト</strong>・大画で背景に映える</li>
+      <li>Cour Napoléon(ピラミッド)：18:15-19:00がライトアップ×薄暮のマジックアワー</li>
+    </ul>
+  </div>
+
+  <div class="lv-tips" style="border-color:#2d4a7c;background:#f0f4f8">
+    <h4 style="color:#2d4a7c">🚻 トイレ位置</h4>
+    <ul>
+      <li>Denon翼 2F Salle 711 周辺(モナリザすぐ)</li>
+      <li>Sully翼 0F エジプト美術エリア(ミロのヴィーナス近く)</li>
+      <li>Richelieu翼 2F Salle 837カフェ付近(フェルメール近く)</li>
+      <li>ナポレオンホール地下(入場口)</li>
+      <li>女性用は概ね混雑・<strong>見かけたら入る</strong>が鉄則</li>
+    </ul>
+  </div>
+
+  <div class="lv-tips" style="border-color:#c9a961;background:#faf6ef">
+    <h4 style="color:#8b6f2c">☕ 休憩スポット</h4>
+    <ul>
+      <li>Richelieu翼 2F カフェ(Salle 837周辺)：コーヒー €3・サンドイッチ €7</li>
+      <li>Café Marly(ピラミッド前アーケード)：眺望◎・少し高め</li>
+      <li>推奨タイミング：18:15頃・書記官⇒フェルメール移動途中で一息</li>
+    </ul>
+  </div>
+
+  <div class="lv-tips" style="border-color:#8b6f2c;background:#fdfaf3">
+    <h4 style="color:#5a4210">🌆 撮影マップ(Cour Napoléon)</h4>
+    <ul>
+      <li><strong>ピラミッド南側(セーヌ川側)</strong>：正面アングル・記念写真ベスト</li>
+      <li><strong>ピラミッド西側(リヴォリ通り側)</strong>：宮殿全景を背景に</li>
+      <li>服装提案：妻＝ネイビーワンピ／夫＝白シャツ+紺ジャケが金光に映える</li>
+      <li>「Excusez-moi, pouvez-vous nous prendre en photo ?」でパリジャンに撮影依頼可</li>
+    </ul>
+  </div>
+
+  <div class="lv-tips" style="border-color:#4d6390;background:#f7f9fc">
+    <h4 style="color:#2d4a7c">✅ 事実確認済み(ハルシネーション対策)</h4>
+    <ul>
+      <li>各作品の年代・作者・場所は複数ソースで検証済み</li>
+      <li>2026年7月版・ミケランジェロ「約40歳」・ジェリコー「32歳没(5年後)」・フェルメール「43年の生涯」等修正済み</li>
+      <li>作品配置は稀に変更あり。当日ピラミッド地下Info Deskで公式マップを再確認</li>
+    </ul>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="ftop">
+    <div class="brand">ROMA — PARIS · HONEYMOON 2026</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shiori.html">しおり</a>
+      <a href="schedule.html">日程</a>
+      <a href="roma.html">Roma</a>
+      <a href="journal.html">旅の記録</a>
+      <a href="paris.html">Paris</a>
+      <a href="hotels.html">Hotel</a>
+      <a href="packing.html">持ち物</a>
+      <a href="checklist.html">準備</a>
+    </nav>
+  </div>
+  <div class="fine">2026/6/28-7/6 · 8泊9日 · Louvre 音声ガイド：Microsoft Edge Neural (ja-JP-NanamiNeural) · 15作品事実確認済</div>
+</footer>
+
+</body>
+</html>
