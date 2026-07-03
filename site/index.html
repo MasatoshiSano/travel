@@ -7,9 +7,16 @@
 <meta name="description" content="2026年6月28日〜7月6日 ローマ＆パリ 8泊9日の旅。日程・地図・ガイド。">
 <link rel="stylesheet" href="assets/site.css">
 <script src="assets/nav.js" defer></script>
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css"/>
+<script src="assets/vendor/leaflet/leaflet.js"></script>
 <script src="assets/maps.js" defer></script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2032%2032%27%3E%3Crect%20width%3D%2732%27%20height%3D%2732%27%20rx%3D%277%27%20fill%3D%27%238b2c1d%27/%3E%3Ctext%20x%3D%2716%27%20y%3D%2722%27%20font-size%3D%2715%27%20text-anchor%3D%27middle%27%20fill%3D%27%23fbf8f3%27%20font-family%3D%27Georgia%2C%20serif%27%20font-style%3D%27italic%27%3ER%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Roma × Paris — Honeymoon 2026｜旅のトップ">
+<meta property="og:description" content="2026年6月28日〜7月6日 ローマ＆パリ 8泊9日の旅。日程・地図・ガイド。">
+<meta property="og:url" content="https://honeymoon-roma-paris-2026-863646532781.s3.ap-northeast-1.amazonaws.com/index.html">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Trevi_Fountain_-_Roma.jpg/1600px-Trevi_Fountain_-_Roma.jpg">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
 
@@ -28,7 +35,7 @@
   </ul>
 </nav>
 
-<header class="hero" style="background-color:#1a1410;background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Trevi_Fountain_-_Roma.jpg/3840px-Trevi_Fountain_-_Roma.jpg');">
+<header class="hero" style="background-color:#1a1410;background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Trevi_Fountain_-_Roma.jpg/1600px-Trevi_Fountain_-_Roma.jpg');">
   <div class="small">A Honeymoon Field Guide · Asiana 2026</div>
   <h1>Roma <em style="font-style:normal;opacity:.7">×</em> Paris<span>2026.06.28 — 07.06 · 8泊9日</span></h1>
   <p class="lead">関空からソウル経由でローマへ。永遠の都で3泊し、空路でアルプスを越えてパリへ4泊。<br>二人で巡る、定番と路地裏の9日間。日程・地図・ガイドをこの一冊に。</p>
@@ -101,16 +108,36 @@
     <a class="pagecard" href="budget.html" style="background-color:#2a2018;background-image:linear-gradient(135deg,#8b2c1d,#c9a961)">
       <div class="inner"><div class="knum">07 · Budget</div><h3>費用・予算</h3><p>航空・ホテル・ツアー・入場料の内訳と総額。</p></div>
     </a>
+    <a class="pagecard" href="louvre.html" style="background-color:#2a2018;background-image:linear-gradient(135deg,#8b6f2c,#1a1410)">
+      <div class="inner"><div class="knum">08 · Audio Guide</div><h3>Louvre音声ガイド</h3><p>ルーブル15作品の音声解説と館内動線マップ。</p></div>
+    </a>
+    <a class="pagecard" href="shiori.html" style="background-color:#2a2018;background-image:linear-gradient(135deg,#c44a35,#2d4a7c)">
+      <div class="inner"><div class="knum">09 · Story</div><h3>旅のしおり</h3><p>写真たっぷり。各日の見どころ・食べる価値・注意点。</p></div>
+    </a>
+    <a class="pagecard" href="journal.html" style="background-color:#1a2338;background-image:linear-gradient(135deg,#5a76a8,#2a2018)">
+      <div class="inner"><div class="knum">10 · Journal</div><h3>旅の記録</h3><p>実際に使った金額・立ち寄った場所の記録。</p></div>
+    </a>
   </div>
 </section>
 
-<section class="chapter" style="padding-top:0">
+<section class="chapter" style="padding-top:0" id="changelog">
   <div class="subhead"><span class="pill gold">CHANGELOG</span><h3>更新履歴</h3><span class="line"></span></div>
-  <p style="margin:-14px 0 26px;font-size:13px;opacity:.6">このサイトを何をどのように更新したかの記録。最終更新 <strong>2026-07-02</strong>。</p>
+  <p style="margin:-14px 0 26px;font-size:13px;opacity:.6">このサイトを何をどのように更新したかの記録。最終更新 <strong>2026-07-03</strong>。</p>
 
   <p style="margin:-14px 0 22px;font-size:12px;opacity:.55">各項目の右端の<span class="cl-tag" style="margin:0 2px">ページ名</span>をタップすると、その変更箇所へ移動します。</p>
 
   <div class="changelog">
+    <div class="cl-day">
+      <div class="cl-date">2026-07-03 <span>金</span></div>
+      <ul class="cl-list">
+        <li><span class="cl-what">表示速度を大幅改善 — 写真を最大1/25に軽量化（3840px→640px）、地図ライブラリをサイト内に同梱してCDN依存を解消</span><span class="cl-pages"><span class="cl-tag all">全ページ共通</span></span></li>
+        <li><span class="cl-what">電波が弱い場所への対策 — 写真が読み込めなくても文字が読める暗色フォールバック、地図が出ない時は「Googleマップで開く」ボタンを表示</span><span class="cl-pages"><span class="cl-tag all">全ページ共通</span></span></li>
+        <li><span class="cl-what">本文をゴシック体に変更してスマホでの可読性を向上（見出しは明朝のまま）、地図ピン📍のタップ領域を拡大、印刷用レイアウトを追加</span><span class="cl-pages"><span class="cl-tag all">全ページ共通</span></span></li>
+        <li><span class="cl-what">ページ上部に「章ジャンプ」タブを追加 — 観光/食事/スイーツ/交通などへ1タップで移動</span><span class="cl-pages"><a class="cl-tag paris" href="paris.html">Paris</a><a class="cl-tag" href="roma.html">Roma</a></span></li>
+        <li><span class="cl-what">トップの「この旅のページ」に Louvre音声ガイド・しおり・旅の記録 のカードを追加、古い更新日表記を更新履歴へのリンクに置換</span><span class="cl-pages"><a class="cl-tag" href="index.html#changelog">Home</a><a class="cl-tag paris" href="paris.html">Paris</a><a class="cl-tag" href="roma.html">Roma</a></span></li>
+        <li><span class="cl-what">LINE等でURLを共有した時にタイトルとプレビュー画像が出るように（OGP対応）</span><span class="cl-pages"><span class="cl-tag all">全ページ共通</span></span></li>
+      </ul>
+    </div>
     <div class="cl-day">
       <div class="cl-date">2026-07-02 <span>木</span></div>
       <ul class="cl-list">

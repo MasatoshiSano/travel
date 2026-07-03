@@ -1,6 +1,24 @@
 /* ===== Honeymoon 2026 maps — Leaflet + OpenStreetMap (no API key) ===== */
 (function () {
-  if (typeof L === "undefined") return;
+  /* Leafletが読み込めなかった時: 空白の代わりにGoogleマップへのリンクを表示 */
+  if (typeof L === "undefined") {
+    var FALLBACK = {
+      "map-overview": ["ローマ⇄パリの全体ルート", "https://www.google.com/maps/dir/Roma/Paris"],
+      "map-rome":     ["ローマの観光スポット",     "https://www.google.com/maps/search/Rome+attractions"],
+      "map-paris":    ["パリの観光スポット",       "https://www.google.com/maps/search/Paris+attractions"]
+    };
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".leaflet-map").forEach(function (el) {
+        var fb = FALLBACK[el.id] || ["地図", "https://www.google.com/maps"];
+        var div = document.createElement("div");
+        div.className = "map-fallback";
+        div.innerHTML = "<div>地図を読み込めませんでした（電波の弱い場所かもしれません）</div>" +
+          '<a href="' + fb[1] + '" target="_blank" rel="noopener">Googleマップで' + fb[0] + 'を開く</a>';
+        el.replaceWith(div);
+      });
+    });
+    return;
+  }
 
   var TILE = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
   var ATTR = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>';

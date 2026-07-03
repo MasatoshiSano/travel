@@ -9,12 +9,16 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{
-  font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP","Cormorant Garamond",serif;
-  background:var(--c-paper);color:var(--c-text);line-height:1.75;-webkit-font-smoothing:antialiased;
+  font-family:-apple-system,"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic Medium","Noto Sans JP","Segoe UI",sans-serif;
+  background:var(--c-paper);color:var(--c-text);line-height:1.8;-webkit-font-smoothing:antialiased;
 }
+/* 見出しは明朝でエディトリアルな雰囲気を維持、本文はゴシックで可読性優先 */
+h1,h2,h3,h4,.serif{font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP","Cormorant Garamond",serif}
 img{max-width:100%;display:block}
 a{color:inherit}
 .sans{font-family:"Helvetica Neue",Arial,sans-serif}
+/* sticky navの下に見出しが隠れないように */
+[id]{scroll-margin-top:84px}
 
 /* ===== NAV ===== */
 nav.topnav{
@@ -34,7 +38,7 @@ nav.topnav a:hover,nav.topnav a.active{color:var(--c-classic)}
 }
 
 /* ===== HERO ===== */
-.hero{position:relative;min-height:86vh;background-size:cover;background-position:center;color:#fff;
+.hero{position:relative;min-height:86vh;background-color:var(--c-ink);background-size:cover;background-position:center;color:#fff;
   display:flex;flex-direction:column;justify-content:center;padding:80px 6vw}
 .hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.18) 0%,rgba(26,20,16,.72) 100%)}
 .hero>*{position:relative;z-index:1}
@@ -183,3 +187,38 @@ footer.site .fine{opacity:.6;line-height:1.8}
 .card .body .info{margin-top:14px;padding-top:14px;border-top:1px dashed rgba(26,20,16,.15);font-family:"Helvetica Neue",Arial,sans-serif;font-size:12px;color:var(--c-mute);line-height:1.7}
 .card .body .info span{display:inline-block;color:var(--c-ink);font-weight:600}
 .card .body .day-tag{display:inline-block;background:var(--c-classic);color:#fff;font-family:"Helvetica Neue",Arial,sans-serif;font-size:10px;letter-spacing:.2em;padding:3px 8px;margin-top:12px;border-radius:2px}
+
+/* ===== 地図ピン(📍)のタップ領域を指サイズに ===== */
+a.pin{display:inline-block;padding:6px 8px;margin:-4px 0;font-size:17px;text-decoration:none;line-height:1}
+
+/* ===== 章ジャンプタブ (roma / paris) ===== */
+.chapnav{position:sticky;top:0;z-index:900;background:rgba(251,248,243,.96);backdrop-filter:blur(8px);
+  border-bottom:1px solid rgba(26,20,16,.1);padding:10px 5vw;display:flex;gap:8px;overflow-x:auto;
+  -webkit-overflow-scrolling:touch;scrollbar-width:none}
+.chapnav::-webkit-scrollbar{display:none}
+.chapnav a{flex:0 0 auto;font-family:"Helvetica Neue",Arial,sans-serif;font-size:12px;letter-spacing:.08em;
+  color:var(--c-text);text-decoration:none;padding:7px 14px;border:1px solid rgba(26,20,16,.18);border-radius:999px;
+  white-space:nowrap;background:#fff;transition:background .2s,color .2s}
+.chapnav a:hover,.chapnav a:active{background:var(--c-classic);color:#fff;border-color:var(--c-classic)}
+.chapnav.paris a:hover,.chapnav.paris a:active{background:var(--c-paris);border-color:var(--c-paris)}
+/* 章タブがあるページはアンカー着地位置をさらに下げる */
+.has-chapnav [id]{scroll-margin-top:132px}
+
+/* ===== 地図フォールバック ===== */
+.map-fallback{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;
+  width:100%;height:360px;border-radius:3px;border:1px dashed rgba(26,20,16,.25);background:var(--c-cream);
+  color:var(--c-mute);font-family:"Helvetica Neue",Arial,sans-serif;font-size:13px;text-align:center;padding:20px}
+.map-fallback a{display:inline-block;background:var(--c-classic);color:#fff;text-decoration:none;
+  padding:10px 22px;border-radius:999px;font-weight:700;letter-spacing:.06em}
+
+/* ===== 印刷用 ===== */
+@media print{
+  nav.topnav,.chapnav,#backtop,.mapwrap,.map-fallback,footer.site nav{display:none !important}
+  body{background:#fff;color:#000}
+  .hero{min-height:auto;padding:24px 0;background:#fff !important;color:#000}
+  .hero::before{display:none}
+  .hero h1,.hero .lead,.hero .small,.hero .meta-bar{color:#000;opacity:1}
+  .card,.flatcard{box-shadow:none;border:1px solid #ccc;break-inside:avoid}
+  section.chapter{padding:20px 0}
+  a{text-decoration:none;color:#000}
+}
