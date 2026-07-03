@@ -9,6 +9,17 @@
   ready(function () {
     var nav = document.querySelector("nav.topnav");
 
+    /* ---- 章ジャンプタブ(.chapnav)を topnav の実高さの直下に固定 ----
+       ハンバーガー化でnavの高さが変わるため、レイアウト確定後にも再計測する */
+    var chapnav = document.querySelector("nav.chapnav");
+    if (nav && chapnav) {
+      var setTop = function () { chapnav.style.top = nav.offsetHeight + "px"; };
+      setTop();
+      setTimeout(setTop, 0);
+      window.addEventListener("load", setTop);
+      window.addEventListener("resize", setTop);
+    }
+
     /* ---- favicon (SVG data URI) ---- */
     if (!document.querySelector('link[rel="icon"]')) {
       var svg = "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'>" +
