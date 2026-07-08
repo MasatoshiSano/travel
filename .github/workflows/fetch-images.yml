@@ -20,9 +20,11 @@ jobs:
       - name: Download and resize images
         run: |
           set -euo pipefail
+          pip install --quiet pillow
           mkdir -p site/assets/img
           python3 - <<'PYEOF'
           import re, glob, json, subprocess, urllib.parse, os
+          from PIL import Image
 
           url_re = re.compile(r'https://upload\.wikimedia\.org/wikipedia/commons/thumb/[^"\')\s>]+')
           urls = set()
@@ -41,11 +43,19 @@ jobs:
               subprocess.run(['curl', '-sSfL', '--retry', '3',
                               '-A', 'HoneymoonTravelSite/1.0 (masatoshi.sano1021@gmail.com)',
                               '-o', src, url], check=True)
+              im = Image.open(src)
+              if im.mode not in ('RGB', 'L') and ext != '.png':
+                  im = im.convert('RGB')
               out = {}
               for w in (640, 1600):
                   dst = f'site/assets/img/{base}-{w}{ext}'
-                  subprocess.run(['convert', src, '-resize', f'{w}x>', '-strip',
-                                  '-quality', '80', dst], check=True)
+                  r = im.copy()
+                  if r.width > w:
+                      r.thumbnail((w, w * 10), Image.LANCZOS)
+                  if ext == '.png':
+                      r.save(dst, optimize=True)
+                  else:
+                      r.save(dst, quality=80, optimize=True, progressive=True)
                   out[str(w)] = dst.replace('site/', '', 1)
               mapping[url] = out
               print(f'{url} -> {base} ({os.path.getsize("site/assets/img/"+base+"-640"+ext)//1024}KB / '
