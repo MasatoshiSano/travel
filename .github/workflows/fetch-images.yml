@@ -26,7 +26,7 @@ jobs:
           import re, glob, json, subprocess, urllib.parse, os
           from PIL import Image
 
-          url_re = re.compile(r'https://upload\.wikimedia\.org/wikipedia/commons/thumb/[^"\')\s>]+')
+          url_re = re.compile(r'https://(?:upload\.wikimedia\.org/wikipedia/commons/[^"\')\s>]+|commons\.wikimedia\.org/wiki/Special:FilePath/[^"\')\s>]+)')
           urls = set()
           for f in glob.glob('site/*.html'):
               urls |= set(url_re.findall(open(f, encoding='utf-8').read()))
