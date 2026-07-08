@@ -1,10 +1,6 @@
 name: Fetch and downscale site images
 
 on:
-  push:
-    branches: [claude/aws-site-deployment-al0hzi]
-    paths:
-      - '.github/workflows/fetch-images.yml'
   workflow_dispatch:
 
 permissions:
