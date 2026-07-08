@@ -1,0 +1,66 @@
+name: Fetch and downscale site images
+
+on:
+  push:
+    branches: [claude/aws-site-deployment-al0hzi]
+    paths:
+      - '.github/workflows/fetch-images.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Download and resize images
+        run: |
+          set -euo pipefail
+          mkdir -p site/assets/img
+          python3 - <<'PYEOF'
+          import re, glob, json, subprocess, urllib.parse, os
+
+          url_re = re.compile(r'https://upload\.wikimedia\.org/wikipedia/commons/thumb/[^"\')\s>]+')
+          urls = set()
+          for f in glob.glob('site/*.html'):
+              urls |= set(url_re.findall(open(f, encoding='utf-8').read()))
+
+          mapping = {}
+          for url in sorted(urls):
+              tail = url.rsplit('/', 1)[-1]                      # 3840px-Foo.jpg
+              name = re.sub(r'^\d+px-', '', tail)                 # Foo.jpg
+              name = urllib.parse.unquote(name)
+              base, ext = os.path.splitext(name)
+              base = re.sub(r'[^A-Za-z0-9._-]+', '_', base).strip('_').lower()[:60]
+              ext = ext.lower() if ext.lower() in ('.jpg', '.jpeg', '.png') else '.jpg'
+              src = f'/tmp/{base}_src{ext}'
+              subprocess.run(['curl', '-sSfL', '--retry', '3',
+                              '-A', 'HoneymoonTravelSite/1.0 (masatoshi.sano1021@gmail.com)',
+                              '-o', src, url], check=True)
+              out = {}
+              for w in (640, 1600):
+                  dst = f'site/assets/img/{base}-{w}{ext}'
+                  subprocess.run(['convert', src, '-resize', f'{w}x>', '-strip',
+                                  '-quality', '80', dst], check=True)
+                  out[str(w)] = dst.replace('site/', '', 1)
+              mapping[url] = out
+              print(f'{url} -> {base} ({os.path.getsize("site/assets/img/"+base+"-640"+ext)//1024}KB / '
+                    f'{os.path.getsize("site/assets/img/"+base+"-1600"+ext)//1024}KB)')
+
+          json.dump(mapping, open('site/assets/img/map.json', 'w', encoding='utf-8'),
+                    ensure_ascii=False, indent=1)
+          print(f'total {len(mapping)} images')
+          PYEOF
+          du -sh site/assets/img
+
+      - name: Commit images to branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/assets/img
+          git commit -m "画像の縮小版をリポジトリに追加(Wikipedia依存の解消・640px/1600px)"
+          git push
