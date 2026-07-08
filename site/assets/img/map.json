@@ -1,70 +1,158 @@
 {
- "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Piazza_Navona_%28Rome%29_at_night.jpg/3840px-Piazza_Navona_%28Rome%29_at_night.jpg": {
-  "640": "assets/img/piazza_navona__rome__at_night-640.jpg",
-  "1600": "assets/img/piazza_navona__rome__at_night-1600.jpg"
+ "https://commons.wikimedia.org/wiki/Special:FilePath/Campo_de_Fiori.jpg": {
+  "640": "assets/img/campo_de_fiori-640.jpg",
+  "1600": "assets/img/campo_de_fiori-1600.jpg"
  },
- "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Granita_originelle_au_citron_de_Sicile.jpg/1920px-Granita_originelle_au_citron_de_Sicile.jpg": {
-  "640": "assets/img/granita_originelle_au_citron_de_sicile-640.jpg",
-  "1600": "assets/img/granita_originelle_au_citron_de_sicile-1600.jpg"
+ "https://commons.wikimedia.org/wiki/Special:FilePath/Castel_Sant%27Angelo.jpg": {
+  "640": "assets/img/castel_sant_angelo-640.jpg",
+  "1600": "assets/img/castel_sant_angelo-1600.jpg"
  },
- "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Crowd_in_the_Jardin_des_Tuileries%2C_Paris_July_2014.jpg/3840px-Crowd_in_the_Jardin_des_Tuileries%2C_Paris_July_2014.jpg": {
-  "640": "assets/img/crowd_in_the_jardin_des_tuileries__paris_july_2014-640.jpg",
-  "1600": "assets/img/crowd_in_the_jardin_des_tuileries__paris_july_2014-1600.jpg"
+ "https://upload.wikimedia.org/wikipedia/commons/0/01/GiolittiCafeRoma.jpg": {
+  "640": "assets/img/giolitticaferoma-640.jpg",
+  "1600": "assets/img/giolitticaferoma-1600.jpg"
  },
- "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Falafels_2.jpg/3840px-Falafels_2.jpg": {
-  "640": "assets/img/falafels_2-640.jpg",
-  "1600": "assets/img/falafels_2-1600.jpg"
+ "https://upload.wikimedia.org/wikipedia/commons/0/09/Crepes_dsc07085.jpg": {
+  "640": "assets/img/crepes_dsc07085-640.jpg",
+  "1600": "assets/img/crepes_dsc07085-1600.jpg"
  },
- "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Louvre_Museum_Wikimedia_Commons.jpg/3840px-Louvre_Museum_Wikimedia_Commons.jpg": {
-  "640": "assets/img/louvre_museum_wikimedia_commons-640.jpg",
-  "1600": "assets/img/louvre_museum_wikimedia_commons-1600.jpg"
+ "https://upload.wikimedia.org/wikipedia/commons/1/10/Madeleines_pic.jpg": {
+  "640": "assets/img/madeleines_pic-640.jpg",
+  "1600": "assets/img/madeleines_pic-1600.jpg"
  },
- "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Caf%C3%A9_de_Flore%2C_172_boulevard_Saint-Germain%2C_Paris_6e.jpg/3840px-Caf%C3%A9_de_Flore%2C_172_boulevard_Saint-Germain%2C_Paris_6e.jpg": {
-  "640": "assets/img/caf__de_flore__172_boulevard_saint-germain__paris_6e-640.jpg",
-  "1600": "assets/img/caf__de_flore__172_boulevard_saint-germain__paris_6e-1600.jpg"
+ "https://upload.wikimedia.org/wikipedia/commons/1/11/VanillaMacaron.jpg": {
+  "640": "assets/img/vanillamacaron-640.jpg",
+  "1600": "assets/img/vanillamacaron-1600.jpg"
  },
- "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Mont-Saint-Michel_vu_du_ciel.jpg/3840px-Mont-Saint-Michel_vu_du_ciel.jpg": {
-  "640": "assets/img/mont-saint-michel_vu_du_ciel-640.jpg",
-  "1600": "assets/img/mont-saint-michel_vu_du_ciel-1600.jpg"
+ "https://upload.wikimedia.org/wikipedia/commons/1/16/Franse_tarte_tatin.jpg": {
+  "640": "assets/img/franse_tarte_tatin-640.jpg",
+  "1600": "assets/img/franse_tarte_tatin-1600.jpg"
  },
- "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Arc_de_Triomphe%2C_Paris_21_October_2010.jpg/3840px-Arc_de_Triomphe%2C_Paris_21_October_2010.jpg": {
-  "640": "assets/img/arc_de_triomphe__paris_21_october_2010-640.jpg",
-  "1600": "assets/img/arc_de_triomphe__paris_21_october_2010-1600.jpg"
+ "https://upload.wikimedia.org/wikipedia/commons/2/29/Quiche.jpg": {
+  "640": "assets/img/quiche-640.jpg",
+  "1600": "assets/img/quiche-1600.jpg"
  },
- "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Pantheon_%28Rome%29_-_Right_side_and_front.jpg/3840px-Pantheon_%28Rome%29_-_Right_side_and_front.jpg": {
-  "640": "assets/img/pantheon__rome__-_right_side_and_front-640.jpg",
-  "1600": "assets/img/pantheon__rome__-_right_side_and_front-1600.jpg"
+ "https://upload.wikimedia.org/wikipedia/commons/2/29/Saltimbocca_01.jpg": {
+  "640": "assets/img/saltimbocca_01-640.jpg",
+  "1600": "assets/img/saltimbocca_01-1600.jpg"
  },
- "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/2022-04-14-Passerelle_de_la_Grange-aux-Belles-8583.jpg/3840px-2022-04-14-Passerelle_de_la_Grange-aux-Belles-8583.jpg": {
-  "640": "assets/img/2022-04-14-passerelle_de_la_grange-aux-belles-8583-640.jpg",
-  "1600": "assets/img/2022-04-14-passerelle_de_la_grange-aux-belles-8583-1600.jpg"
+ "https://upload.wikimedia.org/wikipedia/commons/2/2a/Croissant-Petr_Kratochvil.jpg": {
+  "640": "assets/img/croissant-petr_kratochvil-640.jpg",
+  "1600": "assets/img/croissant-petr_kratochvil-1600.jpg"
  },
- "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Bucatini_allamatriciana.jpg/3840px-Bucatini_allamatriciana.jpg": {
-  "640": "assets/img/bucatini_allamatriciana-640.jpg",
-  "1600": "assets/img/bucatini_allamatriciana-1600.jpg"
+ "https://upload.wikimedia.org/wikipedia/commons/3/33/Espaguetis_carbonara.jpg": {
+  "640": "assets/img/espaguetis_carbonara-640.jpg",
+  "1600": "assets/img/espaguetis_carbonara-1600.jpg"
  },
- "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Venice_-_Ice_cream_parlor_-_4017.jpg/3840px-Venice_-_Ice_cream_parlor_-_4017.jpg": {
-  "640": "assets/img/venice_-_ice_cream_parlor_-_4017-640.jpg",
-  "1600": "assets/img/venice_-_ice_cream_parlor_-_4017-1600.jpg"
+ "https://upload.wikimedia.org/wikipedia/commons/3/3f/Paris_Berthillon%2C_12_July_2003.jpg": {
+  "640": "assets/img/paris_berthillon__12_july_2003-640.jpg",
+  "1600": "assets/img/paris_berthillon__12_july_2003-1600.jpg"
  },
- "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Trevi_Fountain_-_Roma.jpg/3840px-Trevi_Fountain_-_Roma.jpg": {
-  "640": "assets/img/trevi_fountain_-_roma-640.jpg",
-  "1600": "assets/img/trevi_fountain_-_roma-1600.jpg"
+ "https://upload.wikimedia.org/wikipedia/commons/4/43/Pizza_al_taglio.jpg": {
+  "640": "assets/img/pizza_al_taglio-640.jpg",
+  "1600": "assets/img/pizza_al_taglio-1600.jpg"
  },
- "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Basilica_di_San_Clemente_al_Laterano_-_esterno.jpg/3840px-Basilica_di_San_Clemente_al_Laterano_-_esterno.jpg": {
-  "640": "assets/img/basilica_di_san_clemente_al_laterano_-_esterno-640.jpg",
-  "1600": "assets/img/basilica_di_san_clemente_al_laterano_-_esterno-1600.jpg"
+ "https://upload.wikimedia.org/wikipedia/commons/4/44/Mille-feuille_fran%C3%A7ais_1.jpg": {
+  "640": "assets/img/mille-feuille_fran_ais_1-640.jpg",
+  "1600": "assets/img/mille-feuille_fran_ais_1-1600.jpg"
  },
- "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/3840px-Colosseo_2020.jpg": {
-  "640": "assets/img/colosseo_2020-640.jpg",
-  "1600": "assets/img/colosseo_2020-1600.jpg"
+ "https://upload.wikimedia.org/wikipedia/commons/4/47/CafeMia.jpg": {
+  "640": "assets/img/cafemia-640.jpg",
+  "1600": "assets/img/cafemia-1600.jpg"
  },
- "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg/3840px-Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg": {
-  "640": "assets/img/basilica_di_san_pietro_in_vaticano_september_2015-1a-640.jpg",
-  "1600": "assets/img/basilica_di_san_pietro_in_vaticano_september_2015-1a-1600.jpg"
+ "https://upload.wikimedia.org/wikipedia/commons/4/4a/Brioche.jpg": {
+  "640": "assets/img/brioche-640.jpg",
+  "1600": "assets/img/brioche-1600.jpg"
  },
- "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Notre-Dame_de_Paris%2C_4_October_2017.jpg/3840px-Notre-Dame_de_Paris%2C_4_October_2017.jpg": {
-  "640": "assets/img/notre-dame_de_paris__4_october_2017-640.jpg",
-  "1600": "assets/img/notre-dame_de_paris__4_october_2017-1600.jpg"
+ "https://upload.wikimedia.org/wikipedia/commons/5/58/Tiramisu_-_Raffaele_Diomede.jpg": {
+  "640": "assets/img/tiramisu_-_raffaele_diomede-640.jpg",
+  "1600": "assets/img/tiramisu_-_raffaele_diomede-1600.jpg"
+ },
+ "https://upload.wikimedia.org/wikipedia/commons/5/5d/Grotta_azzurra.jpg": {
+  "640": "assets/img/grotta_azzurra-640.jpg",
+  "1600": "assets/img/grotta_azzurra-1600.jpg"
+ },
+ "https://upload.wikimedia.org/wikipedia/commons/5/5f/Pain_au_chocolat_Luc_Viatour.jpg": {
+  "640": "assets/img/pain_au_chocolat_luc_viatour-640.jpg",
+  "1600": "assets/img/pain_au_chocolat_luc_viatour-1600.jpg"
+ },
+ "https://upload.wikimedia.org/wikipedia/commons/6/6b/Centre_Pompidou_%40_Beaubourg_%40_Paris_%2815448205062%29.jpg": {
+  "640": "assets/img/centre_pompidou___beaubourg___paris__15448205062-640.jpg",
+  "1600": "assets/img/centre_pompidou___beaubourg___paris__15448205062-1600.jpg"
+ },
+ "https://upload.wikimedia.org/wikipedia/commons/7/70/Sainte_Chapelle_-_Upper_level_1.jpg": {
+  "640": "assets/img/sainte_chapelle_-_upper_level_1-640.jpg",
+  "1600": "assets/img/sainte_chapelle_-_upper_level_1-1600.jpg"
+ },
+ "https://upload.wikimedia.org/wikipedia/commons/7/7b/Pasta_alla_Gricia.jpg": {
+  "640": "assets/img/pasta_alla_gricia-640.jpg",
+  "1600": "assets/img/pasta_alla_gricia-1600.jpg"
+ },
+ "https://upload.wikimedia.org/wikipedia/commons/8/85/Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg": {
+  "640": "assets/img/tour_eiffel_wikimedia_commons__cropped-640.jpg",
+  "1600": "assets/img/tour_eiffel_wikimedia_commons__cropped-1600.jpg"
+ },
+ "https://upload.wikimedia.org/wikipedia/commons/9/90/Ripa_-_Aventino_-_CavalieriDiMalta.JPG": {
+  "640": "assets/img/ripa_-_aventino_-_cavalieridimalta-640.jpg",
+  "1600": "assets/img/ripa_-_aventino_-_cavalieridimalta-1600.jpg"
+ },
+ "https://upload.wikimedia.org/wikipedia/commons/9/99/Cacio_e_pepe.jpg": {
+  "640": "assets/img/cacio_e_pepe-640.jpg",
+  "1600": "assets/img/cacio_e_pepe-1600.jpg"
+ },
+ "https://upload.wikimedia.org/wikipedia/commons/9/9a/Reel_and_Brand_-_September_2021_-_Sarah_Stierch_05.jpg": {
+  "640": "assets/img/reel_and_brand_-_september_2021_-_sarah_stierch_05-640.jpg",
+  "1600": "assets/img/reel_and_brand_-_september_2021_-_sarah_stierch_05-1600.jpg"
+ },
+ "https://upload.wikimedia.org/wikipedia/commons/9/9e/Le_mus%C3%A9e_de_la_centrale_Montemartini_%28Rome%29_%2834321364485%29.jpg": {
+  "640": "assets/img/le_mus_e_de_la_centrale_montemartini__rome___34321364485-640.jpg",
+  "1600": "assets/img/le_mus_e_de_la_centrale_montemartini__rome___34321364485-1600.jpg"
+ },
+ "https://upload.wikimedia.org/wikipedia/commons/a/a2/Quartiere_Copped%C3%A9_09.jpg": {
+  "640": "assets/img/quartiere_copped__09-640.jpg",
+  "1600": "assets/img/quartiere_copped__09-1600.jpg"
+ },
+ "https://upload.wikimedia.org/wikipedia/commons/a/ad/Cannoli_siciliani_al_Caff%C3%A8_Impero%2C_ad_Alcamo.jpg": {
+  "640": "assets/img/cannoli_siciliani_al_caff__impero__ad_alcamo-640.jpg",
+  "1600": "assets/img/cannoli_siciliani_al_caff__impero__ad_alcamo-1600.jpg"
+ },
+ "https://upload.wikimedia.org/wikipedia/commons/c/c5/Le_sacre_coeur.jpg": {
+  "640": "assets/img/le_sacre_coeur-640.jpg",
+  "1600": "assets/img/le_sacre_coeur-1600.jpg"
+ },
+ "https://upload.wikimedia.org/wikipedia/commons/d/d2/Versailles-Chateau-Jardins02.jpg": {
+  "640": "assets/img/versailles-chateau-jardins02-640.jpg",
+  "1600": "assets/img/versailles-chateau-jardins02-1600.jpg"
+ },
+ "https://upload.wikimedia.org/wikipedia/commons/d/d3/Paris_Hotel_de_Sens_dsc04028.jpg": {
+  "640": "assets/img/paris_hotel_de_sens_dsc04028-640.jpg",
+  "1600": "assets/img/paris_hotel_de_sens_dsc04028-1600.jpg"
+ },
+ "https://upload.wikimedia.org/wikipedia/commons/d/de/Santa_Maria_in_Trastevere_fountain.jpg": {
+  "640": "assets/img/santa_maria_in_trastevere_fountain-640.jpg",
+  "1600": "assets/img/santa_maria_in_trastevere_fountain-1600.jpg"
+ },
+ "https://upload.wikimedia.org/wikipedia/commons/d/df/Italian_food.JPG": {
+  "640": "assets/img/italian_food-640.jpg",
+  "1600": "assets/img/italian_food-1600.jpg"
+ },
+ "https://upload.wikimedia.org/wikipedia/commons/e/e2/Spumonipic.jpg": {
+  "640": "assets/img/spumonipic-640.jpg",
+  "1600": "assets/img/spumonipic-1600.jpg"
+ },
+ "https://upload.wikimedia.org/wikipedia/commons/e/e3/Ripa_-_giardino_degli_aranci_01.JPG": {
+  "640": "assets/img/ripa_-_giardino_degli_aranci_01-640.jpg",
+  "1600": "assets/img/ripa_-_giardino_degli_aranci_01-1600.jpg"
+ },
+ "https://upload.wikimedia.org/wikipedia/commons/e/ed/Al_Borgat_1.jpg": {
+  "640": "assets/img/al_borgat_1-640.jpg",
+  "1600": "assets/img/al_borgat_1-1600.jpg"
+ },
+ "https://upload.wikimedia.org/wikipedia/commons/e/ef/Chez_Chartier_1.JPG": {
+  "640": "assets/img/chez_chartier_1-640.jpg",
+  "1600": "assets/img/chez_chartier_1-1600.jpg"
+ },
+ "https://upload.wikimedia.org/wikipedia/commons/f/fa/Galette_des_Rois.png": {
+  "640": "assets/img/galette_des_rois-640.png",
+  "1600": "assets/img/galette_des_rois-1600.png"
  }
 }
